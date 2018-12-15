@@ -1,0 +1,21 @@
+---
+layout: base
+templateClass: sg-collection
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - main
+permalink: /{{ tag }}/
+---
+
+{{ content | safe }}
+
+<div class="posts py-4 fs-3">
+    {% set taglist = collections[ tag ] %}
+    {% for post in taglist | reverse %}
+      <p><a href="{{ post.url | url }}">{{ post.data.title }}</a></p>
+        <hr class="border-light">
+    {% endfor %}
+</div>
