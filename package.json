@@ -8,17 +8,30 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "lerna": "^3.6.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {
+    "@11ty/eleventy": "^0.6.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.0",
     "@vue/cli-plugin-babel": "^3.2.0",
     "@vue/cli-plugin-eslint": "^3.2.0",
     "@vue/cli-service": "^3.2.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0-0",
+    "favicons-webpack-plugin": "^0.0.9",
+    "gulp": "^4.0.0",
+    "gulp-copy": "^4.0.1",
+    "gulp-print": "^5.0.0",
+    "gulp-sizereport": "^1.2.1",
+    "gulp-string-replace": "^1.1.2",
+    "handlebars-loader": "^1.7.0",
+    "html-webpack-template": "^6.2.0",
     "node-sass": "^4.9.0",
+    "nunjucks-loader": "^3.0.0",
     "sass-loader": "^7.0.1",
+    "vue-styleguidist": "^2.1.1",
     "vue-template-compiler": "^2.5.17"
   }
 }
