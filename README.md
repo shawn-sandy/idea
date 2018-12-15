@@ -2,7 +2,7 @@
 
 > ### IDEA is a simple and easy to use customizable framework for creating design systems for your ideas or projects.
 
-### Features
+## Features
 
 - Atomic driven system / structure
 - Markdown driven content and components
@@ -51,3 +51,13 @@ yarn run lint
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Customization
+
+## Licence (MIT)
+
+## Contribute
+
+## Enjoy
+
+**Wakanda Forever :)**
