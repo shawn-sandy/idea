@@ -1,0 +1,30 @@
+---
+layout: styleguide.njk
+---
+
+<div class="ui-content p-3">
+  {% for item in collections.components %}
+  {% if loop.index !== 1 %}
+  <hr />
+  {% endif %}
+  <article id="{{ item.data.title | slug }}">
+      <h2 class="text-uppercase-">
+     {{ item.data.name or item.data.title }}
+      </h2>
+      <div class="ui-element">
+        {{ item.templateContent | safe }}
+      </div>
+      <aside>
+          <p class="lead py-3">
+            {{ item.data.description }}
+          </p>
+      </aside>
+    </article>
+  {% include './partials/hr-rule.html' %}
+  {% else %}
+  <p class="fs-2 p-4 text-center text-capitalize text-sg-secondary-color">
+    Sorry our {{ title }} elves currently are on strike and will return shortly, thank you
+  </p>
+  <hr class="my-5">
+  {% endfor %}
+</div>

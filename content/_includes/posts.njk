@@ -1,0 +1,9 @@
+---
+layout: base
+templateClass: sg-posts
+---
+{{ content | safe }}
+<hr class="border-light">
+<div class="posts py-4 fs-3 text-sg-secondary">
+  {% include 'partials/post-collections.njk' %}
+</div>

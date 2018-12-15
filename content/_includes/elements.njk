@@ -1,0 +1,24 @@
+---
+layout: styleguide.njk
+---
+
+<div class="ui-content px-3">
+  {% for item in collections.elements %}
+  {% if loop.index !== 1 %}
+  {% endif %}
+  <article id="{{ item.data.title | slug }}">
+    <h2 class="text-capitalize text-sg-secondary-color">
+   {{ item.data.name or item.data.title }}
+    </h2>
+    <div class="ui-element">
+      {{ item.templateContent | safe }}
+    </div>
+    <aside>
+        <p class="lead py-3">
+          {{ item.data.description }}
+        </p>
+    </aside>
+  </article>
+  {% include './partials/hr-rule.html' %}
+  {% endfor %}
+</div>
