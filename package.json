@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "content": "yarn eleventy --serve"
+    "content": "yarn eleventy --serve",
+    "build:content": "yarn eleventy"
   },
   "dependencies": {
     "lerna": "^3.6.0",
