@@ -1,0 +1,8 @@
+<ul class="list-unstyled">
+  {%- for items in collections.news -%}
+  <li>
+    <a href="/content{{ items.url }}">{{ items.data.title }}</a>
+  </li>
+  <hr class="border-light">
+  {%- endfor -%}
+</ul>
