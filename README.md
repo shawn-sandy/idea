@@ -1,12 +1,12 @@
 # A simple way to visualize Ideas
 
+## IDEA is a simple and easy to use customizable toolkit (framework if you prefer) for creating design systems allowing you to turn your ideas and vision into products.
+
 > ## A design system is an agreed upon set of principles and a living suite of modular, resuable parts. This includes standards around style, color, language and behavior. The system allows us to work smarter and innovate on products faster, while providing a more predictable user experience.
->
+
 > [Amélie Lamont @amelielamont](https://twitter.com/amelielamont/status/1072917354819059713)
 
 ---
-
-## IDEA is a simple and easy to use customizable framework for creating design systems allowing you to turn your ideas and vision into products.
 
 ## Features
 
@@ -14,6 +14,7 @@
 - Markdown / HTML driven content and components
 - Vue.js integration
 - Modular
+- IndexDB integration
 - Customizbale
 
 ## Project setup
