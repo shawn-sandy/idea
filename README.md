@@ -15,9 +15,10 @@ _Idea is currently in early production beta, feel free to open an issues for fea
 - Atomic driven component system / structure
 - Markdown / HTML driven content and components
 - Vue.js integration
-- Javascript based template **Nun**
+- Javascript based template **[Nunjucks](https://mozilla.github.io/nunjucks/)**, Handlebars, Mustache...
 - Modular
 - IndexDB integration
+- Webpack / Gulp
 - Customizable
 
 ## Project setup

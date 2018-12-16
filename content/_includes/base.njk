@@ -1,70 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>{{ title }}</title>
+    {% include "./partials/header-scripts.html" %}
+  </head>
+  <body cz-shortcut-listen="true">
+    {% block nav %}
+    <nav>{% include "./views/nav.njk" %}</nav>
+    {% endblock %}
+    <!-- header -->
+    {% block header %}
+    <header></header>
+    {% endblock %}
+    <div id="components">
+      <div class="ui-content">
+        <main class="container">
+          <div class="row">
+            <!-- left sidebar -->
+            {% block left %} {% endblock %}
+            <!-- content -->
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <title>Globalise {{title}}</title>
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-    crossorigin="anonymous">
-  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+            {% block content %} {% include "./views/content.njk" %} {% endblock
+            %}
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/themes/prism-tomorrow.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/plugins/line-numbers/prism-line-numbers.css">
-  <link href="https://shopglobaluidesign-techdata-dev.azurewebsites.net/styles/app.css" rel="stylesheet">
-</head>
-
-<body cz-shortcut-listen="true">
-  <div id="components">
-    <div class="ui-content">
-      <div>
-        <div>
-          {% include "./views/header-nav.html" %}
-          <main class="container">
-            <div class="row">
-
-            <div class="col-md-9">
-              <div class="ui-content py-5">
-                {{ content | safe }}
-              </div>
-            </div>
-            <!-- {% block sidebar %}
-            <div class="col-md-3">
-              <div class="sidebar my-5">
-                <h4 class="text-sg-secondary-color">Recent News</h4>
-                <hr class="border-light">
-                {% include './partials/post-collections.njk' %}
-              </div>
-            </div>
-            {% endblock sidebar %} -->
-
-            </div>
-          </main>
-        </div>
+            <!-- sidebar -->
+            {% block right %}{% endblock right %}
+          </div>
+        </main>
       </div>
+      {% block footer %}
+      <footer class="ui-footer py-5" style="height:200px">
+        {% include "./views/footer.njk" %}
+      </footer>
+      {% endblock %}
     </div>
-    <footer class="ui-footer py-5" style="height:200px">
-      {% include "./views/footer.html" %}
-    </footer>
-  </div>
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/prism.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
-</body>
+    {% include "./partials/footer-scripts.html" %}
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  </body>
 </html>
