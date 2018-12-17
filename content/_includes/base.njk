@@ -13,14 +13,14 @@
   </head>
   <body cz-shortcut-listen="true">
     {% block nav %}
-    <nav>{% include "./views/nav.njk" %}</nav>
+    <nav class="container-fluid">{% include "./views/nav.njk" %}</nav>
     {% endblock %}
 
     <!-- header -->
     {% block header %}
-    <header>{% include "./views/header.njk" %}</header>
+    <header class="container">{% include "./views/header.njk" %}</header>
     {% endblock %}
-    <div id="components">
+    <div id="components" class="container">
       <div class="ui-content">
         <main class="container">
           <div class="row">
@@ -36,13 +36,12 @@
           </div>
         </main>
       </div>
-      {% block footer %}
-      <footer class="ui-footer py-5" style="height:200px">
-        {% include "./views/footer.njk" %}
-      </footer>
-      {% endblock %}
     </div>
-    {% include "./partials/footer-scripts.html" %}
+    {% block footer %}
+    <footer class="ui-footer py-5" style="height:200px">
+      {% include "./views/footer.njk" %}
+    </footer>
+    {% endblock %} {% include "./partials/footer-scripts.html" %}
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   </body>
