@@ -1,3 +1,4 @@
+// @import "./utilities/units";
 .nav {
-  height: 10vh;
+  @extend %vh10;
 }
