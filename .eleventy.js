@@ -15,6 +15,8 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByTag("elements").reverse();
   });
 
+  eleventyConfig.addPassthroughCopy("dist/css");
+
   return {
     dir: {
       input: "content",
@@ -23,6 +25,7 @@ module.exports = function(eleventyConfig) {
     templateFormats: ["njk", "md", "mustache", "hbs"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
+    passthroughFileCopy: true,
     pathPrefix: "/content/"
   };
 };
