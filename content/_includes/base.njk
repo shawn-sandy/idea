@@ -9,11 +9,13 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>{{ title }}</title>
-    {% include "./partials/header-scripts.html" %}
+    {% include "./partials/head.html" %}
   </head>
   <body cz-shortcut-listen="true">
     {% block nav %}
-    <nav class="container-fluid">{% include "./views/nav.njk" %}</nav>
+    <div class="container-fluid bg-light">
+      <nav>{% include "./views/nav.njk" %}</nav>
+    </div>
     {% endblock %}
 
     <!-- header -->
