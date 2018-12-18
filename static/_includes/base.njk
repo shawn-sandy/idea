@@ -10,6 +10,10 @@
     />
     <title>{{ title }}</title>
     {% include "./partials/head.html" %}
+    <!---->
+    {%- for links in collections.guides -%} {% if links.data.stylesheet %}
+    <link href="{{ links.data.stylesheet }}" rel="stylesheet" />
+    {% endif %} {%- endfor -%}
   </head>
   <body cz-shortcut-listen="true">
     {% block nav %}

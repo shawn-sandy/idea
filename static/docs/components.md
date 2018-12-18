@@ -3,6 +3,7 @@ layout: base.njk
 tags: ["guides", "documentation"]
 title: "Design System Docs"
 date: Last Modified
+stylesheet: "/styles.css"
 ---
 
 ## Design System (DS) Setup
