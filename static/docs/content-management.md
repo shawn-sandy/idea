@@ -8,3 +8,9 @@ stylesheet: "styles"
 {% import 'macros/examples.njk' as example %}
 
 {{ example.button() }}
+
+---
+
+{{ '/css/styles.css' | url }}
+
+---
