@@ -1,0 +1,4 @@
+{% macro button(label = "button" class="btn") %}
+<button id="{{ label | slug }}" class="{{ class }}">{{ label }}</button>
+<!--  -->
+{% endmacro %}
