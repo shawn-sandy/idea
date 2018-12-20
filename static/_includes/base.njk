@@ -9,8 +9,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>{{ title }}</title>
-
     {% include "./partials/head.html" %}
     <!--  -->
     {% endblock %}
@@ -25,16 +23,20 @@
     <!-- header -->
     {% block header %}
     <header class="container">{% include "./views/header.njk" %}</header>
-    {% endblock %} {% block main %}
+    {% endblock %}
+    <!-- main content -->
+    {% block main %}
     <main class="container">
       <div class="row">{% include './views/main.njk' %}</div>
     </main>
-    {% endblock %} {% block footer %}
+    {% endblock %}
+    <!-- footer -->
+    {% block footer %}
     <footer class="container ui-footer py-5" style="height:200px">
       {% include "./views/footer.njk" %}
     </footer>
-    {% endblock %} {% include "./partials/footer-scripts.html" %}
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    {% endblock %}
+    <!-- scripts  -->
+    {% include "./partials/footer-scripts.html" %}
   </body>
 </html>
