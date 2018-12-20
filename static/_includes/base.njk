@@ -25,22 +25,11 @@
     <!-- header -->
     {% block header %}
     <header class="container">{% include "./views/header.njk" %}</header>
-    {% endblock %}
-
+    {% endblock %} {% block main %}
     <main class="container">
-      <div class="row">
-        <!-- left sidebar -->
-        {% block left %} {% endblock %}
-        <!-- content -->
-
-        {% block content %} {% include "./views/content.njk" %} {% endblock %}
-
-        <!-- sidebar -->
-        {% block right %}{% endblock right %}
-      </div>
+      <div class="row">{% include './views/main.njk' %}</div>
     </main>
-
-    {% block footer %}
+    {% endblock %} {% block footer %}
     <footer class="container ui-footer py-5" style="height:200px">
       {% include "./views/footer.njk" %}
     </footer>
