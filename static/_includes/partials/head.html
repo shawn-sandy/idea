@@ -1,5 +1,14 @@
- <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 
- <link rel="stylesheet" href="/content/css/style.css">
+<link rel="stylesheet" href="/content/css/style.css">
+
+<!---->
+{%- for links in collections.guides -%}
+<!--  -->
+{% if links.data.stylesheet %}
+<link href="{{ links.data.stylesheet }}" rel="stylesheet" />
+{% endif %} 
+{# -- #}
+{%- endfor -%}

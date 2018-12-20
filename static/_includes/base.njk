@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    {% block head %}
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -9,12 +10,10 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>{{ title }}</title>
-    {% include "./partials/head.html" %}
 
-    <!---->
-    {%- for links in collections.guides -%} {% if links.data.stylesheet %}
-    <link href="{{ links.data.stylesheet }}" rel="stylesheet" />
-    {% endif %} {%- endfor -%}
+    {% include "./partials/head.html" %}
+    <!--  -->
+    {% endblock %}
   </head>
   <body cz-shortcut-listen="true">
     {% block nav %}
