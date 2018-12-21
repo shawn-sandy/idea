@@ -1,5 +1,6 @@
-module.exports = {
+module.exports = () => ({
   name: "shawn sandy",
   framework: "bootstrap",
-  environment: process.env.ELEVENTY_ENV
-};
+  test: "test-0",
+  color: "#00000"
+});
