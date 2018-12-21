@@ -22,7 +22,7 @@ module.exports = function(eleventyConfig) {
       input: "static",
       output: "dist/content"
     },
-    templateFormats: ["njk", "md", "mustache", "hbs"],
+    templateFormats: ["njk", "html", "md", "mustache", "hbs"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
     passthroughFileCopy: true,
