@@ -1,3 +1,5 @@
 module.exports = {
-  name: "shawn sandy"
+  name: "shawn sandy",
+  framework: "bootstrap",
+  environment: process.env.ELEVENTY_ENV
 };
