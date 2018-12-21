@@ -5,6 +5,7 @@ const replace = require("gulp-string-replace");
 const autoprefixer = require("gulp-autoprefixer");
 const minify = require("gulp-clean-css");
 const sass = require("gulp-sass");
+const shell = require("gulp-shell");
 
 // fetch command line arguments
 const arg = (argList => {
@@ -86,3 +87,7 @@ const capitalize = function(str) {
 gulp.task("watch", () =>
   gulp.watch("./src/scss/**/*.scss", gulp.parallel("sass"))
 );
+
+gulp.task("start", shell.task("yarn eleventy --serve"));
+
+gulp.task("dev", gulp.parallel("start", "watch"));
