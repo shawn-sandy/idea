@@ -13,3 +13,7 @@ title: Idea a design system framework
 ---
 
 {{ eleventy.name }}
+
+---
+
+{{ eleventy.framework }}

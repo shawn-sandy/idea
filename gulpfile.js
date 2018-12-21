@@ -90,4 +90,4 @@ gulp.task("watch", () =>
 
 gulp.task("start", shell.task("yarn eleventy --serve"));
 
-gulp.task("dev", gulp.parallel("start", "watch"));
+gulp.task("dev", gulp.parallel("watch", "start"));

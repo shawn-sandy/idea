@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --no-clean",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "content": "yarn eleventy --serve",
-    "build:content": "yarn eleventy"
+    "build:content": "yarn eleventy",
+    "dev": "yarn gulp dev"
   },
   "dependencies": {
     "lerna": "^3.6.0",

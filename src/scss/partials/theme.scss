@@ -1,3 +1,7 @@
 main {
   @extend %vh60 !optional;
 }
+
+.nav {
+  @extend %vh10;
+}
