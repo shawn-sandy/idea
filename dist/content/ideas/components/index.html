@@ -11,7 +11,7 @@
     />
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 <link rel="stylesheet" href="/content/css/style.css">
-<title>Idea a design system framework</title>
+<title>Design System Docs</title>
 <!----><!--  -->
 
 <link href="/styles.css" rel="stylesheet" />
@@ -51,13 +51,45 @@
 <!-- content -->
 
  <div class="col h-75">
-  <div class="ui-content py-5"><h2>Sample content</h2>
-<hr>
-<p>{&quot;name&quot;:&quot;shawn sandy&quot;,&quot;framework&quot;:&quot;bootstrap&quot;,&quot;test&quot;:&quot;test-0&quot;,&quot;color&quot;:&quot;#00000&quot;}</p>
-<hr>
-<p>shawn sandy</p>
-<hr>
-<p>bootstrap</p>
+  <div class="ui-content py-5"><h2>Design System (DS) Setup</h2>
+<p><strong>DS Structure (Default Structure)</strong></p>
+<p>While IDEA is based on the Atomic model (atoms, molecules, organisms, templates, pages) popularized by Brad Frost, we choose naming structure that we believe would more familiar to developers:</p>
+<ul>
+<li>Attributes (Tokens)</li>
+<li>Elements (Molecules)</li>
+<li>Patterns (Organisms)</li>
+<li>Screens (Templates)</li>
+<li>Apps / Prototypes (Pages)</li>
+</ul>
+<p><strong>Get started</strong></p>
+<ul>
+<li>View and edit with live updates run <code>yarn content</code></li>
+<li></li>
+</ul>
+<p><strong>Adding system components</strong></p>
+<ul>
+<li>We use the <code>*.html.md</code> extensions for components allowing us to add HTML formatting via file association in IDE's support - <code>content/elements/sample.html.md</code> for an example.</li>
+</ul>
+<p><strong>Component Markdown Structure</strong></p>
+<pre><code>---
+layout: base.njk
+tags: 'elements'
+title: Card
+permalink: elements/design-system-docs/index.html
+icon: group_work
+description: A simple card elements for shop
+date: 2018-01-01
+---
+
+&lt;div class=&quot;card sg-card sg-box-shadow-md rounded-0 col-4&quot;&gt;
+  &lt;div class=&quot;p-2&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ab nemo adipisci sit veritatis blanditiis iure
+      vero maxime, in ut? Magnam dignissimos aperiam quidem deserunt illum unde adipisci magni doloremque?&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+</code></pre>
 </div>
 </div>
  
