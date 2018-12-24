@@ -15,17 +15,17 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByTag("elements").reverse();
   });
 
-  eleventyConfig.addPassthroughCopy("dist/css");
+  // eleventyConfig.addPassthroughCopy("dist/css");
 
   return {
     dir: {
-      input: "static",
-      output: "dist/content"
+      input: "src",
+      output: "dist/"
     },
     templateFormats: ["njk", "html", "md", "mustache", "hbs"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
     passthroughFileCopy: true,
-    pathPrefix: "/content/"
+    pathPrefix: "/"
   };
 };
