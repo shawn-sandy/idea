@@ -42,8 +42,7 @@ gulp.task("sass", () =>
     .pipe(sass().on("error", sass.logError))
     .pipe(autoprefixer())
     .pipe(minify())
-    .pipe(gulp.dest("./dist/content/css"))
-    .pipe(gulp.dest("./dist/css"))
+    .pipe(gulp.dest("./src/css"))
 );
 
 gulp.task("reports", () =>

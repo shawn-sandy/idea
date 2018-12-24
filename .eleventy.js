@@ -15,7 +15,7 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByTag("elements").reverse();
   });
 
-  // eleventyConfig.addPassthroughCopy("dist/css");
+  eleventyConfig.addPassthroughCopy("src/css");
 
   return {
     dir: {
