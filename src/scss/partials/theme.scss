@@ -1,7 +1,22 @@
+html {
+  font-size: 16px;
+}
 main {
-  @extend %vh60 !optional;
+  height: 60vh;
 }
 
 .nav {
   @extend %vh10;
 }
+
+.cover {
+
+}
+
+  .headline {
+    font-size: rem(120px)
+  }
+
+  .headline-2  {
+    font-size: rem(60px)
+  }
