@@ -4,7 +4,7 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
   .BundleAnalyzerPlugin;
 
 module.exports = {
-  outputDir: "dist/assets",
+  outputDir: "dist/vue",
   runtimeCompiler: true,
   // transpileDependencies: ['blacktie-buttons-v2/src/components/*.vue'],
   css: {
@@ -34,7 +34,7 @@ module.exports = {
   pages: {
     index: {
       // entry for the page
-      entry: "./src/main.js",
+      entry: "./vue/main.js",
       // the source template
       template: "public/index.html",
       // output as dist/index.html
@@ -51,7 +51,7 @@ module.exports = {
     // and falls back to `public/index.html` if not found.
     // Output filename is inferred to be `subpage.html`.
     // "bootstrap-lite": {
-    //   entry: "./src/components/bootstrap-custom/bootstrap.js",
+    //   entry: "./vue/components/bootstrap-custom/bootstrap.js",
     //   template: "public/_layout.html",
     //   filename: "bootstrap.html",
     //   title: "Bootstrap Custom",
