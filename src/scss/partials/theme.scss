@@ -21,11 +21,23 @@ main {
   font-size: rem(32px);
 }
 .button {
-  padding: rem(12px 30px);
+  padding: rem(18px 36px);
   background-color: $dark;
   color: $light;
   font-size: rem(21px);
   border-radius: rem(99px);
+}
+
+.button-sm {
+  font-size: rem(14px);
+}
+
+.button-md {
+  font-size: rem(32px);
+}
+
+.button-lg {
+  font-size: rem(36px);
 }
 
 a.button {
