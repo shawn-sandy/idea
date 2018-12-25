@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: styleguide.njk
 tags: ["guides", "documentation"]
 title: "Design System Docs"
 date: Last Modified

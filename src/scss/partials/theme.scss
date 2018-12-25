@@ -15,6 +15,10 @@ main {
 .headline {
   font-size: rem(150px);
   font-weight: bold;
+  text-transform: uppercase;
+  &.headline-sm {
+    font-size: rem(72px);
+  }
 }
 
 .subtitle {
@@ -28,10 +32,6 @@ main {
   border-radius: rem(99px);
 }
 
-.button-sm {
-  font-size: rem(14px);
-}
-
 .button-md {
   font-size: rem(32px);
 }
@@ -42,4 +42,9 @@ main {
 
 a.button {
   color: $light;
+}
+
+.sidebar {
+  // position: static;
+  min-height: 100vh !important;
 }

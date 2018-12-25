@@ -1,0 +1,7 @@
+<!-- Content Nav collection -->
+{% macro anchors(links) %} {% for link in links %}
+<a class="" href="#{{ link.data.title | slug }}">
+  {{ link.data.name or link.data.title }}
+</a>
+<!-- <hr> -->
+{% endfor %} {% endmacro %}

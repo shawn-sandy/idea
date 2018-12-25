@@ -5,12 +5,12 @@ date: Last Modified
 stylesheet: "styles"
 ---
 
-{% import 'macros/examples.njk' as example %}
+<!-- {% import 'macros/examples.njk' as example %}
 
 {{ example.button() }}
 
 ---
 
-{{ '/css/styles.css' | url }}
+{{ '/css/styles.css' | url }} -->
 
 ---
