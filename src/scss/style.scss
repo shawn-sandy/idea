@@ -1,4 +1,5 @@
 @import "node_modules/sass-rem/rem";
+$rem-fallback: true;
 // bootstrap required
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/_variables.scss";
