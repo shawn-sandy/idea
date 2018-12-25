@@ -20,3 +20,14 @@ main {
 .subtitle {
   font-size: rem(28px);
 }
+.button {
+  padding: rem(12px 30px);
+  background-color: $dark;
+  color: $light;
+  font-size: rem(21px);
+  border-radius: rem(99px);
+}
+
+a.button {
+  color: $light;
+}
