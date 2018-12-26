@@ -1,5 +1,5 @@
 <!-- collections -->
-{% macro posts(collections, classes= "py-4") %} {% for item in collections %}
+{% macro posts(collections, classes= "py-3") %} {% for item in collections %}
 
 <aside id="{{ item.data.title | slug }}" class="posts {{ classes }}">
   <h2>{{ item.data.name or item.data.title }}</h2>
