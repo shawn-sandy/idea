@@ -2,7 +2,7 @@
 layout: theme/layout.njk
 title: Getting started with Vue.js
 tags: ["ideas"]
-date: last modified
+date: 2018-12-05
 ---
 
 ## Getting started with Vue.js

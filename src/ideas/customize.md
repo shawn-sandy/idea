@@ -2,7 +2,7 @@
 layout: theme/layout.njk
 title: Customization Guide
 tags: ["ideas"]
-date: Last Modified
+date: 2018-12-04
 ---
 
 #

@@ -2,7 +2,7 @@
 layout: theme/layout.njk
 tags: ["ideas"]
 title: "Design System Docs"
-date: Last Modified
+date: 2018-12-02
 stylesheet: "/styles.css"
 ---
 
