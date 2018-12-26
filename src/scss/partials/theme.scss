@@ -9,15 +9,16 @@ main {
   @extend %vh10;
 }
 
-.cover {
-}
-
 .headline {
   font-size: rem(150px);
   font-weight: bold;
   text-transform: uppercase;
   &.headline-sm {
     font-size: rem(72px);
+  }
+  &.headline-title {
+    font-weight: 500;
+    font-size: rem(60px);
   }
 }
 
@@ -47,10 +48,11 @@ a.button {
 .sidebar {
   // position: static;
   min-height: 100vh !important;
-}
 
-a.anchors {
-  display: block;
-  color: $light;
-  padding: rem(10px 0);
+  a {
+    display: block;
+    color: $light;
+    padding: rem(10px 0);
+    font-size: rem(18px);
+  }
 }

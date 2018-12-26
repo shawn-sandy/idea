@@ -25,52 +25,70 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-3 bg-dark text-light sidebar">
+    <div class="col bg-dark text-light sidebar">
       <div class="p-3">
 <div class="headline headline-sm">
 Idea.
 </div>
 <p class="sidebar-nav">
  
-<a class="anchors" href="#getting-started-with-vue.js">
-  Getting started with Vue.js
-</a>
-<!-- <hr> -->
-
-<a class="anchors" href="#content-management">
-  Content Management
-</a>
-<!-- <hr> -->
-
-<a class="anchors" href="#design-system-docs">
-  Design System Docs
-</a>
-<!-- <hr> -->
- 
+<a href="/ideas/content-management/">Content Management</a> 
+<a href="/ideas/components/">Design System Docs</a> 
+<a href="/ideas/vue/">Getting started with Vue.js</a> 
+<a href="/ideas/customize/">Customization Guide</a>  
 </p>
         </p>
       </div>
     </div>
-    <div class="col">
-      <div class="content">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-          doloremque atque. Enim alias sunt quasi harum, ab libero doloremque.
-          Quidem, adipisci soluta. Eligendi illo sequi laboriosam porro
-          quisquam? Odit, voluptas.
-        </p>
-        <p>
-          Officiis sequi tenetur cum reprehenderit aut, veritatis at quas neque
-          voluptatum deserunt tempore expedita, est vel doloremque cupiditate
-          vero, blanditiis similique iste impedit error? Quisquam nulla tempora
-          necessitatibus sequi aspernatur!
-        </p>
-        <p>
-          A consequatur, quibusdam quos asperiores tenetur consequuntur
-          provident, nemo, minus ad odio nostrum dolorem aspernatur enim dolore
-          atque ea quasi. Pariatur ducimus maiores sapiente provident,
-          laboriosam eligendi in sit vero.
-        </p>
+    <div class="col-9">
+      <div class="content p-4">
+        <h1 class="headline headline-title">
+          Design System Docs
+        </h1>
+        <hr>
+        <article>
+          <h2>Design System (DS) Setup</h2>
+<p><strong>DS Structure (Default Structure)</strong></p>
+<p>While IDEA is based on the Atomic model (atoms, molecules, organisms, templates, pages) popularized by Brad Frost, we choose naming structure that we believe would more familiar to developers:</p>
+<ul>
+<li>Attributes (Tokens)</li>
+<li>Elements (Molecules)</li>
+<li>Patterns (Organisms)</li>
+<li>Screens (Templates)</li>
+<li>Apps / Prototypes (Pages)</li>
+</ul>
+<p><strong>Get started</strong></p>
+<ul>
+<li>View and edit with live updates run <code>yarn content</code></li>
+<li></li>
+</ul>
+<p><strong>Adding system components</strong></p>
+<ul>
+<li>We use the <code>*.html.md</code> extensions for components allowing us to add HTML formatting via file association in IDE's support - <code>content/elements/sample.html.md</code> for an example.</li>
+</ul>
+<p><strong>Component Markdown Structure</strong></p>
+<pre><code>---
+layout: base.njk
+tags: 'elements'
+title: Card
+permalink: elements/design-system-docs/index.html
+icon: group_work
+tags: ['ideas']
+description: A simple card elements for shop
+date: 2018-01-01
+---
+
+&lt;div class=&quot;card sg-card sg-box-shadow-md rounded-0 col-4&quot;&gt;
+  &lt;div class=&quot;p-2&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ab nemo adipisci sit veritatis blanditiis iure
+      vero maxime, in ut? Magnam dignissimos aperiam quidem deserunt illum unde adipisci magni doloremque?&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+</code></pre>
+
+        </article>
       </div>
     </div>
   </div>

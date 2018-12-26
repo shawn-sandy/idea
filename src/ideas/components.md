@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: theme/layout.njk
 tags: ["ideas"]
 title: "Design System Docs"
 date: Last Modified

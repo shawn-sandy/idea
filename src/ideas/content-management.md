@@ -1,17 +1,17 @@
 ---
-layout: base.njk
+layout: theme/layout.njk
 title: Content Management
 date: Last Modified
 stylesheet: "styles"
 tags: ["ideas"]
 ---
 
-<!-- {% import 'macros/examples.njk' as example %}
+{% import 'macros/examples.njk' as example %}
 
 {{ example.button() }}
 
 ---
 
-{{ '/css/styles.css' | url }} -->
+{{ '/css/styles.css' | url }}
 
 ---

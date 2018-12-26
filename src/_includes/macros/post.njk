@@ -2,13 +2,10 @@
 {% macro posts(collections) %} {% for item in collections %}
 
 <aside id="{{ item.data.title | slug }}">
-  <h5 class="text-uppercase text-sg-secondary-color-">
-    {{ item.data.name or item.data.title }}
-  </h5>
+  <h2>{{ item.data.name or item.data.title }}</h2>
   <p class="">{{ item.data.description }}</p>
+  <hr />
   <p><a href="{{ item.url }}">Read More</a></p>
 </aside>
-
-<hr class="border-sg-disabled" />
 
 {% endfor %} {% endmacro %}

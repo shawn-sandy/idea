@@ -1,7 +1,7 @@
 ---
-layout: base.njk
+layout: theme/layout.njk
 title: Customization Guide
-tags: ["documentation", "themes"]
+tags: ["ideas"]
 date: Last Modified
 ---
 

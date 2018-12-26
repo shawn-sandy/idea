@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: theme/layout.njk
 title: Getting started with Vue.js
 tags: ["ideas"]
 date: last modified
