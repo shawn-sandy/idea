@@ -1,6 +1,4 @@
 ---
-layout: styleguide.njk
+layout: layout.njk
 title: Welcome Page
 ---
-
-## Welcome

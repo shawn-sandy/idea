@@ -1,5 +1,5 @@
 {% extends './base.njk' %}
-
+{% import "./macros/anchors.njk" as navs %}
 <!-- replace nav -->
 {% block nav %}{% endblock %}
 <!-- remove header nav -->
@@ -14,6 +14,9 @@
 <div class="headline headline-sm">
 Idea.
 </div>
+<p class="sidebar-nav">
+{{ navs.anchors(collections.ideas) }}
+</p>
         </p>
       </div>
     </div>

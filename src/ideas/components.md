@@ -1,6 +1,6 @@
 ---
-layout: styleguide.njk
-tags: ["guides", "documentation"]
+layout: layout.njk
+tags: ["ideas"]
 title: "Design System Docs"
 date: Last Modified
 stylesheet: "/styles.css"
@@ -36,6 +36,7 @@ tags: 'elements'
 title: Card
 permalink: elements/{{ title | slug }}/index.html
 icon: group_work
+tags: ['ideas']
 description: A simple card elements for shop
 date: 2018-01-01
 ---

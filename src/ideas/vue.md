@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: Getting started with Vue.js
-tags: documentation
+tags: ["ideas"]
 date: last modified
 ---
 

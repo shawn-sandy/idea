@@ -48,3 +48,9 @@ a.button {
   // position: static;
   min-height: 100vh !important;
 }
+
+a.anchors {
+  display: block;
+  color: $light;
+  padding: rem(10px 0);
+}
