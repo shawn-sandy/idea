@@ -49,10 +49,12 @@ a.button {
   // position: static;
   min-height: 100vh !important;
 
-  a {
-    display: block;
-    color: $light;
-    padding: rem(10px 0);
-    font-size: rem(18px);
+  .sidebar-nav {
+    a {
+      display: block;
+      color: $light;
+      padding: rem(10px 0);
+      font-size: rem(18px);
+    }
   }
 }
