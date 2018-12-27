@@ -11,7 +11,7 @@
     />
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 <link rel="stylesheet" href="/css/style.css">
-<title>Introduction</title>
+<title>DS - Start Here</title>
 <!---->
     <!--  -->
     
@@ -44,31 +44,10 @@
     <div class="col-9">
       <div class="content p-4">
         <h1 class="headline headline-title">
-         Introduction
+         DS - Start Here
         </h1>        
         <article class="py-4">
-          <h1>A simple way to visualize IDEA's</h1>
-<p><em>Idea is currently in early production beta, feel free to open an issues for features, bugs suggestions etc.</em></p>
-<h2>IDEA(beta) is a simple and easy to use HTML, CSS and JAVASCRIPT toolkit (framework if you prefer) for building and managing your teams design systems. allowing you to turn your ideas and vision into products.</h2>
-<blockquote>
-<h3>A design system is an agreed upon set of principles and a living suite of modular, resuable parts. This includes standards around style, color, language and behavior. The system allows us to work smarter and innovate on products faster, while providing a more predictable user experience.</h3>
-</blockquote>
-<blockquote>
-<p><a href="https://twitter.com/amelielamont/status/1072917354819059713" target="blank"><strong>Amélie Lamont @amelielamont</strong></a></p>
-</blockquote>
-<hr>
-<h2>Features</h2>
-<ul>
-<li>Atomic driven component system / structure</li>
-<li>Markdown / HTML driven content and components</li>
-<li>Vue.js integration</li>
-<li>Javascript based template <strong><a href="https://mozilla.github.io/nunjucks/">Nunjucks</a></strong>, Handlebars, Mustache...</li>
-<li>Modular</li>
-<li>IndexDB integration</li>
-<li>Webpack / Gulp</li>
-<li>Customizable</li>
-</ul>
-<h2>Project setup</h2>
+          <h2>Design System (DS) Setup</h2>
 <ul>
 <li>Clone the repo <code>git clone https://github.com/shawn-sandy/idea</code></li>
 <li>CD into you cloned repo</li>
@@ -79,26 +58,45 @@
 </li>
 <li>Continue with the rest of the setup. Have fun.</li>
 </ul>
-<aside id="ds-start-here" class="posts py-3">
-  <h2>DS - Start Here</h2>
-  <p class=""></p>
-  <p><a href="/ideas/starthere/">Read More</a></p>
-</aside>
-<aside id="content-management" class="posts py-3">
-  <h2>Content Management</h2>
-  <p class=""></p>
-  <p><a href="/ideas/content-management/">Read More</a></p>
-</aside>
-<aside id="customization-guide" class="posts py-3">
-  <h2>Customization Guide</h2>
-  <p class=""></p>
-  <p><a href="/ideas/customize/">Read More</a></p>
-</aside>
-<aside id="getting-started-with-vue.js" class="posts py-3">
-  <h2>Getting started with Vue.js</h2>
-  <p class=""></p>
-  <p><a href="/ideas/vue/">Read More</a></p>
-</aside>
+<p><strong>DS Structure (Default Structure)</strong></p>
+<p>While IDEA is based on the Atomic model (atoms, molecules, organisms, templates, pages) popularized by Brad Frost, we choose naming structure that we believe would more familiar to developers:</p>
+<ul>
+<li>Attributes (Tokens)</li>
+<li>Elements (Molecules)</li>
+<li>Patterns (Organisms)</li>
+<li>Screens (Templates)</li>
+<li>Apps / Prototypes (Pages)</li>
+</ul>
+<p><strong>Get started</strong></p>
+<ul>
+<li>View and edit with live updates run <code>yarn content</code></li>
+<li></li>
+</ul>
+<p><strong>Adding system components</strong></p>
+<ul>
+<li>We use the <code>*.html.md</code> extensions for components allowing us to add HTML formatting via file association in IDE's support - <code>content/elements/sample.html.md</code> for an example.</li>
+</ul>
+<p><strong>Component Markdown Structure</strong></p>
+<pre><code>---
+layout: base.njk
+tags: 'elements'
+title: Card
+permalink: elements/ds-start-here/index.html
+icon: group_work
+tags: ['ideas']
+description: A simple card elements for shop
+date: 2018-01-01
+---
+
+&lt;div class=&quot;card sg-card sg-box-shadow-md rounded-0 col-4&quot;&gt;
+  &lt;div class=&quot;p-2&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ab nemo adipisci sit veritatis blanditiis iure
+      vero maxime, in ut? Magnam dignissimos aperiam quidem deserunt illum unde adipisci magni doloremque?&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+</code></pre>
 
         </article>
       </div>
