@@ -1,6 +1,5 @@
 {% extends './base.njk' %}
-{% import "./macros/anchors.njk" as navs %}
-{% import "./macros/links.njk" as url %}
+{% import "./macros/collections.njk" as collection %}
 <!-- replace nav -->
 {% block nav %}{% endblock %}
 <!-- remove header nav -->
@@ -17,7 +16,7 @@
 </div>
 <div class="sidebar-nav">
   <a href="/ideas">Introduction</a>
-{{ url.links(collections.ideas) }}
+{{ collection.links(collections.ideas) }}
 </div>
         </p>
       </div>
