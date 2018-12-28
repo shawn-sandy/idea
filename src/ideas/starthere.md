@@ -12,11 +12,9 @@ stylesheet: "/styles.css"
 - CD into you cloned repo
 - Remove the git repo and make it your own `git remote rm origin`
 - Add your repo `git add remote your repo url`
-- Install packages
-  ```
-  yarn install
-  ```
-- Continue with the rest of the setup. Have fun.
+- Install packages `yarn install`
+- Continue with the rest of the setup.
+- Have fun.
 
 **DS Structure (Default Structure)**
 
