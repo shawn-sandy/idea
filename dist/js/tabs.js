@@ -1,0 +1,1 @@
+"use strict";require("core-js/modules/es6.array.iterator"),require("core-js/modules/es6.promise"),require("core-js/modules/es7.promise.finally"),console.log("tabs js");var fn=function(){return null};[1,2,3].map(function(e){return e+1});

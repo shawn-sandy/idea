@@ -6,6 +6,10 @@ const autoprefixer = require("gulp-autoprefixer");
 const minify = require("gulp-clean-css");
 const sass = require("gulp-sass");
 const shell = require("gulp-shell");
+const babel = require("gulp-babel");
+const sourcemaps = require("gulp-sourcemaps");
+const concat = require("gulp-concat")
+const uglify = require("gulp-uglify")
 
 // fetch command line arguments
 const arg = (argList => {
@@ -87,6 +91,22 @@ gulp.task("watch", () =>
   gulp.watch("./src/scss/**/*.scss", gulp.parallel("sass"))
 );
 
+gulp.task("watch:scripts", () => 
+gulp.watch("./src/scripts/**/*.js", gulp.parallel('scripts'))
+)
+
 gulp.task("start", shell.task("yarn eleventy --serve"));
 
 gulp.task("dev", gulp.parallel("watch", "start"));
+
+gulp.task("scripts", () => 
+  gulp.src("./src/scripts/**/*.js")
+  .pipe(babel({
+    presets: ['@babel/env']
+}))
+    .pipe(uglify())
+    .pipe(gulp.dest('./src/js'))
+  )
+
+
+
