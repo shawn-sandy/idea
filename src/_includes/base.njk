@@ -20,14 +20,12 @@
     {% endblock %}
     <!-- main content -->
     {% block main %}
-    <main class="container">
+    <main class="container-fluid">
       <div class="row">{% include './views/main.njk' %}</div>
     </main>
     {% endblock %}
     <!-- footer -->
     {% block footer %}
-    <footer class="container ui-footer py-5" style="height:200px">
-    </footer>
     {% endblock %}
     <!-- scripts  -->
     {% include "./partials/footer-scripts.html" %}

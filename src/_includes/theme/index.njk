@@ -1,26 +1,7 @@
 {% extends './base.njk' %}
 <!-- import anchor -->
 {% block main %}
-<main class="d-flex justify-content-center text-center cover bg-dark">
-  <div class="container align-items-center align-self-center text-white">
-    <div class="text-uppercase headline">Idea.</div>
-    <div class="subtitle text-uppercase">
-      <!-- A toolkit for building & managing a design systems -->
-    </div>
-  </div>
-</main>
+{{ content | safe }}
 {% endblock %}
 <!-- footer -->
-{% block footer %}
-<footer class="container d-flex justify-content-center py-5">
-  <div class="align-items-center">
-    <p class="subtitle text-center">
-      IDEA <small>(beta)</small> is a simple, easy to use HTML, CSS and
-      JAVASCRIPT toolkit for building and managing a living design system.
-    </p>
-    <p class="text-right text-center py-3">
-      <a href="/ideas" class="button button-lg-">Read More</a>
-    </p>
-  </div>
-</footer>
-{% endblock %}
+

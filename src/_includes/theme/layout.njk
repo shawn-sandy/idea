@@ -1,5 +1,5 @@
-{% extends './base.njk' %}
-{% import "./macros/collections.njk" as collection %}
+{% extends 'base.njk' %}
+{% import "macros/collections.njk" as collection %}
 {% block head %}
 {{ super() }}
 {% endblock %}
@@ -14,21 +14,23 @@
   <div class="row">
     <div class="col bg-dark text-light sidebar">
       <div class="p-3">
-<div class="headline headline-sm">
-  <a href="/" class="text-light">Idea.</a>
-</div>
-<div class="sidebar-nav">
-  <a href="/ideas">Introduction</a>
-{{ collection.links(collections.ideas) }}
-</div>
+        <div class="headline headline-sm">
+          <a href="/" class="text-light">Idea.</a>
+        </div>
+        <div class="sidebar-nav">
+          {% block sidebar %}
+          <a href="/ideas">Introduction</a>
+          {{ collection.links(collections.ideas) }}
+          {% endblock %}
+        </div>
         </p>
       </div>
     </div>
     <div class="col-9">
       <div class="content p-4">
         <h1 class="headline headline-title">
-         {{ title }}
-        </h1>        
+          {{ title }}
+        </h1>
         <article class="py-4">
           {{ content | safe }}
         </article>
