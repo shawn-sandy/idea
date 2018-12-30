@@ -97,7 +97,7 @@ gulp.watch("./src/scripts/**/*.js", gulp.parallel('scripts'))
 
 gulp.task("start", shell.task("yarn eleventy --serve"));
 
-gulp.task("dev", gulp.parallel("watch", "start"));
+gulp.task("dev", gulp.parallel("watch", "watch:scripts", "start"));
 
 gulp.task("scripts", () => 
   gulp.src("./src/scripts/**/*.js")

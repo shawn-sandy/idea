@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {% block head %}
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -9,19 +8,15 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    {% block head %}
     {% include "./partials/head.html" %}
-    <!--  -->
     {% endblock %}
   </head>
   <body>
     {% block nav %}
-    <div class="container-fluid bg-light">
-      <nav>{% include "./views/nav.njk" %}</nav>
-    </div>
     {% endblock %}
     <!-- header -->
     {% block header %}
-    <header class="container">{% include "./views/header.njk" %}</header>
     {% endblock %}
     <!-- main content -->
     {% block main %}
@@ -32,7 +27,6 @@
     <!-- footer -->
     {% block footer %}
     <footer class="container ui-footer py-5" style="height:200px">
-      {% include "./views/footer.njk" %}
     </footer>
     {% endblock %}
     <!-- scripts  -->
