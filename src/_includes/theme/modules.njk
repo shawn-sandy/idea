@@ -1,7 +1,6 @@
-{% extends 'theme/layout.njk' %}
+{% extends 'theme/layout.njk' %} {% block sidebar %}
 
-{% block sidebar %}
-
-{{ collection.links(collections.modules) }}
-
+<h3><a href="/ideas" class="lead text-uppercase">Elements</a></h3>
+{{ collection.links(collections.elements) }}
+<h3><a href="/ideas" class="lead text-uppercase">Components</a></h3>
 {% endblock %}
