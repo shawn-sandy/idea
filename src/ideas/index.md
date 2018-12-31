@@ -6,9 +6,11 @@ date: 2018-12-01
 
 {% import "macros/collections.njk" as collection %}
 
+#
+
 _Idea is currently in early production beta, feel free to open an issues for features, bugs suggestions etc._
 
-## IDEA(beta) is a simple and easy to use HTML, CSS and JAVASCRIPT toolkit (framework if you prefer) for building and managing your teams design systems. allowing you to turn your ideas and vision into products.
+## IDEA(beta) is a easy to use Markdown, HTML, CSS and JAVASCRIPT toolkit (framework if you prefer) for building, managing and generating design systems. The IDEA - make it simple for anyone on a product development team to create, edit document or share in the building of a design system
 
 ---
 
@@ -38,5 +40,7 @@ _Idea is currently in early production beta, feel free to open an issues for fea
 - Install packages `yarn install`
 - Continue with the rest of the setup.
 - Have fun.
+- 
 ---
+
 {{ collection.posts(collections.ideas, 'py-2') }}
