@@ -1,1 +1,1 @@
-"use strict";require("core-js/modules/es6.array.iterator"),require("core-js/modules/es6.promise"),require("core-js/modules/es7.promise.finally"),console.log("tabs js");var fn=function(){return null},count=function(){return[1,2,3].map(function(e){return e+1})};console.log("count",count);
+"use strict";console.log("tabs js");var fn=function(){return null},count=function(){return[1,2,3].map(function(n){return n+1})};console.log("count",count);
