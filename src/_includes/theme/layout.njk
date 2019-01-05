@@ -32,12 +32,16 @@
           {{ title }}
         </h1>
         <article class="py-4">
-         <p>
+            <p class="lead">
+                {{ description}}
+            </p>
+         <p class="py-4">
            {{ content | safe }}
          </p> 
-          <p>
-              {{ description}}
-          </p>
+         <div class="meta border-top border-bottom p-3">
+            Meta
+         </div>
+        
         </article>
       </div>
     </div>

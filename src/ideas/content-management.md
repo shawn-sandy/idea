@@ -1,6 +1,6 @@
 ---
 layout: theme/layout.njk
-title: Content Management
+title: Manage Content 
 date: 2018-12-03
 stylesheet: "styles"
 tags: ["ideas"]

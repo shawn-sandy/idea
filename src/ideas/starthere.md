@@ -1,7 +1,7 @@
 ---
 layout: theme/layout.njk
 tags: ["ideas"]
-title: "DS - Start Here"
+title: "Start Here"
 date: 2018-12-02
 stylesheet: "/styles.css"
 ---
@@ -18,10 +18,11 @@ stylesheet: "/styles.css"
 
 **DS Structure (Default Structure)**
 
-While IDEA is based on the Atomic model (atoms, molecules, organisms, templates, pages) popularized by Brad Frost, we choose naming structure that we believe would more familiar to developers:
+While IDEA is based on the Atomic model (atoms, molecules, organisms, templates, pages) popularized by Brad Frost, ours is bit more opinionated and based on a naming structure that we believe would be more familiar for traditional teams
 
 - Attributes (Tokens)
 - Elements (Molecules)
+- Actions ()
 - Patterns (Organisms)
 - Screens (Templates)
 - Apps / Prototypes (Pages)
