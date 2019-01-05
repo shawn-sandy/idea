@@ -10,3 +10,16 @@
 <h3><a href="/ideas" class="lead text-uppercase">Components</a></h3>
 
 {% endblock %}
+
+{% block info %}
+<div class="py-4 border-top description">   
+    <p>
+        {{ description }}
+    </p>  
+</div>
+<div class="py-4 border-top">   
+    <small>
+        <span class="text-lightgray text-uppercase">{{ page.fileSlug }}</span> {{ page.inputPath }}
+    </small>   
+</div>
+{% endblock %}

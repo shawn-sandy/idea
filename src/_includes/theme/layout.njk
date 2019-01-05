@@ -34,14 +34,9 @@
         <article class="py-2">
           <p class="py-2">
             {{ content | safe }}
-          </p> 
-          <p class="lead py-2">
-              {{ description }}
-          </p>
-         <div class="meta border-top border-bottom p-3">
-            Meta
-         </div>
-        
+          </p>      
+          <!-- meta data block -->
+          {% block info %}{% endblock %}
         </article>
       </div>
     </div>
