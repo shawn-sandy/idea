@@ -22,8 +22,9 @@ _Idea is currently in early production beta, feel free to open an issues for fea
 
 ## Features
 
-- Atomic driven component system / structure
-- Markdown / HTML driven content and components
+- Atomically driven modular system / structure out of the box or build your own
+- Build you modules with html/css/javascript
+- Markdown / HTML driven content
 - Vue.js integration
 - Javascript based template **[Nunjucks](https://mozilla.github.io/nunjucks/)**, Handlebars, Mustache...
 - Modular

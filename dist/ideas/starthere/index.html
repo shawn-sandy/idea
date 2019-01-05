@@ -60,7 +60,7 @@
                 
             </p>
          <p class="py-4">
-           <h2>Design System (DS) Setup</h2>
+           <h2>Install and Setup</h2>
 <ul>
 <li>Clone the repo <code>git clone https://github.com/shawn-sandy/idea</code></li>
 <li>CD into you cloned repo</li>
@@ -71,11 +71,12 @@
 <li>Have fun.</li>
 </ul>
 <p><strong>DS Structure (Default Structure)</strong></p>
-<p>While IDEA is based on the Atomic model (atoms, molecules, organisms, templates, pages) popularized by Brad Frost, ours is bit more opinionated and based on a naming structure that we believe would be more familiar for traditional teams</p>
+<p>IDEA is based on the Atomic model (atoms, molecules, organisms, templates, pages) popularized by Brad Frost, but with an opinionated customizable developer centric approach to naming and structure of the system</p>
 <ul>
 <li>Attributes (Tokens)</li>
-<li>Elements (Molecules)</li>
-<li>Actions ()</li>
+<li>Actions (Functions)</li>
+<li>Elements (Atoms)</li>
+<li>Components (Molecules)</li>
 <li>Patterns (Organisms)</li>
 <li>Screens (Templates)</li>
 <li>Apps / Prototypes (Pages)</li>
@@ -83,14 +84,13 @@
 <p><strong>Get started</strong></p>
 <ul>
 <li>View and edit with live updates run <code>yarn content</code></li>
-<li></li>
 </ul>
-<p><strong>Adding system components</strong></p>
+<p><strong>Adding Modules</strong></p>
 <ul>
-<li>We use the <code>*.html.md</code> extensions for components allowing us to add HTML formatting via file association in IDE's support - <code>content/elements/sample.html.md</code> for an example.</li>
+<li>We use the <code>*.html</code> extensions for components allowing us to add HTML formatting via file association in IDE's support - <code>content/elements/sample.html.md</code> for an example.</li>
 </ul>
-<p><strong>Component Markdown Structure</strong></p>
-<pre><code>---
+<p><strong>Component Example / Markdown Structure</strong></p>
+<pre><code class="language-html">---
 layout: base.njk
 tags: 'elements'
 title: Card
@@ -101,7 +101,7 @@ description: A simple card elements for shop
 date: 2018-01-01
 ---
 
-&lt;div class=&quot;card sg-card sg-box-shadow-md rounded-0 col-4&quot;&gt;
+&lt;div class=&quot;card sg-box-shadow-md rounded-0 col-4&quot;&gt;
   &lt;div class=&quot;p-2&quot;&gt;
     &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ab nemo adipisci sit veritatis blanditiis iure
       vero maxime, in ut? Magnam dignissimos aperiam quidem deserunt illum unde adipisci magni doloremque?&lt;/p&gt;

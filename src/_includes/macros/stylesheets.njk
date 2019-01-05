@@ -1,12 +1,20 @@
 <!-- Stylesheet macros -->
-{% macro links(stylesheets) %}
-<!---->
+{% macro collection(collection) %}
 
-{% for styles in stylesheets %} {% if styles.data.stylesheet %}
+<!-- -->
+
+{% for styles in collection %} 
+
+{% if styles.data.stylesheet %}
 
 <link rel="stylesheet" href="{{ styles.data.stylesheet }}" />
 
-{% endif %} {% endfor %}
-<!---->
+{% endif %} 
+
+{% endfor %}
+
+<!-- -->
 
 {% endmacro %}
+
+
