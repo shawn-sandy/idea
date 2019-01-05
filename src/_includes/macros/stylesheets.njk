@@ -1,7 +1,7 @@
 <!-- Stylesheet macros -->
-{% macro collection(collection) %}
 
-<!-- -->
+<!-- list styles in a collections -->
+{% macro collection(collection) %}
 
 {% for styles in collection %} 
 
@@ -13,8 +13,16 @@
 
 {% endfor %}
 
-<!-- -->
-
 {% endmacro %}
 
+<!-- list styles on a page -->
 
+{% macro styles(styles) %}
+
+{% for style in styles %}
+
+<link rel="stylesheet" href="{{ style }}">
+
+{% endfor %}
+
+{% endmacro %}
