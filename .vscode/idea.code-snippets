@@ -26,7 +26,7 @@
 		],
 		"description": "A sample smippet"
 	},
-	"Creates a module for your DS Idea": {
+	"Creates front matter values for module for your DS Idea": {
 		"prefix": "idea_mod",
 		"body": [
 		  "---",
@@ -48,6 +48,19 @@
 		  "</div>"
 		],
 		"description": "Create a module for your Idea"
-	  }
+	  },
+	"11TY default front matter values": {
+		"prefix": "idea_mod",
+		"body": [
+		  "---",
+		  "layout: ${6:theme/modules.njk}",
+		  "title: ${1:Name}",
+		  "tags: [${3:'elements'}]",
+		  "permalink: ${4:elements/{{ title | slug }}/index.html}",
+		  "date: 0000-00-00",
+		  
+		],
+		"description": "front matter values markdown values"
+	  },
 }
 
