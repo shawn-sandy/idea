@@ -1,0 +1,27 @@
+{
+	"Nunjucks - macro snippet": {
+		"prefix": "njk_macro",
+		"body": [
+		  "{% macro ${1:name}(${2:param}) %}",
+		  "",
+		  "{% endmacro %}"
+		],
+		"description": "Nunjucks - macro snippet"
+	  },
+	  "Nunjucks - block snippet": {
+		"prefix": "njk_block",
+		"body": [
+		  "{% block ${1:block_name}%}",
+		  "${2:content...}",
+		  "{% endblock %}"
+		],
+		"description": "Nunjucks - block snippet"
+	  },
+	  "Nunjucks - import macro": {
+		"prefix": "njk_import",
+		"body": [
+		  "{% import \"${1:/macro/ms_macro.njk}\" as ${2:macro} %}"
+		],
+		"description": "Nunjucks - import macro"
+	  }
+}
