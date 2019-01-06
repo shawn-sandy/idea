@@ -16,7 +16,7 @@ stylesheet: "/styles.css"
 - Continue with the rest of the setup.
 - Have fun.
 
-**DS Structure (Default Structure)**
+**Design System Structure (Default Structure)**
 
 IDEA is based on the Atomic model (atoms, molecules, organisms, templates, pages) popularized by Brad Frost, but with a developer centric approach to naming and structure of the system
 
