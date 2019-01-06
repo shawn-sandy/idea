@@ -18,7 +18,7 @@ stylesheet: "/styles.css"
 
 **DS Structure (Default Structure)**
 
-IDEA is based on the Atomic model (atoms, molecules, organisms, templates, pages) popularized by Brad Frost, but with an opinionated customizable developer centric approach to naming and structure of the system
+IDEA is based on the Atomic model (atoms, molecules, organisms, templates, pages) popularized by Brad Frost, but with a developer centric approach to naming and structure of the system
 
 - Attributes (Tokens)
 - Actions (Functions)
