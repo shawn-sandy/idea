@@ -10,9 +10,7 @@ stylesheet: './button.css'
 ---
 
 
+{% import "macros/collections.njk" as collection %}
 <div class="p-2">
-  <p>
-  Screens
-  </p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ullam nesciunt, ipsum, voluptatem tempora quo id enim possimus pariatur aperiam porro. Optio provident nostrum esse neque ea, nihil distinctio aperiam?</p>
+  {{ collection.modules(collections.screens) }}
 </div>

@@ -16,9 +16,9 @@ stylesheet: "/styles.css"
 - Continue with the rest of the setup.
 - Have fun.
 
-**Design System Structure (Default Structure)**
+**Structuring Your Design System**
 
-IDEA is based on the Atomic model (atoms, molecules, organisms, templates, pages) popularized by Brad Frost, but with a developer centric approach to naming and structure of the system
+IDEA is based on the Atomic Design Methodology (atoms, molecules, organisms, templates, pages) popularized by <a href="http://atomicdesign.bradfrost.com/chapter-2/"  target="_blank">Brad Frost,</a> but with a developer centric approach to naming and structure of the system.
 
 - Attributes (Tokens)
 - Actions (Functions)
@@ -27,6 +27,10 @@ IDEA is based on the Atomic model (atoms, molecules, organisms, templates, pages
 - Patterns (Organisms)
 - Screens (Templates)
 - Apps / Prototypes (Pages)
+
+
+
+> Atomic design is a methodology composed of five distinct stages working together to create interface design systems in a more deliberate and hierarchical manner. 
 
 **Get started**
 
