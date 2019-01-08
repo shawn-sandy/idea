@@ -1,0 +1,88 @@
+html {
+  
+  font-size: 16px;
+
+  @include media-breakpoint-down(md) { 
+    font-size: 14px;
+   }
+  @include media-breakpoint-down(sm) { 
+    font-size: 13px;
+   }
+  @include media-breakpoint-down(sm) { 
+    font-size: 12px;
+   }
+}
+main {
+  height: 60vh;
+}
+
+.nav {
+  height: 10vh;
+}
+
+.headline {
+  font-size: rem(150px);
+  font-weight: bold;
+  text-transform: uppercase;
+  &.headline-sm {
+    font-size: rem(72px);
+  }
+  &.headline-title {
+    font-weight: 500;
+    font-size: rem(60px);
+  }
+}
+
+.subtitle {
+  font-size: rem(32px);
+}
+.button {
+  padding: rem(10px 36px);
+  background-color: $dark;
+  color: $light;
+  border-radius: rem(3px);
+  border: none;
+}
+
+.button-rounded { 
+  border-radius: rem(99px);
+}
+
+.button-sm {
+  padding-top: rem(7px);
+  font-size: rem(12px);
+}
+
+.button-md {
+  font-size: rem(21px);
+}
+
+.button-lg {
+  font-size: rem(32px);
+}
+
+.button-xl {
+  font-size: rem(40px);
+}
+
+a.button {
+  color: $light;
+}
+
+.sidebar {
+  // position: static;
+  min-height: 100vh !important;
+
+  .sidebar-nav {
+    a {
+      display: block;
+      color: $light;
+      padding: rem(7px 0);
+      font-size: rem(18px);
+    }
+  }
+}
+
+code {
+  color: tomato;
+}

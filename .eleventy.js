@@ -15,14 +15,19 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByTag("elements").reverse();
   });
 
+  eleventyConfig.addPassthroughCopy("src/css");
+
+  eleventyConfig.addPassthroughCopy("src/js");
+
   return {
     dir: {
-      input: "content",
-      output: "dist/content"
+      input: "src",
+      output: "dist/"
     },
-    templateFormats: ["njk", "md", "mustache", "hbs"],
+    templateFormats: ["njk", "html", "md", "mustache", "hbs"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
-    pathPrefix: "/content/"
+    passthroughFileCopy: true,
+    pathPrefix: "/"
   };
 };

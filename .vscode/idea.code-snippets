@@ -1,0 +1,40 @@
+
+{
+		
+	"Creates front matter values for module for your DS Idea": {
+		"prefix": "idea_module",
+		"body": [
+		  "---",
+		  "layout: ${6:theme/modules.njk}",
+		  "title: ${1:title}",
+		  "tags: [${3:'tags'}]",
+		  "permalink: ${4:elements/{{ title | slug }}/index.html}",
+		  "date: 0000-00-00",
+		  "icon: \"group_work\"",
+		  "description: ${2:Description}",
+		  "stylesheets: [${5:path/style.css}]",
+		  "---",
+		  "",
+		  "",
+		  "<div class=\"modules ${1:Name} ${3:tags}\">",
+		  "   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ab nemo adipisci sit veritatis blanditiis iure",
+		  "      vero maxime, in ut? Magnam dignissimos aperiam quidem deserunt illum unde adipisci magni doloremque?</p>",
+		  "  </div>",
+		  "</div>"
+		],
+		"description": "Create a module for your Idea"
+	  },
+	"11TY default front matter values": {
+		"prefix": "idea_page",
+		"body": [
+		  "---",
+		  "layout: ${6:theme/modules.njk}",
+		  "title: ${1:Name}",
+		  "tags: ['${3:elements}']",
+		  "permalink: ${4:elements/{{ title | slug }}/index.html}",
+		  "date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+		],
+		"description": "front matter values markdown values"
+	  },
+}
+

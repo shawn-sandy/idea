@@ -1,0 +1,48 @@
+<!-- Content Nav collection -->
+{% macro anchors(links, classes = "") %} 
+{% for link in links %}
+<a class="anchors" href="#{{ link.data.title | slug }}">
+  {{ link.data.name or link.data.title }}
+</a>
+<!-- <hr> -->
+{% endfor %} 
+{% endmacro %}
+
+<!-- collections a links -->
+{% macro links(collections, classes = "") %} 
+{% for item in collections %}
+<a href="{{ item.url }}">{{ item.data.name or item.data.title }}</a> 
+{% endfor %} 
+{% endmacro %}
+
+<!-- modules -->
+{% macro modules(modules, classes = "") %} 
+{% for item in modules %}
+
+<aside id="{{ item.data.title | slug }}" class="modules ">
+  <h5 class="text-uppercase text-sg-secondary-color-">
+    {{ item.data.name or item.data.title }}
+  </h5>
+
+  <p class="">{{ item.data.description }}</p>
+
+  <div class="ui-element py-2">{{ item.templateContent | safe }}</div>
+</aside>
+
+<hr class="border-sg-disabled" />
+
+{% endfor %} 
+{% endmacro %}
+
+<!-- post collections -->
+{% macro posts(collections, classes= "py-3") %}
+{% for item in collections %}
+
+<aside id="{{ item.data.title | slug }}" class="posts {{ classes }}">
+  <h2>{{ item.data.name or item.data.title }}</h2>
+  <p class="">{{ item.data.description }}</p>
+  <p><a href="{{ item.url }}">Read More</a></p>
+</aside>
+
+{% endfor %} 
+{% endmacro %}

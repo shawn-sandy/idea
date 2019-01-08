@@ -1,0 +1,11 @@
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+<link rel="stylesheet" href="/css/style.css">
+<title>{{ title }}</title>
+<!---->
+{%- for links in collections.guides -%}
+<!--  -->
+{% if links.data.stylesheet %}
+<link href="{{ links.data.stylesheet }}" rel="stylesheet" />
+{% endif %} 
+{# -- #}
+{%- endfor -%}

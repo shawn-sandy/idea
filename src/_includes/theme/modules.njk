@@ -1,0 +1,26 @@
+{% extends 'theme/modules.njk' %} 
+
+{% block sidebar %}
+
+<h3><a href="/elements" class="lead text-uppercase">Elements</a></h3>
+{{ collection.links(collections.elements) }}
+<p class="py-2">
+    <hr>
+</p>
+<h3><a href="/ideas" class="lead text-uppercase">Components</a></h3>
+
+{% endblock %}
+
+{% block info %}
+<div class="py-4 border-bottom description">   
+    <p class="">
+        {{ description }}
+    </p>  
+</div>
+<div class="py-4 border-bottom">   
+    <small>
+        <span class="text-lightgray text-uppercase">{{ page.fileSlug }}</span> 
+        <span class="font-weight-bold">{{ page.inputPath }}</span>
+    </small>   
+</div>
+{% endblock %}

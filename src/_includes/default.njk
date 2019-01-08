@@ -1,0 +1,27 @@
+{% extends './base.njk' %} {% block head %}
+<!-- Required meta tags -->
+{% include "./partials/head.html" %}
+<!--  -->
+{% block nav %}
+<div class="container-fluid bg-light">
+  <nav>{% include "./views/nav.njk" %}</nav>
+</div>
+{% endblock %}
+<!-- header -->
+{% block header %}
+<header class="container">{% include "./views/header.njk" %}</header>
+{% endblock %}
+<!-- main content -->
+{% block main %}
+<main class="container">
+  <div class="row">{% include './views/main.njk' %}</div>
+</main>
+{% endblock %}
+<!-- footer -->
+{% block footer %}
+<footer class="container ui-footer py-5" style="height:200px">
+  {% include "./views/footer.njk" %}
+</footer>
+{% endblock %}
+<!-- scripts  -->
+{% include "./partials/footer-scripts.html" %}

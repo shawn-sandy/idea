@@ -1,0 +1,12 @@
+{% macro button(label = "button" classes="button" type="button") %}
+<button id="{{ label | slug }}" class="{{ classes }}" type="{{ type }}">
+  {{ label }}
+</button>
+<!--  -->
+{% endmacro %}
+
+<!-- creates a button link -->
+{% macro link(label = "Button Link", url="#", classes="" %}
+<a href="{{ url }}" class="{{ classes }}"> {{ label }} </a>
+<!--  -->
+{% endmacro %}

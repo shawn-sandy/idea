@@ -1,0 +1,16 @@
+---
+layout: base.njk
+tags: 'components'
+title: Sample Apps
+name: Cart Button
+description: Default button style for shop global
+# Default date 2018-01-01 required for name sorting
+date: 0000-00-00
+stylesheet: './button.css'
+---
+
+
+{% import "macros/collections.njk" as collection %}
+<div class="p-2">
+  {{ collection.modules(collections.apps) }}
+</div>

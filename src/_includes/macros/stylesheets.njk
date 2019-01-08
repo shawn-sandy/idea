@@ -1,0 +1,28 @@
+<!-- Stylesheet macros -->
+
+<!-- list styles in a collections -->
+{% macro collection(collection) %}
+
+{% for styles in collection %} 
+
+{% if styles.data.stylesheet %}
+
+<link rel="stylesheet" href="{{ styles.data.stylesheet }}" />
+
+{% endif %} 
+
+{% endfor %}
+
+{% endmacro %}
+
+<!-- list styles on a page -->
+
+{% macro styles(styles) %}
+
+{% for style in styles %}
+
+<link rel="stylesheet" href="{{ style }}">
+
+{% endfor %}
+
+{% endmacro %}
