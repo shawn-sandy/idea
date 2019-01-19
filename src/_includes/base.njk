@@ -8,26 +8,29 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    {% block head %}
-    {% include "./partials/head.html" %}
-    {% endblock %}
+    {% block head %} {% include "partials/head.html" %} {% endblock %}
   </head>
   <body>
-    {% block nav %}
-    {% endblock %}
+    {% block nav %} {% endblock %}
     <!-- header -->
-    {% block header %}
-    {% endblock %}
+    {% block header %} {% endblock %}
     <!-- main content -->
     {% block main %}
     <main class="container-fluid">
-      <div class="row">{% include './views/main.njk' %}</div>
+      <div class="row">{% include 'views/main.njk' %}</div>
     </main>
     {% endblock %}
     <!-- footer -->
-    {% block footer %}
-    {% endblock %}
+    {% block footer %} {% endblock %}
     <!-- scripts  -->
     {% include "./partials/footer-scripts.html" %}
+    <script>
+    
+      var jobs = document.querySelectorAll('div');
+
+Array.prototype.forEach.call(jobs, function (job) {
+	console.log('Each', jobs);
+});
+    </script>
   </body>
 </html>

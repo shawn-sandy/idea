@@ -8,19 +8,15 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 <link rel="stylesheet" href="/css/style.css">
 <title>Idea a design system framework</title>
-<!---->
-    
+<!----> 
   </head>
   <body>
-    
-    
+     
     <!-- header -->
-    
-    
+     
     <!-- main content -->
     
 
@@ -41,19 +37,42 @@
     </p>
     <p class="text-right text-center py-3">
       <a href="/ideas" class="button button-md m-2 button-rounded">Read More</a>
-      <a href="/elements" class="button button-md m-2 button-rounded">Sample Modules</a>
+      <a href="/modules/elements" class="button button-md m-2 button-rounded">Sample Modules</a>
     </p>
   </div>
 </footer>
 
 
     <!-- footer -->
-    
-    
+     
     <!-- scripts  -->
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/prism.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+  <script>
+  // comment
+console.log('tabs js')
+
+const fn = () => {
+    return null
+}
+
+
+// Babel Input: ES2015 arrow function
+let count  = () => {
+ return  [1, 2, 3].map((n) => n + 1);  
+} 
+
+console.log('count', count);
+  </script>
+    <script>
+    
+      var jobs = document.querySelectorAll('div');
+
+Array.prototype.forEach.call(jobs, function (job) {
+	console.log('Each', jobs);
+});
+    </script>
   </body>
 </html>
