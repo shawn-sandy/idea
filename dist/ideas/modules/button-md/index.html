@@ -9,12 +9,10 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     
-
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+ <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 <link rel="stylesheet" href="/css/style.css">
 <title>Button Medium</title>
-<!---->
-    
+<!----> 
 
   </head>
   <body>
@@ -52,9 +50,9 @@
 <a href="/elements/card/">Card</a> 
  
 
-<p class="py-2">
+
     <hr>
-</p>
+
 <h3><a href="/ideas" class="lead text-uppercase">Components</a></h3>
 
 
@@ -63,13 +61,13 @@
       </div>
     </div>
     <div class="col-9">
-      <nav class="py-2">
-        <div class="py-4 text-right">
+      <nav class="py">
+        <div class="py-3 text-right">
           <a href="/ideas" class="button m-2 button-rounded button-sm">
-Read More
+About
 </a>
 <a href="/ideas/modules" class="button m-2 button-rounded button-sm">
-Examples
+Modules
 </a>
 <a href="//github.com/shawn-sandy/idea" target="_blank" class="button m-2 button-rounded button-sm">
 Github Repo
@@ -89,6 +87,7 @@ Button
           </p>      
           <!-- meta data block -->
           
+
 <div class="py-4 border-bottom description">   
     <p class="">
         A simple button element `button-md`
@@ -115,5 +114,29 @@ Button
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/prism.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+  <script>
+  // comment
+console.log('tabs js')
+
+const fn = () => {
+    return null
+}
+
+
+// Babel Input: ES2015 arrow function
+let count  = () => {
+ return  [1, 2, 3].map((n) => n + 1);  
+} 
+
+console.log('count', count);
+  </script>
+    <script>
+    
+      var jobs = document.querySelectorAll('div');
+
+Array.prototype.forEach.call(jobs, function (job) {
+	console.log('Each', jobs);
+});
+    </script>
   </body>
 </html>
