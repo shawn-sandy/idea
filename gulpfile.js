@@ -42,7 +42,7 @@ gulp.task("default", function() {
 
 gulp.task("sass", () =>
   gulp
-    .src("./src/scss/*.scss")
+    .src("./src/**/scss/*.scss", { base: "./src/**/scss"})
     .pipe(sass().on("error", sass.logError))
     .pipe(autoprefixer())
     .pipe(minify())
@@ -88,7 +88,7 @@ const capitalize = function(str) {
 };
 
 gulp.task("watch", () =>
-  gulp.watch("./src/scss/**/*.scss", gulp.parallel("sass"))
+  gulp.watch("./src/**/*.scss", gulp.parallel("sass"))
 );
 
 gulp.task("watch:scripts", () => 
