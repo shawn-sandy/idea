@@ -42,7 +42,7 @@ gulp.task("default", function() {
 
 gulp.task("sass", () =>
   gulp
-    .src(["./src/scss/*.scss","./src/**/scss/*.scss"])
+    .src(["./src/scss/*.scss"])
     .pipe(sass().on("error", sass.logError))
     .pipe(autoprefixer())
     .pipe(minify())
