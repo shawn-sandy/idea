@@ -42,11 +42,11 @@ gulp.task("default", function() {
 
 gulp.task("sass", () =>
   gulp
-    .src("./src/**/scss/*.scss", { base: "./src/**/scss"})
+    .src(["./src/scss/*.scss","./src/**/scss/*.scss"])
     .pipe(sass().on("error", sass.logError))
     .pipe(autoprefixer())
     .pipe(minify())
-    .pipe(gulp.dest("./src/css"))
+    .pipe(gulp.dest("./src/css/"))
 );
 
 gulp.task("reports", () =>
