@@ -42,11 +42,11 @@ gulp.task("default", function() {
 
 gulp.task("sass", () =>
   gulp
-    .src("./src/scss/*.scss")
+    .src(["./src/scss/*.scss"])
     .pipe(sass().on("error", sass.logError))
     .pipe(autoprefixer())
     .pipe(minify())
-    .pipe(gulp.dest("./src/css"))
+    .pipe(gulp.dest("./src/css/"))
 );
 
 gulp.task("reports", () =>
@@ -88,7 +88,7 @@ const capitalize = function(str) {
 };
 
 gulp.task("watch", () =>
-  gulp.watch("./src/scss/**/*.scss", gulp.parallel("sass"))
+  gulp.watch("./src/**/*.scss", gulp.parallel("sass"))
 );
 
 gulp.task("watch:scripts", () => 

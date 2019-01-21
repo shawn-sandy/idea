@@ -11,4 +11,6 @@ $rem-fallback: true;
 @import "node_modules/bootstrap/scss/_utilities.scss";
 
 // partials
-@import "./partials/globals.scss";
+@import "./partials/utilities/units";
+@import "./partials/elements/nav";
+@import "./partials/theme.scss";
