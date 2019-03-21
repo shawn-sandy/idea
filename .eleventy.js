@@ -19,6 +19,11 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("src/js");
 
+  eleventyConfig.setBrowserSyncConfig({
+    notify: true,
+    open: true
+  });
+
   return {
     dir: {
       input: "src",

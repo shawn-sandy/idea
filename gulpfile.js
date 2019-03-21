@@ -8,8 +8,11 @@ const sass = require("gulp-sass");
 const shell = require("gulp-shell");
 const babel = require("gulp-babel");
 const sourcemaps = require("gulp-sourcemaps");
-const concat = require("gulp-concat")
-const uglify = require("gulp-uglify")
+const concat = require("gulp-concat");
+const uglify = require("gulp-uglify");
+const webpack = require("webpack-stream")
+const named = require('vinyl-named')
+const rename = require('gulp-rename')
 
 // fetch command line arguments
 const arg = (argList => {
@@ -87,26 +90,48 @@ const capitalize = function(str) {
   return str.join(" ");
 };
 
-gulp.task("watch", () =>
-  gulp.watch("./src/**/*.scss", gulp.parallel("sass"))
-);
+gulp.task("watch", () => gulp.watch("./src/**/*.scss", gulp.parallel("sass")));
 
-gulp.task("watch:scripts", () => 
-gulp.watch("./src/scripts/**/*.js", gulp.parallel('scripts'))
-)
+gulp.task("watch:scripts", () =>
+  gulp.watch("./src/scripts/**/*.js", gulp.parallel("scripts"))
+);
 
 gulp.task("start", shell.task("yarn eleventy --serve"));
 
 gulp.task("dev", gulp.parallel("watch", "watch:scripts", "start"));
 
-gulp.task("scripts", () => 
-  gulp.src("./src/scripts/**/*.js")
-  .pipe(babel({
-    presets: ['@babel/env']
-}))
+gulp.task("scripts", () =>
+  gulp
+    .src("./src/scripts/**/*.js")
+    .pipe(
+      babel({
+        presets: ["@babel/env"]
+      })
+    )
     .pipe(uglify())
-    .pipe(gulp.dest('./src/js'))
-  )
+    .pipe(gulp.dest("./src/js"))
+);
 
-
-
+gulp.task('js', () => {
+  return gulp.src('./src/js/*.js')
+    .pipe(named())
+    .pipe(webpack({
+      mode: 'production',
+      watch: true,
+      module: {
+        rules: [
+          {
+            test: /\.(js)$/,
+            loader: 'babel-loader'
+          }
+        ]
+      }
+    }))
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('./src/js/min'))
+    .pipe(reports ({
+      gzip: true
+    }))
+})
