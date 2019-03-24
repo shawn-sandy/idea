@@ -18,7 +18,37 @@
 
   </head>
   <body>
-    
+<div id="ie-warning" class="ie-hidden">
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aperiam magni mollitia rerum tempore maxime harum, sit exercitationem eos laboriosam repellat? Omnis, ratione sed? Quibusdam recusandae sed magni culpa laborum!
+  </p>
+</div>
+    <!--[if IE 11]>
+      <div id="warning">
+        <h4 class="red">Your Browser Is Not Supported!</h4>
+        <br />
+        <p>
+          Please upgrade to <a href="http://getfirefox.com">FireFox</a>,
+          <a href="http://www.opera.com/download/">Opera</a>,
+          <a href="http://www.apple.com/safari/">Safari</a> or
+          <a href="http://www.microsoft.com/windows/downloads/ie/getitnow.mspx"
+            >Internet Explorer 7 or 8</a
+          >. Thank You!&nbsp;&nbsp;&nbsp;<a
+            href="#"
+            onClick="document.getElementById('warning').style.display = 'none';"
+            ><b>Close Window</b></a
+          >
+        </p>
+      </div>
+    <![endif]-->
+
+    <!--[if IE]>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, corporis.
+      Quos dignissimos neque fugiat, nulla quae eaque vel dicta delectus maiores
+      reprehenderit facere possimus consequuntur unde dolorem, repudiandae
+      voluptatem alias.
+    <![endif]-->
+
     <!-- header -->
     
     <!-- main content -->
@@ -56,12 +86,13 @@
           <a href="/ideas" class="button m-2 button-rounded button-sm">
 About
 </a>
-<a href="/ideas/modules" class="button m-2 button-rounded button-sm">
+<a href="/modules/elements" class="button m-2 button-rounded button-sm">
 Modules
 </a>
 <a href="//github.com/shawn-sandy/idea" target="_blank" class="button m-2 button-rounded button-sm">
 Github Repo
 </a>
+
         </div>
       </nav>
       <div class="content p-4">
@@ -72,7 +103,7 @@ Github Repo
           <p class="py-2">
             <h2>Get Stared</h2>
 
-          </p>      
+          </p>
           <!-- meta data block -->
           
         </article>
@@ -89,9 +120,13 @@ Github Repo
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/prism.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+  <script src="/js/ie.js"></script>
   <script>
 
   </script>
-  
+
+    <script>
+
+    </script>
   </body>
 </html>
