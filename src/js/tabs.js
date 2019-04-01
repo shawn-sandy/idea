@@ -1,4 +1,4 @@
-console.log("tabs js");
+console.log("tabs js....");
 var fn = () => {
     return null;
   },
