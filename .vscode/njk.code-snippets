@@ -23,5 +23,13 @@
 		  "{% import \"${1:/macro/ms_macro.njk}\" as ${2:macro} %}"
 		],
 		"description": "Nunjucks - import macro"
-	  }
+    },
+    "Create a nunjucks tag": {
+      "prefix": "nun",
+      "body": [
+        "{% ${1:example} %}"
+      ],
+      "description": "Create a nunjucks tag"
+    }
+
 }

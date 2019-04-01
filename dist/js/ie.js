@@ -3,7 +3,9 @@
 /**
  * Detect if any version of Internet is running
  */
-var isIE = function () {
+
+
+var isIE = () => {
   var ua = window.navigator.userAgent; //Check the userAgent property of the window.navigator object
   var msie = ua.indexOf('MSIE '); // IE 10 or older
   var trident = ua.indexOf('Trident/'); //IE 11

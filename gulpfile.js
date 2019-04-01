@@ -13,6 +13,7 @@ const uglify = require("gulp-uglify");
 const webpack = require("webpack-stream")
 const named = require('vinyl-named')
 const rename = require('gulp-rename')
+const stripDebug = require('gulp-strip-debug')
 
 // fetch command line arguments
 const arg = (argList => {
@@ -114,6 +115,7 @@ gulp.task("scripts", () =>
 
 gulp.task('js', () => {
   return gulp.src('./src/js/*.js')
+  .pipe(stripDebug())
     .pipe(named())
     .pipe(webpack({
       mode: 'production',

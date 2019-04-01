@@ -1,5 +1,8 @@
 const syntax = require("@11ty/eleventy-plugin-syntaxhighlight");
 
+// shortcode imports
+const _Button = require('./src/_shortcodes/Button')
+
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function(eleventyConfig) {
@@ -23,6 +26,9 @@ module.exports = function(eleventyConfig) {
     notify: true,
     open: true
   });
+
+  // shortcodes
+ eleventyConfig.addShortcode('Button', _Button)
 
   return {
     dir: {
