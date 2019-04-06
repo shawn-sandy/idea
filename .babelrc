@@ -1,4 +1,8 @@
 {
+  "comments": false,
   "presets": ["@babel/preset-env"],
-  "plugins": ["@babel/plugin-transform-arrow-functions"]
+  "plugins": [
+    "@babel/plugin-transform-arrow-functions",
+    "transform-remove-console"
+  ]
 }
