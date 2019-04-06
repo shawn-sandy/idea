@@ -10,10 +10,10 @@ const babel = require("gulp-babel");
 const sourcemaps = require("gulp-sourcemaps");
 const concat = require("gulp-concat");
 const uglify = require("gulp-uglify");
-const webpack = require("webpack-stream")
-const named = require('vinyl-named')
-const rename = require('gulp-rename')
-const stripDebug = require('gulp-strip-debug')
+const webpack = require("webpack-stream");
+const named = require("vinyl-named");
+const rename = require("gulp-rename");
+const stripDebug = require("gulp-strip-debug");
 
 // fetch command line arguments
 const arg = (argList => {
@@ -113,27 +113,34 @@ gulp.task("scripts", () =>
     .pipe(gulp.dest("./src/js"))
 );
 
-gulp.task('js', () => {
-  return gulp.src('./src/js/*.js')
-  .pipe(stripDebug())
+gulp.task("js", () => {
+  return gulp
+    .src("./src/js/*.js")
+    .pipe(stripDebug())
     .pipe(named())
-    .pipe(webpack({
-      mode: 'production',
-      watch: true,
-      module: {
-        rules: [
-          {
-            test: /\.(js)$/,
-            loader: 'babel-loader'
-          }
-        ]
-      }
-    }))
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(gulp.dest('./src/js/min'))
-    .pipe(reports ({
-      gzip: true
-    }))
-})
+    .pipe(
+      webpack({
+        mode: "production",
+        watch: true,
+        module: {
+          rules: [
+            {
+              test: /\.(js)$/,
+              loader: "babel-loader"
+            }
+          ]
+        }
+      })
+    )
+    .pipe(
+      rename({
+        suffix: ".min"
+      })
+    )
+    .pipe(gulp.dest("./src/js/min"))
+    .pipe(
+      reports({
+        gzip: true
+      })
+    );
+});
