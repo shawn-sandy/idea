@@ -13,7 +13,7 @@ var isIE = function() {
 }
 
 if(isIE()) {
-  const ieElm = document.getElementById('ie-warning')
+  var ieElm = document.getElementById('ie-warning')
   ieElm.classList.remove('ie-hidden')
   console.info("User is using IE/MSIE...");
 }

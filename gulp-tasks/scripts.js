@@ -3,10 +3,9 @@ const named = require('vinyl-named')
 const webpack = require('webpack-stream')
 const rename = require('gulp-rename')
 const reports = require('gulp-sizereport')
-const babel = require('gulp-babel')
 const uglify = require("gulp-uglify");
 
-gulp.task("js", () => {
+gulp.task("js:webpack", () => {
   return gulp
     .src("./src/js/*.js")
     .pipe(named())
@@ -37,9 +36,9 @@ gulp.task("js", () => {
     .pipe(gulp.dest("./src/js/min"))
 });
 
-gulp.task("js:app", () => {
+gulp.task("js:libs", () => {
   return gulp
-    .src("./src/js/*.js")
+    .src("./src/js/libs/*.js")
     //.pipe(named())
     .pipe(
       webpack({
@@ -47,6 +46,11 @@ gulp.task("js:app", () => {
         watch: false,
         output: {
           filename: "app.js"
+        },
+        optimization: {
+          splitChunks: {
+            chunks: 'all',
+          },
         },
         module: {
           rules: [
@@ -71,18 +75,17 @@ gulp.task("js:app", () => {
     .pipe(gulp.dest("./src/js/min"))
 });
 
-
-gulp.task("scripts", () =>
+gulp.task("js", () =>
   gulp
     .src("./src/js/*.js")
+    .pipe(uglify())
     .pipe(
-      babel({
-        presets: ["@babel/env"]
+      rename({
+        suffix: ".min"
       })
     )
-    .pipe(uglify())
     .pipe(reports({
       gzip: true
     }))
-    .pipe(gulp.dest("./src/js/scripts"))
+    .pipe(gulp.dest("./src/js/min"))
 );

@@ -6,8 +6,6 @@ const autoprefixer = require("gulp-autoprefixer");
 const minify = require("gulp-clean-css");
 const sass = require("gulp-sass");
 const shell = require("gulp-shell");
-const sourcemaps = require("gulp-sourcemaps");
-const concat = require("gulp-concat");
 
 /**
   Our gulp tasks live in their own files,
@@ -94,7 +92,7 @@ const capitalize = function(str) {
 gulp.task("watch", () => gulp.watch("./src/**/*.scss", gulp.parallel("sass")));
 
 gulp.task("watch:scripts", () =>
-  gulp.watch("./src/scripts/**/*.js", gulp.parallel("scripts"))
+  gulp.watch("./src/js/*.js", gulp.parallel("js"))
 );
 
 gulp.task("start", shell.task("yarn eleventy --serve"));

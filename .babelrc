@@ -1,6 +1,16 @@
 {
   "comments": false,
-  "presets": ["@babel/preset-env"],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "chrome": "58",
+          "ie": "11"
+        }
+      }
+    ]
+  ],
   "plugins": [
     "@babel/plugin-transform-arrow-functions",
     "transform-remove-console"
