@@ -1,0 +1,1 @@
+"use strict";require("core-js/modules/es6.array.iterator"),require("core-js/modules/es6.promise"),require("core-js/modules/es7.promise.finally");var isIE=function(){var e=window.navigator.userAgent,r=e.indexOf("MSIE "),i=e.indexOf("Trident/");return 0<r||0<i};if(isIE()){var ieElm=document.getElementById("ie-warning");ieElm.classList.remove("ie-hidden")}

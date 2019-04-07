@@ -1,10 +1,1 @@
-console.log("tabs js....");
-var fn = () => {
-    return null;
-  },
-  count = () => {
-    return [1, 2, 3,4].map(function(n) {
-      return n + 1;
-    });
-  };
-console.log("count", count);
+"use strict";var fn=function(){return null},count=function(){return[1,2,3].map(function(n){return n+1})};

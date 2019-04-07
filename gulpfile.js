@@ -6,10 +6,8 @@ const autoprefixer = require("gulp-autoprefixer");
 const minify = require("gulp-clean-css");
 const sass = require("gulp-sass");
 const shell = require("gulp-shell");
-const babel = require("gulp-babel");
 const sourcemaps = require("gulp-sourcemaps");
 const concat = require("gulp-concat");
-const uglify = require("gulp-uglify");
 
 /**
   Our gulp tasks live in their own files,
@@ -103,14 +101,9 @@ gulp.task("start", shell.task("yarn eleventy --serve"));
 
 gulp.task("dev", gulp.parallel("watch", "watch:scripts", "start"));
 
-gulp.task("scripts", () =>
-  gulp
-    .src("./src/scripts/**/*.js")
-    .pipe(
-      babel({
-        presets: ["@babel/env"]
-      })
-    )
-    .pipe(uglify())
-    .pipe(gulp.dest("./src/js"))
-);
+gulp.task('sizereport', function () {
+  return gulp.src(['./dist/js/**/*', './dist/css/**/*.css'])
+      .pipe(reports({
+          gzip: true
+      }));
+});
