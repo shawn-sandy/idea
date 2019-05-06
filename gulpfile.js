@@ -6,6 +6,7 @@ const autoprefixer = require("gulp-autoprefixer");
 const minify = require("gulp-clean-css");
 const sass = require("gulp-sass");
 const shell = require("gulp-shell");
+const srcToJson = require("scsstojson")
 
 /**
   Our gulp tasks live in their own files,
@@ -105,3 +106,19 @@ gulp.task('sizereport', function () {
           gzip: true
       }));
 });
+
+gulp.task("tokens", function (done) {
+  var tokens = [
+    {
+      src: "./src/scss/partials/_variables.scss",
+      dest: "./src/_data/tokens/brand-colors.json",
+      lineStartsWith: "$i-brand-color-",
+      allowVarValues: true
+    }
+  ]
+
+  srcToJson(tokens, {}, function() {
+    done()
+  })
+
+})

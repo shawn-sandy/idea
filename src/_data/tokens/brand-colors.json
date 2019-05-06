@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "name": "$i-brand-color-default",
+      "value": "#2B3338",
+      "comment": ""
+    },
+    {
+      "name": "$i-brand-color-light",
+      "value": "whitesmoke",
+      "comment": ""
+    }
+  ],
+  "meta": {
+    "description": "To add to these items, use Sass variables that start with <code>$i-brand-color-</code> in <code>./src/scss/partials/_variables.scss</code>"
+  }
+}

@@ -13204,6 +13204,11 @@ scss-tokenizer@^0.2.3:
     js-base64 "^2.1.8"
     source-map "^0.4.2"
 
+scsstojson@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/scsstojson/-/scsstojson-1.0.2.tgz#56e646af6205001b6eedde49a77a534d7cc91d23"
+  integrity sha1-VuZGr2IFABtu7d5Jp3pTTXzJHSM=
+
 section-matter@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/section-matter/-/section-matter-1.0.0.tgz#e9041953506780ec01d59f292a19c7b850b84167"
