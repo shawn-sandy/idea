@@ -1,7 +1,7 @@
 ---
 layout: theme/index.njk
 collection: none
-package: 'axios'
+package: 'react'
 title: Idea a design system framework
 ---
 
@@ -26,7 +26,7 @@ title: Idea a design system framework
       <a href="/modules/elements" class="button button-md m-2 button-rounded">Sample Modules</a>
     </p>
     <p>
-     {{ 'vue' | packageDownloads | safe  }}
+     {{ package | packageDownloads | safe  }}
      </p>
   </div>
 </footer>
