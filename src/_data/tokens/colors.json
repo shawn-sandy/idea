@@ -3,12 +3,12 @@
     {
       "name": "$i-brand-color-default",
       "value": "#2B3338",
-      "comment": ""
+      "comment": "default color for text"
     },
     {
       "name": "$i-brand-color-light",
       "value": "whitesmoke",
-      "comment": ""
+      "comment": "default background color"
     }
   ],
   "meta": {

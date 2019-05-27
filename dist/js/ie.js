@@ -15,5 +15,5 @@ var isIE = function() {
 if(isIE()) {
   var ieElm = document.getElementById('ie-warning')
   ieElm.classList.remove('ie-hidden')
-  console.info("User is using IE/MSIE...");
+  console.info("User is using IE/MSIE");
 }
