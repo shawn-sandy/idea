@@ -11,9 +11,6 @@ module.exports =  async( packageName, callback ) => {
     const stars = github ? github.starsCount : 'n/a'
     const openIssues = github ? github.issues.openCount : 'n/a'
     console.log('url', url)
-    console.log(data)
-    console.log('github', github)
-		// const downloads = JSON.parse( body ).downloads;
     const downloads = `
     <ul class="npm-package-list">
     <li class="text-capitalize npm-pakage-name">${data.name}</li>
