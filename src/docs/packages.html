@@ -1,0 +1,14 @@
+---
+layout: theme/layout.njk
+tags: 'ideas-'
+title: Examples
+description: Default button style for shop global
+# Default date 2018-01-01 required for name sorting
+date: 2018-01-01
+stylesheet: '/css/modules.css'
+---
+
+{% import "macros/collections.njk" as collection %}
+<div class="p-2">
+  {{ collection.modules(collections.elements) }}
+</div>
