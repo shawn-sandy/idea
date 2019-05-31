@@ -6,10 +6,13 @@ const autoprefixer = require("gulp-autoprefixer");
 const minify = require("gulp-clean-css");
 const sass = require("gulp-sass");
 const shell = require("gulp-shell");
-const babel = require("gulp-babel");
-const sourcemaps = require("gulp-sourcemaps");
-const concat = require("gulp-concat")
-const uglify = require("gulp-uglify")
+const srcToJson = require("scsstojson")
+
+/**
+  Our gulp tasks live in their own files,
+  for the sake of clarity.
+ */
+require('require-dir')('./gulp-tasks');
 
 // fetch command line arguments
 const arg = (argList => {
@@ -87,26 +90,35 @@ const capitalize = function(str) {
   return str.join(" ");
 };
 
-gulp.task("watch", () =>
-  gulp.watch("./src/**/*.scss", gulp.parallel("sass"))
-);
+gulp.task("watch", () => gulp.watch("./src/**/*.scss", gulp.parallel("sass")));
 
-gulp.task("watch:scripts", () => 
-gulp.watch("./src/scripts/**/*.js", gulp.parallel('scripts'))
-)
+gulp.task("watch:scripts", () =>
+  gulp.watch("./src/js/*.js", gulp.parallel("js"))
+);
 
 gulp.task("start", shell.task("yarn eleventy --serve"));
 
 gulp.task("dev", gulp.parallel("watch", "watch:scripts", "start"));
 
-gulp.task("scripts", () => 
-  gulp.src("./src/scripts/**/*.js")
-  .pipe(babel({
-    presets: ['@babel/env']
-}))
-    .pipe(uglify())
-    .pipe(gulp.dest('./src/js'))
-  )
+gulp.task('sizereport', function () {
+  return gulp.src(['./dist/js/**/*', './dist/css/**/*.css'])
+      .pipe(reports({
+          gzip: true
+      }));
+});
 
+gulp.task("tokens", function (done) {
+  var tokens = [
+    {
+      src: "./src/scss/partials/_variables.scss",
+      dest: "./src/_data/tokens/colors.json",
+      lineStartsWith: "$i-brand-color-",
+      allowVarValues: true
+    }
+  ]
 
+  srcToJson(tokens, {}, function() {
+    done()
+  })
 
+})

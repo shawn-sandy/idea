@@ -3,6 +3,8 @@
 {% block head %}
 {{ super() }}
 {% endblock %}
+
+{% include "partials/no-ie.html" %}
 <!-- replace nav -->
 {% block nav %}{% endblock %}
 <!-- remove header nav -->
@@ -39,7 +41,7 @@
         <article class="py-2">
           <p class="py-2">
             {{ content | safe }}
-          </p>      
+          </p>
           <!-- meta data block -->
           {% block info %}{% endblock %}
         </article>

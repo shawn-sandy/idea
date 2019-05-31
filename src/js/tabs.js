@@ -1,1 +1,0 @@
-"use strict";console.log("tabs js");var fn=function(){return null},count=function(){return[1,2,3].map(function(n){return n+1})};console.log("count",count);

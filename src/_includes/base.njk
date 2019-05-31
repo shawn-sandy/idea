@@ -11,7 +11,7 @@
     {% block head %} {% include "partials/head.html" %} {% endblock %}
   </head>
   <body>
-    {% block nav %} {% endblock %}
+    {% include "partials/no-ie.html" %}
     <!-- header -->
     {% block header %} {% endblock %}
     <!-- main content -->
@@ -24,6 +24,6 @@
     {% block footer %} {% endblock %}
     <!-- scripts  -->
     {% include "./partials/footer-scripts.html" %}
-  
+    <script></script>
   </body>
 </html>
