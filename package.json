@@ -11,7 +11,7 @@
     "dev": "gulp dev"
   },
   "dependencies": {
-    "vue": "^2.5.17"
+    "vue": "^2.6.10"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.8.3",
