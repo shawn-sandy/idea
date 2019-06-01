@@ -1,0 +1,16 @@
+{
+  "files": {
+    "packages/bootstrap-lite/README.md": "23dd7c6874427ba3efd36efb3c7853db5e75a3e4",
+    "packages/bootstrap-lite/__tests__/bootstrap-lite.test.js": "698c2db52ee6a40d96b037cabe78f61d58af6593",
+    "packages/bootstrap-lite/dist/bootstrap-lite.css": "6af42b69db8c0c5a4b921c55665449fd4601298a",
+    "packages/bootstrap-lite/dist/bootstrap-lite.min.css": "efe842de21eea830ca1d6387373c3141007a5fdd",
+    "packages/bootstrap-lite/dist/maps/bootstrap-lite.css.map": "cf7acf12d5eb0a3247a362594e2c407e2d5e2ade",
+    "packages/bootstrap-lite/dist/maps/bootstrap-lite.css.min.css": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "packages/bootstrap-lite/gulpfile.js": "56779e7d047dc73fcc9513c4adf4a2efa4023e9f",
+    "packages/bootstrap-lite/lib/bootstrap-lite.js": "d9dba5234cc5692f3b1e5aec0f2aafdad22a17c5",
+    "packages/bootstrap-lite/package.json": "7a8e5bc2154321b948ce6e8d837ca90aa1d0157a",
+    "packages/bootstrap-lite/src/bootstrap-lite.scss": "6ef516ac97b6dac35f274b1eab227615b87cc59a",
+    "packages/bootstrap-lite/src/index.html": "e24e4c7a5b875943a258a99665e4ce727209398e"
+  },
+  "arguments": "yarn gulp sass "
+}
