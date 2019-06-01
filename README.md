@@ -1,3 +1,5 @@
+# IDEA Core
+
 # A simple way to visualize IDEA's
 
 _Idea is currently in early production beta, feel free to open an issues for features, bugs suggestions etc._
@@ -8,6 +10,10 @@ _Idea is currently in early production beta, feel free to open an issues for fea
 
 > [Amélie Lamont @amelielamont](https://twitter.com/amelielamont/status/1072917354819059713)
 
+### Core
+
+Core is the engine of the system and tools that power system, a Lerna.js monorepo that's host to the core site, plugins and tools that are distributed as independent packages.
+
 ---
 
 ## Features
@@ -17,7 +23,6 @@ _Idea is currently in early production beta, feel free to open an issues for fea
 - Vue.js integration
 - Javascript based template **[Nunjucks](https://mozilla.github.io/nunjucks/)**, Handlebars, Mustache...
 - Modular
-- IndexDB integration
 - Webpack / Gulp
 - Customizable
 
