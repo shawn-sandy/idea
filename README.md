@@ -12,7 +12,7 @@ _Idea is currently in early production beta, feel free to open an issues for fea
 
 ### Core
 
-Core is the engine of the system and tools that power system, a Lerna.js monorepo that's host to the core site, plugins and tools that are distributed as independent packages.
+Core is the engine of Idea, a collection packages and tools that behind the system. A Lerna.js powered monorepo that's host to the core site, plugins and tools that can be distributed as independent packages.
 
 ---
 
