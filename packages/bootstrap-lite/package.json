@@ -15,6 +15,7 @@
   "private": true,
   "homepage": "https://github.com/shawn-sandy/idea/tree/master/packages/bootstrap-lite",
   "dependencies": {
+    "blacktie-js": "^0.0.4",
     "bootstrap": "^4.3.1"
   },
   "bugs": {
