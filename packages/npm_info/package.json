@@ -25,9 +25,9 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" ",
-    "np:major": "np major --yolo=true --tag=false",
-    "np:minor": "np minor --yolo=true --tag=false",
-    "np:patch": "np patch --yolo=true --tag=false"
+    "np:major": "np major --yolo=true --tag=false --no-publish",
+    "np:minor": "np minor --yolo=true --tag=false --no-publish",
+    "np:patch": "np patch --yolo=true --tag=false --no-publish"
   },
   "bugs": {
     "url": "https://github.com/shawn-sandy/idea/issues"
