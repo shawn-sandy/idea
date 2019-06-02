@@ -13,11 +13,11 @@ module.exports =  async( packageName, callback ) => {
     console.log('url', url)
     const downloads = `
     <ul class="npm-package-list">
-    <li class="npm-pakage-name">${data.name}</li>
-    <li class="npm-pakage-description">Description ${data.description}</li>
-    <li class="npm-pakage-version">Version ${data.version}</li>
-    <li class="npm-pakage-stars">Stars Count ${stars}</li>
-    <li class="npm-package-issues">Open issues ${openIssues}</li>
+    <li class="npm-pakage-name">Name: ${data.name}</li>
+    <li class="npm-pakage-description">Description: ${data.description}</li>
+    <li class="npm-pakage-version">Version: ${data.version}</li>
+    <li class="npm-pakage-stars">Stars Count: ${stars}</li>
+    <li class="npm-package-issues">Open issues: ${openIssues}</li>
     </ul>
     `
     callback( null, downloads);

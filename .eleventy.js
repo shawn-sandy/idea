@@ -3,7 +3,7 @@ const syntax = require("@11ty/eleventy-plugin-syntaxhighlight");
 // shortcode imports
 const _Button = require('./src/_shortcodes/Button')
 
-const _npm = require("npm_package_info")
+const _npm = require("@shawnsandy/npm_info")
 
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
 
