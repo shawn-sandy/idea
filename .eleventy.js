@@ -2,12 +2,14 @@ const syntax = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 // shortcode imports
 const _Button = require('./src/_shortcodes/Button')
-const _npm = require('./src/_shortcodes/npm')
+
+const _npm = require("npm_package_info")
 
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function(eleventyConfig) {
-  //   eleventyConfig.addPlugin(pluginRss);
+
+//   eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addCollection("news", function(collection) {
     // get unsorted items
