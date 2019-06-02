@@ -25,7 +25,8 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" ",
-    "np": "np --any-branch --yolo"
+    "np:minor": "np minor --any-branch=true --yolo=true",
+    "np:patch": "np patch --any-branch=true --yolo=true"
   },
   "bugs": {
     "url": "https://github.com/shawn-sandy/idea/issues"
