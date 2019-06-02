@@ -1,7 +1,7 @@
 {
   "name": "npm_package_info",
   "version": "0.0.1",
-  "description": "Eleventy filter that grabs and returns basicnpm package details",
+  "description": "Eleventy filter that grabs and returns npm package details",
   "keywords": [
     "npm",
     "filter",
@@ -28,5 +28,9 @@
   },
   "bugs": {
     "url": "https://github.com/shawn-sandy/idea/issues"
-  }
+  },
+  "np": {
+		"yarn": true,
+		"contents": "dist"
+	}
 }
