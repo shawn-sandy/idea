@@ -38,6 +38,8 @@ module.exports = function(eleventyConfig) {
  */
 eleventyConfig.addNunjucksAsyncFilter( "packageDownloads", _npm);
 
+eleventyConfig.addNunjucksAsyncFilter( "gitinfo", require("@shawnsandy/npm_info/gitinfo"));
+
   return {
     dir: {
       input: "src",
