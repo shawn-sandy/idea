@@ -12,12 +12,12 @@ module.exports =  async( packageName, callback ) => {
     const openIssues = github ? github.issues.openCount : 'n/a'
     console.log('url', url)
     const downloads = `
-    <ul class="npm-package-list">
-    <li class="npm-pakage-name">Name: ${data.name}</li>
-    <li class="npm-pakage-description">Description: ${data.description}</li>
-    <li class="npm-pakage-version">Version: ${data.version}</li>
-    <li class="npm-pakage-stars">Stars Count: ${stars}</li>
-    <li class="npm-package-issues">Open issues: ${openIssues}</li>
+    <ul class="npm-info-list">
+    <li class="npm-info-name"><span>Name:</span> ${data.name}</li>
+    <li class="npm-info-description">Description:<span> ${data.description}</li>
+    <li class="npm-info-version">Version:<span> ${data.version}</li>
+    <li class="npm-info-stars">Stars Count:<span> ${stars}</li>
+    <li class="npm-info-issues">Open issues:<span> ${openIssues}</li>
     </ul>
     `
     callback( null, downloads);
