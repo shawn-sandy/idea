@@ -11,15 +11,16 @@
     "dev": "gulp dev"
   },
   "dependencies": {
-
+    "@shawnsandy/bootstrap-lite": "file:packages\\bootstrap-lite",
+    "@shawnsandy/npm_info": "file:packages/npm_info",
+    "blacktie-js": "file:packages\\blacktie-js"
   },
   "devDependencies": {
-    "@shawnsandy/bootstrap-lite": "file:packages\\bootstrap-lite",
-    "blacktie-js": "file:packages\\blacktie-js",
     "@11ty/eleventy": "^0.8.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
+    "@shawnsandy/bootstrap-lite": "file:packages\\bootstrap-lite",
     "@vue/cli-plugin-babel": "^3.8.0",
     "@vue/cli-plugin-eslint": "^3.8.0",
     "@vue/cli-service": "^3.8.0",
@@ -27,6 +28,7 @@
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-remove-console": "^6.9.4",
+    "blacktie-js": "file:packages\\blacktie-js",
     "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.5",
     "del": "^2.2.2",
@@ -73,7 +75,6 @@
     "luxon": "^1.16.0",
     "node-fs": "^0.1.7",
     "node-sass": "^4.12.0",
-    "npm_package_info": "file:packages/npm_package",
     "nunjucks-loader": "^3.0.0",
     "require-dir": "^1.2.0",
     "sass-loader": "^7.1.0",
