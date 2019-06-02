@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/npm_info",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Eleventy filter that grabs and returns npm package details",
   "keywords": [
     "npm",
@@ -25,9 +25,9 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" ",
-    "np:major": "np major --yolo=true --tag=false --no-publish",
-    "np:minor": "np minor --yolo=true --tag=false --no-publish",
-    "np:patch": "np patch --yolo=true --tag=false --no-publish"
+    "np:major": "np major --yolo=true --no-publish",
+    "np:minor": "np minor --yolo=true --no-publish",
+    "np:patch": "np patch --yolo=true --no-publish"
   },
   "bugs": {
     "url": "https://github.com/shawn-sandy/idea/issues"
