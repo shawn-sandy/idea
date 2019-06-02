@@ -24,7 +24,7 @@
     "url": "git+https://github.com/shawn-sandy/idea.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
+    "test": "echo \"Error: run tests from root\" ",
     "np": "np --any-branch --yolo"
   },
   "bugs": {
