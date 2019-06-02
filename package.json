@@ -73,6 +73,7 @@
     "luxon": "^1.15.0",
     "node-fs": "^0.1.7",
     "node-sass": "^4.12.0",
+    "npm_package_info": "file:packages/npm_package",
     "nunjucks-loader": "^3.0.0",
     "require-dir": "^1.2.0",
     "sass-loader": "^7.1.0",
