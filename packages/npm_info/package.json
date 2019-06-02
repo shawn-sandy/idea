@@ -25,7 +25,7 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" ",
-    "np:minor": "np minor --any-branch=true --yolo=true",
+    "np:minor": "np minor --any-branch=true --yolo=true --tag=false",
     "np:patch": "np patch --any-branch=true --yolo=true"
   },
   "bugs": {
