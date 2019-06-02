@@ -30,8 +30,9 @@
     "url": "https://github.com/shawn-sandy/idea/issues"
   },
   "np": {
-		"yarn": false,
+    "yarn": false,
     "contents": "./",
+    "yolo": true,
     "anyBranch": true
-	}
+  }
 }
