@@ -1,6 +1,6 @@
 {
-  "name": "npm_package_info",
-  "version": "0.0.1",
+  "name": "@shawnsandy/npm_info",
+  "version": "0.1.0",
   "description": "Eleventy filter that grabs and returns npm package details",
   "keywords": [
     "npm",
@@ -35,5 +35,8 @@
     "contents": "./",
     "yolo": true,
     "anyBranch": true
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
