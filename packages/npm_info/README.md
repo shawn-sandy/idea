@@ -11,13 +11,12 @@ Stars Count 138764
 Open issues 281
 
 ## Usage
----
 
 ### NPM Package details
 - Add the following to your `eleventy.js` config file
 
 ``` js
-const npmInfo = require("npm_package_info")
+const npmInfo = require("@shawnsandy/npm_info")
 
 ```
 
@@ -70,7 +69,7 @@ eleventyConfig.addNunjucksAsyncFilter( "gitInfo", require("@shawnsandy/npm_info/
 
 ### TODO
 
-- [ ] refactor remove safe require filter
+- [ ] refactor remove safe requirement on filter
 - [ ] complete docs
 - [ ] Add configuration options
 - [ ] write test
