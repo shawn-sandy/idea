@@ -16,19 +16,19 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addCollection("molecules", function(collection) {
-    return sortingTags(collection, "molecules")
+    return sortingTags(collection, "molecules").reverse()
   });
 
   eleventyConfig.addCollection("organisms", function(collection) {
-    return sortingTags(collection, "organisms")
+    return sortingTags(collection, "organisms").reverse()
   });
 
   eleventyConfig.addCollection("pages", function(collection) {
-    return sortingTags(collection, "pages")
+    return sortingTags(collection, "pages").reverse()
   });
 
   eleventyConfig.addCollection("templates", function(collection) {
-    return sortingTags(collection, "templates")
+    return sortingTags(collection, "templates").reverse()
   });
 
 }
