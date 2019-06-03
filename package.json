@@ -14,9 +14,7 @@
     "np:patch": "np patch --yolo=true --no-publish"
   },
   "dependencies": {
-    "@shawnsandy/bootstrap-lite": "file:packages\\bootstrap-lite",
-    "@shawnsandy/npm_info": "file:packages/npm_info",
-    "blacktie-js": "file:packages\\blacktie-js"
+
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.8.3",
@@ -24,6 +22,7 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@shawnsandy/bootstrap-lite": "file:packages\\bootstrap-lite",
+    "@shawnsandy/npm_info": "file:packages/npm_info",
     "@vue/cli-plugin-babel": "^3.8.0",
     "@vue/cli-plugin-eslint": "^3.8.0",
     "@vue/cli-service": "^3.8.0",
