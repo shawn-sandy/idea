@@ -1,17 +1,18 @@
 {
-  "name": "@shawnsandy/npm_info",
-  "version": "0.4.0",
-  "description": "Eleventy filter that grabs and returns npm package details",
+  "name": "@shawnsandy/eleventy_atomic_plugin",
+  "version": "0.1.0",
+  "description": "An eleventy tool for building and managing an atomic driven design system",
   "keywords": [
-    "npm",
-    "filter",
+    "Atomic",
+    "Design",
     "eleventy",
-    "11ty"
+    "design",
+    "systems"
   ],
   "author": "shawnsandy <shawnsandy04@gmail.com>",
   "homepage": "https://github.com/shawn-sandy/idea#readme",
   "license": "MIT",
-  "main": "index.js",
+  "main": ".eleventy.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -19,6 +20,9 @@
   "files": [
     "lib"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shawn-sandy/idea.git"
@@ -31,17 +35,5 @@
   },
   "bugs": {
     "url": "https://github.com/shawn-sandy/idea/issues"
-  },
-  "np": {
-    "yarn": false,
-    "contents": "./",
-    "yolo": true,
-    "anyBranch": true
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "dependencies": {
-    "@shawnsandy/eleventy_atomic_plugin": "file:../eleventy_atomic_plugin"
   }
 }

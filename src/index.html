@@ -25,6 +25,7 @@ title: Idea a design system framework
       <a href="/ideas" class="button button-md m-2 button-rounded">Read More</a>
       <a href="/modules/elements" class="button button-md m-2 button-rounded">Sample Modules</a>
     </p>
+
     <p>
      {{ package | packageDownloads | safe  }}
      </p>
@@ -32,4 +33,9 @@ title: Idea a design system framework
      {{ "vuejs/vue" | gitinfo | safe  }}
      </p>
   </div>
+   <div>
+    {% for atom in collections.atoms %}
+    {{ atom.templateContent | safe }}
+    {% endfor %}
+    </div>
 </footer>

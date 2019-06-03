@@ -40,6 +40,10 @@ eleventyConfig.addNunjucksAsyncFilter( "packageDownloads", _npm);
 
 eleventyConfig.addNunjucksAsyncFilter( "gitinfo", require("@shawnsandy/npm_info/gitinfo"));
 
+// plugins
+
+eleventyConfig.addPlugin(require("@shawnsandy/eleventy_atomic_plugin"));
+
   return {
     dir: {
       input: "src",
