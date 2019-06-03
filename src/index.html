@@ -35,6 +35,9 @@ title: Idea a design system framework
   </div>
    <div>
     {% for atom in collections.atoms %}
+    <h2>
+    {{ atom.data.title }}
+    </h2>
     {{ atom.templateContent | safe }}
     {% endfor %}
     </div>

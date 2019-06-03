@@ -1,6 +1,6 @@
 // imports
 
-const sorting = (collection, tags = "atoms") => {
+const sortingTags = (collection, tags = "atoms") => {
   return collection.getFilteredByTag(tags).sort((a, b) => {
     if (a.data.title > b.data.title) return -1
     else if (a.data.title < b.data.title) return 1
@@ -9,26 +9,26 @@ const sorting = (collection, tags = "atoms") => {
 }
 module.exports = (eleventyConfig) => {
 
-  //
+  // collection--atomic modules
 
   eleventyConfig.addCollection("atoms", function(collection) {
-    return sorting(collection, "atoms")
+    return sortingTags(collection, "atoms")
   });
 
   eleventyConfig.addCollection("molecules", function(collection) {
-    return sorting(collection, "molecules")
+    return sortingTags(collection, "molecules")
   });
 
   eleventyConfig.addCollection("organisms", function(collection) {
-    return sorting(collection, "organisms")
+    return sortingTags(collection, "organisms")
   });
 
   eleventyConfig.addCollection("pages", function(collection) {
-    return sorting(collection, "pages")
+    return sortingTags(collection, "pages")
   });
 
   eleventyConfig.addCollection("templates", function(collection) {
-    return sorting(collection, "templates")
+    return sortingTags(collection, "templates")
   });
 
 }

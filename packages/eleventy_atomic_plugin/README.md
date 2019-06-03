@@ -25,9 +25,10 @@ eleventyConfig.addPlugin(eleventyAtomicPlugin);
 Add the collection to your template(s) `eleventy.js file` <a href="https://www.11ty.io/docs/collections/" target="_blank">collections info</a>
 
 ``` html
-{% for atom in collections.atoms %}
-{{ atom.data.Title }}
+  {% for atom in collections.atoms %}
+    <h2>
+    {{ atom.data.title }}
+    </h2>
     {{ atom.templateContent | safe }}
-{% endfor %}
-
+    {% endfor %}
 ```
