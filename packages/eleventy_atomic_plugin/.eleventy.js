@@ -12,7 +12,7 @@ module.exports = (eleventyConfig) => {
   // collection--atomic modules
 
   eleventyConfig.addCollection("atoms", function(collection) {
-    return sortingTags(collection, "atoms")
+    return sortingTags(collection, "atoms").reverse()
   });
 
   eleventyConfig.addCollection("molecules", function(collection) {
