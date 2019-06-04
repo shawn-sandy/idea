@@ -22,7 +22,37 @@ eleventyConfig.addPlugin(eleventyAtomicPlugin);
 
 ```
 
-Add the collection to your template(s) `eleventy.js file` <a href="https://www.11ty.io/docs/collections/" target="_blank">collections info</a>
+### Atomic Collections
+
+Eleventy collections allows you to "group content in interest ways", likewise atomic collections takes the 5 parts to the atomic system and groups them into collection that you can quickly use in your template.
+
+**USAGE**
+
+Lets create some atoms for our design system and display them in our template
+
+Add the `atoms` tags to the front matter data in you content
+
+``` md
+
+---
+layout: theme/modules.njk
+title: A Sample Atom
+tags: ["atoms"]
+date: 0000-00-00
+icon: "group_work"
+description: Description
+#stylesheets: [path/style.css]
+---
+
+
+<div class="modules Sample Atom "atoms"">
+   <p>Sample page</p>
+  </div>
+</div>
+
+```
+
+Now lets display a collections of atoms in a template by calling `collection.atoms` array and looping through it, <a href="https://www.11ty.io/docs/collections/" target="_blank"> read more on collections</a>
 
 ``` html
   {% for atom in collections.atoms %}
@@ -30,5 +60,5 @@ Add the collection to your template(s) `eleventy.js file` <a href="https://www.1
     {{ atom.data.title }}
     </h2>
     {{ atom.templateContent | safe }}
-    {% endfor %}
+  {% endfor %}
 ```
