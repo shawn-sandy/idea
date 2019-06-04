@@ -24,7 +24,7 @@ eleventyConfig.addPlugin(eleventyAtomicPlugin);
 
 ### Atomic Collections
 
-Eleventy collections allows you to "group content in interest ways", likewise atomic collections takes the 5 parts to the atomic system and groups them into collection that you can quickly use in your template.
+<a href="https://www.11ty.io/docs/collections/" target="_blank">Eleventy collections</a> allows you to "group content in interest ways", atomic collections takes the five key concepts of the atomic methodology and groups them into collections that you can quickly use in your template.
 
 **USAGE**
 
