@@ -20,7 +20,7 @@ const npmInfo = require("@shawnsandy/npm_info")
 
 ```
 
-- In the `module.exports` section of your `eleventy.js` file add a nunjucks filter `eleventyConfig.addNunjucksAsyncFilter( "npm", _npm);`
+- In the `module.exports` section of your `eleventy.js` file add a nunjucks filter `eleventyConfig.addNunjucksAsyncFilter( "npm", npmInfo);`
 
 ``` js
 
@@ -28,7 +28,7 @@ module.exports = function(eleventyConfig) {
 /**
  * Get the npm package info
  */
-eleventyConfig.addNunjucksAsyncFilter( "npm", _npm);
+eleventyConfig.addNunjucksAsyncFilter( "npm", npmInfo);
 
 }
 
@@ -37,14 +37,14 @@ eleventyConfig.addNunjucksAsyncFilter( "npm", _npm);
 - Use the filter in your template
   ``` html
 
-   {{ "vuejs/vue" | npnInfo | safe  }}
+   {{ "vue" | npnInfo | safe  }}
 
    ```
 ### Github repository info
 
 - Lets skip the property declaration this time
 
-- In the `module.exports` section of your `eleventy.js` file add a nunjucks filter `eleventyConfig.addNunjucksAsyncFilter( "git", require("@shawnsandy/npm_info/gitinfo");`
+- In the `module.exports` section of your `eleventy.js` file add a nunjucks filter `eleventyConfig.addNunjucksAsyncFilter( "gitInfo", require("@shawnsandy/npm_info/gitinfo");`
 
 ``` js
 

@@ -1,9 +1,18 @@
 # Atomic
 
-A plugin for building and managing an atomic driven design system with Eleventy
+A plugin for building and managing an atomic driven design system with <a href="https://www.11ty.io/" target="_blank">Eleventy</a>
+FrontEndBuild
 
-> Atomic design is a methodology composed of five distinct stages working together to create interface design systems in a more deliberate and hierarchical manner.
-> The five stages
+**Atomic Design System**
+
+> Atomic design is a methodology popularized by <a href="http://bradfrost.com/" target="_blank">Brad Frost</a>,  composed of five distinct stages working together to create interface design systems in a more deliberate and hierarchical manner.
+> - Atoms
+> - Organisms
+> - Molecules
+> - Templates
+> - Pages
+>
+
 
 ## Usage
 
