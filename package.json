@@ -14,6 +14,11 @@
     "np:patch": "np patch --yolo=true --no-publish"
   },
   "dependencies": {
+    "@shawnsandy/bootstrap-lite": "file:packages\\bootstrap-lite",
+    "@shawnsandy/eleventy_atomic_plugin": "file:packages\\eleventy_atomic_plugin",
+    "@shawnsandy/ideacore": "file:packages\\ideacore",
+    "@shawnsandy/npm_info": "file:packages\\npm_info",
+    "blacktie-js": "file:packages\\blacktie-js"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.8.3",
