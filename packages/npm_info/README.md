@@ -12,6 +12,17 @@ Open issues 281
 
 ## Usage
 
+### Install
+
+```
+// npm
+npm i @shawnsandy/npm_info --dev
+
+// yarn
+yarn add @shawnsandy/npm_info -D
+
+```
+
 ### NPM Package details
 - Add the following to your `eleventy.js` config file
 
