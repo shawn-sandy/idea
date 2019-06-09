@@ -4,6 +4,7 @@ const syntax = require("@11ty/eleventy-plugin-syntaxhighlight");
 const _Button = require('./src/_shortcodes/Button')
 
 const _npm = require("@shawnsandy/npm_info")
+const elements = require("@shawnsandy/ideacore")
 
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
 
@@ -41,6 +42,8 @@ eleventyConfig.addNunjucksAsyncFilter( "packageDownloads", _npm);
 eleventyConfig.addNunjucksAsyncFilter( "gitinfo", require("@shawnsandy/npm_info/gitinfo"));
 
 // plugins
+
+eleventyConfig.addPlugin(require("@shawnsandy/ideacore"))
 
 eleventyConfig.addPlugin(require("@shawnsandy/eleventy_atomic_plugin"));
 

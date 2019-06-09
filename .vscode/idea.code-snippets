@@ -1,6 +1,6 @@
 
 {
-		
+
 	"Creates front matter values for module for your DS Idea": {
 		"prefix": "idea_module",
 		"body": [
@@ -31,8 +31,10 @@
 		  "layout: ${6:theme/modules.njk}",
 		  "title: ${1:Name}",
 		  "tags: ['${3:elements}']",
-		  "permalink: ${4:elements/{{ title | slug }}/index.html}",
-		  "date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+      "date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+      "---",
+      "",
+      ""
 		],
 		"description": "front matter values markdown values"
 	  },
