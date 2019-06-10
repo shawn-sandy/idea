@@ -1,4 +1,5 @@
 const elements = require("./lib/elements")
+const forms = require('./lib/form')
 
 module.exports = (eleventy, options = {}) => {
 
