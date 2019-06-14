@@ -3,9 +3,6 @@ const syntax = require("@11ty/eleventy-plugin-syntaxhighlight");
 // shortcode imports
 const _Button = require('./src/_shortcodes/Button')
 
-const _npm = require("@shawnsandy/npm_info")
-const elements = require("@shawnsandy/ideas")
-
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function(eleventyConfig) {
@@ -37,7 +34,7 @@ module.exports = function(eleventyConfig) {
  /**
  * Get the npm package downloads
  */
-eleventyConfig.addNunjucksAsyncFilter( "packageDownloads", _npm);
+eleventyConfig.addNunjucksAsyncFilter( "packageDownloads", require("@shawnsandy/npm_info"));
 
 eleventyConfig.addNunjucksAsyncFilter( "gitinfo", require("@shawnsandy/npm_info/gitinfo"));
 
