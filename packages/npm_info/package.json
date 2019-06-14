@@ -42,6 +42,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@shawnsandy/eleventy_atomic_plugin": "file:../eleventy_atomic_plugin"
+
   }
 }

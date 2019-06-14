@@ -1,0 +1,25 @@
+---
+layout: theme/modules.njk
+title: Core Plugin Examples
+tags: ['pages']
+collection: examples
+date: 2019-06-08
+---
+
+<aside class="py-3">
+<h1>Button</h1>
+  <p>
+{% button_elm null, 'type="submit" style="one"' %}
+Sample Button
+{% endbutton_elm %}
+  </p>
+</aside>
+
+<aside class="py-3">
+<h1>Link</h1>
+<p>
+{% link_elm "//google.com" %}
+Google It
+{% endlink_elm %}
+</p>
+</aside>
