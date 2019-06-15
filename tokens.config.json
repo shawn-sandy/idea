@@ -1,0 +1,14 @@
+
+{
+  "source": ["./src/_data/tokens/**/*.json"],
+  "platforms": {
+    "js": {
+      "transformGroup": "js",
+      "buildPath": "./src/js/",
+      "files": [{
+        "destination": "tokens.js",
+        "format": "javascript/es6"
+      }]
+    }
+  }
+}
