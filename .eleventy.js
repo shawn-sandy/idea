@@ -1,13 +1,12 @@
 const syntax = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 // shortcode imports
-const _Button = require('./src/_shortcodes/Button')
+const _Button = require("./src/_shortcodes/Button");
 
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function(eleventyConfig) {
-
-//   eleventyConfig.addPlugin(pluginRss);
+  //   eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addCollection("news", function(collection) {
     // get unsorted items
@@ -29,20 +28,26 @@ module.exports = function(eleventyConfig) {
   });
 
   // shortcodes
- eleventyConfig.addShortcode('Button', _Button)
+  eleventyConfig.addShortcode("Button", _Button);
 
- /**
- * Get the npm package downloads
- */
-eleventyConfig.addNunjucksAsyncFilter( "packageDownloads", require("@shawnsandy/npm_info"));
+  /**
+   * Get the npm package downloads
+   */
+  eleventyConfig.addNunjucksAsyncFilter(
+    "packageDownloads",
+    require("@shawnsandy/npm_info")
+  );
 
-eleventyConfig.addNunjucksAsyncFilter( "gitinfo", require("@shawnsandy/npm_info/gitinfo"));
+  eleventyConfig.addNunjucksAsyncFilter(
+    "gitinfo",
+    require("@shawnsandy/npm_info/gitinfo")
+  );
 
-// plugins
+  // plugins
 
-eleventyConfig.addPlugin(require("@shawnsandy/ideas"))
+  eleventyConfig.addPlugin(require("@shawnsandy/ideas"));
 
-eleventyConfig.addPlugin(require("@shawnsandy/eleventy_atomic_plugin"));
+  eleventyConfig.addPlugin(require("@shawnsandy/eleventy_atomic_plugin"));
 
   return {
     dir: {

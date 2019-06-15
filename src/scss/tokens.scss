@@ -1,0 +1,39 @@
+
+/*
+  Do not edit directly
+  Generated on Sat, 15 Jun 2019 04:49:33 GMT
+*/
+
+$sg-button-components-primary-background-color: hsl(10, 80, 50) !default;
+$sg-button-components-primary-color: #000000 !default;
+$sg-color-base-primary: #61dafb !default;
+$sg-color-base-secondary: #fc7aa5 !default;
+$sg-color-text: #666666 !default;
+$sg-color-background: #eeeeee !default;
+$sg-primary: #00548c !default;
+$sg-secondary: #00B1E2 !default;
+$sg-modal: lighten(#97999B, 15%) !default;
+$sg-compare-tray: lighten(#21314D, 20%) !default;
+
+$tokens: (
+  'button': (
+    'components': (
+      'primary': (
+        'background-color': $sg-button-components-primary-background-color,
+        'color': $sg-button-components-primary-color
+      )
+    )
+  ),
+  'color': (
+    'base': (
+      'primary': $sg-color-base-primary,
+      'secondary': $sg-color-base-secondary
+    ),
+    'text': $sg-color-text,
+    'background': $sg-color-background
+  ),
+  'primary': $sg-primary,
+  'secondary': $sg-secondary,
+  'modal': $sg-modal,
+  'compare-tray': $sg-compare-tray
+);
