@@ -1,17 +1,35 @@
 {
-  "items": [
-    {
-      "name": "$i-brand-color-default",
-      "value": "#2B3338",
-      "comment": "default color for text"
+  "color": {
+    "base": {
+      "primary": {
+        "value": "#61dafb"
+      },
+      "secondary": {
+        "value": "#fc7aa5"
+      }
     },
-    {
-      "name": "$i-brand-color-light",
-      "value": "whitesmoke",
-      "comment": "default background color"
+    "text": {
+      "value": "#666666"
+    },
+    "background": {
+      "value": "#EEEEEE"
     }
-  ],
-  "meta": {
-    "description": "To add to these items, use Sass variables that start with <code>$i-brand-color-</code> in <code>./src/scss/partials/_variables.scss</code>"
+  },
+  "primary": {
+    "value": "#00548c",
+    "comment": ""
+  },
+  "secondary": {
+    "value": "#00B1E2",
+    "comment": ""
+  },
+  "modal": {
+    "value": "lighten(#97999B, 15%)",
+    "comment": ""
+  },
+  "compare-tray": {
+    "value": "lighten(#21314D, 20%)",
+    "comment": ""
   }
+
 }
