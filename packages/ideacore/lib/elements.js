@@ -19,7 +19,7 @@ module.exports = {
   },
 
   list_li: (content, class_names, attrs) => {
-    return `<li class="${class_names} ${attrs}>${content}</li>`;
+    return `<li class="${class_names}" ${attrs}>${content}</li>`;
   },
 
   blockquote: (content, class_names, attrs) => {

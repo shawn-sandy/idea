@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sat, 15 Jun 2019 20:36:03 GMT
+ * Generated on Mon, 17 Jun 2019 00:32:36 GMT
  */
 
 export const ButtonComponentsPrimaryBackgroundColor = "hsl(10, 80, 50)";
