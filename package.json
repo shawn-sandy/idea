@@ -15,13 +15,15 @@
     "np:minor": "np minor --yolo=true --no-publish",
     "np:patch": "np patch --yolo=true --no-publish"
   },
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "@11ty/eleventy": "^0.8.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@shawnsandy/bootstrap-lite": "file:packages/bootstrap-lite",
+    "@shawnsandy/css-modal": "file:packages/css-modal",
     "@shawnsandy/eleventy-content": "file:packages/eleventy-content",
     "@shawnsandy/eleventy_atomic_plugin": "file:packages/eleventy_atomic_plugin",
     "@shawnsandy/ideas": "file:packages/ideas",

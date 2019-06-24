@@ -1,0 +1,86 @@
+// ----
+// Sass (v3.4.21)
+// Compass (v1.0.3)
+// ----
+
+// Sass modifiers mixin by Sarah Dayan
+// Generate All Your Utility Classes with Sass Maps: http://frontstuff.io/generate-all-your-utility-classes-with-sass-maps
+// http://frontstuff.io
+// https://github.com/sarahdayan
+@import '~sass-rem';
+$colors: (
+  red: #ff3538,
+  grey: (
+    base: #404145,
+    light: #c7c7cd
+  ),
+  yellow: (
+    base: #ecaf2d
+  ),
+  green: (
+    base: #5ad864
+  )
+);
+
+$font-sizes: (
+  small: rem(12px),
+  medium: rem(14px),
+  large: rem(16px),
+  x-large: rem(18px),
+  xx-large: rem(20px)
+);
+
+@mixin modifiers(
+  $map,
+  $attribute,
+  $prefix: '-',
+  $separator: '-',
+  $base: 'base'
+) {
+  @each $key, $value in $map {
+    &#{if($key != $base, #{$prefix}#{$key}, '')} {
+      @if type-of($value) == 'map' {
+        @include modifiers($value, $attribute, $separator);
+      } @else {
+        #{$attribute}: $value !important;
+      }
+      @include element($value, $attribute);
+    }
+  }
+}
+
+@mixin mixColor($color, $ratio: 5%, $light: #ffffff, $dark: #1d1d1d) {
+  @if (lightness($color) > 50) {
+    color: mix($color, $dark, $ratio) !important;
+  } @else {
+    color: mix($color, $light, $ratio) !important;
+  }
+}
+
+@mixin element($value, $attribute) {
+  @if ($attribute == 'color') {
+    // #{$attribute}-color: $value;
+    &-elm {
+      background-color: $value;
+      @if (lightness($value) > 50) {
+        @include mixColor($value);
+      } @else {
+        @include mixColor($value);
+      }
+      &:hover,
+      &:focus {
+        background-color: darken($value, 5%);
+        @include mixColor($value);
+      }
+    }
+  }
+}
+
+// .text {
+//   @include modifiers($colors, 'color', $separator: ':');
+//   @include modifiers($font-sizes, 'font-size', '-');
+// }
+
+// .elm {
+//   @include modifiers($colors, 'elm', $separator: ':');
+// }
