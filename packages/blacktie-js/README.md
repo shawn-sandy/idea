@@ -38,4 +38,4 @@ License: **MIT**
 ### TODO
 
 - [ ] Complete documentation
-- [ ]
+- [ ] more to come
