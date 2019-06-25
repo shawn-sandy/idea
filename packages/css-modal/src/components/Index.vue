@@ -1,7 +1,7 @@
 <template>
-  <div :id="name" class="cs-overlay" v-bind="$attrs">
+  <div :id="name" class="cs-overlay">
     <a href="#" class="cancel"></a>
-    <div class="modal">
+    <div class="modal" :class="size" v-bind="$attrs">
       <slot></slot>
       <a href="#" class="close">
         <slot name="close">&times;</slot>
@@ -13,7 +13,18 @@
 <script>
   export default {
     inheritAttrs: false,
-    props: ["name"]
+    props: {
+      name: {
+        default: null,
+        type: String
+
+      },
+      size: {
+        default: "modal-sm",
+        type: String
+
+      }
+    }
   };
 </script>
 
@@ -38,7 +49,6 @@
     }
     .modal {
       position: relative;
-      width: 500px;
       max-width: 80%;
       background: white;
       border-radius: 4px;
@@ -51,6 +61,22 @@
         right: 15px;
         color: grey;
         text-decoration: none;
+      }
+
+      &-sm {
+        width: 20vw;
+      }
+
+      &-md {
+        width: 40vw;
+      }
+
+      &-lg {
+        width: 60vw;
+      }
+
+      &-xl {
+        width: 80vw;
       }
     }
 
