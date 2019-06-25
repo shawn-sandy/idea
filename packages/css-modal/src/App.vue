@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Modal from './components/Component.vue'
+import Modal from './components/Index.vue'
 
 export default {
   inheritAttrs: false,
