@@ -2,7 +2,7 @@
   <div :id="name" class="cs-overlay">
     <a href="#" class="cancel"></a>
     <div class="modal" :class="size" v-bind="$attrs">
-      <slot></slot>
+      <slot>Content...</slot>
       <a href="#" class="close">
         <slot name="close">&times;</slot>
       </a>
