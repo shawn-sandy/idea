@@ -15,8 +15,7 @@
     "np:minor": "np minor --yolo=true --no-publish",
     "np:patch": "np patch --yolo=true --no-publish"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@11ty/eleventy": "^0.8.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
@@ -38,10 +37,11 @@
     "blacktie-js": "file:packages/blacktie-js",
     "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.5",
+    "dart-sass": "^1.22.1",
     "del": "^2.2.2",
     "dexie": "^2.0.4",
     "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.2.2",
+    "eslint-plugin-vue": "^5.0.0",
     "favicons-webpack-plugin": "^0.0.9",
     "got": "^9.6.0",
     "gulp": "^4.0.2",
@@ -86,6 +86,7 @@
     "require-dir": "^1.2.0",
     "sass-loader": "^7.1.0",
     "sass-rem": "^2.0.1",
+    "sassdoc": "^2.7.0",
     "scsstojson": "^1.0.2",
     "style-dictionary": "^2.8.0",
     "vinyl-named": "^1.1.0",

@@ -52,7 +52,7 @@ module.exports = function(eleventyConfig) {
   return {
     dir: {
       input: "src",
-      output: "dist/"
+      output: "../lerna/dist/"
     },
     templateFormats: ["njk", "html", "md", "mustache", "hbs"],
     htmlTemplateEngine: "njk",

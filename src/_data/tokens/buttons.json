@@ -1,14 +1,23 @@
 {
   "button": {
-  "components": {
-      "primary": {
-        "background-color": {
-          "value": "hsl(10, 80, 50)"
-        },
-        "color": {
-          "value": "#000000"
-        }
+    "padding": {
+      "value": "10rem",
+      "comment": "default button padding"
+    },
+    "font-size": {
+      "value": 2
+    },
+    "primary": {
+      "background-color": {
+        "value": "hsl(10, 80, 50)"
+      },
+      "color": {
+        "value": "#000000"
       }
+    },
+    "new": {
+      "value": "{color.base.primary.value}"
+    }
+
     }
   }
-}
