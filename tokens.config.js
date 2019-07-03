@@ -68,6 +68,15 @@ module.exports = {
           format: "javascript/es6"
         }
       ]
+    },
+    json: {
+      transformGroup: 'scss',
+      buildPath: './src/json/',
+      prefix: 'sg',
+      files: [{
+        destination: 'tokens.json',
+        format: 'json/nested'
+      }]
     }
   }
 }

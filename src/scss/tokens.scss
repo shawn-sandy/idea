@@ -1,11 +1,15 @@
 
+
 /*
   Do not edit directly
-  Generated on Mon, 17 Jun 2019 00:32:36 GMT
+  Generated on Fri, 28 Jun 2019 17:19:09 GMT
 */
 
-$sg-button-components-primary-background-color: hsl(10, 80, 50) !default;
-$sg-button-components-primary-color: #000000 !default;
+$sg-button-padding: 10rem !default; // default button padding
+$sg-button-font-size: 2 !default;
+$sg-button-primary-background-color: hsl(10, 80, 50) !default;
+$sg-button-primary-color: #000000 !default;
+$sg-button-new: #61dafb !default;
 $sg-color-base-primary: #61dafb !default;
 $sg-color-base-secondary: #fc7aa5 !default;
 $sg-color-text: #666666 !default;
@@ -17,12 +21,13 @@ $sg-compare-tray: lighten(#21314D, 20%) !default;
 
 $tokens: (
   'button': (
-    'components': (
-      'primary': (
-        'background-color': $sg-button-components-primary-background-color,
-        'color': $sg-button-components-primary-color
-      )
-    )
+    'padding': $sg-button-padding,
+    'font-size': $sg-button-font-size,
+    'primary': (
+      'background-color': $sg-button-primary-background-color,
+      'color': $sg-button-primary-color
+    ),
+    'new': $sg-button-new
   ),
   'color': (
     'base': (
