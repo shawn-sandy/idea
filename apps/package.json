@@ -1,7 +1,6 @@
 {
   "name": "@local/idea",
   "version": "0.2.0",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --no-clean",
     "build": "vue-cli-service build",
@@ -15,7 +14,9 @@
     "np:minor": "np minor --yolo=true --no-publish",
     "np:patch": "np patch --yolo=true --no-publish"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@shawnsandy/ideas": "^0.0.1"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^0.8.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
