@@ -15,9 +15,6 @@
   "private": true,
   "homepage": "https://github.com/shawn-sandy/idea/tree/master/packages/bootstrap-lite",
   "dependencies": {
-    "@shawnsandy/eleventy_atomic_plugin": "file:../eleventy_atomic_plugin",
-    "@shawnsandy/npm_info": "file:../npm_info",
-    "blacktie-js": "file:../blacktie-js",
     "bootstrap": "^4.3.1"
   },
   "bugs": {
