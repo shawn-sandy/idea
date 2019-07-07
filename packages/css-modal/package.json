@@ -33,5 +33,8 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "devDependencies": {
+    "@vue/cli-service": "^3.9.2"
+  }
 }

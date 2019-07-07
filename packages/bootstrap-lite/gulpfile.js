@@ -19,10 +19,15 @@ gulp.task('sass', () => {
     .pipe(sass().on('error', sass.logError))
     .pipe(prefixer())
     .pipe(sourcemaps.write('./maps'))
+    .pipe(print())
     .pipe(gulp.dest('./dist'))
     .pipe(cleanCss())
     .pipe(rename({ extname: '.min.css' }))
+    .pipe(print())
     .pipe(gulp.dest('./dist'))
+    .pipe(reports({
+      gzip: true
+    }))
 })
 
 gulp.task('reports', () => {
