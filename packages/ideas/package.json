@@ -2,12 +2,7 @@
   "name": "@shawnsandy/ideas",
   "version": "0.0.1",
   "description": "A design system toolkit for Eleventy",
-  "keywords": [
-    "design",
-    "system",
-    "eleventy",
-    "style-guide"
-  ],
+  "keywords": ["design", "system", "eleventy", "style-guide"],
   "author": "shawnsandy <shawnsandy04@gmail.com>",
   "homepage": "https://github.com/shawn-sandy/idea#readme",
   "license": "MIT",
@@ -16,9 +11,7 @@
     "lib": "lib",
     "test": "__tests__"
   },
-  "files": [
-    "lib"
-  ],
+  "files": ["lib"],
   "publishConfig": {
     "access": "public"
   },
@@ -27,7 +20,8 @@
     "url": "git+https://github.com/shawn-sandy/idea.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "gulp-sass": "gulp sass"
   },
   "bugs": {
     "url": "https://github.com/shawn-sandy/idea/issues"

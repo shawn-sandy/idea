@@ -23,7 +23,7 @@ module.exports = (eleventy, options = {}) => {
   })
 
   eleventy.addPairedShortcode('link_button', (content, link = "#", classes, attrs) => {
-    return element.link(content, link, classes, attrs)
+    return elements.link(content, link, classes, attrs)
   })
 
   /**
