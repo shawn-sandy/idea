@@ -43,13 +43,16 @@ module.exports = function(eleventyConfig) {
     require("@shawnsandy/npm_info/gitinfo")
   );
 
-  // plugins
+  /**
+   * Plugins
+   */
 
-  eleventyConfig.addPlugin(require("@shawnsandy/ideas"));
+   eleventyConfig.addPlugin(require('@shawnsandy/ideas'))
 
-  eleventyConfig.addPlugin(require("@shawnsandy/eleventy_atomic_plugin"));
-
-  return {
+   /**
+    * Config
+    */
+   return {
     dir: {
       input: "src",
       output: "../dist/"

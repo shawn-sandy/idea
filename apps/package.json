@@ -15,7 +15,6 @@
     "np:patch": "np patch --yolo=true --no-publish"
   },
   "dependencies": {
-    "@shawnsandy/ideas": "^0.0.1"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.8.3",
@@ -24,6 +23,7 @@
     "@babel/preset-env": "^7.4.5",
     "@shawnsandy/css-modal": "^0.1.0",
     "@shawnsandy/eleventy_atomic_plugin": "^0.1.0",
+    "@shawnsandy/ideas": "^0.0.1",
     "@shawnsandy/npm_info": "^0.4.2",
     "@vue/cli-plugin-babel": "^3.8.0",
     "@vue/cli-plugin-eslint": "^3.8.0",
