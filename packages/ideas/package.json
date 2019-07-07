@@ -44,4 +44,5 @@
     "gulp-sizereport": "^1.2.1",
     "gulp-sourcemaps": "^2.6.5"
   }
+
 }
