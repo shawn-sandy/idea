@@ -1,8 +1,10 @@
 const shared = require('./lib/shared')
 
 /**
- * A modular approach to building a flexible design system that integrates with commonly used industry concepts, patterns and best practices--offering an alternative approach to the atomic methodology.
- */
+A modular approach to building a flexible design system that integrates with
+* commonly used industry concepts, patterns and best practices, offering an
+* alternative approach to the atomic methodology.
+*/
 
 module.exports = (eleventy) => {
 
