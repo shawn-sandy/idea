@@ -23,13 +23,19 @@ module.exports = (eleventy, options = {}) => {
   })
 
   eleventy.addPairedShortcode('link_button', (content, link = "#", classes, attrs) => {
-    return elements.link(content, link, classes, attrs)
+    let _classes = classes ? classes + " btn" : "button"
+    return elements.link(content, link, _classes, attrs)
   })
 
   /**
    * Plugins
    */
 
-  eleventy.addPlugin(require("@shawnsandy/eleventy_atomic_plugin"));
+
+
+   // adds Mo
+   eleventy.addPlugin(require("./modular-patterns"))
+   // adds atomic modules as collections
+  eleventy.addPlugin(require("./atomic"))
 
 }
