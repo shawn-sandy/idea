@@ -34,7 +34,7 @@ module.exports = (eleventy, options = {}) => {
 
 
    // adds Mo
-   eleventy.addPlugin(require("./modular-patterns"))
+   eleventy.addPlugin(require("./modular"))
    // adds atomic modules as collections
   eleventy.addPlugin(require("./atomic"))
 
