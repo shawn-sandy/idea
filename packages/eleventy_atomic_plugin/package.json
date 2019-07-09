@@ -2,6 +2,7 @@
   "name": "@shawnsandy/eleventy_atomic_plugin",
   "version": "0.1.1",
   "description": "An eleventy tool for building and managing an atomic driven design system",
+  "private": true,
   "keywords": [
     "Atomic",
     "Design",

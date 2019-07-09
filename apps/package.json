@@ -1,6 +1,7 @@
 {
   "name": "@local/idea",
   "version": "0.2.1",
+  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --no-clean",
     "build": "vue-cli-service build",

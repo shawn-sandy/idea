@@ -12,7 +12,6 @@
   "scripts": {
     "build": "gulp sass"
   },
-  "private": true,
   "homepage": "https://github.com/shawn-sandy/idea/tree/master/packages/bootstrap-lite",
   "dependencies": {
     "bootstrap": "^4.3.1"

@@ -2,6 +2,7 @@
   "name": "@shawnsandy/style-toolkit",
   "version": "0.0.2",
   "description": "A toolkit to creating styles for design systems",
+  "private": true,
   "keywords": [
     "SASS",
     "CSS",
