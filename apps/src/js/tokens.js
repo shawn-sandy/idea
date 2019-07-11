@@ -1,13 +1,13 @@
 /**
  * Do not edit directly
- * Generated on Fri, 28 Jun 2019 17:19:09 GMT
+ * Generated on Thu, 11 Jul 2019 03:57:28 GMT
  */
 
-export const ButtonPadding = "10rem"; // default button padding
-export const ButtonFontSize = 2;
-export const ButtonPrimaryBackgroundColor = "hsl(10, 80, 50)";
-export const ButtonPrimaryColor = "#000000";
-export const ButtonNew = "#61dafb";
+export const BtnPadding = "10rem"; // default button padding
+export const BtnFontSize = 2;
+export const BtnPrimaryBackgroundColor = "hsl(10, 80, 50)";
+export const BtnPrimaryColor = "#000000";
+export const BtnNew = "#61dafb";
 export const ColorBasePrimary = "#61dafb";
 export const ColorBaseSecondary = "#fc7aa5";
 export const ColorText = "#666666";

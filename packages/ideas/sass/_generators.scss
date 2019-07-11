@@ -1,2 +1,19 @@
-@import "./maps";
+@import "./mixins";
 
+// generate classes from your map color key
+@mixin map-colors($map: $tokens, $attrs...) {
+  $key: "color";
+  @each $attr in $attrs {
+    @include class-generator($key, $attr, $map);
+  }
+}
+
+// loop through specified top level keys and generate classes
+// @include map-components($tokens, 'btns', 'cards', 'font-style')
+@mixin map-components($map: $tokens, $keys...) {
+  @each $key in $keys {
+    @if map-get($map, $key) {
+      @include get-modifiers($key, $map)
+    }
+  }
+}

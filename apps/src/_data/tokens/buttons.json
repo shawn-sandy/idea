@@ -1,5 +1,5 @@
 {
-  "button": {
+  "btn": {
     "padding": {
       "value": "10rem",
       "comment": "default button padding"
@@ -18,6 +18,5 @@
     "new": {
       "value": "{color.base.primary.value}"
     }
-
-    }
   }
+}

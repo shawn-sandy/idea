@@ -41,17 +41,3 @@
   }
 }
 
-/**
-*
-**/
-@mixin map-colors($map: $tokens, $attrs...) {
-  $key: "color";
-  @each $attr in $attrs {
-    @include class-generator($key, $attr, $map);
-  }
-}
-
-
-@mixin map-buttons($map: $tokens, $attrs...) {
-
-}
