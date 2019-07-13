@@ -1,7 +1,47 @@
 {
-    "cSpell.words": [
-        "endmacro",
-        "ideacore",
-        "shawnsandy"
-    ]
+  "cSpell.words": ["endmacro", "ideacore", "shawnsandy"],
+  "files.associations": {
+    "*.tag": "html",
+    "*.cshtml": "html",
+    "*.html": "html",
+    "*.njk": "html",
+    "*.mustache": "html",
+    "*.html.md": "html"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/.vscode": true,
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/node_modules": true,
+    "node_modules": true,
+    "venv": true,
+    "*.sublime-*": true,
+    "env*": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/env": true,
+    "**/venv": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/env/**": true,
+    "**/venv/**": true,
+    "env-*": true
+  },
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.cursorBlinking": "phase",
+  "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
+  "editor.formatOnSave": true,
+  "breadcrumbs.enabled": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.maxColumn": 200,
+  "editor.minimap.showSlider": "always"
 }
