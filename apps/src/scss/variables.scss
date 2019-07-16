@@ -1,22 +1,30 @@
 
 /*
   Do not edit directly
-  Generated on Thu, 11 Jul 2019 03:57:28 GMT
+  Generated on Mon, 15 Jul 2019 01:59:23 GMT
 */
 
 $tokens: (
-  // default button padding
-  'sg-btn-padding': 10rem,
-  'sg-btn-font-size': 2,
-  'sg-btn-primary-background-color': hsl(10, 80, 50),
-  'sg-btn-primary-color': #000000,
-  'sg-btn-new': #61dafb,
-  'sg-color-base-primary': #61dafb,
-  'sg-color-base-secondary': #fc7aa5,
-  'sg-color-text': #666666,
-  'sg-color-background': #eeeeee,
-  'sg-primary': #00548c,
-  'sg-secondary': #00B1E2,
-  'sg-modal': lighten(#97999B, 15%),
-  'sg-compare-tray': lighten(#21314D, 20%)
+  'sg-comp-btn-padding': 1.25rem 5rem,
+  'sg-comp-btn-font-size': 1.07rem,
+  'sg-comp-btn-background-color': [object Object],
+  'sg-comp-btn-hover-background-color': color.blue,
+  // Color used for logos / highlights
+  'sg-color-blue': #3f86f5,
+  // a midrange gray backgrounds/muted text
+  'sg-color-gray': #bebdbf,
+  // light background color
+  'sg-color-light-gray': #efefef,
+  // highlight text
+  'sg-color-dark-25': #707070,
+  // default text
+  'sg-color-dark-50': #2a2a2a,
+  // Element background etc
+  'sg-color-dark-100': #232323,
+  'sg-color-key': colors,
+  'sg-button-key': btns,
+  'sg-header-key': headers,
+  'sg-fonts-keys': fonts,
+  'sg-font-types-keys': font-type,
+  'sg-margin-padding-keys': spacers
 );

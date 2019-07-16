@@ -80,6 +80,7 @@
     "node-sass": "^4.12.0",
     "nunjucks-loader": "^3.0.0",
     "require-dir": "^1.2.0",
+    "rollup": "^1.17.0",
     "sass-loader": "^7.1.0",
     "sass-rem": "^2.0.1",
     "sassdoc": "^2.7.0",

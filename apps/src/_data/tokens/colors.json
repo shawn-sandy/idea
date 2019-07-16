@@ -1,35 +1,30 @@
 {
   "color": {
-    "base": {
-      "primary": {
-        "value": "#61dafb"
+    "blue": {
+      "value": "#3F86F5",
+      "comment": "Color used for logos / highlights"
+    },
+    "gray": {
+      "value": "#BEBDBF",
+      "comment": "a midrange gray backgrounds/muted text"
+    },
+    "light-gray": {
+      "value": "#EFEFEF",
+      "comment": "light background color"
+    },
+    "dark": {
+      "25": {
+        "value": "#707070",
+        "comment": "highlight text"
       },
-      "secondary": {
-        "value": "#fc7aa5"
+      "50": {
+        "value": "#2A2A2A",
+        "comment": "default text"
+      },
+      "100": {
+        "value": "#232323",
+        "comment": "Element background etc"
       }
-    },
-    "text": {
-      "value": "#666666"
-    },
-    "background": {
-      "value": "#EEEEEE"
     }
-  },
-  "primary": {
-    "value": "#00548c",
-    "comment": ""
-  },
-  "secondary": {
-    "value": "#00B1E2",
-    "comment": ""
-  },
-  "modal": {
-    "value": "lighten(#97999B, 15%)",
-    "comment": ""
-  },
-  "compare-tray": {
-    "value": "lighten(#21314D, 20%)",
-    "comment": ""
   }
-
 }

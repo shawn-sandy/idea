@@ -1,22 +1,20 @@
 {
-  "btn": {
-    "padding": {
-      "value": "10rem",
-      "comment": "default button padding"
-    },
-    "font-size": {
-      "value": 2
-    },
-    "primary": {
-      "background-color": {
-        "value": "hsl(10, 80, 50)"
+  "comp": {
+    "btn": {
+      "padding": {
+        "value": "1.25rem 5rem"
       },
-      "color": {
-        "value": "#000000"
+      "font-size": {
+        "value": "1.07rem"
+      },
+      "background-color": {
+        "value": "{color.dark.100}"
+      },
+      ":hover": {
+        "background-color": {
+          "value": "color.blue"
+        }
       }
-    },
-    "new": {
-      "value": "{color.base.primary.value}"
     }
   }
 }

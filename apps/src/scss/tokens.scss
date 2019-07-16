@@ -1,42 +1,51 @@
+
 /*
   Do not edit directly
-  Generated on Thu, 11 Jul 2019 03:57:28 GMT
+  Generated on Mon, 15 Jul 2019 01:59:23 GMT
 */
 
-$sg-btn-padding: 10rem !default; // default button padding
-$sg-btn-font-size: 2 !default;
-$sg-btn-primary-background-color: hsl(10, 80, 50) !default;
-$sg-btn-primary-color: #000000 !default;
-$sg-btn-new: #61dafb !default;
-$sg-color-base-primary: #61dafb !default;
-$sg-color-base-secondary: #fc7aa5 !default;
-$sg-color-text: #666666 !default;
-$sg-color-background: #eeeeee !default;
-$sg-primary: #00548c !default;
-$sg-secondary: #00b1e2 !default;
-$sg-modal: lighten(#97999b, 15%) !default;
-$sg-compare-tray: lighten(#21314d, 20%) !default;
+$sg-comp-btn-padding: 1.25rem 5rem !default;
+$sg-comp-btn-font-size: 1.07rem !default;
+$sg-comp-btn-background-color: [object Object] !default;
+$sg-comp-btn-hover-background-color: color.blue !default;
+$sg-color-blue: #3f86f5 !default; // Color used for logos / highlights
+$sg-color-gray: #bebdbf !default; // a midrange gray backgrounds/muted text
+$sg-color-light-gray: #efefef !default; // light background color
+$sg-color-dark-25: #707070 !default; // highlight text
+$sg-color-dark-50: #2a2a2a !default; // default text
+$sg-color-dark-100: #232323 !default; // Element background etc
+$sg-color-key: colors !default;
+$sg-button-key: btns !default;
+$sg-header-key: headers !default;
+$sg-fonts-keys: fonts !default;
+$sg-font-types-keys: font-type !default;
+$sg-margin-padding-keys: spacers !default;
 
 $tokens: (
-  "btn": (
-    "padding": $sg-btn-padding,
-    "font-size": $sg-btn-font-size,
-    "primary": (
-      "background-color": $sg-btn-primary-background-color,
-      "color": $sg-btn-primary-color
-    ),
-    "new": $sg-btn-new
+  'comp': (
+    'btn': (
+      'padding': $sg-comp-btn-padding,
+      'font-size': $sg-comp-btn-font-size,
+      'background-color': $sg-comp-btn-background-color,
+      ':hover': (
+        'background-color': $sg-comp-btn-hover-background-color
+      )
+    )
   ),
-  "color": (
-    "base": (
-      "primary": $sg-color-base-primary,
-      "secondary": $sg-color-base-secondary
-    ),
-    "text": $sg-color-text,
-    "background": $sg-color-background
+  'color': (
+    'blue': $sg-color-blue,
+    'gray': $sg-color-gray,
+    'light-gray': $sg-color-light-gray,
+    'dark': (
+      '25': $sg-color-dark-25,
+      '50': $sg-color-dark-50,
+      '100': $sg-color-dark-100
+    )
   ),
-  "primary": $sg-primary,
-  "secondary": $sg-secondary,
-  "modal": $sg-modal,
-  "compare-tray": $sg-compare-tray
+  'color-key': $sg-color-key,
+  'button-key': $sg-button-key,
+  'header-key': $sg-header-key,
+  'fonts-keys': $sg-fonts-keys,
+  'font-types-keys': $sg-font-types-keys,
+  'margin-padding-keys': $sg-margin-padding-keys
 );
