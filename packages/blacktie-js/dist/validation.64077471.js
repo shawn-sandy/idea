@@ -117,127 +117,90 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"src/_js-kit.js":[function(require,module,exports) {
+})({"src/validation.js":[function(require,module,exports) {
+/* eslint-disable no-undef */
+
 /* eslint-disable no-unused-vars */
-// eslint-disable-next-line no-unused-vars
-function _$(css, parent) {
-  return (parent || document).querySelector(css);
-}
+var validate = function () {
+  var methods = {};
 
-function _$$(css, parent) {
-  var nodes = (parent || document).querySelectorAll(css);
-  return Array.prototype.slice.call(nodes, 0);
-}
-
-var _js = function () {
-  "use strict"; // Create the methods object
-
-  var methods = {}; //
-  // Methods
-  //
-
-  /**
-   * Get an element in the DOM
-   * @param  {String} selector The selector to match against
-   * @param  {Node} scope      An element to search within [optional]
-   * @return {Node}            The first matching element
-   */
-
-  methods.get = function (selector, scope) {
-    if (!selector) throw new Error("Please provide a selector.");
-    return scope ? scope.querySelector(selector) : document.querySelector(selector);
+  var _each = function _each(arr, callback) {
+    Array.prototype.forEach.call(arr, callback);
   };
   /**
-   * Get all matching elements in the DOM
-   * @param  {String} selector The selector to match against
-   * @param  {Node} scope      An element to search within [optional]
-   * @return {NodeList}        The matching elements
+   * @description Validate HTML5 forms
+   * @param {*} formID the id for the form
+   * @param {*} elements input elements `input, textarea, select` or input class-name(s) `.js-required`
+   * @param {Object} opts options, input error class-name, error display element {errorClass: 'border-danger', errorElm: '.js-error-msg' }
    */
 
 
-  methods.getAll = function (selector, scope) {
-    if (!selector) throw new Error("Please provide a selector.");
-    return scope ? scope.querySelectorAll(selector) : document.querySelectorAll(selector);
-  };
-  /**
-   * Setup an event listener
-   * @param  {Node}     elem        The element to attach the listener to
-   * @param  {String}   event       The event to listen for
-   * @param  {Function} callback    The callback to run on the event
-   * @param  {Boolean}  useCapture  If true, set useCapture to true [optional]
-   */
+  methods.validate = function (formID, elements) {
+    var opts = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+    console.log(opts); // Loop through them...
 
+    var _form = document.getElementById(formID);
 
-  methods.on = function (elem, event, callback, useCapture) {
-    if (!elem) throw new Error("Please provide an element to attach the event to.");
-    if (!event) throw new Error("Please provide an event to listen for.");
-    if (!callback || typeof callback !== "function") throw new Error("Please provide a valid callback function to run");
-    elem.addEventListener(event, callback, useCapture || false);
-  };
-  /**
-   * Get the URL parameters
-   * source: https://css-tricks.com/snippets/javascript/get-url-variables/
-   * @param  {String} url The URL
-   * @return {Object}     The URL parameters
-   */
-
-
-  methods.getParams = function (url) {
-    var params = {};
-    var parser = document.createElement("a");
-    parser.href = url || window.location.href;
-    var query = parser.search.substring(1);
-    var vars = query.split("&");
-    if (vars.length < 2) return params;
-
-    for (var i = 0; i < vars.length; i++) {
-      var pair = vars[i].split("=");
-      params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+    if (!_form) {
+      _form = document.querySelector('form');
     }
 
-    return params;
-  };
-  /*!
-   * Run event after the DOM is ready
-   * (c) 2017 Chris Ferdinandi, MIT License, https://gomakethings.com
-   * @param  {Function} fn Callback function
-   */
+    var inputs = _form.querySelectorAll(elements);
 
+    _each(inputs, function (input) {
+      input.addEventListener('invalid', function (event) {
+        input.classList.add(opts.border || 'border-danger');
+        /*  showing custom error message if we have in data attribute  */
 
-  methods.ready = function (fn) {
-    // Sanity check
-    if (typeof fn !== "function") return; // If document is already loaded, run method
+        var customMessage = getCustomMessage(input);
+        appendValidationMsg(input, customMessage);
+      }, false);
+      input.addEventListener('blur', function (event) {
+        input.classList.remove(opts.border || 'border-danger');
+        input.setCustomValidity('');
 
-    if (document.readyState === "interactive" || document.readyState === "complete") {
-      return fn();
-    }
+        if (!input.checkValidity()) {
+          input.classList.add(opts.border || 'border-danger');
+          /*  showing custom error message if we have in data attribute  */
 
-    document.addEventListener("DOMContentLoaded", fn, false);
+          var customMessage = getCustomMessage(input);
+          appendValidationMsg(input, customMessage, opts.errorElm || null);
+        } else {
+          appendValidationMsg(input, '*', opts.errorElm || null); // reset the message
+        }
+      });
+    });
   };
   /**
-   * Traverse loop and call a method
+   * @description
+   * @param {*} inputElement
+   * @param {*} message
+   * @param {*} errorElm
    */
 
 
-  methods.each = function (selector, callback) {
-    if (!selector) throw new Error("Please provide a selector.");
-    if (!callback || typeof callback !== "function") throw new Error("Please provide a valid callback function to run");
-    var elms = document.querySelectorAll(selector);
-    Array.prototype.forEach.call(elms, callback);
-  };
-  /*!
-   * Determine if an element is in the viewport
-   * (c) 2017 Chris Ferdinandi, MIT License, https://gomakethings.com
-   * @param  {Node}    elem The element
-   * @return {Boolean}      Returns true if element is in the viewport
-   */
+  function appendValidationMsg(inputElement, message, errorElm) {
+    var parent = inputElement.parentNode;
+    var errMsg = parent.querySelector(errorElm || '.js-error-msg'); // errMsg.textContent = '*'
 
+    if (!errMsg) {
+      throw new Error("Error: missing validation selector"); // return confirm(message || inputElement.validationMessage)
+    }
 
-  methods.isInViewport = function (elem) {
-    var distance = elem.getBoundingClientRect();
-    return distance.top >= 0 && distance.left >= 0 && distance.bottom <= (window.innerHeight || document.documentElement.clientHeight) && distance.right <= (window.innerWidth || document.documentElement.clientWidth);
-  }; // Expose the public methods
+    errMsg && (errMsg.textContent = message || inputElement.validationMessage);
+  }
 
+  function getCustomMessage(inputElement) {
+    if (inputElement.validity.valueMissing) {
+      inputElement.setCustomValidity(inputElement.dataset.requirederror || inputElement.validationMessage);
+      return inputElement.dataset.requirederror;
+    } else if (inputElement.validity.patternMismatch) {
+      inputElement.setCustomValidity(inputElement.dataset.mismatch || inputElement.validationMessage);
+      return inputElement.dataset.mismatch;
+    } else {
+      return false;
+    }
+  }
 
   return methods;
 }();
@@ -444,5 +407,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/_js-kit.js"], null)
-//# sourceMappingURL=/_js-kit.e9c39d3d.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/validation.js"], null)
+//# sourceMappingURL=/validation.64077471.js.map
