@@ -39,12 +39,14 @@
       // prefix class if necessary
       &#{$prefix}#{$attribute}#{$prefix}#{$item} {
         @if type-of($value) == "map" {
-          @include generator("#{$key}.#{$item}");
+          @include class-generator(
+            "#{$key}.#{$item}",
+            $attribute,
+            $map,
+            $prefix
+          );
         } @else {
           #{$attribute}: $value;
-          // &:hover {
-          //   #{$attribute}: transparentize($value, .3);
-          // }
         }
       }
       @if type-of($value) == "color" {
@@ -57,6 +59,9 @@
           &:focus {
             #{$attribute}: $value !important;
           }
+        }
+        &#{$prefix}trans\:#{$attribute}#{$prefix}#{$item} {
+          #{$attribute}: transparentize($value, 0.2) !important;
         }
       }
     }
@@ -86,6 +91,39 @@
   @if length($attrs) >= 1 {
     @each $key, $value in $attrs {
       #{$key}: $value;
+    }
+  }
+}
+
+@mixin g-colors($map: $tokens) {
+  @include generator(
+    $token-colors,
+    $map,
+    "color",
+    "background-color",
+    "border-color"
+  );
+}
+
+@mixin g-fonts($map: $tokens) {
+  @include generator($token-fonts, $map, "fonts");
+}
+
+@mixin g-headers($map: $tokens) {
+  @include generator($token-headers, $map, "header");
+}
+
+@mixin components($components: "components", $map: $tokens, $prefix: "-") {
+  $comps: map-get($map, $components);
+  @if type-of($comps) == "map" {
+    @each $name, $value in $comps {
+      &#{$prefix}#{$name} {
+        @if type-of($value) == "map" {
+          @include components($name, $map);
+        } @else {
+          #{$name}: $value;
+        }
+      }
     }
   }
 }

@@ -1,14 +1,10 @@
 
 /*
   Do not edit directly
-  Generated on Mon, 15 Jul 2019 01:59:23 GMT
+  Generated on Wed, 24 Jul 2019 01:42:36 GMT
 */
 
 $tokens: (
-  'sg-comp-btn-padding': 1.25rem 5rem,
-  'sg-comp-btn-font-size': 1.07rem,
-  'sg-comp-btn-background-color': [object Object],
-  'sg-comp-btn-hover-background-color': color.blue,
   // Color used for logos / highlights
   'sg-color-blue': #3f86f5,
   // a midrange gray backgrounds/muted text
@@ -21,6 +17,10 @@ $tokens: (
   'sg-color-dark-50': #2a2a2a,
   // Element background etc
   'sg-color-dark-100': #232323,
+  'sg-components-btn-padding': 1.25rem 5rem,
+  'sg-components-btn-font-size': 1.07rem,
+  'sg-components-btn-background-color': [object Object],
+  'sg-components-btn-hover-background-color': color.blue,
   'sg-color-key': colors,
   'sg-button-key': btns,
   'sg-header-key': headers,

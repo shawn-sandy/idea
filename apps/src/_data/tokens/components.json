@@ -1,5 +1,5 @@
 {
-  "comp": {
+  "components": {
     "btn": {
       "padding": {
         "value": "1.25rem 5rem"

@@ -1,20 +1,7 @@
 @import "./mixins";
 
-// generate classes from colors map, for color, background-color, border-color
-@mixin map-colors($map: $tokens) {
-  @include generator(
-    $token-colors,
-    $map,
-    "color",
-    "background-color",
-    "border-color"
-  );
-}
-
-@mixin map-fonts($map: $tokens) {
-  @include generator($token-fonts, $map, "fonts");
-}
-
-@mixin map-headers($map: $tokens) {
-  @include generator($token-headers, $map, "header");
-}
+@include g-colors($tokens);
+@include g-fonts($tokens);
+@include g-headers($tokens);
+//generate buttons
+@include generator($token-colors, $map, $button);
