@@ -1,7 +1,8 @@
 @import "./functions";
+@import "./map-component";
 
 // Get modifiers
-// converts a sass nested-map into a modifier
+// converts a specific sass nested-map into a modifier
 // using get function
 // usage @include get-modifiers('heading.margin')
 @mixin get-modifiers($key, $map: $tokens, $prefix: "-") {
@@ -15,14 +16,6 @@
     } @else {
       #{$item}: $value;
     }
-  }
-}
-
-// generate classes from your map color key
-@mixin utility-map($map: $tokens, $attrs...) {
-  $key: "color";
-  @each $attr in $attrs {
-    @include class-generator($key, $attr, $map);
   }
 }
 
@@ -77,24 +70,6 @@
   }
 }
 
-// loop through specified top level keys and generate classes
-// @include map-components($tokens, 'btns', 'cards', 'font-style')
-@mixin map-components($map: $tokens, $keys...) {
-  @each $key in $keys {
-    @if map-get($map, $key) {
-      @include get-modifiers($key, $map);
-    }
-  }
-}
-
-@mixin component($attrs...) {
-  @if length($attrs) >= 1 {
-    @each $key, $value in $attrs {
-      #{$key}: $value;
-    }
-  }
-}
-
 @mixin g-colors($map: $tokens) {
   @include generator(
     $token-colors,
@@ -111,19 +86,4 @@
 
 @mixin g-headers($map: $tokens) {
   @include generator($token-headers, $map, "header");
-}
-
-@mixin components($components: "components", $map: $tokens, $prefix: "-") {
-  $comps: map-get($map, $components);
-  @if type-of($comps) == "map" {
-    @each $name, $value in $comps {
-      &#{$prefix}#{$name} {
-        @if type-of($value) == "map" {
-          @include components($name, $map);
-        } @else {
-          #{$name}: $value;
-        }
-      }
-    }
-  }
 }

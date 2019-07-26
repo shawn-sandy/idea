@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Wed, 24 Jul 2019 01:42:35 GMT
+  Generated on Fri, 26 Jul 2019 19:34:03 GMT
 */
 
 $sg-color-blue: #3f86f5 !default; // Color used for logos / highlights
@@ -12,8 +12,14 @@ $sg-color-dark-50: #2a2a2a !default; // default text
 $sg-color-dark-100: #232323 !default; // Element background etc
 $sg-components-btn-padding: 1.25rem 5rem !default;
 $sg-components-btn-font-size: 1.07rem !default;
-$sg-components-btn-background-color: [object Object] !default;
-$sg-components-btn-hover-background-color: color.blue !default;
+$sg-components-btn-background-color: #232323 !default;
+$sg-components-btn-color: #efefef !default;
+$sg-components-btn-hover-color: darken(#efefef, 10%) !default;
+$sg-components-btn-hover-background-color: darken(#232323, 10%) !default;
+$sg-components-btn-blue-background-color: #3f86f5 !default;
+$sg-components-btn-cursor: pointer !default;
+$sg-components-btn-border: none !default;
+$sg-components-btn-border-radius: 0.19rem !default;
 $sg-color-key: colors !default;
 $sg-button-key: btns !default;
 $sg-header-key: headers !default;
@@ -37,9 +43,17 @@ $tokens: (
       'padding': $sg-components-btn-padding,
       'font-size': $sg-components-btn-font-size,
       'background-color': $sg-components-btn-background-color,
-      ':hover': (
+      'color': $sg-components-btn-color,
+      'hover': (
+        'color': $sg-components-btn-hover-color,
         'background-color': $sg-components-btn-hover-background-color
-      )
+      ),
+      'blue': (
+        'background-color': $sg-components-btn-blue-background-color
+      ),
+      'cursor': $sg-components-btn-cursor,
+      'border': $sg-components-btn-border,
+      'border-radius': $sg-components-btn-border-radius
     )
   ),
   'color-key': $sg-color-key,
