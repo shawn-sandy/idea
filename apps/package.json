@@ -23,6 +23,7 @@
     "@shawnsandy/css-modal": "^0.1.2",
     "@shawnsandy/eleventy_atomic_plugin": "^0.1.2",
     "@shawnsandy/ideas": "^0.0.4",
+    "@shawnsandy/mix": "^0.0.1",
     "@shawnsandy/npm_info": "^0.4.4",
     "@vue/cli-plugin-babel": "^3.8.0",
     "@vue/cli-plugin-eslint": "^3.8.0",

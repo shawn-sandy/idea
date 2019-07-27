@@ -1,7 +1,0 @@
-@import "./mixins";
-
-@include g-colors($tokens);
-@include g-fonts($tokens);
-@include g-headers($tokens);
-//generate buttons
-@include generator($token-colors, $map, $button);

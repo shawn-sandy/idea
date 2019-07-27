@@ -1,25 +1,4 @@
-@import "./functions";
-@import "./map-component";
-
-// Get modifiers
-// converts a specific sass nested-map into a modifier
-// using get function
-// usage @include get-modifiers('heading.margin')
-@mixin get-modifiers($key, $map: $tokens, $prefix: "-") {
-  $modifiers: get($key);
-
-  @each $item, $value in $modifiers {
-    @if type-of($value) == "map" {
-      &#{$prefix}#{$item} {
-        @include get-modifiers("#{$key}.#{$item}");
-      }
-    } @else {
-      #{$item}: $value;
-    }
-  }
-}
-
-@mixin class-generator($key, $attribute, $map: $tokens, $prefix: "-") {
+@mixin class-generator($key, $attribute, $map: $tokens, $prefix: $prefix) {
   // get a predefined map
   $map: get($key, $map);
   @if type-of($map) != "map" {
@@ -68,22 +47,4 @@
       @include class-generator($key, $attr, $map);
     }
   }
-}
-
-@mixin g-colors($map: $tokens) {
-  @include generator(
-    $token-colors,
-    $map,
-    "color",
-    "background-color",
-    "border-color"
-  );
-}
-
-@mixin g-fonts($map: $tokens) {
-  @include generator($token-fonts, $map, "fonts");
-}
-
-@mixin g-headers($map: $tokens) {
-  @include generator($token-headers, $map, "header");
 }

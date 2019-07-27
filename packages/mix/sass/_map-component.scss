@@ -1,4 +1,4 @@
-@mixin map-component($key, $map: $tokens, $prefix: "-") {
+@mixin map-component($key, $map: $mix-tokens, $prefix: "-") {
   $maps: get($key, $map);
   @each $item, $value in $maps {
     @if $item == "hover" {
@@ -28,14 +28,15 @@
       }
     }
   }
-  @if $key != "component" {
-    //@error "#{$key}"
-  }
 }
 
-@mixin components($components: "components", $map: $tokens, $prefix: "-") {
+@mixin components(
+  $components: $mix-components,
+  $map: $mix-tokens,
+  $prefix: $mix-prefix
+) {
   $maps: map-get($map, $components);
-  @if type-of($maps) == "map" {
+  components @if type-of($maps) == "map" {
     @each $key, $val in $maps {
       // @error "#{$components}.#{$key}";
       &#{$prefix}#{$key} {
