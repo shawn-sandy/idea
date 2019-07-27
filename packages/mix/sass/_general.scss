@@ -4,13 +4,13 @@
 // converts a specific sass nested-map into a modifier
 // using get function
 // usage @include get-modifiers('heading.margin')
-@mixin map-modifiers($key, $map: $tokens, $prefix: "-") {
+@mixin mix-modifiers($key, $map: $mix-tokens, $prefix: $mix-prefix) {
   $modifiers: get($key);
 
   @each $item, $value in $modifiers {
     @if type-of($value) == "map" {
       &#{$prefix}#{$item} {
-        @include map-modifiers("#{$key}.#{$item}");
+        @include mix-modifiers("#{$key}.#{$item}");
       }
     } @else {
       #{$item}: $value;

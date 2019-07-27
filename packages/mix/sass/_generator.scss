@@ -1,4 +1,9 @@
-@mixin class-generator($key, $attribute, $map: $tokens, $prefix: $prefix) {
+@mixin class-generator(
+  $key,
+  $attribute,
+  $map: $mix-tokens,
+  $prefix: $mix-prefix
+) {
   // get a predefined map
   $map: get($key, $map);
   @if type-of($map) != "map" {
@@ -41,7 +46,7 @@
 }
 
 // generate classes from your map key
-@mixin generator($key, $map: $tokens, $attrs...) {
+@mixin mix-generator($key, $map: $mix-tokens, $attrs...) {
   @if length($attrs) >= 1 {
     @each $attr in $attrs {
       @include class-generator($key, $attr, $map);

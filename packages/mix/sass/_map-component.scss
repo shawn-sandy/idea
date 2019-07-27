@@ -30,17 +30,32 @@
   }
 }
 
-@mixin components(
+@mixin mix-components(
   $components: $mix-components,
   $map: $mix-tokens,
   $prefix: $mix-prefix
 ) {
   $maps: map-get($map, $components);
-  components @if type-of($maps) == "map" {
+  @if type-of($maps) == "map" {
     @each $key, $val in $maps {
       // @error "#{$components}.#{$key}";
       &#{$prefix}#{$key} {
         @include map-component("#{$components}.#{$key}", $map);
+      }
+    }
+  }
+}
+
+@mixin mix-custom($keys...) {
+  @if (length($keys) >= 1) {
+    @each $key in $keys {
+      $comp: get($key);
+      // output the key and value
+      @each $modifier, $value in $comp {
+        // mak sure the comp is not a map
+        @if (type-of($value) != "map") {
+          #{$modifier}: $value;
+        }
       }
     }
   }

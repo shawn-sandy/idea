@@ -10,7 +10,7 @@ $mix-prefix: "-" !default;
 @import "./generator";
 
 @mixin g-colors($map: $tokens) {
-  @include generator(
+  @include mix-generator(
     "colors",
     $map,
     "color",
@@ -20,13 +20,13 @@ $mix-prefix: "-" !default;
 }
 
 @mixin g-fonts($map: $mix-tokens) {
-  @include generator($mix-fonts, $map, "fonts");
+  @include mix-generator($mix-fonts, $map, "fonts");
 }
 
 @mixin g-spacing($map: $mix-tokens) {
-  @include generator($mix-spacing, $map, "spacing");
+  @include mix-generator($mix-spacing, $map, "spacing");
 }
 
 @mixin g-sizing($map: $mix-tokens) {
-  @include generator($mix-sizing, $map, "spacing");
+  @include mix-generator($mix-sizing, $map, "spacing");
 }
