@@ -1,0 +1,32 @@
+$mix-tokens: $tokens !default;
+$mix-fonts: "fonts" !default;
+$mix-spacing: "spacing" !default;
+$mix-sizing: "sizing" !default;
+$mix-prefix: "-" !default;
+
+@import "./functions";
+@import "./general";
+@import "./map-component";
+@import "./generator";
+
+@mixin g-colors($map: $tokens) {
+  @include mix-generator(
+    "colors",
+    $map,
+    "color",
+    "background-color",
+    "border-color"
+  );
+}
+
+@mixin g-fonts($map: $mix-tokens) {
+  @include mix-generator($mix-fonts, $map, "fonts");
+}
+
+@mixin g-spacing($map: $mix-tokens) {
+  @include mix-generator($mix-spacing, $map, "spacing");
+}
+
+@mixin g-sizing($map: $mix-tokens) {
+  @include mix-generator($mix-sizing, $map, "spacing");
+}

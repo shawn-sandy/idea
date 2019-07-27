@@ -1,0 +1,55 @@
+@mixin class-generator(
+  $key,
+  $attribute,
+  $map: $mix-tokens,
+  $prefix: $mix-prefix
+) {
+  // get a predefined map
+  $map: get($key, $map);
+  @if type-of($map) != "map" {
+    @error 'Incorrect map type `#{$map}`, map is required';
+  } @else {
+    // loop through maps
+    @each $item, $value in $map {
+      // generate utility classes from keys
+      // e.g. a color map containing colors .color-key { color: value }
+      // prefix class if necessary
+      &#{$prefix}#{$attribute}#{$prefix}#{$item} {
+        @if type-of($value) == "map" {
+          @include class-generator(
+            "#{$key}.#{$item}",
+            $attribute,
+            $map,
+            $prefix
+          );
+        } @else {
+          #{$attribute}: $value;
+        }
+      }
+      @if type-of($value) == "color" {
+        &#{$prefix}hover\:#{$attribute}#{$prefix}#{$item} {
+          &:hover {
+            #{$attribute}: $value !important;
+          }
+        }
+        &#{$prefix}focus\:#{$attribute}#{$prefix}#{$item} {
+          &:focus {
+            #{$attribute}: $value !important;
+          }
+        }
+        &#{$prefix}trans\:#{$attribute}#{$prefix}#{$item} {
+          #{$attribute}: transparentize($value, 0.2) !important;
+        }
+      }
+    }
+  }
+}
+
+// generate classes from your map key
+@mixin mix-generator($key, $map: $mix-tokens, $attrs...) {
+  @if length($attrs) >= 1 {
+    @each $attr in $attrs {
+      @include class-generator($key, $attr, $map);
+    }
+  }
+}

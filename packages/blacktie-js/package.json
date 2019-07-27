@@ -1,23 +1,30 @@
 {
-	"name": "@shawnsandy/blacktie-js",
-	"version": "0.0.5",
-	"description": "Blacktie Core",
-	"private": true,
-	"main": "src/main.js",
-	"author": {
-		"name": "Shawn Sandy",
-		"url": "http://idea.com"
-	},
-	"license": "MIT",
-	"openSource": {
-		"credits": ""
-	},
-	"repository": {
-		"type": "git",
-		"url": "http://github.com/shawn-sandy/blacktie"
-	},
-	"dependencies": {
-		"bootstrap": "^4.3.1",
-		"lodash": "^4.17.11"
-	}
+  "name": "@shawnsandy/blacktie-js",
+  "version": "0.0.5",
+  "description": "Blacktie Core",
+  "private": true,
+  "scripts": {
+    "start": "parcel index.html watch --open --https",
+    "build": "npm run clean && parcel build index.html --no-content-hash --detailed-report",
+    "clean": "rm -rf dist/*"
+  },
+  "author": {
+    "name": "Shawn Sandy",
+    "url": "http://idea.com"
+  },
+  "license": "MIT",
+  "openSource": {
+    "credits": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/shawn-sandy/blacktie"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "gulp": "^4.0.2",
+    "lodash": "^4.17.15",
+    "parcel-bundler": "^1.12.3"
+  }
 }

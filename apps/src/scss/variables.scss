@@ -1,0 +1,36 @@
+
+/*
+  Do not edit directly
+  Generated on Fri, 26 Jul 2019 19:34:03 GMT
+*/
+
+$tokens: (
+  // Color used for logos / highlights
+  'sg-color-blue': #3f86f5,
+  // a midrange gray backgrounds/muted text
+  'sg-color-gray': #bebdbf,
+  // light background color
+  'sg-color-light-gray': #efefef,
+  // highlight text
+  'sg-color-dark-25': #707070,
+  // default text
+  'sg-color-dark-50': #2a2a2a,
+  // Element background etc
+  'sg-color-dark-100': #232323,
+  'sg-components-btn-padding': 1.25rem 5rem,
+  'sg-components-btn-font-size': 1.07rem,
+  'sg-components-btn-background-color': #232323,
+  'sg-components-btn-color': #efefef,
+  'sg-components-btn-hover-color': darken(#efefef, 10%),
+  'sg-components-btn-hover-background-color': darken(#232323, 10%),
+  'sg-components-btn-blue-background-color': #3f86f5,
+  'sg-components-btn-cursor': pointer,
+  'sg-components-btn-border': none,
+  'sg-components-btn-border-radius': 0.19rem,
+  'sg-color-key': colors,
+  'sg-button-key': btns,
+  'sg-header-key': headers,
+  'sg-fonts-keys': fonts,
+  'sg-font-types-keys': font-type,
+  'sg-margin-padding-keys': spacers
+);

@@ -59,6 +59,17 @@ module.exports = {
         format: 'scss/map-deep'
       }]
     },
+    flat: {
+      // We can still use this transformGroup because we are overriding
+      // the underlying transform
+      transformGroup: 'scss',
+      buildPath: './src/scss/',
+      prefix: 'sg',
+      files: [{
+        destination: 'variables.scss',
+        format: 'scss/map-flat'
+      }]
+    },
     js: {
       transformGroup: "js",
       buildPath: "./src/js/",

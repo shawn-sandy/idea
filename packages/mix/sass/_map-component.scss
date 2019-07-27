@@ -1,0 +1,62 @@
+@mixin map-component($key, $map: $mix-tokens, $prefix: "-") {
+  $maps: get($key, $map);
+  @each $item, $value in $maps {
+    @if $item == "hover" {
+      @if type-of($value) == "map" {
+        &:hover {
+          @each $c-key, $c-value in $value {
+            #{$c-key}: $c-value;
+          }
+        }
+      }
+    } @else if type-of($value) == "map" {
+      // @error "#{$key}.#{$item}";
+
+      &#{$prefix}#{$item} {
+        @if $item != "hover" {
+          @include map-component("#{$key}.#{$item}");
+        }
+      }
+    } @else {
+      #{$item}: $value;
+      @if type-of($value) == "color" {
+        &#{$prefix}hover\:#{$item} {
+          &:hover {
+            #{$item}: transparentize($value, 0.2) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mix-components(
+  $components: $mix-components,
+  $map: $mix-tokens,
+  $prefix: $mix-prefix
+) {
+  $maps: map-get($map, $components);
+  @if type-of($maps) == "map" {
+    @each $key, $val in $maps {
+      // @error "#{$components}.#{$key}";
+      &#{$prefix}#{$key} {
+        @include map-component("#{$components}.#{$key}", $map);
+      }
+    }
+  }
+}
+
+@mixin mix-custom($keys...) {
+  @if (length($keys) >= 1) {
+    @each $key in $keys {
+      $comp: get($key);
+      // output the key and value
+      @each $modifier, $value in $comp {
+        // mak sure the comp is not a map
+        @if (type-of($value) != "map") {
+          #{$modifier}: $value;
+        }
+      }
+    }
+  }
+}
