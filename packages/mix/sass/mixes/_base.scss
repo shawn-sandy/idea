@@ -1,0 +1,50 @@
+@mixin mix($key, $type: null) {
+  @if type-of($key) == null {
+    @error "Error: required params $key is missing, please fix error";
+  } @else {
+    $element: get(#{$key});
+    @if type-of($element) == "map" {
+      @each $modifier, $value in element {
+        #{$modifier}: $value;
+      }
+    } @else {
+      #{$type}: $element;
+    }
+  }
+}
+
+@mixin mix-color($key) {
+  @include mix($key, "color");
+}
+
+@mixin mix-bg($key) {
+  @include mix($key, "background-color");
+}
+
+@mixin mix-font-type($key) {
+  @include mix($key, "font-type");
+}
+
+@mixin mix-font-size($key) {
+  @include mix($key, "font-size");
+}
+
+@mixin mix-padding($key) {
+  @include mix($key, "padding");
+}
+
+@mixin mix-margin($key) {
+  @include mix($key, "margin");
+}
+
+@mixin mix-height($key) {
+  @include mix($key, "height");
+}
+
+@mixin mix-width($key) {
+  @include mix($key, "width");
+}
+
+@function get-type($key: "content") {
+  @return type-of(get($key));
+}

@@ -1,4 +1,6 @@
+// Setup up some defaults
 $mix-tokens: $tokens !default;
+$mix-colors: "color" !default;
 $mix-fonts: "fonts" !default;
 $mix-spacing: "spacing" !default;
 $mix-sizing: "sizing" !default;
@@ -11,7 +13,7 @@ $mix-prefix: "-" !default;
 
 @mixin g-colors($map: $tokens) {
   @include mix-generator(
-    "colors",
+    $mix-colors,
     $map,
     "color",
     "background-color",

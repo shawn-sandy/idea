@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sat, 27 Jul 2019 23:16:33 GMT
+ * Generated on Sun, 28 Jul 2019 12:35:43 GMT
  */
 
 export const ColorBlue = "#3f86f5"; // Color used for logos / highlights
@@ -18,6 +18,6 @@ export const ComponentsBtnHoverBackgroundColor = "darken(#232323, 10%)";
 export const ComponentsBtnBlueBackgroundColor = "#3f86f5";
 export const ComponentsBtnCursor = "pointer";
 export const ComponentsBtnBorder = "none";
-export const ComponentsBtnBorderRadius = "0.19rem";
+export const ComponentsBtnBorderRadius = "9999rem";
 export const ColorsBlueColor = "#3f86f5";
 export const ColorsGreenColor = "#3f86f5";
