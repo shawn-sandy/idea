@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/mix",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A collection of SASS mixins and functions for generate CSS styles from SASS-Maps",
   "keywords": [
     "SASS",
