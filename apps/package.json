@@ -1,6 +1,6 @@
 {
   "name": "@local/idea",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --no-clean",
@@ -22,8 +22,8 @@
     "@babel/preset-env": "^7.4.5",
     "@shawnsandy/css-modal": "^0.1.2",
     "@shawnsandy/eleventy_atomic_plugin": "^0.1.2",
-    "@shawnsandy/ideas": "^0.0.4",
-    "@shawnsandy/mix": "^0.0.1",
+    "@shawnsandy/ideas": "^0.0.5",
+    "@shawnsandy/mix": "^0.0.2",
     "@shawnsandy/npm_info": "^0.4.4",
     "@vue/cli-plugin-babel": "^3.8.0",
     "@vue/cli-plugin-eslint": "^3.8.0",
