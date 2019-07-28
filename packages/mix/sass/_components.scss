@@ -52,9 +52,11 @@
       $comp: get($key);
       // output the key and value
       @each $modifier, $value in $comp {
-        // mak sure the comp is not a map
+        // make sure the comp is not a map
         @if (type-of($value) != "map") {
           #{$modifier}: $value;
+        } @else {
+          @error "Error modifier value is not a type #{$value} is not a map";
         }
       }
     }

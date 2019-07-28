@@ -1,8 +1,0 @@
-{
-  "color-key": { "value": "colors" },
-  "button-key": { "value": "btns" },
-  "header-key": { "value": "headers" },
-  "fonts-keys": { "value": "fonts", "comments": "font size" },
-  "font-types-keys": { "value": "font-type" },
-  "margin-padding-keys": { "value": "spacers" }
-}
