@@ -1,4 +1,4 @@
-@mixin mix($key, $type: null) {
+@mixin mix($key, $type: "content") {
   @if type-of($key) == null {
     @error "Error: required params $key is missing, please fix error";
   } @else {
@@ -13,20 +13,17 @@
   }
 }
 
-@mixin mix-color($key) {
-  @include mix($key, "color");
+@mixin mix-color($key, $attr: null) {
+  $type: if(type-of($attr) == null, "color", $attr);
+  @include mix($key, $type);
 }
 
 @mixin mix-bg($key) {
   @include mix($key, "background-color");
 }
 
-@mixin mix-font-type($key) {
-  @include mix($key, "font-type");
-}
-
-@mixin mix-font-size($key) {
-  @include mix($key, "font-size");
+@mixin mix-font($key, $attr: "type") {
+  @include mix($key, "font-#{$attr}");
 }
 
 @mixin mix-padding($key) {
