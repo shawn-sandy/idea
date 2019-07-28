@@ -1,4 +1,4 @@
-# `@shawnsandy/mix`
+# `@shawnsandy/mix` 
 
 A SASS toolkit for generating utility classes, components and styles-sheets from SASS MAPS or design tokens
 
@@ -16,11 +16,12 @@ A SASS toolkit for generating utility classes, components and styles-sheets from
 
 ```
 
-**Change default settings**
+**Change default settings** replace default mix values with your own
 
 ``` scss
-
+// your map name
 $mix-tokens: $tokens;
+// your default font map
 $mix-fonts: "fonts";
 $mix-spacing: "spacing";
 $mix-sizing: "sizing";
@@ -39,6 +40,53 @@ $mix-prefix: "-";
 ``` scss
 
 // TODO
+
+```
+
+**Mixing Components** (custom components)
+
+This mix includes allow you to quickly generate a **components** from a utility/component map:
+
+``` scss
+  @include mix($key, $attr: optional)
+
+```
+
+<!-- *Functions*
+
+* mix-color
+* mix-font
+* mix-height
+* mix-width
+* mix-padding
+* mix-margin -->
+
+*Example*
+
+``` scss
+// scss
+.component: {
+
+// use with component/utility maps
+  @include mix('colors.blue')
+
+  @include mix('components.btn.hover')
+
+}
+
+// css output
+.component {
+  color: #3f86f5;
+  }
+  .component:hover {
+    color: #ffffff;
+    color: #000000;
+  }
+
+  // optionally you can use regular maps by passing and optional value for the modifier
+  @include mix-color-background('color.blue')
+
+  @include mix-color-border('color.blue')
 
 ```
 
