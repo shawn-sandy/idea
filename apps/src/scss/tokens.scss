@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Fri, 26 Jul 2019 19:34:03 GMT
+  Generated on Sat, 27 Jul 2019 23:16:33 GMT
 */
 
 $sg-color-blue: #3f86f5 !default; // Color used for logos / highlights
@@ -20,12 +20,8 @@ $sg-components-btn-blue-background-color: #3f86f5 !default;
 $sg-components-btn-cursor: pointer !default;
 $sg-components-btn-border: none !default;
 $sg-components-btn-border-radius: 0.19rem !default;
-$sg-color-key: colors !default;
-$sg-button-key: btns !default;
-$sg-header-key: headers !default;
-$sg-fonts-keys: fonts !default;
-$sg-font-types-keys: font-type !default;
-$sg-margin-padding-keys: spacers !default;
+$sg-colors-blue-color: #3f86f5 !default;
+$sg-colors-green-color: #3f86f5 !default;
 
 $tokens: (
   'color': (
@@ -56,10 +52,12 @@ $tokens: (
       'border-radius': $sg-components-btn-border-radius
     )
   ),
-  'color-key': $sg-color-key,
-  'button-key': $sg-button-key,
-  'header-key': $sg-header-key,
-  'fonts-keys': $sg-fonts-keys,
-  'font-types-keys': $sg-font-types-keys,
-  'margin-padding-keys': $sg-margin-padding-keys
+  'colors': (
+    'blue': (
+      'color': $sg-colors-blue-color
+    ),
+    'green': (
+      'color': $sg-colors-green-color
+    )
+  )
 );

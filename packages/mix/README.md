@@ -1,13 +1,45 @@
-# `@shawnsandy/mix` 
+# `@shawnsandy/mix`
 
-A collection of SASS mixins and functions for generating utility classes, components and styles-sheets from Design Tokens or SASS MAPS
+A SASS toolkit for generating utility classes, components and styles-sheets from SASS MAPS or design tokens
 
 ## Usage
 
-``` 
-const mix = require('@shawnsandy/mix');
+**Basic**
 
-// TODO: DEMONSTRATE API
+``` scss
+
+@import "@shawnsandy/mix";
+
+.sg {
+ @include mix-components();
+}
+
+```
+
+**Change default settings**
+
+``` scss
+
+$mix-tokens: $tokens;
+$mix-fonts: "fonts";
+$mix-spacing: "spacing";
+$mix-sizing: "sizing";
+$mix-prefix: "-";
+
+@import "@shawnsandy/mix";
+
+.sg {
+ @include mix-components();
+}
+
+```
+
+**Custom components**
+
+``` scss
+
+// TODO
+
 ```
 
 ### What are SASS Maps
@@ -31,3 +63,14 @@ Style Dictionary is a build system that allows you to define styles once, in a w
 
 **[Advanced Use of Sass Maps]([https://link](https://itnext.io/advanced-use-of-sass-maps-bd5a47ca0d1a))**
 
+### License
+
+The MIT License (MIT)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+**Enjoy!**

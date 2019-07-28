@@ -6,7 +6,7 @@ $mix-prefix: "-" !default;
 
 @import "./functions";
 @import "./general";
-@import "./map-component";
+@import "./components";
 @import "./generator";
 
 @mixin g-colors($map: $tokens) {
