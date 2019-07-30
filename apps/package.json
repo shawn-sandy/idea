@@ -1,6 +1,6 @@
 {
   "name": "@local/idea",
-  "version": "0.2.9",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --no-clean",
@@ -20,7 +20,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
-    "@shawnsandy/css-modal": "^0.1.4",
+    "@shawnsandy/css-modal": "^0.2.0",
     "@shawnsandy/eleventy_atomic_plugin": "^0.1.2",
     "@shawnsandy/ideas": "^0.0.5",
     "@shawnsandy/mix": "^0.0.7",
