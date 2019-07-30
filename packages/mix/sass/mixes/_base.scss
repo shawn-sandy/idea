@@ -1,4 +1,4 @@
-@mixin mix($key, $type: "content") {
+@mixin mix($key, $attr: null) {
   @if type-of($key) == null {
     @error "Error: required params $key is missing, please fix error";
   } @else {
@@ -8,7 +8,12 @@
         #{$modifier}: $value;
       }
     } @else {
-      #{$type}: $element;
+      //$type: if(type-of($attr) == null, "color", $attr);
+      // @if type-of($attr) != null {
+      //   $key: "#{$key}.#{$attr}";
+      //   $element: get($key);
+      //
+      #{$attr}: $element;
     }
   }
 }

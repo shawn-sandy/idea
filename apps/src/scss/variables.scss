@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Sun, 28 Jul 2019 12:35:43 GMT
+  Generated on Mon, 29 Jul 2019 03:26:19 GMT
 */
 
 $tokens: (
@@ -17,6 +17,20 @@ $tokens: (
   'sg-color-dark-50': #2a2a2a,
   // Element background etc
   'sg-color-dark-100': #232323,
+  'sg-black-25-color': transparentize(#000000, .75) !important,
+  'sg-black-50-color': transparentize(#000000, .50) !important,
+  'sg-black-75-color': transparentize(#000000, .25) !important,
+  'sg-black-color': #000000,
+  'sg-gray-color': #000000,
+  'sg-red-color': #000000,
+  'sg-blue-color': #000000,
+  'sg-orange-color': #000000,
+  'sg-yellow-color': #000000,
+  'sg-green-color': #000000,
+  'sg-white-25-color': transparentize(#ffffff, .75) !important,
+  'sg-white-50-color': transparentize(#ffffff, .50) !important,
+  'sg-white-75-color': transparentize(#ffffff, .25) !important,
+  'sg-white-color': #ffffff,
   'sg-components-btn-padding': 1.25rem 5rem,
   'sg-components-btn-font-size': 1.07rem,
   'sg-components-btn-background-color': #232323,
@@ -26,7 +40,5 @@ $tokens: (
   'sg-components-btn-blue-background-color': #3f86f5,
   'sg-components-btn-cursor': pointer,
   'sg-components-btn-border': none,
-  'sg-components-btn-border-radius': 9999rem,
-  'sg-colors-blue-color': #3f86f5,
-  'sg-colors-green-color': #3f86f5
+  'sg-components-btn-border-radius': 9999rem
 );

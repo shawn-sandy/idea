@@ -1,7 +1,6 @@
-
 /*
   Do not edit directly
-  Generated on Sun, 28 Jul 2019 12:35:42 GMT
+  Generated on Mon, 29 Jul 2019 03:26:19 GMT
 */
 
 $sg-color-blue: #3f86f5 !default; // Color used for logos / highlights
@@ -10,6 +9,20 @@ $sg-color-light-gray: #efefef !default; // light background color
 $sg-color-dark-25: #707070 !default; // highlight text
 $sg-color-dark-50: #2a2a2a !default; // default text
 $sg-color-dark-100: #232323 !default; // Element background etc
+$sg-black-25-color: transparentize(#000000, 0.75) !important !default;
+$sg-black-50-color: transparentize(#000000, 0.5) !important !default;
+$sg-black-75-color: transparentize(#000000, 0.25) !important !default;
+$sg-black-color: #000000 !default;
+$sg-gray-color: #000000 !default;
+$sg-red-color: #000000 !default;
+$sg-blue-color: #000000 !default;
+$sg-orange-color: #000000 !default;
+$sg-yellow-color: #000000 !default;
+$sg-green-color: #000000 !default;
+$sg-white-25-color: transparentize(#ffffff, 0.75) !important !default;
+$sg-white-50-color: transparentize(#ffffff, 0.5) !important !default;
+$sg-white-75-color: transparentize(#ffffff, 0.25) !important !default;
+$sg-white-color: #ffffff !default;
 $sg-components-btn-padding: 1.25rem 5rem !default;
 $sg-components-btn-font-size: 1.07rem !default;
 $sg-components-btn-background-color: #232323 !default;
@@ -20,44 +33,76 @@ $sg-components-btn-blue-background-color: #3f86f5 !default;
 $sg-components-btn-cursor: pointer !default;
 $sg-components-btn-border: none !default;
 $sg-components-btn-border-radius: 9999rem !default;
-$sg-colors-blue-color: #3f86f5 !default;
-$sg-colors-green-color: #3f86f5 !default;
 
 $tokens: (
-  'color': (
-    'blue': $sg-color-blue,
-    'gray': $sg-color-gray,
-    'light-gray': $sg-color-light-gray,
-    'dark': (
-      '25': $sg-color-dark-25,
-      '50': $sg-color-dark-50,
-      '100': $sg-color-dark-100
+  "color": (
+    "blue": $sg-color-blue,
+    "gray": $sg-color-gray,
+    "light-gray": $sg-color-light-gray,
+    "dark": (
+      "25": $sg-color-dark-25,
+      "50": $sg-color-dark-50,
+      "100": $sg-color-dark-100
     )
   ),
-  'components': (
-    'btn': (
-      'padding': $sg-components-btn-padding,
-      'font-size': $sg-components-btn-font-size,
-      'background-color': $sg-components-btn-background-color,
-      'color': $sg-components-btn-color,
-      'hover': (
-        'color': $sg-components-btn-hover-color,
-        'background-color': $sg-components-btn-hover-background-color
-      ),
-      'blue': (
-        'background-color': $sg-components-btn-blue-background-color
-      ),
-      'cursor': $sg-components-btn-cursor,
-      'border': $sg-components-btn-border,
-      'border-radius': $sg-components-btn-border-radius
-    )
-  ),
-  'colors': (
-    'blue': (
-      'color': $sg-colors-blue-color
+  "black": (
+    "25": (
+      "color": $sg-black-25-color
     ),
-    'green': (
-      'color': $sg-colors-green-color
+    "50": (
+      "color": $sg-black-50-color
+    ),
+    "75": (
+      "color": $sg-black-75-color
+    ),
+    "color": $sg-black-color
+  ),
+  "gray": (
+    "color": $sg-gray-color
+  ),
+  "red": (
+    "color": $sg-red-color
+  ),
+  "blue": (
+    "color": $sg-blue-color
+  ),
+  "orange": (
+    "color": $sg-orange-color
+  ),
+  "yellow": (
+    "color": $sg-yellow-color
+  ),
+  "green": (
+    "color": $sg-green-color
+  ),
+  "white": (
+    "25": (
+      "color": $sg-white-25-color
+    ),
+    "50": (
+      "color": $sg-white-50-color
+    ),
+    "75": (
+      "color": $sg-white-75-color
+    ),
+    "color": $sg-white-color
+  ),
+  "components": (
+    "btn": (
+      "padding": $sg-components-btn-padding,
+      "font-size": $sg-components-btn-font-size,
+      "background-color": $sg-components-btn-background-color,
+      "color": $sg-components-btn-color,
+      "hover": (
+        "color": $sg-components-btn-hover-color,
+        "background-color": $sg-components-btn-hover-background-color
+      ),
+      "blue": (
+        "background-color": $sg-components-btn-blue-background-color
+      ),
+      "cursor": $sg-components-btn-cursor,
+      "border": $sg-components-btn-border,
+      "border-radius": $sg-components-btn-border-radius
     )
   )
 );
