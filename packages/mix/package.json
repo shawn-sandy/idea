@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/mix",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "A collection of SASS mixins and functions for generate CSS styles from SASS-Maps",
   "keywords": [
     "SASS",
@@ -14,7 +14,6 @@
   "homepage": "https://github.com/shawn-sandy/idea#readme",
   "license": "MIT",
   "main": "index.scss",
-
   "publishConfig": {
     "access": "public"
   },
