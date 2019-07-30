@@ -14,9 +14,7 @@
   "homepage": "https://github.com/shawn-sandy/idea#readme",
   "license": "MIT",
   "main": "index.scss",
-  "files": [
-    "lib"
-  ],
+
   "publishConfig": {
     "access": "public"
   },
