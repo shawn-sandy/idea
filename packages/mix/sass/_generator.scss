@@ -27,17 +27,18 @@
         }
       }
       @if type-of($value) == "color" {
-        &#{$prefix}hover\:#{$attribute}#{$prefix}#{$item} {
+        $attr: map-color-attrs($attribute);
+        &#{$prefix}hover#{$attr}#{$prefix}#{$item} {
           &:hover {
             #{$attribute}: $value !important;
           }
         }
-        &#{$prefix}focus\:#{$attribute}#{$prefix}#{$item} {
+        &#{$prefix}focus#{$attr}#{$prefix}#{$item} {
           &:focus {
             #{$attribute}: $value !important;
           }
         }
-        &#{$prefix}trans\:#{$attribute}#{$prefix}#{$item} {
+        &#{$prefix}tp#{$attr}#{$prefix}#{$item} {
           #{$attribute}: transparentize($value, 0.2) !important;
         }
       }
@@ -51,5 +52,15 @@
     @each $attr in $attrs {
       @include class-generator($key, $attr, $map);
     }
+  }
+}
+
+@function map-color-attrs($attr) {
+  @if $attr == "background-color" {
+    @return "-bg";
+  } @else if $attr == "border-color" {
+    @return "-border";
+  } @else {
+    @return null;
   }
 }

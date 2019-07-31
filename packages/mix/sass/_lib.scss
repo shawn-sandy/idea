@@ -5,6 +5,7 @@ $mix-fonts: "fonts" !default;
 $mix-spacing: "spacing" !default;
 $mix-sizing: "sizing" !default;
 $mix-prefix: "-" !default;
+$mix-components: "components" !default;
 
 @import "./functions";
 @import "./general";
