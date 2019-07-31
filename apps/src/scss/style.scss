@@ -23,3 +23,7 @@ $rem-fallback: true;
 .id {
   @include g-colors();
 }
+
+.btn {
+  @include mix-modifiers("components.btn");
+}
