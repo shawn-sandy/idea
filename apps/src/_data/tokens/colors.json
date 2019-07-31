@@ -1,16 +1,22 @@
 {
   "color": {
-    "blue": {
-      "value": "#3F86F5",
-      "comment": "Color used for logos / highlights"
-    },
     "gray": {
-      "value": "#BEBDBF",
-      "comment": "a midrange gray backgrounds/muted text"
+      "value": "#6a737d"
     },
-    "light-gray": {
-      "value": "#EFEFEF",
-      "comment": "light background color"
+    "red": {
+      "value": "#d73a49"
+    },
+    "blue": {
+      "value": "#0366d6"
+    },
+    "orange": {
+      "value": "#f66a0a"
+    },
+    "yellow": {
+      "value": "#ffd33d"
+    },
+    "green": {
+      "value": "#28a745"
     },
     "dark": {
       "25": {
