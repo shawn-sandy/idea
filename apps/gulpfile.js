@@ -6,13 +6,13 @@ const autoprefixer = require("gulp-autoprefixer");
 const minify = require("gulp-clean-css");
 const sass = require("gulp-sass");
 const shell = require("gulp-shell");
-const srcToJson = require("scsstojson")
+const srcToJson = require("scsstojson");
 
 /**
   Our gulp tasks live in their own files,
   for the sake of clarity.
  */
-require('require-dir')('./gulp-tasks');
+require("require-dir")("./gulp-tasks");
 
 // fetch command line arguments
 const arg = (argList => {
@@ -50,6 +50,7 @@ gulp.task("sass", () =>
     .pipe(autoprefixer())
     .pipe(minify())
     .pipe(gulp.dest("./src/css/"))
+    .pipe(reports({ gzip: true }))
 );
 
 gulp.task("reports", () =>
@@ -100,14 +101,15 @@ gulp.task("start", shell.task("yarn eleventy --serve"));
 
 gulp.task("dev", gulp.parallel("watch", "watch:scripts", "start"));
 
-gulp.task('sizereport', function () {
-  return gulp.src(['./dist/js/**/*', './dist/css/**/*.css'])
-      .pipe(reports({
-          gzip: true
-      }));
+gulp.task("sizereport", function() {
+  return gulp.src(["./dist/js/**/*", "./dist/css/**/*.css"]).pipe(
+    reports({
+      gzip: true
+    })
+  );
 });
 
-gulp.task("tokens", function (done) {
+gulp.task("tokens", function(done) {
   var tokens = [
     {
       src: "./src/scss/partials/_variables.scss",
@@ -115,10 +117,9 @@ gulp.task("tokens", function (done) {
       lineStartsWith: "$i-brand-color-",
       allowVarValues: true
     }
-  ]
+  ];
 
   srcToJson(tokens, {}, function() {
-    done()
-  })
-
-})
+    done();
+  });
+});

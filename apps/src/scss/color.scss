@@ -1,0 +1,6 @@
+@import "./tokens.scss";
+@import "node_modules/@shawnsandy/mix/index";
+
+.id {
+  @include g-colors();
+}
