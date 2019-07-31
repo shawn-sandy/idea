@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 31 Jul 2019 19:42:13 GMT
+ * Generated on Wed, 31 Jul 2019 19:46:17 GMT
  */
 
 export const ColorGray = "#6a737d";

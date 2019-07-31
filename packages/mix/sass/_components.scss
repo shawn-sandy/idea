@@ -62,3 +62,39 @@
     }
   }
 }
+
+// output map values as class modifiers
+@mixin mix-component-modifier($key, $map: $mix-tokens) {
+  $token: get($key, $map);
+  @if length($token) >= 0 {
+    @each $item, $value in $token {
+      @if type-of($value) == "map" {
+        @if $item == "hover" {
+          &:hover {
+            @include mix-component-modifier("#{$key}.#{$item}");
+          }
+        } @else {
+          &.#{$item} {
+            @include mix-component-modifier("#{$key}.#{$item}");
+          }
+        }
+      } @else {
+        @if $item == "hover" {
+          &:hover {
+            #{$item}: $value;
+          }
+        } @else {
+          #{$item}: $value;
+        }
+      }
+    }
+  }
+}
+
+@mixin mix-modifiers($keys...) {
+  @if length($keys) >= 1 {
+    @each $item in $keys {
+      @include mix-component-modifier($item);
+    }
+  }
+}

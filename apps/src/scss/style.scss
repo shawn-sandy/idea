@@ -17,9 +17,13 @@ $rem-fallback: true;
 // @import "./partials/elements/nav";
 @import "./partials/theme.scss";
 @import "./partials/utilities/ie";
-@import "./tokens.scss";
+@import "./_tokens";
 @import "node_modules/@shawnsandy/mix/index";
 
 .id {
   @include g-colors();
+}
+
+.btn {
+  @include mix-modifiers("components.btn");
 }

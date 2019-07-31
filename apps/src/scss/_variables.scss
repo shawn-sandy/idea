@@ -1,16 +1,16 @@
 
 /*
   Do not edit directly
-  Generated on Wed, 31 Jul 2019 11:29:40 GMT
+  Generated on Wed, 31 Jul 2019 19:46:17 GMT
 */
 
 $tokens: (
-  // Color used for logos / highlights
-  'sg-color-blue': #3f86f5,
-  // a midrange gray backgrounds/muted text
-  'sg-color-gray': #bebdbf,
-  // light background color
-  'sg-color-light-gray': #efefef,
+  'sg-color-gray': #6a737d,
+  'sg-color-red': #d73a49,
+  'sg-color-blue': #0366d6,
+  'sg-color-orange': #f66a0a,
+  'sg-color-yellow': #ffd33d,
+  'sg-color-green': #28a745,
   // highlight text
   'sg-color-dark-25': #707070,
   // default text
@@ -34,10 +34,10 @@ $tokens: (
   'sg-components-btn-padding': 1.25rem 5rem,
   'sg-components-btn-font-size': 1.07rem,
   'sg-components-btn-background-color': #232323,
-  'sg-components-btn-color': #efefef,
-  'sg-components-btn-hover-color': darken(#efefef, 10%),
+  'sg-components-btn-color': transparentize(#6a737d, .25),
+  'sg-components-btn-hover-color': darken(transparentize(#6a737d, .25), 10%),
   'sg-components-btn-hover-background-color': darken(#232323, 10%),
-  'sg-components-btn-blue-background-color': #3f86f5,
+  'sg-components-btn-blue-background-color': #0366d6,
   'sg-components-btn-cursor': pointer,
   'sg-components-btn-border': none,
   'sg-components-btn-border-radius': 9999rem

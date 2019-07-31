@@ -11,7 +11,7 @@
         "value": "{color.dark.100.value}"
       },
       "color": {
-        "value": "{color.light-gray.value}"
+        "value": "transparentize({color.gray.value}, .25)"
       },
       "hover": {
         "color": {
