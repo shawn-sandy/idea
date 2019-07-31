@@ -14,7 +14,8 @@
       // generate utility classes from keys
       // e.g. a color map containing colors .color-key { color: value }
       // prefix class if necessary
-      &#{$prefix}#{$attribute}#{$prefix}#{$item} {
+      $attr: map-color-attrs($attribute);
+      &#{$attr}#{$prefix}#{$item} {
         @if type-of($value) == "map" {
           @include class-generator(
             "#{$key}.#{$item}",
@@ -27,7 +28,7 @@
         }
       }
       @if type-of($value) == "color" {
-        $attr: map-color-attrs($attribute);
+        // $attr: map-color-attrs($attribute);
         &#{$prefix}hover#{$attr}#{$prefix}#{$item} {
           &:hover {
             #{$attribute}: $value !important;
