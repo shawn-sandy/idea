@@ -1,32 +1,32 @@
 {
   "gray": {
     "color": {
-      "value": "#000000"
+      "value": "#6a737d"
     }
   },
   "red": {
     "color": {
-      "value": "#000000"
+      "value": "#d73a49"
     }
   },
   "blue": {
     "color": {
-      "value": "#000000"
+      "value": "#0366d6"
     }
   },
   "orange": {
     "color": {
-      "value": "#000000"
+      "value": "#f66a0a"
     }
   },
   "yellow": {
     "color": {
-      "value": "#000000"
+      "value": "#ffd33d"
     }
   },
   "green": {
     "color": {
-      "value": "#000000"
+      "value": "#28a745"
     }
   }
 }

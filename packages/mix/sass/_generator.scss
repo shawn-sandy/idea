@@ -5,39 +5,54 @@
   $prefix: $mix-prefix
 ) {
   // get a predefined map
+
   $map: get($key, $map);
   @if type-of($map) != "map" {
     @error 'Incorrect map type `#{$map}`, map is required';
   } @else {
     // loop through maps
+    //TODO check if the item is a map--map colors or run class generator value
     @each $item, $value in $map {
       // generate utility classes from keys
       // e.g. a color map containing colors .color-key { color: value }
       // prefix class if necessary
-      &#{$prefix}#{$attribute}#{$prefix}#{$item} {
-        @if type-of($value) == "map" {
+      $attr: map-color-attrs($attribute);
+      &#{$attr}#{$prefix}#{$item} {
+        @if type-of($item) == "map" {
+          //@debug "value #{$item} item: #{$value}";
+          @debug "key #{$key} .item #{$item} .value #{$value}";
           @include class-generator(
-            "#{$key}.#{$item}",
+            "#{$key}.#{$value}",
             $attribute,
             $map,
             $prefix
           );
         } @else {
-          #{$attribute}: $value;
+          @if type-of($value) != "map" {
+            #{$attribute}: $value;
+          } @else {
+            @each $_key, $_value in $value {
+              &#{$prefix}#{$_key} {
+                #{$attribute}: $_value;
+              }
+            }
+          }
         }
       }
+
       @if type-of($value) == "color" {
-        &#{$prefix}hover\:#{$attribute}#{$prefix}#{$item} {
+        // $attr: map-color-attrs($attribute);
+        &#{$attr}#{$prefix}#{$item}#{$prefix}hover {
           &:hover {
             #{$attribute}: $value !important;
           }
         }
-        &#{$prefix}focus\:#{$attribute}#{$prefix}#{$item} {
+        &#{$attr}#{$prefix}#{$item}#{$prefix}focus {
           &:focus {
             #{$attribute}: $value !important;
           }
         }
-        &#{$prefix}trans\:#{$attribute}#{$prefix}#{$item} {
+        &#{$attr}#{$prefix}#{$item}#{$prefix}tp {
           #{$attribute}: transparentize($value, 0.2) !important;
         }
       }
@@ -51,5 +66,15 @@
     @each $attr in $attrs {
       @include class-generator($key, $attr, $map);
     }
+  }
+}
+
+@function map-color-attrs($attr) {
+  @if $attr == "background-color" {
+    @return "-bg";
+  } @else if $attr == "border-color" {
+    @return "-border";
+  } @else {
+    @return null;
   }
 }

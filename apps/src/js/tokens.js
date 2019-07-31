@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 29 Jul 2019 03:26:19 GMT
+ * Generated on Wed, 31 Jul 2019 11:29:40 GMT
  */
 
 export const ColorBlue = "#3f86f5"; // Color used for logos / highlights
@@ -13,12 +13,12 @@ export const Black25Color = "transparentize(#000000, .75) !important";
 export const Black50Color = "transparentize(#000000, .50) !important";
 export const Black75Color = "transparentize(#000000, .25) !important";
 export const BlackColor = "#000000";
-export const GrayColor = "#000000";
-export const RedColor = "#000000";
-export const BlueColor = "#000000";
-export const OrangeColor = "#000000";
-export const YellowColor = "#000000";
-export const GreenColor = "#000000";
+export const GrayColor = "#6a737d";
+export const RedColor = "#d73a49";
+export const BlueColor = "#0366d6";
+export const OrangeColor = "#f66a0a";
+export const YellowColor = "#ffd33d";
+export const GreenColor = "#28a745";
 export const White25Color = "transparentize(#ffffff, .75) !important";
 export const White50Color = "transparentize(#ffffff, .50) !important";
 export const White75Color = "transparentize(#ffffff, .25) !important";

@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Mon, 29 Jul 2019 03:26:19 bGMT
+  Generated on Wed, 31 Jul 2019 11:29:40 GMT
 */
 
 $sg-color-blue: #3f86f5 !default; // Color used for logos / highlights
@@ -13,12 +13,12 @@ $sg-black-25-color: transparentize(#000000, 0.75) !important !default;
 $sg-black-50-color: transparentize(#000000, 0.5) !important !default;
 $sg-black-75-color: transparentize(#000000, 0.25) !important !default;
 $sg-black-color: #000000 !default;
-$sg-gray-color: #000000 !default;
-$sg-red-color: #000000 !default;
-$sg-blue-color: #000000 !default;
-$sg-orange-color: #000000 !default;
-$sg-yellow-color: #000000 !default;
-$sg-green-color: #000000 !default;
+$sg-gray-color: #6a737d !default;
+$sg-red-color: #d73a49 !default;
+$sg-blue-color: #0366d6 !default;
+$sg-orange-color: #f66a0a !default;
+$sg-yellow-color: #ffd33d !default;
+$sg-green-color: #28a745 !default;
 $sg-white-25-color: transparentize(#ffffff, 0.75) !important !default;
 $sg-white-50-color: transparentize(#ffffff, 0.5) !important !default;
 $sg-white-75-color: transparentize(#ffffff, 0.25) !important !default;
@@ -37,6 +37,7 @@ $sg-components-btn-border-radius: 9999rem !default;
 $tokens: (
   "color": (
     "blue": $sg-color-blue,
+    "black": "black",
     "gray": $sg-color-gray,
     "light-gray": $sg-color-light-gray,
     "dark": (

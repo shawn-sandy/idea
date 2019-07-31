@@ -30,7 +30,7 @@
   }
 }
 
-@mixin mix-components(
+@mixin mix-component(
   $components: $mix-components,
   $map: $mix-tokens,
   $prefix: $mix-prefix
