@@ -5,41 +5,54 @@
   $prefix: $mix-prefix
 ) {
   // get a predefined map
+
   $map: get($key, $map);
   @if type-of($map) != "map" {
     @error 'Incorrect map type `#{$map}`, map is required';
   } @else {
     // loop through maps
+    //TODO check if the item is a map--map colors or run class generator value
     @each $item, $value in $map {
       // generate utility classes from keys
       // e.g. a color map containing colors .color-key { color: value }
       // prefix class if necessary
       $attr: map-color-attrs($attribute);
       &#{$attr}#{$prefix}#{$item} {
-        @if type-of($value) == "map" {
+        @if type-of($item) == "map" {
+          //@debug "value #{$item} item: #{$value}";
+          @debug "key #{$key} .item #{$item} .value #{$value}";
           @include class-generator(
-            "#{$key}.#{$item}",
+            "#{$key}.#{$value}",
             $attribute,
             $map,
             $prefix
           );
         } @else {
-          #{$attribute}: $value;
+          @if type-of($value) != "map" {
+            #{$attribute}: $value;
+          } @else {
+            @each $_key, $_value in $value {
+              &#{$prefix}#{$_key} {
+                #{$attribute}: $_value;
+              }
+            }
+          }
         }
       }
+
       @if type-of($value) == "color" {
         // $attr: map-color-attrs($attribute);
-        &#{$prefix}hover#{$attr}#{$prefix}#{$item} {
+        &#{$attr}#{$prefix}#{$item}#{$prefix}hover {
           &:hover {
             #{$attribute}: $value !important;
           }
         }
-        &#{$prefix}focus#{$attr}#{$prefix}#{$item} {
+        &#{$attr}#{$prefix}#{$item}#{$prefix}focus {
           &:focus {
             #{$attribute}: $value !important;
           }
         }
-        &#{$prefix}tp#{$attr}#{$prefix}#{$item} {
+        &#{$attr}#{$prefix}#{$item}#{$prefix}tp {
           #{$attribute}: transparentize($value, 0.2) !important;
         }
       }
