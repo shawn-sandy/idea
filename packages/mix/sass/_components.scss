@@ -1,7 +1,8 @@
 @mixin map-component($key, $map: $mix-tokens, $prefix: "-") {
   $maps: get($key, $map);
+
   @each $item, $value in $maps {
-    @if $item == "hover" {
+    @if $item== "hover" {
       @if type-of($value) == "map" {
         &:hover {
           @each $c-key, $c-value in $value {
@@ -19,6 +20,7 @@
       }
     } @else {
       #{$item}: $value;
+
       @if type-of($value) == "color" {
         &#{$prefix}hover\:#{$item} {
           &:hover {
@@ -36,6 +38,7 @@
   $prefix: $mix-prefix
 ) {
   $maps: map-get($map, $components);
+
   @if type-of($maps) == "map" {
     @each $key, $val in $maps {
       // @error "#{s}.#{$key}";
@@ -47,9 +50,10 @@
 }
 
 @mixin mix-custom($keys...) {
-  @if (length($keys) >= 1) {
+  @if (length($keys) >=1) {
     @each $key in $keys {
       $comp: get($key);
+
       // output the key and value
       @each $modifier, $value in $comp {
         // make sure the comp is not a map
@@ -66,10 +70,11 @@
 // output map values as class modifiers
 @mixin mix-modifier($key, $map: $mix-tokens) {
   $token: get($key, $map);
-  @if length($token) >= 0 {
+
+  @if length($token) >=0 {
     @each $item, $value in $token {
       @if type-of($value) == "map" {
-        @if $item == "hover" {
+        @if $item== "hover" {
           &:hover {
             @include mix-modifier("#{$key}.#{$item}");
           }
@@ -79,7 +84,7 @@
           }
         }
       } @else {
-        @if $item == "hover" {
+        @if $item== "hover" {
           &:hover {
             #{$item}: $value;
           }
@@ -92,18 +97,37 @@
 }
 
 @mixin mix-styles($keys...) {
-  @if length($keys) >= 1 {
+  @if length($keys) >=1 {
     @each $item in $keys {
       @include mix-modifier($item);
     }
   }
 }
 
-@include build-components() {
-  $components: get($mix-components, $mix-tokens);
+@include build-components($components: $mix-components) {
+  $components: get(components, $mix-tokens);
 
   // check if length greater that 0 the proceed else throw error
-  // loop through components
-  // generate class-names from keys
-  // generate modifiers from child keys
+  @if length($components) >=0 {
+    // check if comps loop through components
+    @each $comp, $keys in $components {
+      @if type-of($keys) == "map" {
+        .#{$comp} {
+          @each $key, $value in $keys {
+            @if type-of($value) == "map" {
+              &#{$mix-prefix}#{$key} {
+                @include build-components("#{$components}.#{$key}");
+              }
+            } @else {
+              #{$key}: $value;
+            }
+          }
+        }
+      } @else {
+        @debug "Error map required";
+      }
+    }
+  } @else {
+    @debug "Sorry map empty";
+  }
 }
