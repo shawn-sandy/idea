@@ -1,19 +1,133 @@
-# System Mix
+# StyleMix
 
-A SASS toolkit for generating utility classes, components and styles-sheets from SASS MAPS or design tokens
+A SASS-Map toolkit for generating utility classes, components and styles-sheets for your design system, style-guide or website from SASS MAPS.
 
 ## Usage
 
-**Basic**
+**Basic** generates color utility classes form you map
 
 ``` scss
+// import you sass tokens
 @import "tokens.scss";
+// import StyleMix
 @import "@shawnsandy/mix";
 
-.sg {
- @include mix-components();
+.id {
+  // generate color modifiers
+ @include mix-color();
+}
+```
+
+**Sample color map**
+
+``` scss
+
+$tokens: (
+  'color': (
+    'gray': $sg-color-gray,
+    'red': $sg-color-red,
+    'blue': $sg-color-blue,
+    'orange': $sg-color-orange,
+    'yellow': $sg-color-yellow,
+    'green': $sg-color-green
+  )
+
+```
+
+**Sample Output**
+
+``` css
+.id-gray-hover:hover {
+    color: #6a737d !important
 }
 
+.id-gray-focus:focus {
+    color: #6a737d !important
+}
+
+.id-gray-tp {
+    color: rgba(106, 115, 125, .8) !important
+}
+
+.id-red {
+    color: #d73a49
+}
+
+.id-red-hover:hover {
+    color: #d73a49 !important
+}
+
+.id-red-focus:focus {
+    color: #d73a49 !important
+}
+
+.id-red-tp {
+    color: rgba(215, 58, 73, .8) !important
+}
+
+.id-blue {
+    color: #0366d6
+}
+
+.id-blue-hover:hover {
+    color: #0366d6 !important
+}
+
+.id-blue-focus:focus {
+    color: #0366d6 !important
+}
+
+.id-blue-tp {
+    color: rgba(3, 102, 214, .8) !important
+}
+
+.id-orange {
+    color: #f66a0a
+}
+
+.id-orange-hover:hover {
+    color: #f66a0a !important
+}
+
+.id-orange-focus:focus {
+    color: #f66a0a !important
+}
+
+.id-orange-tp {
+    color: rgba(246, 106, 10, .8) !important
+}
+
+.id-yellow {
+    color: #ffd33d
+}
+
+.id-yellow-hover:hover {
+    color: #ffd33d !important
+}
+
+.id-yellow-focus:focus {
+    color: #ffd33d !important
+}
+
+.id-yellow-tp {
+    color: rgba(255, 211, 61, .8) !important
+}
+
+.id-green {
+    color: #28a745
+}
+
+.id-green-hover:hover {
+    color: #28a745 !important
+}
+
+.id-green-focus:focus {
+    color: #28a745 !important
+}
+
+.id-green-tp {
+    color: rgba(40, 167, 69, .8) !important
+}
 ```
 
 **Change default settings** replace default mix values with your own
@@ -21,7 +135,7 @@ A SASS toolkit for generating utility classes, components and styles-sheets from
 ``` scss
 // your map name
 $mix-tokens: $tokens;
-// your default font map
+// default system tokens categories
 $mix-fonts: "fonts";
 $mix-spacing: "spacing";
 $mix-sizing: "sizing";

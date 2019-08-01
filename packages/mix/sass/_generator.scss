@@ -42,12 +42,12 @@
 
       @if type-of($value) == "color" {
         // $attr: map-color-attrs($attribute);
-        &#{$attr}#{$prefix}#{$item}#{$prefix}hover {
+        &#{$attr}#{$prefix}#{$item}\:hover {
           &:hover {
             #{$attribute}: $value !important;
           }
         }
-        &#{$attr}#{$prefix}#{$item}#{$prefix}focus {
+        &#{$attr}#{$prefix}#{$item}\:focus {
           &:focus {
             #{$attribute}: $value !important;
           }

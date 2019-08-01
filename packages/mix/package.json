@@ -1,7 +1,7 @@
 {
   "name": "@shawnsandy/mix",
   "version": "0.4.1",
-  "description": "A collection of SASS mixins and functions for generate CSS styles from SASS-Maps",
+  "description": "StyleMix--A SASS toolkit for generating utility classes, components and styles-sheets from SASS MAPS or tokens",
   "keywords": [
     "SASS",
     "SASS-MAPS",
