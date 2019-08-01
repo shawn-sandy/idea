@@ -1,4 +1,4 @@
-# `@shawnsandy/mix` 
+# System Mix
 
 A SASS toolkit for generating utility classes, components and styles-sheets from SASS MAPS or design tokens
 
