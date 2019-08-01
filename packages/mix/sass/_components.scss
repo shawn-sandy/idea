@@ -14,7 +14,7 @@
 
       &#{$prefix}#{$item} {
         @if $item != "hover" {
-          @include map-component("#{$key}.#{$item}");
+          @include map("#{$key}.#{$item}");
         }
       }
     } @else {
@@ -38,9 +38,9 @@
   $maps: map-get($map, $components);
   @if type-of($maps) == "map" {
     @each $key, $val in $maps {
-      // @error "#{$components}.#{$key}";
+      // @error "#{s}.#{$key}";
       &#{$prefix}#{$key} {
-        @include map-component("#{$components}.#{$key}", $map);
+        @include map("#{s}.#{$key}", $map);
       }
     }
   }
@@ -64,18 +64,18 @@
 }
 
 // output map values as class modifiers
-@mixin mix-component-modifier($key, $map: $mix-tokens) {
+@mixin mix-modifier($key, $map: $mix-tokens) {
   $token: get($key, $map);
   @if length($token) >= 0 {
     @each $item, $value in $token {
       @if type-of($value) == "map" {
         @if $item == "hover" {
           &:hover {
-            @include mix-component-modifier("#{$key}.#{$item}");
+            @include mix-modifier("#{$key}.#{$item}");
           }
         } @else {
           &.#{$item} {
-            @include mix-component-modifier("#{$key}.#{$item}");
+            @include mix-modifier("#{$key}.#{$item}");
           }
         }
       } @else {
@@ -91,10 +91,19 @@
   }
 }
 
-@mixin mix-modifiers($keys...) {
+@mixin mix-styles($keys...) {
   @if length($keys) >= 1 {
     @each $item in $keys {
-      @include mix-component-modifier($item);
+      @include mix-modifier($item);
     }
   }
+}
+
+@include build-components() {
+  $components: get($mix-components, $mix-tokens);
+
+  // check if length greater that 0 the proceed else throw error
+  // loop through components
+  // generate class-names from keys
+  // generate modifiers from child keys
 }
