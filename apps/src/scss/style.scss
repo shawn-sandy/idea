@@ -28,3 +28,7 @@ $rem-fallback: true;
   }
 }
 @include build-components();
+.states {
+  @include build-modifier("hovers");
+  @include build-modifier("focus");
+}

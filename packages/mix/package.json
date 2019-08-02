@@ -1,7 +1,7 @@
 {
   "name": "@shawnsandy/mix",
   "version": "0.4.2",
-  "description": "StyleMix--A SASS toolkit for generating utility classes, components and styles-sheets from SASS MAPS or tokens",
+  "description": "StyleMix--A toolkit for generating utility classes, components and styles-sheets for your design system, style-guide or website from SASS MAPS",
   "keywords": [
     "SASS",
     "SASS-MAPS",
@@ -11,7 +11,7 @@
     "Systems"
   ],
   "author": "shawnsandy <shawnsandy04@gmail.com>",
-  "homepage": "https://github.com/shawn-sandy/idea#readme",
+  "homepage": "https://github.com/shawn-sandy/idea/tree/master/packages/mix#stylemix",
   "license": "MIT",
   "main": "index.scss",
   "publishConfig": {

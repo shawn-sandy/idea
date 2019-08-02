@@ -7,6 +7,7 @@ $mix-sizing: "sizing" !default;
 $mix-prefix: "-" !default;
 $mix-components: "components" !default;
 $mix-extend-class: true;
+$mix-element-states: active focus focus-within hover visited;
 
 @import "./functions";
 @import "./general";
