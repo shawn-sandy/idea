@@ -120,9 +120,12 @@
           @each $key, $value in $keys {
             @if type-of($value) == "map" {
               &#{$mix-prefix}#{$key} {
-                // @debug "key #{$key}";
-                @each $key_id, $key_val in $value {
-                  #{$key_id}: $key_val;
+                @if $key == "hover" {
+                  &:hover {
+                    @include build-components("#{$component}.#{$comp}.#{$key}");
+                  }
+                } @else {
+                  @include build-components("#{$component}.#{$comp}.#{$key}");
                 }
               }
             } @else {
@@ -131,10 +134,17 @@
           }
         }
       } @else {
-        @debug "Error sass map required";
+        // @debug "Error sass map required";
+        #{$comp}: $keys;
       }
     }
   } @else {
     @debug "Sorry your map(s) is empty";
+  }
+}
+
+@mixin mix-build-components($tokens...) {
+  @each $token in $tokens {
+    @include build-components($token);
   }
 }
