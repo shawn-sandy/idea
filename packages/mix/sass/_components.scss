@@ -104,19 +104,26 @@
   }
 }
 
-@include build-components($components: $mix-components) {
-  $components: get(components, $mix-tokens);
-
+@mixin build-components($component: $mix-components) {
+  $components: get($component, $mix-tokens);
   // check if length greater that 0 the proceed else throw error
   @if length($components) >=0 {
     // check if comps loop through components
     @each $comp, $keys in $components {
+      $modifier: if(
+        $mix-extend-class == true,
+        &#{$mix-prefix}#{$comp},
+        ".#{$comp}"
+      );
       @if type-of($keys) == "map" {
         .#{$comp} {
           @each $key, $value in $keys {
             @if type-of($value) == "map" {
               &#{$mix-prefix}#{$key} {
-                @include build-components("#{$components}.#{$key}");
+                // @debug "key #{$key}";
+                @each $key_id, $key_val in $value {
+                  #{$key_id}: $key_val;
+                }
               }
             } @else {
               #{$key}: $value;
@@ -124,7 +131,7 @@
           }
         }
       } @else {
-        @debug "Error map required";
+        @debug "Error sass map required";
       }
     }
   } @else {

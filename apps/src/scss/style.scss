@@ -24,6 +24,7 @@ $rem-fallback: true;
   @include g-colors();
 
   &-btn {
-    @include mix-modifiers("components.btn");
+    @include mix-modifier("components.btn");
   }
 }
+@include build-components();
