@@ -50,7 +50,7 @@ module.exports = {
       // We can still use this transformGroup because we are overriding
       // the underlying transform
       transformGroup: "scss",
-      buildPath: "./dist/",
+      buildPath: "./scss/",
       prefix: "sg",
       files: [
         {
