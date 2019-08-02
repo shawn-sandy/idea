@@ -1,4 +1,4 @@
-# StyleMix
+# SystemMix (beta)
 
 A SASS-Map toolkit for generating utility classes, components and styles-sheets for your design system, style-guide or website from SASS MAPS.
 
@@ -13,24 +13,85 @@ A SASS-Map toolkit for generating utility classes, components and styles-sheets 
 @import "@shawnsandy/mix";
 
 .id {
-  // generate color modifiers
+  // generate color modifiers from your color map
  @include mix-color();
 }
 ```
 
-**Sample color map**
+**Change default settings** replace default mix values with your own
+
+``` scss
+// Setup up some defaults
+$mix-tokens: $tokens !default;
+$mix-colors: "color" !default;
+$mix-fonts: "fonts" !default;
+$mix-spacing: "spacing" !default;
+$mix-sizing: "sizing" !default;
+$mix-prefix: "-" !default;
+$mix-components: "components" !default;
+$mix-extend-class: true;
+$mix-element-states: active focus focus-within hover visited;
+
+@import "@shawnsandy/mix";
+
+.sg {
+ @include mix-components();
+}
+
+```
+
+**Custom components**
 
 ``` scss
 
-$tokens: (
-  'color': (
-    'gray': $sg-color-gray,
-    'red': $sg-color-red,
-    'blue': $sg-color-blue,
-    'orange': $sg-color-orange,
-    'yellow': $sg-color-yellow,
-    'green': $sg-color-green
-  )
+// TODO
+
+```
+
+**Mixing Components** (custom components)
+
+This mix includes allow you to quickly generate a **components** from a utility/component map:
+
+``` scss
+  @include mix($key, $attr: optional)
+
+```
+
+<!-- *Functions*
+
+* mix-color
+* mix-font
+* mix-height
+* mix-width
+* mix-padding
+* mix-margin -->
+
+*Example*
+
+``` scss
+// scss
+.component: {
+
+// use with component/utility maps
+  @include mix('colors.blue')
+
+  @include mix('components.btn.hover')
+
+}
+
+// css output
+.component {
+  color: #3f86f5;
+  }
+  .component:hover {
+    color: #ffffff;
+    color: #000000;
+  }
+
+  // optionally you can use regular maps by passing and optional value for the modifier
+  @include mix-color-background('color.blue')
+
+  @include mix-color-border('color.blue')
 
 ```
 
@@ -128,149 +189,6 @@ $tokens: (
 .id-green-tp {
     color: rgba(40, 167, 69, .8) !important
 }
-```
-
-**Change default settings** replace default mix values with your own
-
-``` scss
-// your map name
-$mix-tokens: $tokens;
-// default system tokens categories
-$mix-fonts: "fonts";
-$mix-spacing: "spacing";
-$mix-sizing: "sizing";
-$mix-prefix: "-";
-
-@import "@shawnsandy/mix";
-
-.sg {
- @include mix-components();
-}
-
-```
-
-**Custom components**
-
-``` scss
-
-// TODO
-
-```
-
-**Mixing Components** (custom components)
-
-This mix includes allow you to quickly generate a **components** from a utility/component map:
-
-``` scss
-  @include mix($key, $attr: optional)
-
-```
-
-<!-- *Functions*
-
-* mix-color
-* mix-font
-* mix-height
-* mix-width
-* mix-padding
-* mix-margin -->
-
-*Example*
-
-``` scss
-// scss
-.component: {
-
-// use with component/utility maps
-  @include mix('colors.blue')
-
-  @include mix('components.btn.hover')
-
-}
-
-// css output
-.component {
-  color: #3f86f5;
-  }
-  .component:hover {
-    color: #ffffff;
-    color: #000000;
-  }
-
-  // optionally you can use regular maps by passing and optional value for the modifier
-  @include mix-color-background('color.blue')
-
-  @include mix-color-border('color.blue')
-
-```
-
-**SCSS Token map example** * `(tokens.scss)` *
-
-``` scss
-
-/*
-  Do not edit directly
-  Generated on Sun, 28 Jul 2019 12:17:22 GMT
-*/
-
-$sg-color-blue: #3f86f5 !default; // Color used for logos / highlights
-$sg-color-gray: #bebdbf !default; // a midrange gray backgrounds/muted text
-$sg-color-light-gray: #efefef !default; // light background color
-$sg-color-dark-25: #707070 !default; // highlight text
-$sg-color-dark-50: #2a2a2a !default; // default text
-$sg-color-dark-100: #232323 !default; // Element background etc
-$sg-components-btn-padding: 1.25rem 5rem !default;
-$sg-components-btn-font-size: 1.07rem !default;
-$sg-components-btn-background-color: #232323 !default;
-$sg-components-btn-color: #efefef !default;
-$sg-components-btn-hover-color: darken(#efefef, 10%) !default;
-$sg-components-btn-hover-background-color: darken(#232323, 10%) !default;
-$sg-components-btn-blue-background-color: #3f86f5 !default;
-$sg-components-btn-cursor: pointer !default;
-$sg-components-btn-border: none !default;
-$sg-components-btn-border-radius: 9999rem !default;
-$sg-colors-blue-color: #3f86f5 !default;
-$sg-colors-green-color: #3f86f5 !default;
-
-$tokens: (
-  'color': (
-    'blue': $sg-color-blue,
-    'gray': $sg-color-gray,
-    'light-gray': $sg-color-light-gray,
-    'dark': (
-      '25': $sg-color-dark-25,
-      '50': $sg-color-dark-50,
-      '100': $sg-color-dark-100
-    )
-  ),
-  'components': (
-    'btn': (
-      'padding': $sg-components-btn-padding,
-      'font-size': $sg-components-btn-font-size,
-      'background-color': $sg-components-btn-background-color,
-      'color': $sg-components-btn-color,
-      'hover': (
-        'color': $sg-components-btn-hover-color,
-        'background-color': $sg-components-btn-hover-background-color
-      ),
-      'blue': (
-        'background-color': $sg-components-btn-blue-background-color
-      ),
-      'cursor': $sg-components-btn-cursor,
-      'border': $sg-components-btn-border,
-      'border-radius': $sg-components-btn-border-radius
-    )
-  ),
-  'colors': (
-    'blue': (
-      'color': $sg-colors-blue-color
-    ),
-    'green': (
-      'color': $sg-colors-green-color
-    )
-  )
-);
-
 ```
 
 ### What are SASS Maps
