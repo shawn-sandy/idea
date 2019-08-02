@@ -1,0 +1,12 @@
+// StyleMix demo
+
+//import tokens
+@import "./scss/tokens";
+
+// import mix library
+@import "./index.scss";
+
+.mix {
+  // generate color modifiers from your color map
+  @include g-colors();
+}
