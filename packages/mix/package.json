@@ -35,6 +35,7 @@
     "gulp-autoprefixer": "^6.1.0",
     "gulp-clean-css": "^4.2.0",
     "gulp-sass": "^4.0.2",
-    "gulp-sizereport": "^1.2.1"
+    "gulp-sizereport": "^1.2.1",
+    "style-dictionary": "^2.8.1"
   }
 }
