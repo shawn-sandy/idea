@@ -15,8 +15,8 @@
     @include mix-modifier("component.btn");
   }
 }
-/** button components **/
-@include build-components("button");
+/** generate all components in specified map--default component **/
+@include build-components("component");
 .test {
   @if is-modifier-state() {
     @debug "This is a state";

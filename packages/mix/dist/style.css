@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Sat, 03 Aug 2019 03:42:25 GMT
+  Generated on Sat, 03 Aug 2019 17:42:39 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 .mix {
@@ -199,7 +199,7 @@
   .mix-border-white-tp {
     border-color: rgba(255, 255, 255, 0.8) !important; }
   .mix-btn {
-    padding: 1.1rem 1.5rem;
+    padding: 1.1rem;
     font-size: 0.95rem;
     background-color: #6a737d;
     color: #ffffff;
@@ -213,9 +213,9 @@
       background-color: #0366d6;
       color: #ffffff; }
 
-/** button components **/
+/** generate all components in specified map--default component **/
 .btn {
-  padding: 1.1rem 1.5rem;
+  padding: 1.1rem;
   font-size: 0.95rem;
   background-color: #6a737d;
   color: #ffffff;
