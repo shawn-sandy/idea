@@ -9,4 +9,8 @@
 .mix {
   // generate color modifiers from your color map
   @include g-colors();
+  // generate buttons using the mix-modifier (mixin)
+  &-btn {
+    @include mix-modifier("button.btn");
+  }
 }

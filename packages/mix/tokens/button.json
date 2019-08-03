@@ -1,0 +1,43 @@
+{
+  "button": {
+    "btn": {
+      "padding": {
+        "value": "1.1rem 1.5rem"
+      },
+      "font-size": {
+        "value": ".95rem"
+      },
+      "background-color": {
+        "value": "{color.gray.value}"
+      },
+      "color": {
+        "value": "{color.white.value}"
+      },
+      "cursor": {
+        "value": "pointer"
+      },
+      "border": {
+        "value": "none"
+      },
+      "border-radius": {
+        "value": "9999rem"
+      },
+      "hover": {
+        "color": {
+          "value": "transparentize({button.btn.color.value}, .20)"
+        },
+        "background-color": {
+          "value": "darken({button.btn.background-color.value}, 10%)"
+        }
+      },
+      "blue": {
+        "background-color": {
+          "value": "{color.blue.value}"
+        },
+        "color": {
+          "value": "{color.white.value}"
+        }
+      }
+    }
+  }
+}
