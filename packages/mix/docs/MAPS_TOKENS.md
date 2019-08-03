@@ -94,56 +94,34 @@ $tokens: (
     "green": {
       "value": "#28a745"
     },
-    "dark": {
-      "25": {
-        "value": "#707070",
-        "comment": "highlight text"
-      },
-      "50": {
-        "value": "#2A2A2A",
-        "comment": "default text"
-      },
-      "100": {
-        "value": "#232323",
-        "comment": "Element background etc"
-      }
+    "black": {
+      "value": "#000000"
+    },
+    "white": {
+      "value": "#ffffff"
     }
   }
 }
 
 ```
 
-**Color**
+**Button**
 
 ``` json
-
 {
-  "components": {
+  "button": {
     "btn": {
       "padding": {
-        "value": "1.25rem 5rem"
+        "value": "1.1rem 1.5rem"
       },
       "font-size": {
-        "value": "1.07rem"
+        "value": ".95rem"
       },
       "background-color": {
-        "value": "{color.dark.100.value}"
+        "value": "{color.gray.value}"
       },
       "color": {
-        "value": "transparentize({color.gray.value}, .25)"
-      },
-      "hover": {
-        "color": {
-          "value": "darken({components.btn.color.value}, 10%)"
-        },
-        "background-color": {
-          "value": "darken({components.btn.background-color.value}, 10%)"
-        }
-      },
-      "blue": {
-        "background-color": {
-          "value": "{color.blue.value}"
-        }
+        "value": "{color.white.value}"
       },
       "cursor": {
         "value": "pointer"
@@ -153,6 +131,22 @@ $tokens: (
       },
       "border-radius": {
         "value": "9999rem"
+      },
+      "hover": {
+        "color": {
+          "value": "transparentize({button.btn.color.value}, .20)"
+        },
+        "background-color": {
+          "value": "darken({button.btn.background-color.value}, 10%)"
+        }
+      },
+      "blue": {
+        "background-color": {
+          "value": "{color.blue.value}"
+        },
+        "color": {
+          "value": "{color.white.value}"
+        }
       }
     }
   }

@@ -14,6 +14,7 @@ $mix-element-states: active focus focus-within hover visited; // define the stat
 @import "./generator";
 
 @mixin g-colors($map: $tokens) {
+  /** MIX COLORS **/
   @include mix-generator(
     $mix-colors,
     $map,
