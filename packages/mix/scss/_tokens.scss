@@ -1,9 +1,17 @@
 
 /*
   Do not edit directly
-  Generated on Sat, 03 Aug 2019 17:55:11 GMT
+  Generated on Sat, 03 Aug 2019 18:32:11 GMT
 */
 
+$sg-color-gray: #6a737d !default;
+$sg-color-red: #d73a49 !default;
+$sg-color-blue: #0366d6 !default;
+$sg-color-orange: #f66a0a !default;
+$sg-color-yellow: #ffd33d !default;
+$sg-color-green: #28a745 !default;
+$sg-color-black: #000000 !default;
+$sg-color-white: #ffffff !default;
 $sg-component-btn-padding: 1.1rem !default;
 $sg-component-btn-font-size: 0.95rem !default;
 $sg-component-btn-background-color: #6a737d !default;
@@ -29,16 +37,18 @@ $sg-font-size-title-lg: 4rem !default;
 $sg-font-size-title-xl: 5rem !default;
 $sg-font-weight-medium: 500 !default;
 $sg-font-weight-bold: 700 !default;
-$sg-color-gray: #6a737d !default;
-$sg-color-red: #d73a49 !default;
-$sg-color-blue: #0366d6 !default;
-$sg-color-orange: #f66a0a !default;
-$sg-color-yellow: #ffd33d !default;
-$sg-color-green: #28a745 !default;
-$sg-color-black: #000000 !default;
-$sg-color-white: #ffffff !default;
 
 $tokens: (
+  'color': (
+    'gray': $sg-color-gray,
+    'red': $sg-color-red,
+    'blue': $sg-color-blue,
+    'orange': $sg-color-orange,
+    'yellow': $sg-color-yellow,
+    'green': $sg-color-green,
+    'black': $sg-color-black,
+    'white': $sg-color-white
+  ),
   'component': (
     'btn': (
       'padding': $sg-component-btn-padding,
@@ -79,15 +89,5 @@ $tokens: (
       'medium': $sg-font-weight-medium,
       'bold': $sg-font-weight-bold
     )
-  ),
-  'color': (
-    'gray': $sg-color-gray,
-    'red': $sg-color-red,
-    'blue': $sg-color-blue,
-    'orange': $sg-color-orange,
-    'yellow': $sg-color-yellow,
-    'green': $sg-color-green,
-    'black': $sg-color-black,
-    'white': $sg-color-white
   )
 );
