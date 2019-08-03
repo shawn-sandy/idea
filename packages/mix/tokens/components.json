@@ -1,5 +1,5 @@
 {
-  "button": {
+  "component": {
     "btn": {
       "padding": {
         "value": "1.1rem 1.5rem"
@@ -24,10 +24,10 @@
       },
       "hover": {
         "color": {
-          "value": "transparentize({button.btn.color.value}, .20)"
+          "value": "transparentize({component.btn.color.value}, .20)"
         },
         "background-color": {
-          "value": "darken({button.btn.background-color.value}, 10%)"
+          "value": "darken({component.btn.background-color.value}, 10%)"
         }
       },
       "blue": {

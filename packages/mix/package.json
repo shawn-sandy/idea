@@ -26,7 +26,8 @@
     "np:major": "np major --yolo=true --no-publish",
     "np:minor": "np minor --yolo=true --no-publish",
     "np:patch": "np patch --yolo=true --no-publish",
-    "tokens": "style-dictionary build --config ./config/tokens.js"
+    "tokens": "style-dictionary build --config ./config/tokens.js",
+    "build": "npm run tokens && gulp sass"
   },
   "bugs": {
     "url": "https://github.com/shawn-sandy/idea/issues"

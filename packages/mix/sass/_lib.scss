@@ -1,37 +1,16 @@
 // Setup up some defaults
 $mix-tokens: $tokens !default; // token variable name
+$mix-base: "base" !default; // default utility name
 $mix-colors: "color" !default; // color key
 $mix-fonts: "fonts" !default; // font key
 $mix-spacing: "spacing" !default; // padding and margin
 $mix-sizing: "sizing" !default; //  width heights
 $mix-prefix: "-" !default; // separator for you class names my-class-name
 $mix-components: "components" !default; // default component key
-$mix-element-states: active focus focus-within hover visited; // define the states that you use
+$mix-modifier-states: active focus focus-within hover visited; // define the states that you use
 
 @import "./functions";
 @import "./general";
 @import "./components";
 @import "./generator";
-
-@mixin g-colors($map: $tokens) {
-  /** MIX COLORS **/
-  @include mix-generator(
-    $mix-colors,
-    $map,
-    "color",
-    "background-color",
-    "border-color"
-  );
-}
-
-@mixin g-fonts($map: $mix-tokens) {
-  @include mix-generator($mix-fonts, $map, "fonts");
-}
-
-@mixin g-spacing($map: $mix-tokens) {
-  @include mix-generator($mix-spacing, $map, "spacing");
-}
-
-@mixin g-sizing($map: $mix-tokens) {
-  @include mix-generator($mix-sizing, $map, "spacing");
-}
+@import "./utilities";

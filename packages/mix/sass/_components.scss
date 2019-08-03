@@ -1,8 +1,9 @@
+/// gets a map.key and outputs css rules
 @mixin map-component($key, $map: $mix-tokens, $prefix: "-") {
   $maps: get($key, $map);
 
   @each $item, $value in $maps {
-    @if $item== "hover" {
+    @if is-modifier-state() {
       @if type-of($value) == "map" {
         &:hover {
           @each $c-key, $c-value in $value {
@@ -11,16 +12,11 @@
         }
       }
     } @else if type-of($value) == "map" {
-      // @error "#{$key}.#{$item}";
-
       &#{$prefix}#{$item} {
-        @if $item != "hover" {
-          @include map("#{$key}.#{$item}");
-        }
+        @include map-component("#{$key}.#{$item}");
       }
     } @else {
       #{$item}: $value;
-
       @if type-of($value) == "color" {
         &#{$prefix}hover\:#{$item} {
           &:hover {
@@ -32,6 +28,7 @@
   }
 }
 
+/// grabs multiple components and generates rules using the map-component mixin
 @mixin mix-component(
   $components: $mix-components,
   $map: $mix-tokens,
@@ -43,43 +40,27 @@
     @each $key, $val in $maps {
       // @error "#{s}.#{$key}";
       &#{$prefix}#{$key} {
-        @include map("#{s}.#{$key}", $map);
+        @include map-component("#{components}.#{$key}", $map);
       }
     }
   }
 }
 
-@mixin mix-custom($keys...) {
-  @if (length($keys) >=1) {
-    @each $key in $keys {
-      $comp: get($key);
-
-      // output the key and value
-      @each $modifier, $value in $comp {
-        // make sure the comp is not a map
-        @if (type-of($value) != "map") {
-          #{$modifier}: $value;
-        } @else {
-          @error "Error modifier value is not a type #{$value} is not a map";
-        }
-      }
-    }
-  }
-}
-
-// output map values as class modifiers
+/// output component key/values as class properties
+/// mix with existing class or generate new ones
+/// .class-name { mix-modifiers(buttons.btn) }
 @mixin mix-modifier($key, $map: $mix-tokens) {
   $token: get($key, $map);
 
   @if length($token) >=0 {
     @each $item, $value in $token {
       @if type-of($value) == "map" {
-        @if $item== "hover" {
+        @if is-modifier-state() {
           &:hover {
             @include mix-modifier("#{$key}.#{$item}");
           }
         } @else {
-          &.#{$item} {
+          &.#{$mix-prefix}#{$item} {
             @include mix-modifier("#{$key}.#{$item}");
           }
         }
@@ -96,6 +77,8 @@
   }
 }
 
+/// generate rules from multiple classes using mix-modifier()
+/// mix-styles(btn, links)
 @mixin mix-styles($keys...) {
   @if length($keys) >=1 {
     @each $item in $keys {
@@ -104,23 +87,20 @@
   }
 }
 
+// generate classes from component key in your map
+// @include build-components()
 @mixin build-components($component: $mix-components) {
   $components: get($component, $mix-tokens);
   // check if length greater that 0 the proceed else throw error
   @if length($components) >=0 {
     // check if comps loop through components
     @each $comp, $keys in $components {
-      $modifier: if(
-        $mix-extend-class == true,
-        &#{$mix-prefix}#{$comp},
-        ".#{$comp}"
-      );
       @if type-of($keys) == "map" {
         .#{$comp} {
           @each $key, $value in $keys {
             @if type-of($value) == "map" {
               &#{$mix-prefix}#{$key} {
-                @if $key == "hover" {
+                @if is-modifier-state() {
                   &:hover {
                     @include build-components("#{$component}.#{$comp}.#{$key}");
                   }
@@ -143,6 +123,8 @@
   }
 }
 
+// Quickly generate classes for components from token keys using build-components()
+// mix-build-components("buttons', 'cards')
 @mixin mix-build-components($tokens...) {
   @each $token in $tokens {
     @include build-components($token);

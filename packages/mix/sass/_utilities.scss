@@ -1,0 +1,52 @@
+// utility generator
+@mixin utilities($token, $map: $mix-tokens) {
+  $utility: get($token, $map);
+  @if length($list: $utility) >= 0 {
+    @debug "we got the utility map";
+    @each $key, $value in $utility {
+      &#{$mix-prefix}#{$token} {
+        @if type-of($value) == "map" {
+          @include map-values("#{$token}#{$mix-prefix}#{$key}", $value);
+          // @debug "values: #{$value}";
+        } @else {
+          /** "key: #{$key}" **/
+          #{$key}: $value;
+          // @debug "key: #{$key}";
+        }
+      }
+    }
+  } @else {
+    @debug "utility map not found";
+  }
+}
+
+@mixin map-values($modifier-key, $values) {
+  @if type-of($values) == "map" {
+    @each $key, $val in $values {
+      @if type-of($val) == "map" {
+        &#{$mix-prefix}#{$key} {
+          @include map-values($modifier-key, $val);
+        }
+      } @else {
+        @if $key == "base" {
+          // &#{$mix-prefix}rg {
+          //   #{$modifier-key}: $val;
+          // }
+          #{$modifier-key}: $val;
+        } @else {
+          &#{$mix-prefix}#{$key} {
+            #{$modifier-key}: $val;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin mix-utilities($tokens...) {
+  @if length($tokens) >= 1 {
+    @each $var in $tokens {
+      @include utilities($var);
+    }
+  }
+}

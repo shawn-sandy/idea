@@ -6,11 +6,34 @@
 // import mix library
 @import "./index.scss";
 
-.mix {
-  // generate color modifiers from your color map
+.mx {
+  // generate utility color from your color map
+  /** color utilities **/
   @include g-colors();
-  // generate buttons using the mix-modifier (mixin)
+  // generate button modifiers using the mix-modifier (mixin)
   &-btn {
-    @include mix-modifier("button.btn");
+    @include mix-modifier("component.btn");
+  }
+
+  /** fonts **/
+  @include mix-utilities("font");
+}
+/** generate all components in specified map--default component **/
+@include build-components("component");
+.test {
+  @if is-modifier-state() {
+    @debug "This is a state";
+  } @else {
+    @debug "Sorry not state found";
+  }
+  @if is-modifier-state("hov") {
+    @debug "This is a state";
+  } @else {
+    @debug "Sorry not state found";
+  }
+  @if is-modifier-state("focus-within") {
+    @debug "This is a state";
+  } @else {
+    @debug "Sorry not state found";
   }
 }
