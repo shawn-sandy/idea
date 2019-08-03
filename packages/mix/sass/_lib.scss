@@ -12,26 +12,3 @@ $mix-modifier-states: active focus focus-within hover visited; // define the sta
 @import "./general";
 @import "./components";
 @import "./generator";
-
-@mixin g-colors($map: $tokens) {
-  /** MIX COLORS **/
-  @include mix-generator(
-    $mix-colors,
-    $map,
-    "color",
-    "background-color",
-    "border-color"
-  );
-}
-
-@mixin g-fonts($map: $mix-tokens) {
-  @include mix-generator($mix-fonts, $map, "fonts");
-}
-
-@mixin g-spacing($map: $mix-tokens) {
-  @include mix-generator($mix-spacing, $map, "spacing");
-}
-
-@mixin g-sizing($map: $mix-tokens) {
-  @include mix-generator($mix-sizing, $map, "spacing");
-}

@@ -7,14 +7,16 @@
 @import "./index.scss";
 
 .mix {
-  // generate color modifiers from your color map
+  // generate utility color from your color map
+  /** color utilities **/
   @include g-colors();
-  // generate buttons using the mix-modifier (mixin)
+  // generate button modifiers using the mix-modifier (mixin)
   &-btn {
     @include mix-modifier("button.btn");
   }
 }
-
+/** button components **/
+@include build-components("button");
 .test {
   @if is-modifier-state() {
     @debug "This is a state";

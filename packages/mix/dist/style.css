@@ -4,6 +4,7 @@
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 .mix {
+  /** color utilities **/
   /** MIX COLORS **/ }
   .mix-gray {
     color: #6a737d; }
@@ -211,3 +212,19 @@
     .mix-btn:hover {
       background-color: #0366d6;
       color: #ffffff; }
+
+/** button components **/
+.btn {
+  padding: 1.1rem 1.5rem;
+  font-size: 0.95rem;
+  background-color: #6a737d;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 9999rem; }
+  .btn-hover:hover {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #535a61; }
+  .btn-blue:hover {
+    background-color: #0366d6;
+    color: #ffffff; }

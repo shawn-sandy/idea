@@ -1,14 +1,14 @@
 /** GENERAL PURPOSE SASS-MIXINS **/
 
 // Build a modifier based on conditional state
-@mixin build-modifier-state($state, $modifier: "color", $value: #ffffff) {
-  @if index($mix-modifier-states, $state) != null {
-    @debug "State exist : #{$modifier}";
-    &:#{$state} {
-      #{$modifier}: $value;
-    }
-  } @else {
-    #{$modifier}: $value;
-    @debug "not";
-  }
-}
+// @mixin build-modifier-state($state, $modifier: "color", $value: #ffffff) {
+//   @if index($mix-modifier-states, $state) != null {
+//     @debug "State exist : #{$modifier}";
+//     &:#{$state} {
+//       #{$modifier}: $value;
+//     }
+//   } @else {
+//     #{$modifier}: $value;
+//     @debug "not";
+//   }
+// }

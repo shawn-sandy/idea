@@ -60,7 +60,7 @@
   }
 }
 
-// generate classes from your map key
+// generate utility classes from your map key
 @mixin mix-generator($key, $map: $mix-tokens, $attrs...) {
   @if length($attrs) >= 1 {
     @each $attr in $attrs {
@@ -77,4 +77,27 @@
   } @else {
     @return null;
   }
+}
+
+@mixin g-colors($map: $tokens) {
+  /** MIX COLORS **/
+  @include mix-generator(
+    $mix-colors,
+    $map,
+    "color",
+    "background-color",
+    "border-color"
+  );
+}
+
+@mixin g-fonts($map: $mix-tokens) {
+  @include mix-generator($mix-fonts, $map, "fonts");
+}
+
+@mixin g-spacing($map: $mix-tokens) {
+  @include mix-generator($mix-spacing, $map, "spacing");
+}
+
+@mixin g-sizing($map: $mix-tokens) {
+  @include mix-generator($mix-sizing, $map, "spacing");
 }
