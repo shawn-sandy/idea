@@ -3,18 +3,18 @@
   $utility: get($key, $map);
   @if length($list: $utility) >= 0 {
     @debug "we got the utility map";
-    @each $key, $value in $utility {
-      // &#{$mix-prefix}#{$key} {
+    @each $class, $value in $utility {
+      // &#{$mix-prefix}#{$class} {
       //   @each $name, $val in $value {
       //     @if $name == "base" {
-      //       #{$key}#{$mix-prefix}#{$name}: $value;
+      //       #{$class}#{$mix-prefix}#{$name}: $value;
       //     }
       //   }
       // }
       @if type-of($value) == "map" {
-        @each $modifier, $item in $value {
-          @debug "#{$key}";
-          @debug "we have modifiers";
+        @each $item, $modifier in $value {
+          @debug "#{$key}#{$mix-prefix}#{$class}#{$mix-prefix}#{$item}";
+          // @debug "we have modifiers";
         }
       } @else {
         @debug "invalid map key";
