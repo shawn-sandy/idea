@@ -14,3 +14,21 @@
     @include mix-modifier("button.btn");
   }
 }
+
+.test {
+  @if is-modifier-state() {
+    @debug "This is a state";
+  } @else {
+    @debug "Sorry not state found";
+  }
+  @if is-modifier-state("hov") {
+    @debug "This is a state";
+  } @else {
+    @debug "Sorry not state found";
+  }
+  @if is-modifier-state("focus-within") {
+    @debug "This is a state";
+  } @else {
+    @debug "Sorry not state found";
+  }
+}

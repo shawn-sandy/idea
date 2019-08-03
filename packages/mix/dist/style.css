@@ -208,6 +208,6 @@
     .mix-btn:hover {
       color: rgba(255, 255, 255, 0.8);
       background-color: #535a61; }
-    .mix-btn.blue {
+    .mix-btn:hover {
       background-color: #0366d6;
       color: #ffffff; }

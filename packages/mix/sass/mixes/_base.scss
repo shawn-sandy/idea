@@ -8,11 +8,6 @@
         #{$modifier}: $value;
       }
     } @else {
-      //$type: if(type-of($attr) == null, "color", $attr);
-      // @if type-of($attr) != null {
-      //   $key: "#{$key}.#{$attr}";
-      //   $element: get($key);
-      //
       #{$attr}: $element;
     }
   }

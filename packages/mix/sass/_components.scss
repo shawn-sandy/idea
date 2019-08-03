@@ -2,7 +2,7 @@
   $maps: get($key, $map);
 
   @each $item, $value in $maps {
-    @if $item== "hover" {
+    @if is-modifier-state() {
       @if type-of($value) == "map" {
         &:hover {
           @each $c-key, $c-value in $value {
@@ -74,7 +74,7 @@
   @if length($token) >=0 {
     @each $item, $value in $token {
       @if type-of($value) == "map" {
-        @if $item== "hover" {
+        @if is-modifier-state() {
           &:hover {
             @include mix-modifier("#{$key}.#{$item}");
           }
@@ -110,17 +110,12 @@
   @if length($components) >=0 {
     // check if comps loop through components
     @each $comp, $keys in $components {
-      $modifier: if(
-        $mix-extend-class == true,
-        &#{$mix-prefix}#{$comp},
-        ".#{$comp}"
-      );
       @if type-of($keys) == "map" {
         .#{$comp} {
           @each $key, $value in $keys {
             @if type-of($value) == "map" {
               &#{$mix-prefix}#{$key} {
-                @if $key == "hover" {
+                @if is-modifier-state() {
                   &:hover {
                     @include build-components("#{$component}.#{$comp}.#{$key}");
                   }

@@ -2,7 +2,7 @@
 
 // Build a modifier based on conditional state
 @mixin build-modifier-state($state, $modifier: "color", $value: #ffffff) {
-  @if index($mix-element-states, $state) != null {
+  @if index($mix-modifier-states, $state) != null {
     @debug "State exist : #{$modifier}";
     &:#{$state} {
       #{$modifier}: $value;
