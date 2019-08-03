@@ -1,204 +1,205 @@
 /*
   Do not edit directly
-  Generated on Sat, 03 Aug 2019 19:16:44 GMT
+  Generated on Sat, 03 Aug 2019 21:51:41 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
-.mix {
+.mx {
   /** color utilities **/
-  /** MIX COLORS **/ }
-  .mix-gray {
+  /** MIX COLORS **/
+  /** fonts **/ }
+  .mx-gray {
     color: #6a737d; }
-  .mix-gray\:hover:hover {
+  .mx-gray\:hover:hover {
     color: #6a737d !important; }
-  .mix-gray\:focus:focus {
+  .mx-gray\:focus:focus {
     color: #6a737d !important; }
-  .mix-gray-tp {
+  .mx-gray-tp {
     color: rgba(106, 115, 125, 0.8) !important; }
-  .mix-red {
+  .mx-red {
     color: #d73a49; }
-  .mix-red\:hover:hover {
+  .mx-red\:hover:hover {
     color: #d73a49 !important; }
-  .mix-red\:focus:focus {
+  .mx-red\:focus:focus {
     color: #d73a49 !important; }
-  .mix-red-tp {
+  .mx-red-tp {
     color: rgba(215, 58, 73, 0.8) !important; }
-  .mix-blue {
+  .mx-blue {
     color: #0366d6; }
-  .mix-blue\:hover:hover {
+  .mx-blue\:hover:hover {
     color: #0366d6 !important; }
-  .mix-blue\:focus:focus {
+  .mx-blue\:focus:focus {
     color: #0366d6 !important; }
-  .mix-blue-tp {
+  .mx-blue-tp {
     color: rgba(3, 102, 214, 0.8) !important; }
-  .mix-orange {
+  .mx-orange {
     color: #f66a0a; }
-  .mix-orange\:hover:hover {
+  .mx-orange\:hover:hover {
     color: #f66a0a !important; }
-  .mix-orange\:focus:focus {
+  .mx-orange\:focus:focus {
     color: #f66a0a !important; }
-  .mix-orange-tp {
+  .mx-orange-tp {
     color: rgba(246, 106, 10, 0.8) !important; }
-  .mix-yellow {
+  .mx-yellow {
     color: #ffd33d; }
-  .mix-yellow\:hover:hover {
+  .mx-yellow\:hover:hover {
     color: #ffd33d !important; }
-  .mix-yellow\:focus:focus {
+  .mx-yellow\:focus:focus {
     color: #ffd33d !important; }
-  .mix-yellow-tp {
+  .mx-yellow-tp {
     color: rgba(255, 211, 61, 0.8) !important; }
-  .mix-green {
+  .mx-green {
     color: #28a745; }
-  .mix-green\:hover:hover {
+  .mx-green\:hover:hover {
     color: #28a745 !important; }
-  .mix-green\:focus:focus {
+  .mx-green\:focus:focus {
     color: #28a745 !important; }
-  .mix-green-tp {
+  .mx-green-tp {
     color: rgba(40, 167, 69, 0.8) !important; }
-  .mix-black {
+  .mx-black {
     color: #000000; }
-  .mix-black\:hover:hover {
+  .mx-black\:hover:hover {
     color: #000000 !important; }
-  .mix-black\:focus:focus {
+  .mx-black\:focus:focus {
     color: #000000 !important; }
-  .mix-black-tp {
+  .mx-black-tp {
     color: rgba(0, 0, 0, 0.8) !important; }
-  .mix-white {
+  .mx-white {
     color: #ffffff; }
-  .mix-white\:hover:hover {
+  .mx-white\:hover:hover {
     color: #ffffff !important; }
-  .mix-white\:focus:focus {
+  .mx-white\:focus:focus {
     color: #ffffff !important; }
-  .mix-white-tp {
+  .mx-white-tp {
     color: rgba(255, 255, 255, 0.8) !important; }
-  .mix-bg-gray {
+  .mx-bg-gray {
     background-color: #6a737d; }
-  .mix-bg-gray\:hover:hover {
+  .mx-bg-gray\:hover:hover {
     background-color: #6a737d !important; }
-  .mix-bg-gray\:focus:focus {
+  .mx-bg-gray\:focus:focus {
     background-color: #6a737d !important; }
-  .mix-bg-gray-tp {
+  .mx-bg-gray-tp {
     background-color: rgba(106, 115, 125, 0.8) !important; }
-  .mix-bg-red {
+  .mx-bg-red {
     background-color: #d73a49; }
-  .mix-bg-red\:hover:hover {
+  .mx-bg-red\:hover:hover {
     background-color: #d73a49 !important; }
-  .mix-bg-red\:focus:focus {
+  .mx-bg-red\:focus:focus {
     background-color: #d73a49 !important; }
-  .mix-bg-red-tp {
+  .mx-bg-red-tp {
     background-color: rgba(215, 58, 73, 0.8) !important; }
-  .mix-bg-blue {
+  .mx-bg-blue {
     background-color: #0366d6; }
-  .mix-bg-blue\:hover:hover {
+  .mx-bg-blue\:hover:hover {
     background-color: #0366d6 !important; }
-  .mix-bg-blue\:focus:focus {
+  .mx-bg-blue\:focus:focus {
     background-color: #0366d6 !important; }
-  .mix-bg-blue-tp {
+  .mx-bg-blue-tp {
     background-color: rgba(3, 102, 214, 0.8) !important; }
-  .mix-bg-orange {
+  .mx-bg-orange {
     background-color: #f66a0a; }
-  .mix-bg-orange\:hover:hover {
+  .mx-bg-orange\:hover:hover {
     background-color: #f66a0a !important; }
-  .mix-bg-orange\:focus:focus {
+  .mx-bg-orange\:focus:focus {
     background-color: #f66a0a !important; }
-  .mix-bg-orange-tp {
+  .mx-bg-orange-tp {
     background-color: rgba(246, 106, 10, 0.8) !important; }
-  .mix-bg-yellow {
+  .mx-bg-yellow {
     background-color: #ffd33d; }
-  .mix-bg-yellow\:hover:hover {
+  .mx-bg-yellow\:hover:hover {
     background-color: #ffd33d !important; }
-  .mix-bg-yellow\:focus:focus {
+  .mx-bg-yellow\:focus:focus {
     background-color: #ffd33d !important; }
-  .mix-bg-yellow-tp {
+  .mx-bg-yellow-tp {
     background-color: rgba(255, 211, 61, 0.8) !important; }
-  .mix-bg-green {
+  .mx-bg-green {
     background-color: #28a745; }
-  .mix-bg-green\:hover:hover {
+  .mx-bg-green\:hover:hover {
     background-color: #28a745 !important; }
-  .mix-bg-green\:focus:focus {
+  .mx-bg-green\:focus:focus {
     background-color: #28a745 !important; }
-  .mix-bg-green-tp {
+  .mx-bg-green-tp {
     background-color: rgba(40, 167, 69, 0.8) !important; }
-  .mix-bg-black {
+  .mx-bg-black {
     background-color: #000000; }
-  .mix-bg-black\:hover:hover {
+  .mx-bg-black\:hover:hover {
     background-color: #000000 !important; }
-  .mix-bg-black\:focus:focus {
+  .mx-bg-black\:focus:focus {
     background-color: #000000 !important; }
-  .mix-bg-black-tp {
+  .mx-bg-black-tp {
     background-color: rgba(0, 0, 0, 0.8) !important; }
-  .mix-bg-white {
+  .mx-bg-white {
     background-color: #ffffff; }
-  .mix-bg-white\:hover:hover {
+  .mx-bg-white\:hover:hover {
     background-color: #ffffff !important; }
-  .mix-bg-white\:focus:focus {
+  .mx-bg-white\:focus:focus {
     background-color: #ffffff !important; }
-  .mix-bg-white-tp {
+  .mx-bg-white-tp {
     background-color: rgba(255, 255, 255, 0.8) !important; }
-  .mix-border-gray {
+  .mx-border-gray {
     border-color: #6a737d; }
-  .mix-border-gray\:hover:hover {
+  .mx-border-gray\:hover:hover {
     border-color: #6a737d !important; }
-  .mix-border-gray\:focus:focus {
+  .mx-border-gray\:focus:focus {
     border-color: #6a737d !important; }
-  .mix-border-gray-tp {
+  .mx-border-gray-tp {
     border-color: rgba(106, 115, 125, 0.8) !important; }
-  .mix-border-red {
+  .mx-border-red {
     border-color: #d73a49; }
-  .mix-border-red\:hover:hover {
+  .mx-border-red\:hover:hover {
     border-color: #d73a49 !important; }
-  .mix-border-red\:focus:focus {
+  .mx-border-red\:focus:focus {
     border-color: #d73a49 !important; }
-  .mix-border-red-tp {
+  .mx-border-red-tp {
     border-color: rgba(215, 58, 73, 0.8) !important; }
-  .mix-border-blue {
+  .mx-border-blue {
     border-color: #0366d6; }
-  .mix-border-blue\:hover:hover {
+  .mx-border-blue\:hover:hover {
     border-color: #0366d6 !important; }
-  .mix-border-blue\:focus:focus {
+  .mx-border-blue\:focus:focus {
     border-color: #0366d6 !important; }
-  .mix-border-blue-tp {
+  .mx-border-blue-tp {
     border-color: rgba(3, 102, 214, 0.8) !important; }
-  .mix-border-orange {
+  .mx-border-orange {
     border-color: #f66a0a; }
-  .mix-border-orange\:hover:hover {
+  .mx-border-orange\:hover:hover {
     border-color: #f66a0a !important; }
-  .mix-border-orange\:focus:focus {
+  .mx-border-orange\:focus:focus {
     border-color: #f66a0a !important; }
-  .mix-border-orange-tp {
+  .mx-border-orange-tp {
     border-color: rgba(246, 106, 10, 0.8) !important; }
-  .mix-border-yellow {
+  .mx-border-yellow {
     border-color: #ffd33d; }
-  .mix-border-yellow\:hover:hover {
+  .mx-border-yellow\:hover:hover {
     border-color: #ffd33d !important; }
-  .mix-border-yellow\:focus:focus {
+  .mx-border-yellow\:focus:focus {
     border-color: #ffd33d !important; }
-  .mix-border-yellow-tp {
+  .mx-border-yellow-tp {
     border-color: rgba(255, 211, 61, 0.8) !important; }
-  .mix-border-green {
+  .mx-border-green {
     border-color: #28a745; }
-  .mix-border-green\:hover:hover {
+  .mx-border-green\:hover:hover {
     border-color: #28a745 !important; }
-  .mix-border-green\:focus:focus {
+  .mx-border-green\:focus:focus {
     border-color: #28a745 !important; }
-  .mix-border-green-tp {
+  .mx-border-green-tp {
     border-color: rgba(40, 167, 69, 0.8) !important; }
-  .mix-border-black {
+  .mx-border-black {
     border-color: #000000; }
-  .mix-border-black\:hover:hover {
+  .mx-border-black\:hover:hover {
     border-color: #000000 !important; }
-  .mix-border-black\:focus:focus {
+  .mx-border-black\:focus:focus {
     border-color: #000000 !important; }
-  .mix-border-black-tp {
+  .mx-border-black-tp {
     border-color: rgba(0, 0, 0, 0.8) !important; }
-  .mix-border-white {
+  .mx-border-white {
     border-color: #ffffff; }
-  .mix-border-white\:hover:hover {
+  .mx-border-white\:hover:hover {
     border-color: #ffffff !important; }
-  .mix-border-white\:focus:focus {
+  .mx-border-white\:focus:focus {
     border-color: #ffffff !important; }
-  .mix-border-white-tp {
+  .mx-border-white-tp {
     border-color: rgba(255, 255, 255, 0.8) !important; }
-  .mix-btn {
+  .mx-btn {
     padding: 1.1rem;
     font-size: 0.95rem;
     background-color: #6a737d;
@@ -206,12 +207,43 @@
     cursor: pointer;
     border: none;
     border-radius: 9999rem; }
-    .mix-btn:hover {
+    .mx-btn:hover {
       color: rgba(255, 255, 255, 0.8);
       background-color: #535a61; }
-    .mix-btn:hover {
+    .mx-btn:hover {
       background-color: #0366d6;
       color: #ffffff; }
+  .mx-font {
+    font-size: 1rem; }
+    .mx-font-xs {
+      font-size: 0.75rem; }
+    .mx-font-sm {
+      font-size: 0.875rem; }
+    .mx-font-md {
+      font-size: 1.3rem; }
+    .mx-font-lg {
+      font-size: 1.5rem; }
+    .mx-font-xl {
+      font-size: 1.75rem; }
+    .mx-font-title {
+      font-size: 2rem; }
+      .mx-font-title-xs {
+        font-size: 2.5rem; }
+      .mx-font-title-sm {
+        font-size: 3rem; }
+      .mx-font-title-md {
+        font-size: 3.5rem; }
+      .mx-font-title-lg {
+        font-size: 4rem; }
+      .mx-font-title-xl {
+        font-size: 5rem; }
+  .mx-font-medium {
+    font-weight: 500; }
+  .mx-font-bold {
+    font-weight: 700; }
+  .mx-font {
+    /** "key: color" **/
+    color: #fff; }
 
 /** generate all components in specified map--default component **/
 .btn {

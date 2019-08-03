@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Sat, 03 Aug 2019 19:16:44 GMT
+  Generated on Sat, 03 Aug 2019 21:51:41 GMT
 */
 
 $sg-color-gray: #6a737d !default;
@@ -37,6 +37,7 @@ $sg-font-size-title-lg: 4rem !default;
 $sg-font-size-title-xl: 5rem !default;
 $sg-font-weight-medium: 500 !default;
 $sg-font-weight-bold: 700 !default;
+$sg-font-color: #fff !default;
 
 $tokens: (
   'color': (
@@ -88,6 +89,7 @@ $tokens: (
     'weight': (
       'medium': $sg-font-weight-medium,
       'bold': $sg-font-weight-bold
-    )
+    ),
+    'color': $sg-font-color
   )
 );

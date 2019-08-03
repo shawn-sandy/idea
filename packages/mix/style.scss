@@ -6,7 +6,7 @@
 // import mix library
 @import "./index.scss";
 
-.mix {
+.mx {
   // generate utility color from your color map
   /** color utilities **/
   @include g-colors();
@@ -14,6 +14,9 @@
   &-btn {
     @include mix-modifier("component.btn");
   }
+
+  /** fonts **/
+  @include mix-utilities("font");
 }
 /** generate all components in specified map--default component **/
 @include build-components("component");
@@ -33,6 +36,4 @@
   } @else {
     @debug "Sorry not state found";
   }
-
-  @include utilities("font");
 }

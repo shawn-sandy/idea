@@ -17,3 +17,5 @@ gulp.task("sass", () =>
     .pipe(gulp.dest("./dist"))
     .pipe(reports({ gzip: true }))
 );
+
+gulp.task("watch", () => gulp.watch("./**/*.scss", gulp.parallel("sass")));

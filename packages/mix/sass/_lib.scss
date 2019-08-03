@@ -1,5 +1,6 @@
 // Setup up some defaults
 $mix-tokens: $tokens !default; // token variable name
+$mix-base: "base" !default; // default utility name
 $mix-colors: "color" !default; // color key
 $mix-fonts: "fonts" !default; // font key
 $mix-spacing: "spacing" !default; // padding and margin

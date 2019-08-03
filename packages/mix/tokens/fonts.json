@@ -47,6 +47,9 @@
       "bold": {
         "value": "700"
       }
+    },
+    "color": {
+      "value": "#fff"
     }
   }
 }
