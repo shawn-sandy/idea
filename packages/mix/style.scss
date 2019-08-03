@@ -33,4 +33,6 @@
   } @else {
     @debug "Sorry not state found";
   }
+
+  @include utilities("font");
 }
