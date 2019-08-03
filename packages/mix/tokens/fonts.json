@@ -40,11 +40,13 @@
         }
       }
     },
-    "medium": {
-      "value": "500"
-    },
-    "bold": {
-      "value": "700"
+    "weight": {
+      "medium": {
+        "value": "500"
+      },
+      "bold": {
+        "value": "700"
+      }
     }
   }
 }

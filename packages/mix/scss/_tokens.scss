@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Sat, 03 Aug 2019 17:42:39 GMT
+  Generated on Sat, 03 Aug 2019 17:55:11 GMT
 */
 
 $sg-component-btn-padding: 1.1rem !default;
@@ -27,8 +27,8 @@ $sg-font-size-title-sm: 3rem !default;
 $sg-font-size-title-md: 3.5rem !default;
 $sg-font-size-title-lg: 4rem !default;
 $sg-font-size-title-xl: 5rem !default;
-$sg-font-medium: 500 !default;
-$sg-font-bold: 700 !default;
+$sg-font-weight-medium: 500 !default;
+$sg-font-weight-bold: 700 !default;
 $sg-color-gray: #6a737d !default;
 $sg-color-red: #d73a49 !default;
 $sg-color-blue: #0366d6 !default;
@@ -75,8 +75,10 @@ $tokens: (
         'xl': $sg-font-size-title-xl
       )
     ),
-    'medium': $sg-font-medium,
-    'bold': $sg-font-bold
+    'weight': (
+      'medium': $sg-font-weight-medium,
+      'bold': $sg-font-weight-bold
+    )
   ),
   'color': (
     'gray': $sg-color-gray,
