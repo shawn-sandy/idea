@@ -14,7 +14,7 @@
     "np:major": "np major --yolo=true --no-publish",
     "np:minor": "np minor --yolo=true --no-publish",
     "np:patch": "np patch --yolo=true --no-publish",
-    "changelog": "auto-changelog -p --template config/_changelog.hbs && git add CHANGELOG.md"
+    "changelog": "auto-changelog -p --template config/_changelog.hbs"
   },
   "devDependencies": {
     "auto-changelog": "^1.14.1"
