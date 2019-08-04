@@ -13,9 +13,17 @@
     "js-tokens": "style-dictionary build --config ./tokens.config.json",
     "np:major": "np major --yolo=true --no-publish",
     "np:minor": "np minor --yolo=true --no-publish",
-    "np:patch": "np patch --yolo=true --no-publish"
+    "np:patch": "np patch --yolo=true --no-publish",
+    "changelog": "auto-changelog -p --template config/_changelog.hbs && git add CHANGELOG.md"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "auto-changelog": "^1.14.1"
+  },
+  "auto-changelog": {
+    "unreleased": true,
+    "commitLimit": 10,
+    "template": "config/_changelog.hbs"
+  },
   "main": "index.js",
   "repository": "https://github.com/shawn-sandy/idea.git",
   "author": "shawnsandy <shawnsandy04@gmail.com>",
