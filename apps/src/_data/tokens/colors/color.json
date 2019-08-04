@@ -1,0 +1,28 @@
+{
+  "color": {
+    "gray": {
+      "value": "#6a737d"
+    },
+    "red": {
+      "value": "#d73a49"
+    },
+    "blue": {
+      "value": "#0366d6"
+    },
+    "orange": {
+      "value": "#f66a0a"
+    },
+    "yellow": {
+      "value": "#ffd33d"
+    },
+    "green": {
+      "value": "#28a745"
+    },
+    "black": {
+      "value": "#000000"
+    },
+    "white": {
+      "value": "#ffffff"
+    }
+  }
+}
