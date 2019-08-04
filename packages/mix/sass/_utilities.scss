@@ -1,4 +1,5 @@
 // utility generator
+
 @mixin utilities($token, $map: $mix-tokens) {
   $utility: get($token, $map);
   @if length($list: $utility) >= 0 {
@@ -27,6 +28,7 @@
           @include map-values($modifier-key, $val);
         }
       } @else {
+        // TODO refactor to handle color maps--remove `color` from output
         @if $key == "base" {
           #{$modifier-key}: $val;
         } @else {
