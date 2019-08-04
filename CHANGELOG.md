@@ -1,4 +1,4 @@
-#Changelog
+# Changelog
 
 #### [v0.3.6](https://github.com/shawn-sandy/idea/compare/v0.3.5...v0.3.6)
 > 4 August 2019 2019-08-04
