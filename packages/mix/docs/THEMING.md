@@ -1,6 +1,6 @@
 # Customizing SASS Tokens
 
-You may not have the time *(boss needs it yesterday...)* or the desire to create your own tokens from scratch you can use the defaults provided by the kit to customize them. The SASS !default flag allows you to override the variable’s default value in your own Sass without modifying our own--a lot likes bootstrap 4.x. theming function.
+If you don't have the time *(boss needs it yesterday...)* or the desire to create your own tokens from scratch you can use the defaults provided by customizing variables--tokens using the SASS !default flag. The SASS !default flag allows you to override the variable’s default value in your own Sass without modifying our own--a lot likes bootstrap 4.x. theming feature :).
 
  >Normally when you assign a value to a variable, if that variable already had a value, its old value is overwritten. But if you’re writing a Sass library, you might want to allow your users to customize your library’s variables before you use them to generate CSS.
 
