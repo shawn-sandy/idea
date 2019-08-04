@@ -29,11 +29,11 @@ title: Idea a design system framework
     </p>
 
     <p>
-     {{ package | packageDownloads | safe  }}
-     </p>
+      {{ package | packageDownloads | safe }}
+    </p>
     <p>
-     {{ "vuejs/vue" | gitinfo | safe  }}
-     </p>
+      {{ "vuejs/vue" | gitinfo | safe }}
+    </p>
   </div>
   <div>
     {% for atom in collections.atoms %}
@@ -41,6 +41,25 @@ title: Idea a design system framework
       {{ atom.data.title }}
     </h2>
     {{ atom.templateContent | safe }}
+    {% endfor %}
+  </div>
+  <div class="data">
+    {% for item, keys in tokens.colors.color %}
+    {{ loop.index }}
+    <div class="container">
+      <div class="row">
+        {% for name, val in keys %}
+        <div class="col-md-2 p-2">
+          <div
+            class="p-5 rounded"
+            style="background-color: {{ val.value }}"
+          ></div>
+          <div class="color text-capitalize">{{ name }} - {{ val.value }}</div>
+        </div>
+        {% endfor %}
+        {{ keys | dump }}
+      </div>
+    </div>
     {% endfor %}
   </div>
 </footer>

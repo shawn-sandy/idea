@@ -1,8 +1,8 @@
 {
   "color": {
     "gray": "#6a737d",
-    "red": "#d73a49",
-    "blue": "#0366d6",
+    "red": "#bf0201",
+    "blue": "#0070d2",
     "orange": "#f66a0a",
     "yellow": "#ffd33d",
     "green": "#28a745",
@@ -25,7 +25,7 @@
         "background-color": "darken(#232323, 10%)"
       },
       "blue": {
-        "background-color": "#0366d6"
+        "background-color": "#0070d2"
       },
       "cursor": "pointer",
       "border": "none",
