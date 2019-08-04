@@ -1,8 +1,12 @@
-# Themeing
+# Customizing SASS Tokens
 
- The SASS !default flag allowing you to override the variable’s default value in your own Sass without modifying
+You may not have the time *(boss needs it yesterday...)* or the desire to create your own tokens from scratch you can use the defaults provided by the kit to customize them. The SASS !default flag allows you to override the variable’s default value in your own Sass without modifying our own--a lot likes bootstrap 4.x. theming function.
 
-**Default**
+ >Normally when you assign a value to a variable, if that variable already had a value, its old value is overwritten. But if you’re writing a Sass library, you might want to allow your users to customize your library’s variables before you use them to generate CSS.
+
+> To make this possible, Sass provides the !default flag. This assigns a value to a variable only if that variable isn’t defined or its value is null. Otherwise, the existing value will be used. This way, users can set variables before they import your library to customize its behavior. [More info on sass default flag](https://sass-lang.com/documentation/variables#default-values)
+
+**Default Tokens** [*_tokens.scss*](../scss/tokens/scss)
 
 ``` scss
 
@@ -45,6 +49,20 @@ $sg-font-size-title-xl: 5rem !default;
 $sg-font-weight-medium: 500 !default;
 $sg-font-weight-bold: 700 !default;
 $sg-font-color: #fff !default;
+
+```
+
+### Usage
+
+``` scss
+// change the color
+$sg-color-white: #f1f1f1 ;
+// reduce the padding
+$sg-component-btn-padding: .5rem ;
+// increase the button font size
+$sg-component-btn-font-size: 2rem ;
+// import StyleMix tokens
+@import "node_modules/shawnsandy/mix/scss/tokens
 
 ```
 
