@@ -9,7 +9,6 @@
           @include map-values("#{$token}#{$mix-prefix}#{$key}", $value);
           // @debug "values: #{$value}";
         } @else {
-          /** "key: #{$key}" **/
           #{$key}: $value;
           // @debug "key: #{$key}";
         }
@@ -29,9 +28,6 @@
         }
       } @else {
         @if $key == "base" {
-          // &#{$mix-prefix}rg {
-          //   #{$modifier-key}: $val;
-          // }
           #{$modifier-key}: $val;
         } @else {
           &#{$mix-prefix}#{$key} {

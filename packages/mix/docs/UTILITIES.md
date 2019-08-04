@@ -1,10 +1,72 @@
 # Create and Generate Utility Classes
 
-The Utility mixin well generate utility classes for specially formatted maps/tokens
+The Utility mixin will generate utility classes from specially formatted maps/tokens
 
 ## Example
 
-### Font Utility Tokens
+### Font Tokens
+
+``` json
+{
+  "font": {
+    "size": {
+      "base": {
+        "value": "1rem"
+      },
+      "xs": {
+        "value": "0.75rem"
+      },
+      "sm": {
+        "value": "0.875rem"
+      },
+      "md": {
+        "value": "1.3rem"
+      },
+      "lg": {
+        "value": "1.5rem"
+      },
+      "xl": {
+        "value": "1.75rem"
+      },
+      "title": {
+        "base": {
+          "value": "2rem"
+        },
+        "xs": {
+          "value": "2.5rem"
+        },
+        "sm": {
+          "value": "3rem"
+        },
+        "md": {
+          "value": "3.5rem"
+        },
+        "lg": {
+          "value": "4rem"
+        },
+        "xl": {
+          "value": "5rem"
+        }
+      }
+    },
+    "weight": {
+      "medium": {
+        "value": "500"
+      },
+      "bold": {
+        "value": "700"
+      }
+    },
+    "color": {
+      "value": "#fff"
+    }
+  }
+}
+```
+
+### SCSS map generated from font tokens
+
+Tokens are generated with [Amazon Style Dictionary](https://amzn.github.io/style-dictionary/#/)
 
 ``` scss
 'font': (
