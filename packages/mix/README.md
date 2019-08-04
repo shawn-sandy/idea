@@ -191,7 +191,7 @@ This mix includes allow you to quickly generate a **components** from a utility/
 }
 ```
 
-[Docs (WIP)](./docs)
+#### [Read the docs for more info on setup, usages and examples Docs (WIP)](./docs)
 
 ### What are SASS Maps
 
