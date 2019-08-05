@@ -6,7 +6,7 @@ module.exports = {
     </button>`;
   },
 
-  link: (content, link, class_names, attrs) => {
+  link: (content, `link, class_names, attrs) => {
     return `<a href="${link}" class="${class_names}" ${attrs}>${content}</a>`
 
   },

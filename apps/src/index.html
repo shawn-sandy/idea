@@ -44,20 +44,20 @@ title: Idea a design system framework
     {% endfor %}
   </div>
   <div class="data">
-    {% for item, keys in tokens.colors.color %}
-    {{ loop.index }}
+    {% for item, keys in tokens.color %}
     <div class="container">
       <div class="row">
         {% for name, val in keys %}
-        <div class="col-md-2 p-2">
+        <div class="col-md-2 p-2 bg-light">
           <div
-            class="p-5 rounded"
+            class="p-5 rounded shadow-lg"
             style="background-color: {{ val.value }}"
           ></div>
-          <div class="color text-capitalize">{{ name }} - {{ val.value }}</div>
+          <div class="color text-capitalize" style="color: {{ val.value }}">
+            {{ name }} - {{ val.value }}
+          </div>
         </div>
         {% endfor %}
-        {{ keys | dump }}
       </div>
     </div>
     {% endfor %}
