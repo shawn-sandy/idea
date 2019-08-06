@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Sat, 03 Aug 2019 21:51:41 GMT
+  Generated on Tue, 06 Aug 2019 00:16:10 GMT
 */
 
 $sg-color-gray: #6a737d !default;
@@ -23,6 +23,8 @@ $sg-component-btn-hover-color: transparentize(#ffffff, .20) !default;
 $sg-component-btn-hover-background-color: darken(#6a737d, 10%) !default;
 $sg-component-btn-blue-background-color: #0366d6 !default;
 $sg-component-btn-blue-color: #ffffff !default;
+$sg-component-swatch-min-height: 80rem !default;
+$sg-component-swatch-width: 100rem !default;
 $sg-font-size-base: 1rem !default;
 $sg-font-size-xs: 0.75rem !default;
 $sg-font-size-sm: 0.875rem !default;
@@ -67,6 +69,10 @@ $tokens: (
         'background-color': $sg-component-btn-blue-background-color,
         'color': $sg-component-btn-blue-color
       )
+    ),
+    'swatch': (
+      'min-height': $sg-component-swatch-min-height,
+      'width': $sg-component-swatch-width
     )
   ),
   'font': (

@@ -44,13 +44,13 @@ module.exports = {
     // Override the attribute/cti transform
     "attribute/cti": CTITransform
   },
-  source: ["./tokens/**/*.json"],
+  source: ["./tokens/mix/**/*.json"],
   platforms: {
     scss: {
       // We can still use this transformGroup because we are overriding
       // the underlying transform
       transformGroup: "scss",
-      buildPath: "./tokens/",
+      buildPath: "./tokens/mix/",
       prefix: "sg",
       files: [
         {
