@@ -23,17 +23,9 @@ title: Idea a design system framework
 
     <p class="text-right text-center py-3">
       <a href="/ideas" class="button button-md m-2 button-rounded">Read More</a>
-      <a href="/modules/elements" class="button button-md m-2 button-rounded"
-        >Sample Modules</a
-      >
+      <a href="/modules/elements" class="button button-md m-2 button-rounded">Sample Modules</a>
     </p>
 
-    <p>
-      {{ package | packageDownloads | safe }}
-    </p>
-    <p>
-      {{ "vuejs/vue" | gitinfo | safe }}
-    </p>
   </div>
   <div>
     {% for atom in collections.atoms %}
@@ -43,23 +35,37 @@ title: Idea a design system framework
     {{ atom.templateContent | safe }}
     {% endfor %}
   </div>
-  <div class="data">
-    {% for item, keys in tokens.color %}
-    <div class="container">
+
+  <div class="data bg-light p-2">
+    <div class="container bg-light">
       <div class="row">
-        {% for name, val in keys %}
-        <div class="col-md-2 p-2 bg-light">
-          <div
-            class="p-5 rounded shadow-lg"
-            style="background-color: {{ val.value }}"
-          ></div>
-          <div class="color text-capitalize" style="color: {{ val.value }}">
+        {% for name, val in tokens.colors.color %}
+        {% if val.value %}
+        <div class="col-md-2 p-2 rounded">
+          <div class="p-5 rounded shadow-lg" style="background-color: {{ val.value }}"></div>
+          <div class="color text-uppercase" style="color: {{ val.value }}">
             {{ name }} - {{ val.value }}
           </div>
         </div>
+        {% endif %}
         {% endfor %}
       </div>
     </div>
-    {% endfor %}
+    <!-- <hr> -->
+    <div class="container">
+      <div class="row">
+        {% for name, val in tokens.colors.color.dark %}
+        {% if val.value %}
+        <div class="col-md-2 p-2">
+          <div class="p-5 rounded shadow-lg" style="background-color: {{ val.value }}"></div>
+          <div class="color text-uppercase mx-font-xs" style="color: {{ val.value }}">
+            {{ name }} - {{ val.value }}
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
   </div>
 </footer>

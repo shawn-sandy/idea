@@ -23,6 +23,24 @@
     },
     "white": {
       "value": "#ffffff"
+    },
+    "dark": {
+      "10": {
+        "value": "lighten(#707070, 10)",
+        "comment": "lightens"
+      },
+      "25": {
+        "value": "#707070",
+        "comment": "highlight text"
+      },
+      "50": {
+        "value": "#2A2A2A",
+        "comment": "default text"
+      },
+      "100": {
+        "value": "#232323",
+        "comment": "Element background etc"
+      }
     }
   }
 }

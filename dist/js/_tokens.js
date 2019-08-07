@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 06 Aug 2019 00:05:46 GMT
+ * Generated on Wed, 07 Aug 2019 02:47:44 GMT
  */
 
 export const ColorGray = "#6a737d";
@@ -11,6 +11,7 @@ export const ColorYellow = "#ffd33d";
 export const ColorGreen = "#28a745";
 export const ColorBlack = "#000000";
 export const ColorWhite = "#ffffff";
+export const ColorDark10 = "#000000"; // lightens
 export const ColorDark25 = "#707070"; // highlight text
 export const ColorDark50 = "#2a2a2a"; // default text
 export const ColorDark100 = "#232323"; // Element background etc
