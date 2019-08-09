@@ -1,18 +1,18 @@
 
 /*
   Do not edit directly
-  Generated on Fri, 09 Aug 2019 10:34:55 GMT
+  Generated on Fri, 09 Aug 2019 10:46:05 GMT
 */
 
-$sg-sizes-width: 100% !default;
-$sg-sizes-min-height: 60px !default;
+$sg-swatch-width: 100% !default;
+$sg-swatch-min-height: 60px !default;
 $sg-component-swatch-min-height: 60px !default;
 $sg-component-swatch-width: 100% !default;
 
 $tokens: (
-  'sizes': (
-    'width': $sg-sizes-width,
-    'min-height': $sg-sizes-min-height
+  'swatch': (
+    'width': $sg-swatch-width,
+    'min-height': $sg-swatch-min-height
   ),
   'component': (
     'swatch': (
