@@ -11,7 +11,7 @@ gulp.task("default", function(done) {
 
 gulp.task("sass", () =>
   gulp
-    .src(["./style.scss"])
+    .src(["./style.scss", "./mix.scss"])
     .pipe(sass().on("error", sass.logError))
     .pipe(autoprefixer())
     .pipe(gulp.dest("./dist"))

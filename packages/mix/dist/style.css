@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Tue, 06 Aug 2019 00:16:10 GMT
+  Generated on Fri, 09 Aug 2019 10:24:40 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 .mx {
@@ -208,22 +208,21 @@
     border: none;
     border-radius: 9999rem; }
     .mx-btn:hover {
-      color: rgba(255, 255, 255, 0.8);
-      background-color: #535a61; }
+      color: rgba(255, 255, 255, 0.8); }
     .mx-btn:hover {
       background-color: #0366d6;
       color: #ffffff; }
   .mx-font {
     font-size: 1rem; }
-    .mx-font-xs {
+    .mx-font-fine-print {
       font-size: 0.75rem; }
-    .mx-font-sm {
+    .mx-font-notes {
       font-size: 0.875rem; }
-    .mx-font-md {
+    .mx-font-short-copy {
       font-size: 1.3rem; }
-    .mx-font-lg {
+    .mx-font-lead {
       font-size: 1.5rem; }
-    .mx-font-xl {
+    .mx-font-subtitles {
       font-size: 1.75rem; }
     .mx-font-title {
       font-size: 2rem; }
@@ -254,12 +253,7 @@
   border: none;
   border-radius: 9999rem; }
   .btn-hover:hover {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #535a61; }
+    color: rgba(255, 255, 255, 0.8); }
   .btn-blue:hover {
     background-color: #0366d6;
     color: #ffffff; }
-
-.swatch {
-  min-height: 80rem;
-  width: 100rem; }

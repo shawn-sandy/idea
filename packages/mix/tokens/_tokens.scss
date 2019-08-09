@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Tue, 06 Aug 2019 00:16:10 GMT
+  Generated on Fri, 09 Aug 2019 10:24:40 GMT
 */
 
 $sg-color-gray: #6a737d !default;
@@ -20,26 +20,23 @@ $sg-component-btn-cursor: pointer !default;
 $sg-component-btn-border: none !default;
 $sg-component-btn-border-radius: 9999rem !default;
 $sg-component-btn-hover-color: transparentize(#ffffff, .20) !default;
-$sg-component-btn-hover-background-color: darken(#6a737d, 10%) !default;
 $sg-component-btn-blue-background-color: #0366d6 !default;
 $sg-component-btn-blue-color: #ffffff !default;
-$sg-component-swatch-min-height: 80rem !default;
-$sg-component-swatch-width: 100rem !default;
-$sg-font-size-base: 1rem !default;
-$sg-font-size-xs: 0.75rem !default;
-$sg-font-size-sm: 0.875rem !default;
-$sg-font-size-md: 1.3rem !default;
-$sg-font-size-lg: 1.5rem !default;
-$sg-font-size-xl: 1.75rem !default;
-$sg-font-size-title-base: 2rem !default;
-$sg-font-size-title-xs: 2.5rem !default;
-$sg-font-size-title-sm: 3rem !default;
-$sg-font-size-title-md: 3.5rem !default;
-$sg-font-size-title-lg: 4rem !default;
-$sg-font-size-title-xl: 5rem !default;
-$sg-font-weight-medium: 500 !default;
-$sg-font-weight-bold: 700 !default;
-$sg-font-color: #fff !default;
+$sg-font-size-base: 1rem !default; // descriptions...
+$sg-font-size-fine-print: 0.75rem !default; // descriptions...
+$sg-font-size-notes: 0.875rem !default; // descriptions...
+$sg-font-size-short-copy: 1.3rem !default; // descriptions...
+$sg-font-size-lead: 1.5rem !default; // descriptions...
+$sg-font-size-subtitles: 1.75rem !default; // descriptions...
+$sg-font-size-title-base: 2rem !default; // descriptions...
+$sg-font-size-title-xs: 2.5rem !default; // descriptions...
+$sg-font-size-title-sm: 3rem !default; // descriptions...
+$sg-font-size-title-md: 3.5rem !default; // descriptions...
+$sg-font-size-title-lg: 4rem !default; // descriptions...
+$sg-font-size-title-xl: 5rem !default; // descriptions...
+$sg-font-weight-medium: 500 !default; // descriptions...
+$sg-font-weight-bold: 700 !default; // descriptions...
+$sg-font-color: #fff !default; // descriptions...
 
 $tokens: (
   'color': (
@@ -62,27 +59,22 @@ $tokens: (
       'border': $sg-component-btn-border,
       'border-radius': $sg-component-btn-border-radius,
       'hover': (
-        'color': $sg-component-btn-hover-color,
-        'background-color': $sg-component-btn-hover-background-color
+        'color': $sg-component-btn-hover-color
       ),
       'blue': (
         'background-color': $sg-component-btn-blue-background-color,
         'color': $sg-component-btn-blue-color
       )
-    ),
-    'swatch': (
-      'min-height': $sg-component-swatch-min-height,
-      'width': $sg-component-swatch-width
     )
   ),
   'font': (
     'size': (
       'base': $sg-font-size-base,
-      'xs': $sg-font-size-xs,
-      'sm': $sg-font-size-sm,
-      'md': $sg-font-size-md,
-      'lg': $sg-font-size-lg,
-      'xl': $sg-font-size-xl,
+      'fine-print': $sg-font-size-fine-print,
+      'notes': $sg-font-size-notes,
+      'short-copy': $sg-font-size-short-copy,
+      'lead': $sg-font-size-lead,
+      'subtitles': $sg-font-size-subtitles,
       'title': (
         'base': $sg-font-size-title-base,
         'xs': $sg-font-size-title-xs,

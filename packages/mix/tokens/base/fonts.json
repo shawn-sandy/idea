@@ -13,12 +13,12 @@
         "value": "0.875rem",
         "comment": "descriptions..."
       },
-      "md": {
-        "short-copy": "1.3rem",
+      "short-copy": {
+        "value": "1.3rem",
         "comment": "descriptions..."
       },
-      "lg": {
-        "lead": "1.5rem",
+      "lead": {
+        "value": "1.5rem",
         "comment": "descriptions..."
       },
       "subtitles": {
