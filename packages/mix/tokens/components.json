@@ -38,6 +38,13 @@
           "value": "{color.white.value}"
         }
       }
+    },
+    "swatch": {
+      "min-height": {
+        "value": "60"
+      },
+      "width": {
+        "value": "100%"
+      }
     }
   }
-}

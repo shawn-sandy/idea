@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 07 Aug 2019 02:47:44 GMT
+ * Generated on Fri, 09 Aug 2019 00:19:44 GMT
  */
 
 export const ColorGray = "#6a737d";
@@ -25,3 +25,5 @@ export const ComponentsBtnBlueBackgroundColor = "#0070d2";
 export const ComponentsBtnCursor = "pointer";
 export const ComponentsBtnBorder = "none";
 export const ComponentsBtnBorderRadius = "9999rem";
+export const ComponentsSwatchMinHeight = "60";
+export const ComponentsSwatchWidth = "100%";

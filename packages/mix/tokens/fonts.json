@@ -2,54 +2,69 @@
   "font": {
     "size": {
       "base": {
-        "value": "1rem"
+        "value": "1rem",
+        "comment": "descriptions..."
       },
-      "xs": {
-        "value": "0.75rem"
+      "fine-print": {
+        "value": "0.75rem",
+        "comment": "descriptions..."
       },
-      "sm": {
-        "value": "0.875rem"
+      "notes": {
+        "value": "0.875rem",
+        "comment": "descriptions..."
       },
       "md": {
-        "value": "1.3rem"
+        "short-copy": "1.3rem",
+        "comment": "descriptions..."
       },
       "lg": {
-        "value": "1.5rem"
+        "lead": "1.5rem",
+        "comment": "descriptions..."
       },
-      "xl": {
-        "value": "1.75rem"
+      "subtitles": {
+        "value": "1.75rem",
+        "comment": "descriptions..."
       },
       "title": {
         "base": {
-          "value": "2rem"
+          "value": "2rem",
+          "comment": "descriptions..."
         },
         "xs": {
-          "value": "2.5rem"
+          "value": "2.5rem",
+          "comment": "descriptions..."
         },
         "sm": {
-          "value": "3rem"
+          "value": "3rem",
+          "comment": "descriptions..."
         },
         "md": {
-          "value": "3.5rem"
+          "value": "3.5rem",
+          "comment": "descriptions..."
         },
         "lg": {
-          "value": "4rem"
+          "value": "4rem",
+          "comment": "descriptions..."
         },
         "xl": {
-          "value": "5rem"
+          "value": "5rem",
+          "comment": "descriptions..."
         }
       }
     },
     "weight": {
       "medium": {
-        "value": "500"
+        "value": "500",
+        "comment": "descriptions..."
       },
       "bold": {
-        "value": "700"
+        "value": "700",
+        "comment": "descriptions..."
       }
     },
     "color": {
-      "value": "#fff"
+      "value": "#fff",
+      "comment": "descriptions..."
     }
   }
 }
