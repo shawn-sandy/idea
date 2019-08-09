@@ -25,9 +25,6 @@
       "hover": {
         "color": {
           "value": "transparentize({component.btn.color.value}, .20)"
-        },
-        "background-color": {
-          "value": "darken({component.btn.background-color.value}, 10%)"
         }
       },
       "blue": {
@@ -38,13 +35,6 @@
           "value": "{color.white.value}"
         }
       }
-    },
-    "swatch": {
-      "min-height": {
-        "value": "60"
-      },
-      "width": {
-        "value": "100%"
-      }
     }
   }
+}
