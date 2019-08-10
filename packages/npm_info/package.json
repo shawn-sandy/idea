@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/npm_info",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "Eleventy filter that grabs and returns npm package details",
   "keywords": [
     "npm",
@@ -40,5 +40,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "axios": "^0.19.0"
   }
 }

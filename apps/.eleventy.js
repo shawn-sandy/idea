@@ -47,12 +47,14 @@ module.exports = function(eleventyConfig) {
    * Plugins
    */
 
-   eleventyConfig.addPlugin(require('@shawnsandy/ideas'))
+  eleventyConfig.addPlugin(require("@shawnsandy/ideas"));
 
-   /**
-    * Config
-    */
-   return {
+  eleventyConfig.addPlugin(require("@shawnsandy/mix/eleventy"));
+
+  /**
+   * Config
+   */
+  return {
     dir: {
       input: "src",
       output: "../dist/"

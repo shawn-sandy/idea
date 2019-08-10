@@ -4,10 +4,10 @@
       "value": "#6a737d"
     },
     "red": {
-      "value": "#d73a49"
+      "value": "#bf0201"
     },
     "blue": {
-      "value": "#0366d6"
+      "value": "#0070d2"
     },
     "orange": {
       "value": "#f66a0a"
@@ -18,7 +18,17 @@
     "green": {
       "value": "#28a745"
     },
+    "black": {
+      "value": "#000000"
+    },
+    "white": {
+      "value": "#ffffff"
+    },
     "dark": {
+      "10": {
+        "value": "lighten(#707070, 10)",
+        "comment": "lightens"
+      },
       "25": {
         "value": "#707070",
         "comment": "highlight text"

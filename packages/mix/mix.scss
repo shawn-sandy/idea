@@ -1,0 +1,10 @@
+/** mix stylesheet **/
+
+//import tokens
+@import "./tokens/mix/tokens";
+
+// import mix library
+@import "./index.scss";
+
+/** generate all components in specified map--default component **/
+@include build-components("component");

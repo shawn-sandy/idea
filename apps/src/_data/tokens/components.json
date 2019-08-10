@@ -35,6 +35,14 @@
       "border-radius": {
         "value": "9999rem"
       }
+    },
+    "swatch": {
+      "min-height": {
+        "value": "60"
+      },
+      "width": {
+        "value": "100%"
+      }
     }
   }
 }

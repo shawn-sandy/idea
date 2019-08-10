@@ -1,0 +1,36 @@
+{
+  "color": {
+    "gray": {
+      "value": "#6a737d"
+    },
+    "red": {
+      "value": "#bf0201"
+    },
+    "blue": {
+      "value": "#0070d2"
+    },
+    "orange": {
+      "value": "#f66a0a"
+    },
+    "yellow": {
+      "value": "#ffd33d"
+    },
+    "green": {
+      "value": "#28a745"
+    },
+    "dark": {
+      "25": {
+        "value": "#707070",
+        "comment": "highlight text"
+      },
+      "50": {
+        "value": "#2A2A2A",
+        "comment": "default text"
+      },
+      "100": {
+        "value": "#232323",
+        "comment": "Element background etc"
+      }
+    }
+  }
+}
