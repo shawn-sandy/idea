@@ -3,6 +3,7 @@ layout: theme/index.njk
 collection: none
 package: "vue"
 title: Idea a design system framework
+scripts: ["/js/mix.js"]
 ---
 
 <main class="d-flex justify-content-center text-center cover bg-dark">
@@ -22,7 +23,9 @@ title: Idea a design system framework
     </p>
 
     <p class="text-right text-center py-3">
-      <a href="/ideas" class="button button-md m-2 button-rounded">Read More</a>
+      <a href="/ideas" class="button button-md m-2 button-rounded">
+        Read More
+      </a>
       <a href="/modules/elements" class="button button-md m-2 button-rounded">Sample Modules</a>
     </p>
 
@@ -53,7 +56,7 @@ title: Idea a design system framework
     </div>
     <!-- <hr> -->
     <div class="container">
-      <div class="row">
+      <div class="row mx-clip">
         {% for name, val in tokens.colors.color.dark %}
         {% if val.value %}
         <div class="col-md-2 p-2">
@@ -65,6 +68,11 @@ title: Idea a design system framework
         {% endif %}
         {% endfor %}
       </div>
+      <p>
+        <button class="mix-clipboard"
+          data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">Mix Button</button>
+        <button class="mix-clipboard" data-clipboard-target=".mx-clip">Mix Code</button>
+      </p>
     </div>
 
   </div>
