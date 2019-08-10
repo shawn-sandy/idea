@@ -61,6 +61,10 @@
         "value": "700",
         "comment": "descriptions..."
       }
+    },
+    "color": {
+      "value": "#fff",
+      "comment": "descriptions..."
     }
   }
 }

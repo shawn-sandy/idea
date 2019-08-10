@@ -68,11 +68,66 @@ scripts: ["/js/mix.js"]
         {% endif %}
         {% endfor %}
       </div>
-      <p>
-        <button class="mix-clipboard"
-          data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">Mix Button</button>
-        <button class="mix-clipboard" data-clipboard-target=".mx-clip">Mix Code</button>
-      </p>
+      <div class="row">
+        <p>
+          <button class="mix-clipboard"
+            data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">Mix Button</button>
+          <button class="mix-clipboard" data-clipboard-target=".mx-clip">Mix Code</button>
+        </p>
+      </div>
+      <section class="row py-4">
+        <div class="typography">
+          {% for name, val in tokens.fonts.font.size.title %}
+          {% if val.value %}
+          <aside class="col-md-12 p-2">
+            {% if name == 'base' %}
+            <header class="title" style="font-size: {{ val.value }}">
+              <span class="text-uppercase">sny-title</span> <span class="font-italic">(
+                {{ val.comment }} )</span>
+            </header>
+            {% else %}
+            <header class="title" style="font-size: {{ val.value }}">
+              <span class="text-uppercase">sny-title-{{ name }}</span>
+              <span class="font-italic">( {{ val.comment }} )</span>
+            </header>
+            {% endif %}
+          </aside>
+          {% endif %}
+          {% endfor %}
+
+        </div>
+      </section>
+      <section class="row py-4">
+        <div class="typography">
+          {% for name, val in tokens.fonts.font.size %}
+          {% if val.value %}
+          <aside class="col-md-12 p-2">
+            {% if name == 'base' %}
+            <p class="title" style="font-size: {{ val.value }}">
+              <span class="text-uppercase">sny-font</span> <span class="font-italic">(
+                {{ val.comment }} )</span>
+            </p>
+            <p class="title" style="font-size: {{ val.value }}">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sed quae ullam et labore provident illo
+              beatae dicta. Doloremque vitae atque, quos repellendus iusto corporis reprehenderit perferendis quisquam
+              aliquid omnis?
+            </p>
+            {% else %}
+            <p class="title" style="font-size: {{ val.value }}">
+              <span class="text-uppercase">sny-font-{{ name }}</span>
+              <span class="font-italic">( {{ val.comment }} )</span>
+            </p>
+            <p class="title" style="font-size: {{ val.value }}">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sed quae ullam et labore provident illo
+              beatae dicta. Doloremque vitae atque, quos repellendus iusto corporis reprehenderit perferendis quisquam
+              aliquid omnis?
+            </p>
+            {% endif %}
+          </aside>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </section>
     </div>
 
   </div>

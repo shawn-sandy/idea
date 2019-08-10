@@ -21,5 +21,22 @@ module.exports = {
     <button class="mix-clipboard ${classes}"
           data-clipboard-text="${string}">${content || ""}</button>
     `;
+  },
+  copy: (content, size, name, comment) => {
+    return `<p class="mix-type" style="font-size: ${size}">
+              <span class="text-uppercase">${name}</span>
+              <span class="font-italic">( ${comment} )</span>
+            </p>
+            <p class="mix-type" style="font-size: ${size}">
+              ${content}
+            </p>
+    `;
+  },
+  headers: (content, size, name) => {
+    return `<header class="title" style="font-size: ${size}">
+      </header>
+        <span class="font-italic">( {{ val.comment }} )</span>
+      </header>
+    `;
   }
 };

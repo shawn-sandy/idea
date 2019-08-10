@@ -8,9 +8,25 @@
 eleventyConfig.addPlugin(require("@shawnsandy/mix/eleventy.js"));
 ```
 
+**CSS** add a link to the mix stylesheet
+
+``` html
+<link>
+```
+
 #### Shortcodes
 
-**Swatches**
+**Swatches** displays your color tokens as swatches
+
+``` html
+{% swatch '#000000', "Black World" %}
+
+Swatch description
+
+{% endswatch %}
+```
+
+**Typography**
 
 ``` html
 {% swatch '#000000', "Black World" %}
