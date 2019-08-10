@@ -13,14 +13,17 @@ module.exports = (eleventy, options = {}) => {
   /**
    * Swatch
    **/
-  eleventy.addPairedShortcode("copy", (content, size, name, comment = "") => {
-    return mix.swatch(content, size, name, comment);
-  });
+  eleventy.addPairedShortcode(
+    "type_tokens",
+    (content, size, name, comment = "") => {
+      return mix.swatch(content, size, name, comment);
+    }
+  );
 
   /**
    * Swatch
    **/
-  eleventy.addPairedShortcode("header", (content, size, name) => {
+  eleventy.addPairedShortcode("title_tokens", (content, size, name) => {
     return mix.swatch(content, size, name);
   });
 };

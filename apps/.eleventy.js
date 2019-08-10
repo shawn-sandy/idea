@@ -49,6 +49,8 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(require("@shawnsandy/ideas"));
 
+  eleventyConfig.addPlugin(require("@shawnsandy/mix/eleventy"));
+
   /**
    * Config
    */

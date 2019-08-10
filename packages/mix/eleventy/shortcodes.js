@@ -12,16 +12,6 @@ module.exports = {
     </div>
     `;
   },
-  copyElement: (content, target = "#mx-clip", classes) => {
-    return `<button class="mix-clipboard ${classes}" data-clipboard-target="${target}">${content}</button>
-    `;
-  },
-  copyString: (content, string = "You copied a String...", classes) => {
-    return `
-    <button class="mix-clipboard ${classes}"
-          data-clipboard-text="${string}">${content || ""}</button>
-    `;
-  },
   copy: (content, size, name, comment) => {
     return `<p class="mix-type" style="font-size: ${size}">
               <span class="text-uppercase">${name}</span>
