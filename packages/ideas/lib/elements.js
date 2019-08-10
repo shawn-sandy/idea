@@ -24,5 +24,15 @@ module.exports = {
 
   blockquote: (content, class_names, attrs) => {
     return `<blockquote class="${class_names} ${attrs}>${content}</blockquote>`;
+  },
+  copyElement: (content, target = "#mx-clip", classes) => {
+    return `<button class="mix-clipboard ${classes}" data-clipboard-target="${target}">${content}</button>
+    `;
+  },
+  copyString: (content, string = "You copied a String...", classes) => {
+    return `
+    <button class="mix-clipboard ${classes}"
+          data-clipboard-text="${string}">${content || ""}</button>
+    `;
   }
 };
