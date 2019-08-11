@@ -1,5 +1,5 @@
 {
-  "components": {
+  "component": {
     "btn": {
       "padding": {
         "value": "1.25rem 5rem"
@@ -15,10 +15,10 @@
       },
       "hover": {
         "color": {
-          "value": "darken({components.btn.color.value}, 10%)"
+          "value": "darken({component.btn.color.value}, 10%)"
         },
         "background-color": {
-          "value": "darken({components.btn.background-color.value}, 10%)"
+          "value": "darken({component.btn.background-color.value}, 10%)"
         }
       },
       "blue": {

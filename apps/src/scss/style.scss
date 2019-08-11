@@ -24,10 +24,10 @@ $rem-fallback: true;
   @include g-colors();
 
   &-btn {
-    @include mix-modifier("components.btn");
+    @include mix-modifier("component.btn");
   }
 }
-@include build-components();
+@include build-components("component");
 .states {
   // @include build-modifier("hovers");
   // @include build-modifier("focus");

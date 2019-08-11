@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Fri, 09 Aug 2019 09:41:35 GMT
+  Generated on Sun, 11 Aug 2019 05:31:39 GMT
 */
 
 $sg-color-gray: #6a737d !default;
@@ -16,18 +16,32 @@ $sg-color-dark-10: #000000 !default; // lightens
 $sg-color-dark-25: #707070 !default; // highlight text
 $sg-color-dark-50: #2a2a2a !default; // default text
 $sg-color-dark-100: #232323 !default; // Element background etc
-$sg-components-btn-padding: 1.25rem 5rem !default;
-$sg-components-btn-font-size: 1.07rem !default;
-$sg-components-btn-background-color: #232323 !default;
-$sg-components-btn-color: transparentize(#6a737d, .25) !default;
-$sg-components-btn-hover-color: darken(transparentize(#6a737d, .25), 10%) !default;
-$sg-components-btn-hover-background-color: darken(#232323, 10%) !default;
-$sg-components-btn-blue-background-color: #0070d2 !default;
-$sg-components-btn-cursor: pointer !default;
-$sg-components-btn-border: none !default;
-$sg-components-btn-border-radius: 9999rem !default;
-$sg-components-swatch-min-height: 60 !default;
-$sg-components-swatch-width: 100% !default;
+$sg-component-btn-padding: 1.25rem !default;
+$sg-component-btn-font-size: 1.07rem !default;
+$sg-component-btn-background-color: #232323 !default;
+$sg-component-btn-color: transparentize(#6a737d, .25) !default;
+$sg-component-btn-hover-color: darken(transparentize(#6a737d, .25), 10%) !default;
+$sg-component-btn-hover-background-color: darken(#232323, 10%) !default;
+$sg-component-btn-blue-background-color: #0070d2 !default;
+$sg-component-btn-cursor: pointer !default;
+$sg-component-btn-border: none !default;
+$sg-component-btn-border-radius: 9999rem !default;
+$sg-component-swatch-min-height: 60rem !default;
+$sg-component-swatch-width: 100rem !default;
+$sg-font-size-base: 1rem !default; // descriptions...
+$sg-font-size-fine-print: 0.75rem !default; // descriptions...
+$sg-font-size-notes: 0.875rem !default; // descriptions...
+$sg-font-size-short-copy: 1.3rem !default; // descriptions...
+$sg-font-size-lead: 1.5rem !default; // descriptions...
+$sg-font-size-subtitles: 1.75rem !default; // descriptions...
+$sg-font-size-title-base: 2rem !default; // descriptions...
+$sg-font-size-title-xs: 2.5rem !default; // descriptions...
+$sg-font-size-title-sm: 3rem !default; // descriptions...
+$sg-font-size-title-md: 3.5rem !default; // descriptions...
+$sg-font-size-title-lg: 4rem !default; // descriptions...
+$sg-font-size-title-xl: 5rem !default; // descriptions...
+$sg-font-weight-medium: 500 !default; // descriptions...
+$sg-font-weight-bold: 700 !default; // descriptions...
 
 $tokens: (
   'color': (
@@ -46,26 +60,48 @@ $tokens: (
       '100': $sg-color-dark-100
     )
   ),
-  'components': (
+  'component': (
     'btn': (
-      'padding': $sg-components-btn-padding,
-      'font-size': $sg-components-btn-font-size,
-      'background-color': $sg-components-btn-background-color,
-      'color': $sg-components-btn-color,
+      'padding': $sg-component-btn-padding,
+      'font-size': $sg-component-btn-font-size,
+      'background-color': $sg-component-btn-background-color,
+      'color': $sg-component-btn-color,
       'hover': (
-        'color': $sg-components-btn-hover-color,
-        'background-color': $sg-components-btn-hover-background-color
+        'color': $sg-component-btn-hover-color,
+        'background-color': $sg-component-btn-hover-background-color
       ),
       'blue': (
-        'background-color': $sg-components-btn-blue-background-color
+        'background-color': $sg-component-btn-blue-background-color
       ),
-      'cursor': $sg-components-btn-cursor,
-      'border': $sg-components-btn-border,
-      'border-radius': $sg-components-btn-border-radius
+      'cursor': $sg-component-btn-cursor,
+      'border': $sg-component-btn-border,
+      'border-radius': $sg-component-btn-border-radius
     ),
     'swatch': (
-      'min-height': $sg-components-swatch-min-height,
-      'width': $sg-components-swatch-width
+      'min-height': $sg-component-swatch-min-height,
+      'width': $sg-component-swatch-width
+    )
+  ),
+  'font': (
+    'size': (
+      'base': $sg-font-size-base,
+      'fine-print': $sg-font-size-fine-print,
+      'notes': $sg-font-size-notes,
+      'short-copy': $sg-font-size-short-copy,
+      'lead': $sg-font-size-lead,
+      'subtitles': $sg-font-size-subtitles,
+      'title': (
+        'base': $sg-font-size-title-base,
+        'xs': $sg-font-size-title-xs,
+        'sm': $sg-font-size-title-sm,
+        'md': $sg-font-size-title-md,
+        'lg': $sg-font-size-title-lg,
+        'xl': $sg-font-size-title-xl
+      )
+    ),
+    'weight': (
+      'medium': $sg-font-weight-medium,
+      'bold': $sg-font-weight-bold
     )
   )
 );

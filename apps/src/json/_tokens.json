@@ -15,9 +15,9 @@
       "100": "#232323"
     }
   },
-  "components": {
+  "component": {
     "btn": {
-      "padding": "1.25rem 5rem",
+      "padding": "1.25rem",
       "font-size": "1.07rem",
       "background-color": "#232323",
       "color": "transparentize(#6a737d, .25)",
@@ -33,8 +33,30 @@
       "border-radius": "9999rem"
     },
     "swatch": {
-      "min-height": "60",
-      "width": "100%"
+      "min-height": "60rem",
+      "width": "100rem"
+    }
+  },
+  "font": {
+    "size": {
+      "base": "1rem",
+      "fine-print": "0.75rem",
+      "notes": "0.875rem",
+      "short-copy": "1.3rem",
+      "lead": "1.5rem",
+      "subtitles": "1.75rem",
+      "title": {
+        "base": "2rem",
+        "xs": "2.5rem",
+        "sm": "3rem",
+        "md": "3.5rem",
+        "lg": "4rem",
+        "xl": "5rem"
+      }
+    },
+    "weight": {
+      "medium": "500",
+      "bold": "700"
     }
   }
 }

@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Fri, 09 Aug 2019 09:41:36 GMT
+  Generated on Sun, 11 Aug 2019 05:31:39 GMT
 */
 
 $tokens: (
@@ -21,16 +21,44 @@ $tokens: (
   'sg-color-dark-50': #2a2a2a,
   // Element background etc
   'sg-color-dark-100': #232323,
-  'sg-components-btn-padding': 1.25rem 5rem,
-  'sg-components-btn-font-size': 1.07rem,
-  'sg-components-btn-background-color': #232323,
-  'sg-components-btn-color': transparentize(#6a737d, .25),
-  'sg-components-btn-hover-color': darken(transparentize(#6a737d, .25), 10%),
-  'sg-components-btn-hover-background-color': darken(#232323, 10%),
-  'sg-components-btn-blue-background-color': #0070d2,
-  'sg-components-btn-cursor': pointer,
-  'sg-components-btn-border': none,
-  'sg-components-btn-border-radius': 9999rem,
-  'sg-components-swatch-min-height': 60,
-  'sg-components-swatch-width': 100%
+  'sg-component-btn-padding': 1.25rem,
+  'sg-component-btn-font-size': 1.07rem,
+  'sg-component-btn-background-color': #232323,
+  'sg-component-btn-color': transparentize(#6a737d, .25),
+  'sg-component-btn-hover-color': darken(transparentize(#6a737d, .25), 10%),
+  'sg-component-btn-hover-background-color': darken(#232323, 10%),
+  'sg-component-btn-blue-background-color': #0070d2,
+  'sg-component-btn-cursor': pointer,
+  'sg-component-btn-border': none,
+  'sg-component-btn-border-radius': 9999rem,
+  'sg-component-swatch-min-height': 60rem,
+  'sg-component-swatch-width': 100rem,
+  // descriptions...
+  'sg-font-size-base': 1rem,
+  // descriptions...
+  'sg-font-size-fine-print': 0.75rem,
+  // descriptions...
+  'sg-font-size-notes': 0.875rem,
+  // descriptions...
+  'sg-font-size-short-copy': 1.3rem,
+  // descriptions...
+  'sg-font-size-lead': 1.5rem,
+  // descriptions...
+  'sg-font-size-subtitles': 1.75rem,
+  // descriptions...
+  'sg-font-size-title-base': 2rem,
+  // descriptions...
+  'sg-font-size-title-xs': 2.5rem,
+  // descriptions...
+  'sg-font-size-title-sm': 3rem,
+  // descriptions...
+  'sg-font-size-title-md': 3.5rem,
+  // descriptions...
+  'sg-font-size-title-lg': 4rem,
+  // descriptions...
+  'sg-font-size-title-xl': 5rem,
+  // descriptions...
+  'sg-font-weight-medium': 500,
+  // descriptions...
+  'sg-font-weight-bold': 700
 );

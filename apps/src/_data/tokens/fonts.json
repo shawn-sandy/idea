@@ -3,27 +3,27 @@
     "size": {
       "base": {
         "value": "1rem",
-        "comment": "descriptions..."
+        "comment": "16px"
       },
       "fine-print": {
         "value": "0.75rem",
-        "comment": "descriptions..."
+        "comment": "12px"
       },
       "notes": {
         "value": "0.875rem",
-        "comment": "descriptions..."
-      },
-      "short-copy": {
-        "value": "1.3rem",
-        "comment": "descriptions..."
+        "comment": "14px"
       },
       "lead": {
-        "value": "1.5rem",
-        "comment": "descriptions..."
+        "value": "1.125rem",
+        "comment": "18px"
       },
-      "subtitles": {
+      "callout": {
+        "value": "1.5rem",
+        "comment": "24px"
+      },
+      "subtitle": {
         "value": "1.75rem",
-        "comment": "descriptions..."
+        "comment": "28px"
       },
       "title": {
         "base": {
