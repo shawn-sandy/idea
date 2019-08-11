@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Fri, 09 Aug 2019 10:24:40 GMT
+  Generated on Sun, 11 Aug 2019 20:13:32 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 .mx {
@@ -205,8 +205,9 @@
     background-color: #6a737d;
     color: #ffffff;
     cursor: pointer;
-    border: none;
-    border-radius: 9999rem; }
+    border: none; }
+    .mx-btn:hover {
+      border-radius: 9999rem; }
     .mx-btn:hover {
       color: rgba(255, 255, 255, 0.8); }
     .mx-btn:hover {
@@ -240,8 +241,6 @@
     font-weight: 500; }
   .mx-font-bold {
     font-weight: 700; }
-  .mx-font {
-    color: #fff; }
 
 /** generate all components in specified map--default component **/
 .btn {
@@ -250,8 +249,9 @@
   background-color: #6a737d;
   color: #ffffff;
   cursor: pointer;
-  border: none;
-  border-radius: 9999rem; }
+  border: none; }
+  .btn-pill:hover {
+    border-radius: 9999rem; }
   .btn-hover:hover {
     color: rgba(255, 255, 255, 0.8); }
   .btn-blue:hover {

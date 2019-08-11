@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Fri, 09 Aug 2019 10:24:40 GMT
+  Generated on Sun, 11 Aug 2019 20:13:32 GMT
 */
 
 $sg-color-gray: #6a737d !default;
@@ -18,7 +18,7 @@ $sg-component-btn-background-color: #6a737d !default;
 $sg-component-btn-color: #ffffff !default;
 $sg-component-btn-cursor: pointer !default;
 $sg-component-btn-border: none !default;
-$sg-component-btn-border-radius: 9999rem !default;
+$sg-component-btn-pill-border-radius: 9999rem !default;
 $sg-component-btn-hover-color: transparentize(#ffffff, .20) !default;
 $sg-component-btn-blue-background-color: #0366d6 !default;
 $sg-component-btn-blue-color: #ffffff !default;
@@ -36,7 +36,6 @@ $sg-font-size-title-lg: 4rem !default; // descriptions...
 $sg-font-size-title-xl: 5rem !default; // descriptions...
 $sg-font-weight-medium: 500 !default; // descriptions...
 $sg-font-weight-bold: 700 !default; // descriptions...
-$sg-font-color: #fff !default; // descriptions...
 
 $tokens: (
   'color': (
@@ -57,7 +56,9 @@ $tokens: (
       'color': $sg-component-btn-color,
       'cursor': $sg-component-btn-cursor,
       'border': $sg-component-btn-border,
-      'border-radius': $sg-component-btn-border-radius,
+      'pill': (
+        'border-radius': $sg-component-btn-pill-border-radius
+      ),
       'hover': (
         'color': $sg-component-btn-hover-color
       ),
@@ -87,7 +88,6 @@ $tokens: (
     'weight': (
       'medium': $sg-font-weight-medium,
       'bold': $sg-font-weight-bold
-    ),
-    'color': $sg-font-color
+    )
   )
 );

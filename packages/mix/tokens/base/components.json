@@ -19,8 +19,10 @@
       "border": {
         "value": "none"
       },
-      "border-radius": {
-        "value": "9999rem"
+      "pill": {
+        "border-radius": {
+          "value": "9999rem"
+        }
       },
       "hover": {
         "color": {
