@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Sun, 11 Aug 2019 21:16:31 GMT
+  Generated on Sun, 11 Aug 2019 21:25:42 GMT
 */
 
 $sg-color-gray: #6a737d !default;
@@ -21,6 +21,7 @@ $sg-component-btn-cursor: pointer !default;
 $sg-component-btn-border: none !default;
 $sg-component-btn-display: inline-block !default;
 $sg-component-btn-text-align: center !default;
+$sg-component-btn-transition: all .2s !default;
 $sg-component-btn-hover-color: transparentize(#ffffff, .20) !default;
 $sg-component-btn-hover-background-color: transparentize(#6a737d, .20) !default;
 $sg-component-btn-blue-background-color: #0366d6 !default;
@@ -62,6 +63,7 @@ $tokens: (
       'border': $sg-component-btn-border,
       'display': $sg-component-btn-display,
       'text-align': $sg-component-btn-text-align,
+      'transition': $sg-component-btn-transition,
       'hover': (
         'color': $sg-component-btn-hover-color,
         'background-color': $sg-component-btn-hover-background-color

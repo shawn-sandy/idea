@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Sun, 11 Aug 2019 21:16:31 GMT
+  Generated on Sun, 11 Aug 2019 21:25:42 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 .mx {
@@ -207,7 +207,9 @@
     cursor: pointer;
     border: none;
     display: inline-block;
-    text-align: center; }
+    text-align: center;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
     .mx-btn:hover {
       color: rgba(255, 255, 255, 0.8);
       background-color: rgba(106, 115, 125, 0.8); }
@@ -252,7 +254,9 @@
   cursor: pointer;
   border: none;
   display: inline-block;
-  text-align: center; }
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
   .btn-hover:hover {
     color: rgba(255, 255, 255, 0.8);
     background-color: rgba(106, 115, 125, 0.8); }

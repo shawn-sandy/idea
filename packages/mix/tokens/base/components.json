@@ -28,6 +28,9 @@
       "text-align": {
         "value": "center"
       },
+      "transition": {
+        "value": "all .2s"
+      },
       "hover": {
         "color": {
           "value": "transparentize({component.btn.color.value}, .20)"
