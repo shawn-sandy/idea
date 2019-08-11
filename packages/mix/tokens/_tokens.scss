@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Sun, 11 Aug 2019 21:25:42 GMT
+  Generated on Sun, 11 Aug 2019 22:40:45 GMT
 */
 
 $sg-color-gray: #6a737d !default;
@@ -12,9 +12,11 @@ $sg-color-yellow: #ffd33d !default;
 $sg-color-green: #28a745 !default;
 $sg-color-black: #000000 !default;
 $sg-color-white: #ffffff !default;
-$sg-button-padding: .8rem 1.5rem !default;
-$sg-component-btn-padding: .8rem 1.5rem !default;
+$sg-button-padding: 0 1.5rem !default;
+$sg-component-btn-height: 3rem !default;
+$sg-component-btn-padding: 0 1.5rem !default;
 $sg-component-btn-font-size: 0.95rem !default;
+$sg-component-btn-line-height: 1.5rem !default;
 $sg-component-btn-color: #ffffff !default;
 $sg-component-btn-background-color: #6a737d !default;
 $sg-component-btn-cursor: pointer !default;
@@ -26,6 +28,7 @@ $sg-component-btn-hover-color: transparentize(#ffffff, .20) !default;
 $sg-component-btn-hover-background-color: transparentize(#6a737d, .20) !default;
 $sg-component-btn-blue-background-color: #0366d6 !default;
 $sg-component-btn-blue-color: #ffffff !default;
+$sg-component-btn-pill-border-radius: 9999rem !default;
 $sg-font-size-base: 1rem !default; // descriptions...
 $sg-font-size-fine-print: 0.75rem !default; // descriptions...
 $sg-font-size-notes: 0.875rem !default; // descriptions...
@@ -55,8 +58,10 @@ $tokens: (
   'button-padding': $sg-button-padding,
   'component': (
     'btn': (
+      'height': $sg-component-btn-height,
       'padding': $sg-component-btn-padding,
       'font-size': $sg-component-btn-font-size,
+      'line-height': $sg-component-btn-line-height,
       'color': $sg-component-btn-color,
       'background-color': $sg-component-btn-background-color,
       'cursor': $sg-component-btn-cursor,
@@ -71,6 +76,9 @@ $tokens: (
       'blue': (
         'background-color': $sg-component-btn-blue-background-color,
         'color': $sg-component-btn-blue-color
+      ),
+      'pill': (
+        'border-radius': $sg-component-btn-pill-border-radius
       )
     )
   ),

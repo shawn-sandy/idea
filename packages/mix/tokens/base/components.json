@@ -1,14 +1,20 @@
 {
   "button-padding": {
-    "value": ".8rem 1.5rem"
+    "value": "0 1.5rem"
   },
   "component": {
     "btn": {
+      "height": {
+        "value": "3rem"
+      },
       "padding": {
         "value": "{button-padding.value}"
       },
       "font-size": {
         "value": ".95rem"
+      },
+      "line-height": {
+        "value": "1.5"
       },
       "color": {
         "value": "{color.white.value}"
@@ -45,6 +51,11 @@
         },
         "color": {
           "value": "{color.white.value}"
+        }
+      },
+      "pill": {
+        "border-radius": {
+          "value": "9999rem !important"
         }
       }
     }
