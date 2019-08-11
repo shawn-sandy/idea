@@ -7,7 +7,7 @@
 
   clipboard.on("success", e => {
     var clipText = e.trigger.innerHTML;
-    e.trigger.innerHTML = "<span>&#10004;</span>";
+    e.trigger.innerHTML = "<span>&#10003;</span>";
 
     e.clearSelection();
     setTimeout(function() {
