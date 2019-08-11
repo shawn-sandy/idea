@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Sun, 11 Aug 2019 05:31:39 GMT
+  Generated on Sun, 11 Aug 2019 12:44:45 GMT
 */
 
 $tokens: (
@@ -33,32 +33,34 @@ $tokens: (
   'sg-component-btn-border-radius': 9999rem,
   'sg-component-swatch-min-height': 60rem,
   'sg-component-swatch-width': 100rem,
-  // descriptions...
+  // 16px
   'sg-font-size-base': 1rem,
-  // descriptions...
+  // 12px
   'sg-font-size-fine-print': 0.75rem,
-  // descriptions...
+  // 14px
   'sg-font-size-notes': 0.875rem,
-  // descriptions...
-  'sg-font-size-short-copy': 1.3rem,
-  // descriptions...
-  'sg-font-size-lead': 1.5rem,
-  // descriptions...
-  'sg-font-size-subtitles': 1.75rem,
-  // descriptions...
+  // 18px
+  'sg-font-size-lead': 1.125rem,
+  // 24px
+  'sg-font-size-callout': 1.5rem,
+  // 28px
+  'sg-font-size-subtitle': 1.75rem,
+  // 32px
   'sg-font-size-title-base': 2rem,
-  // descriptions...
+  // 40px
   'sg-font-size-title-xs': 2.5rem,
-  // descriptions...
+  // 48px
   'sg-font-size-title-sm': 3rem,
-  // descriptions...
+  // 56px
   'sg-font-size-title-md': 3.5rem,
-  // descriptions...
+  // 64px
   'sg-font-size-title-lg': 4rem,
-  // descriptions...
+  // 80px
   'sg-font-size-title-xl': 5rem,
   // descriptions...
   'sg-font-weight-medium': 500,
   // descriptions...
-  'sg-font-weight-bold': 700
+  'sg-font-weight-bold': 700,
+  // descriptions...
+  'sg-font-color': #fff
 );

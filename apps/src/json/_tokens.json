@@ -42,9 +42,9 @@
       "base": "1rem",
       "fine-print": "0.75rem",
       "notes": "0.875rem",
-      "short-copy": "1.3rem",
-      "lead": "1.5rem",
-      "subtitles": "1.75rem",
+      "lead": "1.125rem",
+      "callout": "1.5rem",
+      "subtitle": "1.75rem",
       "title": {
         "base": "2rem",
         "xs": "2.5rem",
@@ -57,6 +57,7 @@
     "weight": {
       "medium": "500",
       "bold": "700"
-    }
+    },
+    "color": "#fff"
   }
 }
