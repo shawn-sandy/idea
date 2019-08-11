@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    {% block head %} {% include "partials/head.html" %} {% endblock %}
-  </head>
-  <body>
-    {% include "partials/no-ie.html" %}
-    <!-- header -->
-    {% block header %} {% endblock %}
-    <!-- main content -->
-    {% block main %}
-    <main class="container-fluid">
-      <div class="row">{% include 'views/main.njk' %}</div>
-    </main>
-    {% endblock %}
-    <!-- footer -->
-    {% block footer %} {% endblock %}
-    <!-- scripts  -->
-    {% include "./partials/footer-scripts.html" %}
-    <script></script>
-  </body>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <script src="https://kit.fontawesome.com/33ec04a601.js"></script>
+  {% block head %}
+  {% include "partials/head.html" %}
+  {% endblock %}
+</head>
+
+<body>
+  {% include "partials/no-ie.html" %}
+  <!-- header -->
+  {% block header %} {% endblock %}
+  <!-- main content -->
+  {% block main %}
+  <main class="container-fluid">
+    <div class="row">{% include 'views/main.njk' %}</div>
+  </main>
+  {% endblock %}
+  <!-- footer -->
+  {% block footer %} {% endblock %}
+  <!-- scripts  -->
+  {% include "./partials/footer-scripts.html" %}
+  <script></script>
+</body>
+
 </html>
