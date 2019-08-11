@@ -6,7 +6,9 @@ _Idea is currently in early production beta, feel free to open an issues for fea
 
 ## IDEA(beta) is a simple and easy to use HTML, CSS and JAVASCRIPT toolkit (framework if you prefer) for building and managing your teams design systems. allowing you to quickly turn your ideas and vision into products.
 
-> ### A design system is an agreed upon set of principles and a living suite of modular, resuable parts. This includes standards around style, color, language and behavior. The system allows us to work smarter and innovate on products faster, while providing a more predictable user experience.
+>
+
+### A design system is an agreed upon set of principles and a living suite of modular, resuable parts. This includes standards around style, color, language and behavior. The system allows us to work smarter and innovate on products faster, while providing a more predictable user experience.
 
 > [Amélie Lamont @amelielamont](https://twitter.com/amelielamont/status/1072917354819059713)
 
@@ -18,28 +20,34 @@ Core is the engine of Idea, a collection packages and tools behind the system. A
 
 ## Features
 
-- Atomic driven component system / structure
-- Eleventy powered static site generator
-- Markdown / HTML driven content and components
-- Vue.js integration
-- Javascript based template **[Nunjucks](https://mozilla.github.io/nunjucks/)**, Handlebars, Mustache...
-- Modular
-- Webpack / Gulp
-- Customizable
+* Atomic driven component system / structure
+* Eleventy powered static site generator
+* Markdown / HTML driven content and components
+* Vue.js integration
+* Javascript based template **[Nunjucks](https://mozilla.github.io/nunjucks/)**, Handlebars, Mustache...
+* Modular
+* Webpack / Gulp
+* Customizable
 
 ### Install
 
 ```
 npm i @shawnsandy/ideas
 ```
- ### Usage
 
- **Add to eleventy** Add the following to your config file `eleventy.js`  inside the `modules.exports` function.
 
- ```
+
+### Usage
+
+ **Add to eleventy** Add the following to your config file `eleventy.js` inside the `modules.exports` function.
+
+
+
+```
    eleventyConfig.addPlugin(require('@shawnsandy/ideas'))
  ```
 
+ [Eleventy Shortcodes](./ELEVENTY.md)
 
 ## Licence (MIT)
 
@@ -56,3 +64,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## Enjoy
 
 **Wakanda Forever :)**
+
