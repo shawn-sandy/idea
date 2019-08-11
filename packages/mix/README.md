@@ -1,4 +1,4 @@
-# SystemMix (beta)
+# StyleMix (beta)
 
 A SASS-Map toolkit for generating utility classes, components and styles-sheets for your design system, style-guide or website from SASS MAPS.
 
