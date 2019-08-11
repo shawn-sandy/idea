@@ -28,27 +28,27 @@
       "title": {
         "base": {
           "value": "2rem",
-          "comment": "descriptions..."
+          "comment": "32px"
         },
         "xs": {
           "value": "2.5rem",
-          "comment": "descriptions..."
+          "comment": "40px"
         },
         "sm": {
           "value": "3rem",
-          "comment": "descriptions..."
+          "comment": "48px"
         },
         "md": {
           "value": "3.5rem",
-          "comment": "descriptions..."
+          "comment": "56px"
         },
         "lg": {
           "value": "4rem",
-          "comment": "descriptions..."
+          "comment": "64px"
         },
         "xl": {
           "value": "5rem",
-          "comment": "descriptions..."
+          "comment": "80px"
         }
       }
     },
