@@ -6,12 +6,12 @@
   const clipboard = new ClipboardJS(".mix-clipboard");
 
   clipboard.on("success", e => {
-    var clipText = e.trigger.textContent;
-    e.trigger.innerHTML = "&#10003";
+    var clipText = e.trigger.innerHTML;
+    e.trigger.innerHTML = "<span>&#10004;</span>";
 
     e.clearSelection();
     setTimeout(function() {
-      e.trigger.textContent = clipText;
+      e.trigger.innerHTML = clipText;
     }, 1000);
   });
 
