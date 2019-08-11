@@ -13,7 +13,6 @@
   },
   "auto-changelog": {
     "unreleased": true,
-    "commitLimit": 10,
     "template": "config/_changelog.hbs"
   },
   "main": "index.js",
