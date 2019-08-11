@@ -21,6 +21,7 @@
 - 43adc06, a Generated changelog and a https://github.com/shawn-sandy/idea/commit/43adc0633593dda4efa67a369433c938e01af7b8, amongst other things.
 #### [v0.3.0](https://github.com/shawn-sandy/idea/compare/v0.3.7...v0.3.0)
 > 11 August 2019 `2019-08-11`
+- Readme Updates, an 55 and a https://github.com/shawn-sandy/idea/pull/55 to the PR.
 - token utilities, an 54 and a https://github.com/shawn-sandy/idea/pull/54 to the PR.
 - a810298, a Build output and a https://github.com/shawn-sandy/idea/commit/a8102986f184361b4b422dfdff662c72da7a4919, amongst other things.
 - 09a0f05, a Eleventy shortcode/plugin for mix and a https://github.com/shawn-sandy/idea/commit/09a0f05d193eb8667b5ff0bd0dedc1a271d6301d, amongst other things.
