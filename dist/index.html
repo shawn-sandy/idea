@@ -31,7 +31,7 @@
 
 <main class="d-flex justify-content-center text-center cover bg-dark">
   <div class="container align-items-center align-self-center text-white">
-    <div class="text-uppercase headline">Idea.</div>
+    <div id="mx-clip" class="text-uppercase headline">Idea.</div>
     <div class="subtitle text-uppercase">
       <!-- A toolkit for building & managing a design systems -->
     </div>
@@ -201,12 +201,25 @@
         
         
       </div>
-      <div class="row">
+      <div class="">
         <p>
           <button class="mix-clipboard"
             data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">Mix Button
             <span>&#9986;</span></button>
           <button class="mix-clipboard" data-clipboard-target=".mx-clip">Mix Code <span>&#9986;</span></button>
+        </p>
+        <p>
+          <button class="mix-clipboard undefined" data-clipboard-target="#mx-clip">
+          copy element
+           </button>
+    
+
+          
+    <button class="mix-clipboard button button-md m-2"
+          data-clipboard-text="copied string">
+          copy string
+           </button>
+    
         </p>
       </div>
       <section class="row py-4">

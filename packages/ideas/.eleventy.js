@@ -36,14 +36,14 @@ module.exports = (eleventy, options = {}) => {
    * Copy Element
    */
   eleventy.addPairedShortcode("copy_string", (content, string, classes) => {
-    return mix.copyString(content, string, (classes = ""));
+    return elements.copyString(content, string, classes);
   });
 
   /**
    * Copy Swatch
    */
   eleventy.addPairedShortcode("copy_element", (content, target, classes) => {
-    return mix.copyElement(content, target, (classes = ""));
+    return elements.copyElement(content, target, classes);
   });
 
   /**
