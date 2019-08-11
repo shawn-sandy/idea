@@ -20,10 +20,10 @@
 > 3 August 2019 `2019-08-03`
 - 43adc06, a Generated changelog and a https://github.com/shawn-sandy/idea/commit/43adc0633593dda4efa67a369433c938e01af7b8, amongst other things.
 #### [v0.3.0](https://github.com/shawn-sandy/idea/compare/v0.3.7...v0.3.0)
-> 4 August 2019 `2019-08-04`
-- 61cf593, a Format isoDate and a https://github.com/shawn-sandy/idea/commit/61cf593ce51e05d7b795e212a71bdbe116122bda, amongst other things.
-- f236341, a Changelog updates and a https://github.com/shawn-sandy/idea/commit/f2363416472a70bf6e5fc5a1c19149a70f837d9c, amongst other things.
-- e4780d7, a Update CHANGELOG.md and a https://github.com/shawn-sandy/idea/commit/e4780d7c9f5512bde7a90be715804b8f95dc2239, amongst other things.
+> 10 August 2019 `2019-08-10`
+- a810298, a Build output and a https://github.com/shawn-sandy/idea/commit/a8102986f184361b4b422dfdff662c72da7a4919, amongst other things.
+- 09a0f05, a Eleventy shortcode/plugin for mix and a https://github.com/shawn-sandy/idea/commit/09a0f05d193eb8667b5ff0bd0dedc1a271d6301d, amongst other things.
+- e4be2a6, a build output and a https://github.com/shawn-sandy/idea/commit/e4be2a685dd3dc2b8522321792bbfd0aaef7ba5c, amongst other things.
 #### [v0.2.1](https://github.com/shawn-sandy/idea/compare/v0.0.8...v0.2.1)
 > 3 August 2019 `2019-08-03`
 - Tokens and Colors examples, an 51 and a https://github.com/shawn-sandy/idea/pull/51 to the PR.
