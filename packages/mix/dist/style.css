@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Sun, 11 Aug 2019 20:13:32 GMT
+  Generated on Sun, 11 Aug 2019 21:16:31 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 .mx {
@@ -200,16 +200,17 @@
   .mx-border-white-tp {
     border-color: rgba(255, 255, 255, 0.8) !important; }
   .mx-btn {
-    padding: 1.1rem;
+    padding: 0.8rem 1.5rem;
     font-size: 0.95rem;
-    background-color: #6a737d;
     color: #ffffff;
+    background-color: #6a737d;
     cursor: pointer;
-    border: none; }
+    border: none;
+    display: inline-block;
+    text-align: center; }
     .mx-btn:hover {
-      border-radius: 9999rem; }
-    .mx-btn:hover {
-      color: rgba(255, 255, 255, 0.8); }
+      color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(106, 115, 125, 0.8); }
     .mx-btn:hover {
       background-color: #0366d6;
       color: #ffffff; }
@@ -244,16 +245,17 @@
 
 /** generate all components in specified map--default component **/
 .btn {
-  padding: 1.1rem;
+  padding: 0.8rem 1.5rem;
   font-size: 0.95rem;
-  background-color: #6a737d;
   color: #ffffff;
+  background-color: #6a737d;
   cursor: pointer;
-  border: none; }
-  .btn-pill:hover {
-    border-radius: 9999rem; }
+  border: none;
+  display: inline-block;
+  text-align: center; }
   .btn-hover:hover {
-    color: rgba(255, 255, 255, 0.8); }
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(106, 115, 125, 0.8); }
   .btn-blue:hover {
     background-color: #0366d6;
     color: #ffffff; }

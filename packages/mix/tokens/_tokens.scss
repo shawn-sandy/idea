@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Sun, 11 Aug 2019 20:13:32 GMT
+  Generated on Sun, 11 Aug 2019 21:16:31 GMT
 */
 
 $sg-color-gray: #6a737d !default;
@@ -12,14 +12,17 @@ $sg-color-yellow: #ffd33d !default;
 $sg-color-green: #28a745 !default;
 $sg-color-black: #000000 !default;
 $sg-color-white: #ffffff !default;
-$sg-component-btn-padding: 1.1rem !default;
+$sg-button-padding: .8rem 1.5rem !default;
+$sg-component-btn-padding: .8rem 1.5rem !default;
 $sg-component-btn-font-size: 0.95rem !default;
-$sg-component-btn-background-color: #6a737d !default;
 $sg-component-btn-color: #ffffff !default;
+$sg-component-btn-background-color: #6a737d !default;
 $sg-component-btn-cursor: pointer !default;
 $sg-component-btn-border: none !default;
-$sg-component-btn-pill-border-radius: 9999rem !default;
+$sg-component-btn-display: inline-block !default;
+$sg-component-btn-text-align: center !default;
 $sg-component-btn-hover-color: transparentize(#ffffff, .20) !default;
+$sg-component-btn-hover-background-color: transparentize(#6a737d, .20) !default;
 $sg-component-btn-blue-background-color: #0366d6 !default;
 $sg-component-btn-blue-color: #ffffff !default;
 $sg-font-size-base: 1rem !default; // descriptions...
@@ -48,19 +51,20 @@ $tokens: (
     'black': $sg-color-black,
     'white': $sg-color-white
   ),
+  'button-padding': $sg-button-padding,
   'component': (
     'btn': (
       'padding': $sg-component-btn-padding,
       'font-size': $sg-component-btn-font-size,
-      'background-color': $sg-component-btn-background-color,
       'color': $sg-component-btn-color,
+      'background-color': $sg-component-btn-background-color,
       'cursor': $sg-component-btn-cursor,
       'border': $sg-component-btn-border,
-      'pill': (
-        'border-radius': $sg-component-btn-pill-border-radius
-      ),
+      'display': $sg-component-btn-display,
+      'text-align': $sg-component-btn-text-align,
       'hover': (
-        'color': $sg-component-btn-hover-color
+        'color': $sg-component-btn-hover-color,
+        'background-color': $sg-component-btn-hover-background-color
       ),
       'blue': (
         'background-color': $sg-component-btn-blue-background-color,

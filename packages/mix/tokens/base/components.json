@@ -1,17 +1,20 @@
 {
+  "button-padding": {
+    "value": ".8rem 1.5rem"
+  },
   "component": {
     "btn": {
       "padding": {
-        "value": "1.1rem 1.5rem"
+        "value": "{button-padding.value}"
       },
       "font-size": {
         "value": ".95rem"
       },
-      "background-color": {
-        "value": "{color.gray.value}"
-      },
       "color": {
         "value": "{color.white.value}"
+      },
+      "background-color": {
+        "value": "{color.gray.value}"
       },
       "cursor": {
         "value": "pointer"
@@ -19,14 +22,18 @@
       "border": {
         "value": "none"
       },
-      "pill": {
-        "border-radius": {
-          "value": "9999rem"
-        }
+      "display": {
+        "value": "inline-block"
+      },
+      "text-align": {
+        "value": "center"
       },
       "hover": {
         "color": {
           "value": "transparentize({component.btn.color.value}, .20)"
+        },
+        "background-color": {
+          "value": "transparentize({component.btn.background-color.value}, .20)"
         }
       },
       "blue": {
