@@ -20,12 +20,13 @@
 > 3 August 2019 `2019-08-03`
 - 43adc06, a Generated changelog and a https://github.com/shawn-sandy/idea/commit/43adc0633593dda4efa67a369433c938e01af7b8, amongst other things.
 #### [v0.3.0](https://github.com/shawn-sandy/idea/compare/v0.3.7...v0.3.0)
-> 11 August 2019 `2019-08-11`
+> 12 August 2019 `2019-08-12`
+- - update local site, an 56 and a https://github.com/shawn-sandy/idea/pull/56 to the PR.
 - Readme Updates, an 55 and a https://github.com/shawn-sandy/idea/pull/55 to the PR.
 - token utilities, an 54 and a https://github.com/shawn-sandy/idea/pull/54 to the PR.
 - a810298, a Build output and a https://github.com/shawn-sandy/idea/commit/a8102986f184361b4b422dfdff662c72da7a4919, amongst other things.
+- 4be74b7, a add fontawesome and a https://github.com/shawn-sandy/idea/commit/4be74b7cb5b4a97d0a8be171e8916d8795c37a2e, amongst other things.
 - 09a0f05, a Eleventy shortcode/plugin for mix and a https://github.com/shawn-sandy/idea/commit/09a0f05d193eb8667b5ff0bd0dedc1a271d6301d, amongst other things.
-- e4be2a6, a build output and a https://github.com/shawn-sandy/idea/commit/e4be2a685dd3dc2b8522321792bbfd0aaef7ba5c, amongst other things.
 #### [v0.2.1](https://github.com/shawn-sandy/idea/compare/v0.0.8...v0.2.1)
 > 3 August 2019 `2019-08-03`
 - Tokens and Colors examples, an 51 and a https://github.com/shawn-sandy/idea/pull/51 to the PR.
