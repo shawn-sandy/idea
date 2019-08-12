@@ -1,11 +1,12 @@
 /*
   Do not edit directly
-  Generated on Mon, 12 Aug 2019 11:10:59 GMT
+  Generated on Mon, 12 Aug 2019 11:23:56 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 .mx {
   /** color utilities **/
   /** MIX COLORS **/
+  /** generate buttons using the modifier **/
   /** fonts **/ }
   .mx-gray {
     color: #6a737d; }
@@ -213,9 +214,9 @@
     .mx-btn:focus {
       border: none;
       outline: none; }
-    .mx-btn.-pill {
+    .mx-btn-pill {
       border-radius: 9999rem; }
-    .mx-btn.-rounded {
+    .mx-btn-rounded {
       border-radius: 0.31rem; }
   .mx-font {
     font-size: 1rem; }

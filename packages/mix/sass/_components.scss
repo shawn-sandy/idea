@@ -60,7 +60,7 @@
             @include mix-modifier("#{$key}.#{$item}");
           }
         } @else {
-          &.#{$mix-prefix}#{$item} {
+          &#{$mix-prefix}#{$item} {
             @include mix-modifier("#{$key}.#{$item}");
           }
         }
