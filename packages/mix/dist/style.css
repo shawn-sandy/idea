@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Sun, 11 Aug 2019 22:40:45 GMT
+  Generated on Mon, 12 Aug 2019 01:43:54 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 .mx {
@@ -200,24 +200,19 @@
   .mx-border-white-tp {
     border-color: rgba(255, 255, 255, 0.8) !important; }
   .mx-btn {
-    height: 3rem;
+    height: 2.5rem;
     padding: 0 1.5rem;
-    font-size: 0.95rem;
-    line-height: 1.5rem;
-    color: #ffffff;
-    background-color: #6a737d;
-    cursor: pointer;
-    border: none;
     display: inline-block;
+    color: #000000;
     text-align: center;
     -webkit-transition: all 0.2s;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    border: none; }
     .mx-btn:hover {
-      color: rgba(255, 255, 255, 0.8);
-      background-color: rgba(106, 115, 125, 0.8); }
-    .mx-btn.-blue {
-      background-color: #0366d6;
-      color: #ffffff; }
+      color: rgba(0, 0, 0, 0.75); }
+    .mx-btn:focus {
+      border: none;
+      outline: none; }
     .mx-btn.-pill {
       border-radius: 9999rem; }
   .mx-font {
@@ -251,23 +246,18 @@
 
 /** generate all components in specified map--default component **/
 .btn {
-  height: 3rem;
+  height: 2.5rem;
   padding: 0 1.5rem;
-  font-size: 0.95rem;
-  line-height: 1.5rem;
-  color: #ffffff;
-  background-color: #6a737d;
-  cursor: pointer;
-  border: none;
   display: inline-block;
+  color: #000000;
   text-align: center;
   -webkit-transition: all 0.2s;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  border: none; }
   .btn:hover {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(106, 115, 125, 0.8); }
-  .btn-blue {
-    background-color: #0366d6;
-    color: #ffffff; }
+    color: rgba(0, 0, 0, 0.75); }
+  .btn:focus {
+    border: none;
+    outline: none; }
   .btn-pill {
     border-radius: 9999rem; }

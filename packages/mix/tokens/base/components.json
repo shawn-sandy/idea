@@ -5,31 +5,21 @@
   "component": {
     "btn": {
       "height": {
-        "value": "3rem"
+        "value": "2.5rem"
       },
       "padding": {
         "value": "{button-padding.value}"
       },
-      "font-size": {
-        "value": ".95rem"
-      },
-      "line-height": {
-        "value": "1.5"
-      },
-      "color": {
-        "value": "{color.white.value}"
-      },
-      "background-color": {
-        "value": "{color.gray.value}"
-      },
-      "cursor": {
-        "value": "pointer"
-      },
-      "border": {
-        "value": "none"
-      },
       "display": {
         "value": "inline-block"
+      },
+      "color": {
+        "value": "{color.black.value}"
+      },
+      "hover": {
+        "color": {
+          "value": "transparentize({component.btn.color.value}, .25)"
+        }
       },
       "text-align": {
         "value": "center"
@@ -37,25 +27,20 @@
       "transition": {
         "value": "all .2s"
       },
-      "hover": {
-        "color": {
-          "value": "transparentize({component.btn.color.value}, .20)"
-        },
-        "background-color": {
-          "value": "transparentize({component.btn.background-color.value}, .20)"
-        }
+      "border": {
+        "value": "none"
       },
-      "blue": {
-        "background-color": {
-          "value": "{color.blue.value}"
+      "focus": {
+        "border": {
+          "value": "none"
         },
-        "color": {
-          "value": "{color.white.value}"
+        "outline": {
+          "value": "none"
         }
       },
       "pill": {
         "border-radius": {
-          "value": "9999rem !important"
+          "value": "9999rem"
         }
       }
     }

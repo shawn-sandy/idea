@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Sun, 11 Aug 2019 22:40:45 GMT
+  Generated on Mon, 12 Aug 2019 01:43:54 GMT
 */
 
 $sg-color-gray: #6a737d !default;
@@ -13,21 +13,16 @@ $sg-color-green: #28a745 !default;
 $sg-color-black: #000000 !default;
 $sg-color-white: #ffffff !default;
 $sg-button-padding: 0 1.5rem !default;
-$sg-component-btn-height: 3rem !default;
+$sg-component-btn-height: 2.5rem !default;
 $sg-component-btn-padding: 0 1.5rem !default;
-$sg-component-btn-font-size: 0.95rem !default;
-$sg-component-btn-line-height: 1.5rem !default;
-$sg-component-btn-color: #ffffff !default;
-$sg-component-btn-background-color: #6a737d !default;
-$sg-component-btn-cursor: pointer !default;
-$sg-component-btn-border: none !default;
 $sg-component-btn-display: inline-block !default;
+$sg-component-btn-color: #000000 !default;
+$sg-component-btn-hover-color: transparentize(#000000, .25) !default;
 $sg-component-btn-text-align: center !default;
 $sg-component-btn-transition: all .2s !default;
-$sg-component-btn-hover-color: transparentize(#ffffff, .20) !default;
-$sg-component-btn-hover-background-color: transparentize(#6a737d, .20) !default;
-$sg-component-btn-blue-background-color: #0366d6 !default;
-$sg-component-btn-blue-color: #ffffff !default;
+$sg-component-btn-border: none !default;
+$sg-component-btn-focus-border: none !default;
+$sg-component-btn-focus-outline: none !default;
 $sg-component-btn-pill-border-radius: 9999rem !default;
 $sg-font-size-base: 1rem !default; // descriptions...
 $sg-font-size-fine-print: 0.75rem !default; // descriptions...
@@ -60,22 +55,17 @@ $tokens: (
     'btn': (
       'height': $sg-component-btn-height,
       'padding': $sg-component-btn-padding,
-      'font-size': $sg-component-btn-font-size,
-      'line-height': $sg-component-btn-line-height,
-      'color': $sg-component-btn-color,
-      'background-color': $sg-component-btn-background-color,
-      'cursor': $sg-component-btn-cursor,
-      'border': $sg-component-btn-border,
       'display': $sg-component-btn-display,
+      'color': $sg-component-btn-color,
+      'hover': (
+        'color': $sg-component-btn-hover-color
+      ),
       'text-align': $sg-component-btn-text-align,
       'transition': $sg-component-btn-transition,
-      'hover': (
-        'color': $sg-component-btn-hover-color,
-        'background-color': $sg-component-btn-hover-background-color
-      ),
-      'blue': (
-        'background-color': $sg-component-btn-blue-background-color,
-        'color': $sg-component-btn-blue-color
+      'border': $sg-component-btn-border,
+      'focus': (
+        'border': $sg-component-btn-focus-border,
+        'outline': $sg-component-btn-focus-outline
       ),
       'pill': (
         'border-radius': $sg-component-btn-pill-border-radius
