@@ -96,7 +96,8 @@
     // check if comps loop through components
     @each $comp, $keys in $components {
       @if type-of($keys) == "map" {
-        .#{$comp} {
+        .#{if($mix-namespace != "null", #{$mix-namespace}#{$mix-prefix}, ""),
+        }#{$comp} {
           @each $key, $value in $keys {
             @if type-of($value) == "map" {
               @if is-modifier-state($key) {
