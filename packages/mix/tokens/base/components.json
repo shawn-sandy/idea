@@ -13,22 +13,22 @@
       "display": {
         "value": "inline-block"
       },
-      "color": {
-        "value": "{color.black.value}"
-      },
-      "hover": {
-        "color": {
-          "value": "transparentize({component.btn.color.value}, .25)"
-        }
-      },
       "text-align": {
         "value": "center"
+      },
+      "background-color": {
+        "value": "lightgray"
       },
       "transition": {
         "value": "all .2s"
       },
       "border": {
         "value": "none"
+      },
+      "hover": {
+        "background-color": {
+          "value": "darken({component.btn.background-color.value}, 5)"
+        }
       },
       "focus": {
         "border": {
@@ -41,6 +41,11 @@
       "pill": {
         "border-radius": {
           "value": "9999rem"
+        }
+      },
+      "rounded": {
+        "border-radius": {
+          "value": "0.31rem"
         }
       }
     }

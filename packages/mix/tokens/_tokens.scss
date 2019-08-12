@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Mon, 12 Aug 2019 01:43:54 GMT
+  Generated on Mon, 12 Aug 2019 02:15:53 GMT
 */
 
 $sg-color-gray: #6a737d !default;
@@ -16,14 +16,15 @@ $sg-button-padding: 0 1.5rem !default;
 $sg-component-btn-height: 2.5rem !default;
 $sg-component-btn-padding: 0 1.5rem !default;
 $sg-component-btn-display: inline-block !default;
-$sg-component-btn-color: #000000 !default;
-$sg-component-btn-hover-color: transparentize(#000000, .25) !default;
 $sg-component-btn-text-align: center !default;
+$sg-component-btn-background-color: #d3d3d3 !default;
 $sg-component-btn-transition: all .2s !default;
 $sg-component-btn-border: none !default;
+$sg-component-btn-hover-background-color: darken(#d3d3d3, 5) !default;
 $sg-component-btn-focus-border: none !default;
 $sg-component-btn-focus-outline: none !default;
 $sg-component-btn-pill-border-radius: 9999rem !default;
+$sg-component-btn-rounded-border-radius: 0.31rem !default;
 $sg-font-size-base: 1rem !default; // descriptions...
 $sg-font-size-fine-print: 0.75rem !default; // descriptions...
 $sg-font-size-notes: 0.875rem !default; // descriptions...
@@ -56,19 +57,22 @@ $tokens: (
       'height': $sg-component-btn-height,
       'padding': $sg-component-btn-padding,
       'display': $sg-component-btn-display,
-      'color': $sg-component-btn-color,
-      'hover': (
-        'color': $sg-component-btn-hover-color
-      ),
       'text-align': $sg-component-btn-text-align,
+      'background-color': $sg-component-btn-background-color,
       'transition': $sg-component-btn-transition,
       'border': $sg-component-btn-border,
+      'hover': (
+        'background-color': $sg-component-btn-hover-background-color
+      ),
       'focus': (
         'border': $sg-component-btn-focus-border,
         'outline': $sg-component-btn-focus-outline
       ),
       'pill': (
         'border-radius': $sg-component-btn-pill-border-radius
+      ),
+      'rounded': (
+        'border-radius': $sg-component-btn-rounded-border-radius
       )
     )
   ),
