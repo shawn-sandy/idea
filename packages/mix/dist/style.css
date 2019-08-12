@@ -1,11 +1,12 @@
 /*
   Do not edit directly
-  Generated on Fri, 09 Aug 2019 10:24:40 GMT
+  Generated on Mon, 12 Aug 2019 11:23:56 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 .mx {
   /** color utilities **/
   /** MIX COLORS **/
+  /** generate buttons using the modifier **/
   /** fonts **/ }
   .mx-gray {
     color: #6a737d; }
@@ -200,18 +201,23 @@
   .mx-border-white-tp {
     border-color: rgba(255, 255, 255, 0.8) !important; }
   .mx-btn {
-    padding: 1.1rem;
-    font-size: 0.95rem;
-    background-color: #6a737d;
-    color: #ffffff;
-    cursor: pointer;
-    border: none;
-    border-radius: 9999rem; }
+    height: 2.5rem;
+    padding: 0 1.5rem;
+    display: inline-block;
+    text-align: center;
+    background-color: #d3d3d3;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    border: none; }
     .mx-btn:hover {
-      color: rgba(255, 255, 255, 0.8); }
-    .mx-btn:hover {
-      background-color: #0366d6;
-      color: #ffffff; }
+      background-color: #c6c6c6; }
+    .mx-btn:focus {
+      border: none;
+      outline: none; }
+    .mx-btn-pill {
+      border-radius: 9999rem; }
+    .mx-btn-rounded {
+      border-radius: 0.31rem; }
   .mx-font {
     font-size: 1rem; }
     .mx-font-fine-print {
@@ -240,20 +246,23 @@
     font-weight: 500; }
   .mx-font-bold {
     font-weight: 700; }
-  .mx-font {
-    color: #fff; }
 
 /** generate all components in specified map--default component **/
-.btn {
-  padding: 1.1rem;
-  font-size: 0.95rem;
-  background-color: #6a737d;
-  color: #ffffff;
-  cursor: pointer;
-  border: none;
-  border-radius: 9999rem; }
-  .btn-hover:hover {
-    color: rgba(255, 255, 255, 0.8); }
-  .btn-blue:hover {
-    background-color: #0366d6;
-    color: #ffffff; }
+.mx-btn {
+  height: 2.5rem;
+  padding: 0 1.5rem;
+  display: inline-block;
+  text-align: center;
+  background-color: #d3d3d3;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border: none; }
+  .mx-btn:hover {
+    background-color: #c6c6c6; }
+  .mx-btn:focus {
+    border: none;
+    outline: none; }
+  .mx-btn-pill {
+    border-radius: 9999rem; }
+  .mx-btn-rounded {
+    border-radius: 0.31rem; }

@@ -27,7 +27,7 @@ $rem-fallback: true;
     @include mix-modifier("component.btn");
   }
 }
-@include build-components("component");
+// @include build-components("component");
 .states {
   // @include build-modifier("hovers");
   // @include build-modifier("focus");

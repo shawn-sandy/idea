@@ -68,23 +68,34 @@ scripts: ["/js/mix.js"]
         {% endif %}
         {% endfor %}
       </div>
-      <div class="">
+      <section class="button-examples">
         <p>
           <button class="mix-clipboard"
             data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">Mix Button
             <span>&#9986;</span></button>
-          <button class="mix-clipboard" data-clipboard-target=".mx-clip">Mix Code <span>&#9986;</span></button>
+          <button class="mix-clipboard" data-clipboard-target=".mx-clip">Mix Code <i class="fad fa-copy"></i></button>
         </p>
         <p>
           {% copy_element %}
-          copy element
+          copy element <i class="fal fa-cut"></i>
           {% endcopy_element %}
 
-          {% copy_string "copied string", "button button-md m-2" %}
-          copy string
+          {% copy_string "copied string", "mx-btn" %}
+          copy string <i class="fad fa-copy"></i>
           {% endcopy_string %}
         </p>
-      </div>
+        <p class="mx-btn-">
+          <button class="mx-btn">
+            Mix Button
+          </button>
+          <button class="mx-btn btn-rounded">
+            Mix rounded Button
+          </button>
+          <button class="mx-btn btn-pill">
+            Mix Pill Button
+          </button>
+        </p>
+      </section>
       <section class="row py-4">
         <div class="typography">
           {% for name, val in tokens.fonts.font.size.title %}

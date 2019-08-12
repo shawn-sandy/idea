@@ -11,6 +11,7 @@
   /** color utilities **/
   @include g-colors();
   // generate button modifiers using the mix-modifier (mixin)
+  /** generate buttons using the modifier **/
   &-btn {
     @include mix-modifier("component.btn");
   }
@@ -21,7 +22,7 @@
 /** generate all components in specified map--default component **/
 @include build-components("component");
 .test {
-  @if is-modifier-state() {
+  @if is-modifier-state("hover") {
     @debug "This is a state";
   } @else {
     @debug "Sorry not state found";

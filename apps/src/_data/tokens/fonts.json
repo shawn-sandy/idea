@@ -18,21 +18,21 @@
         "comment": "18px"
       },
       "callout": {
-        "value": "1.5rem",
-        "comment": "24px"
+        "value": "1.27rem",
+        "comment": "22px"
       },
       "subtitle": {
-        "value": "1.75rem",
-        "comment": "28px"
+        "value": "1.62rem",
+        "comment": "26px"
       },
       "title": {
         "base": {
-          "value": "2rem",
-          "comment": "32px"
+          "value": "2.25rem",
+          "comment": "36px base/default title"
         },
         "xs": {
-          "value": "2.5rem",
-          "comment": "40px"
+          "value": "1.75rem",
+          "comment": "28px"
         },
         "sm": {
           "value": "3rem",
@@ -46,9 +46,9 @@
           "value": "4rem",
           "comment": "64px"
         },
-        "xl": {
+        "hero": {
           "value": "5rem",
-          "comment": "80px"
+          "comment": "80px Hero"
         }
       }
     },

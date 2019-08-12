@@ -3,9 +3,9 @@
   $maps: get($key, $map);
 
   @each $item, $value in $maps {
-    @if is-modifier-state() {
+    @if is-modifier-state($item) {
       @if type-of($value) == "map" {
-        &:hover {
+        &:#{$item} {
           @each $c-key, $c-value in $value {
             #{$c-key}: $c-value;
           }
@@ -55,12 +55,12 @@
   @if length($token) >=0 {
     @each $item, $value in $token {
       @if type-of($value) == "map" {
-        @if is-modifier-state() {
-          &:hover {
+        @if is-modifier-state($item) {
+          &:#{$item} {
             @include mix-modifier("#{$key}.#{$item}");
           }
         } @else {
-          &.#{$mix-prefix}#{$item} {
+          &#{$mix-prefix}#{$item} {
             @include mix-modifier("#{$key}.#{$item}");
           }
         }
@@ -96,15 +96,16 @@
     // check if comps loop through components
     @each $comp, $keys in $components {
       @if type-of($keys) == "map" {
-        .#{$comp} {
+        .#{if($mix-namespace != "null", #{$mix-namespace}#{$mix-prefix}, ""),
+        }#{$comp} {
           @each $key, $value in $keys {
             @if type-of($value) == "map" {
-              &#{$mix-prefix}#{$key} {
-                @if is-modifier-state() {
-                  &:hover {
-                    @include build-components("#{$component}.#{$comp}.#{$key}");
-                  }
-                } @else {
+              @if is-modifier-state($key) {
+                &:#{$key} {
+                  @include build-components("#{$component}.#{$comp}.#{$key}");
+                }
+              } @else {
+                &#{$mix-prefix}#{$key} {
                   @include build-components("#{$component}.#{$comp}.#{$key}");
                 }
               }

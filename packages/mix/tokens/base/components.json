@@ -1,38 +1,51 @@
 {
+  "button-padding": {
+    "value": "0 1.5rem"
+  },
   "component": {
     "btn": {
-      "padding": {
-        "value": "1.1rem 1.5rem"
+      "height": {
+        "value": "2.5rem"
       },
-      "font-size": {
-        "value": ".95rem"
+      "padding": {
+        "value": "{button-padding.value}"
+      },
+      "display": {
+        "value": "inline-block"
+      },
+      "text-align": {
+        "value": "center"
       },
       "background-color": {
-        "value": "{color.gray.value}"
+        "value": "lightgray"
       },
-      "color": {
-        "value": "{color.white.value}"
-      },
-      "cursor": {
-        "value": "pointer"
+      "transition": {
+        "value": "all .2s"
       },
       "border": {
         "value": "none"
       },
-      "border-radius": {
-        "value": "9999rem"
-      },
       "hover": {
-        "color": {
-          "value": "transparentize({component.btn.color.value}, .20)"
+        "background-color": {
+          "value": "darken({component.btn.background-color.value}, 5)"
         }
       },
-      "blue": {
-        "background-color": {
-          "value": "{color.blue.value}"
+      "focus": {
+        "border": {
+          "value": "none"
         },
-        "color": {
-          "value": "{color.white.value}"
+        "outline": {
+          "value": "none"
+        }
+      },
+      "pill": {
+        "border-radius": {
+          "value": "9999rem"
+        }
+      },
+      "rounded": {
+        "border-radius": {
+          "value": "0.31rem"
         }
       }
     }

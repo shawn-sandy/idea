@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <script src="https://kit.fontawesome.com/33ec04a601.js"></script>
+  
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.1/css/boxicons.min.css' rel='stylesheet'>
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/mix.css">
 <title>Idea a design system framework.</title>
 
 
- 
-  </head>
-  <body>
-    <div id="ie-warning" class="ie-hidden">
+
+  
+</head>
+
+<body>
+  <div id="ie-warning" class="ie-hidden">
   <div>
   Welcome and thank you for visiting. For an optimized and safer browsing experience, we recommend upgrading your browser, please go to
   <a href="https://browser-update.org/update-browser.html" target="_blank">BrowserUpdate.org</a> for more information.
   </div>
 </div>
 
-    <!-- header -->
-     
-    <!-- main content -->
-    
+  <!-- header -->
+   
+  <!-- main content -->
+  
 
 <main class="d-flex justify-content-center text-center cover bg-dark">
   <div class="container align-items-center align-self-center text-white">
@@ -201,36 +204,47 @@
         
         
       </div>
-      <div class="">
+      <section class="button-examples">
         <p>
           <button class="mix-clipboard"
             data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">Mix Button
             <span>&#9986;</span></button>
-          <button class="mix-clipboard" data-clipboard-target=".mx-clip">Mix Code <span>&#9986;</span></button>
+          <button class="mix-clipboard" data-clipboard-target=".mx-clip">Mix Code <i class="fad fa-copy"></i></button>
         </p>
         <p>
           <button class="mix-clipboard undefined" data-clipboard-target="#mx-clip">
-          copy element
+          copy element <i class="fal fa-cut"></i>
            </button>
     
 
           
-    <button class="mix-clipboard button button-md m-2"
+    <button class="mix-clipboard mx-btn"
           data-clipboard-text="copied string">
-          copy string
+          copy string <i class="fad fa-copy"></i>
            </button>
     
         </p>
-      </div>
+        <p class="mx-btn-">
+          <button class="mx-btn">
+            Mix Button
+          </button>
+          <button class="mx-btn btn-rounded">
+            Mix rounded Button
+          </button>
+          <button class="mx-btn btn-pill">
+            Mix Pill Button
+          </button>
+        </p>
+      </section>
       <section class="row py-4">
         <div class="typography">
           
           
           <aside class="col-md-12 p-2">
             
-            <header class="title" style="font-size: 2rem">
+            <header class="title" style="font-size: 2.25rem">
               <span class="text-uppercase">mix-title</span> <span class="font-italic">(
-                32px )</span>
+                36px base/default title )</span>
             </header>
             
           </aside>
@@ -239,9 +253,9 @@
           
           <aside class="col-md-12 p-2">
             
-            <header class="title" style="font-size: 2.5rem">
+            <header class="title" style="font-size: 1.75rem">
               <span class="text-uppercase">mix-title-xs</span>
-              <span class="font-italic">( 40px )</span>
+              <span class="font-italic">( 28px )</span>
             </header>
             
           </aside>
@@ -284,8 +298,8 @@
           <aside class="col-md-12 p-2">
             
             <header class="title" style="font-size: 5rem">
-              <span class="text-uppercase">mix-title-xl</span>
-              <span class="font-italic">( 80px )</span>
+              <span class="text-uppercase">mix-title-hero</span>
+              <span class="font-italic">( 80px Hero )</span>
             </header>
             
           </aside>
@@ -364,11 +378,11 @@
           
           <aside class="col-md-12 p-2">
             
-            <p class="title" style="font-size: 1.5rem">
+            <p class="title" style="font-size: 1.27rem">
               <span class="text-uppercase">mix-font-callout</span>
-              <span class="font-italic">( 24px )</span>
+              <span class="font-italic">( 22px )</span>
             </p>
-            <p class="title" style="font-size: 1.5rem">
+            <p class="title" style="font-size: 1.27rem">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sed quae ullam et labore provident illo
               beatae dicta. Doloremque vitae atque, quos repellendus iusto corporis reprehenderit perferendis quisquam
               aliquid omnis?
@@ -380,11 +394,11 @@
           
           <aside class="col-md-12 p-2">
             
-            <p class="title" style="font-size: 1.75rem">
+            <p class="title" style="font-size: 1.62rem">
               <span class="text-uppercase">mix-font-subtitle</span>
-              <span class="font-italic">( 28px )</span>
+              <span class="font-italic">( 26px )</span>
             </p>
-            <p class="title" style="font-size: 1.75rem">
+            <p class="title" style="font-size: 1.62rem">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sed quae ullam et labore provident illo
               beatae dicta. Doloremque vitae atque, quos repellendus iusto corporis reprehenderit perferendis quisquam
               aliquid omnis?
@@ -403,16 +417,17 @@
 </footer>
 
 
-    <!-- footer -->
-     
-    <!-- scripts  -->
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/prism.js"></script>
+  <!-- footer -->
+   
+  <!-- scripts  -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/prism.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
 
 <script src="/js/ie.js"></script>
 <script src="/js/min/mix.min.js"></script>
 
-    <script></script>
-  </body>
+  <script></script>
+</body>
+
 </html>

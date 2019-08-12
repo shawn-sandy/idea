@@ -5,6 +5,6 @@
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generate all components in specified map--default component **/
-.swatch {
+.mx-swatch {
   min-height: 60px;
   width: 100%; }

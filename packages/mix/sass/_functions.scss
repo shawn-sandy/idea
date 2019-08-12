@@ -130,7 +130,7 @@
   @return append($result, $string);
 }
 
-@function is-modifier-state($state: "hover") {
+@function is-modifier-state($state) {
   @if index($mix-modifier-states, $state) != null {
     @return true;
   }
