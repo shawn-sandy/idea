@@ -3,6 +3,7 @@ const gulp = require("gulp");
 const babel = require("gulp-babel");
 const uglify = require("gulp-uglify");
 const rename = require("gulp-rename");
+const reports = require("gulp-sizereport");
 
 gulp.task("default", () =>
   gulp
@@ -20,4 +21,5 @@ gulp.task("default", () =>
       })
     )
     .pipe(gulp.dest("dist"))
+    .pipe(reports({ gzip: true }))
 );

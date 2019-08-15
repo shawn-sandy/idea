@@ -26,6 +26,7 @@
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-rename": "^1.4.0",
+    "gulp-sizereport": "^1.2.1",
     "gulp-uglify": "^3.0.2",
     "lodash": "^4.17.15",
     "parcel-bundler": "^1.12.3",
