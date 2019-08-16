@@ -7,7 +7,7 @@ module.exports = (eleventy, options = {}) => {
    * Swatch
    **/
   eleventy.addPairedShortcode("mix_swatch", (content, color, name) => {
-    return mix.swatch(content, color, name, comment);
+    return mix.swatch(content, color, name);
   });
 
   /**
