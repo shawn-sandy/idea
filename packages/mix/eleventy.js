@@ -6,24 +6,17 @@ module.exports = (eleventy, options = {}) => {
   /**
    * Swatch
    **/
-  eleventy.addPairedShortcode("swatch", (content, color, name) => {
+  eleventy.addPairedShortcode("mix_swatch", (content, color, name) => {
     return mix.swatch(content, color, name);
   });
 
   /**
-   * Swatch
+   * Type
    **/
   eleventy.addPairedShortcode(
-    "type_tokens",
+    "mix_type",
     (content, size, name, comment = "") => {
-      return mix.swatch(content, size, name, comment);
+      return mix.type(content, size, name, comment);
     }
   );
-
-  /**
-   * Swatch
-   **/
-  eleventy.addPairedShortcode("title_tokens", (content, size, name) => {
-    return mix.swatch(content, size, name);
-  });
 };
