@@ -2,16 +2,9 @@ module.exports = {
   swatch: (content, color, name) => {
     const displayName = name.replace("-", " ");
     return `
-    <div class="mix-swatch>
-    <div class"mix-swatch:color" style="background-color: ${color}"></div>
-    <div class="mix-swatch-label">
-    <span class="mix-swatch-name" style="${color}">
-    ${displayName} - ${color}
-    </span>
-    </div>
-    <p class="mix-swatch-content">
+    <div class="mix-swatch ${color}" style="height: 50px; width: 100%"></div>
+    <div class="mix-swatch-content" style="padding: 5px">
     ${content}
-    </p>
     </div>
     `;
   },

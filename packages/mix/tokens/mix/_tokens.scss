@@ -1,11 +1,12 @@
 
 /*
   Do not edit directly
-  Generated on Fri, 09 Aug 2019 11:22:57 GMT
+  Generated on Fri, 16 Aug 2019 11:05:11 GMT
 */
 
 $sg-default-swatch-width: 100% !default;
 $sg-default-swatch-min-height: 60px !default;
+$sg-default-swatch-padding: 10px !default;
 $sg-component-swatch-min-height: 60px !default;
 $sg-component-swatch-width: 100% !default;
 
@@ -13,7 +14,8 @@ $tokens: (
   'default': (
     'swatch': (
       'width': $sg-default-swatch-width,
-      'min-height': $sg-default-swatch-min-height
+      'min-height': $sg-default-swatch-min-height,
+      'padding': $sg-default-swatch-padding
     )
   ),
   'component': (

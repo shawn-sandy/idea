@@ -60,6 +60,9 @@ scripts: ["/js/mix.js"]
         {% for name, val in tokens.colors.color.dark %}
         {% if val.value %}
         <div class="col-md-2 p-2">
+          {% mix_swatch "id-bg-dark-"+ name, name %}
+          {{ val.comment }} {{ name }}
+          {% endmix_swatch %}
           <div class="p-5 rounded shadow-lg" style="background-color: {{ val.value }}"></div>
           <div class="color text-uppercase mx-font-xs" style="color: {{ val.value }}">
             {{ name }} - {{ val.value }}
