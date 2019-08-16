@@ -102,15 +102,13 @@ scripts: ["/js/mix.js"]
           {% if val.value %}
           <aside class="col-md-12 p-2">
             {% if name == 'base' %}
-            <header class="title" style="font-size: {{ val.value }}">
-              <span class="text-uppercase">mix-title</span> <span class="font-italic">(
-                {{ val.comment }} )</span>
-            </header>
+            {% mix_type val.value, name, val.comment %}
+            <div class="">.mx-font-title</div>
+            {% endmix_type %}
             {% else %}
-            <header class="title" style="font-size: {{ val.value }}">
-              <span class="text-uppercase">mix-title-{{ name }}</span>
-              <span class="font-italic">( {{ val.comment }} )</span>
-            </header>
+            {% mix_type val.value, name, val.comment %}
+            <div class="">.mx-font-title-{{name}}</div>
+            {% endmix_type %}
             {% endif %}
           </aside>
           {% endif %}
@@ -124,25 +122,29 @@ scripts: ["/js/mix.js"]
           {% if val.value %}
           <aside class="col-md-12 p-2">
             {% if name == 'base' %}
-            <p class="title" style="font-size: {{ val.value }}">
-              <span class="text-uppercase">mix-font</span> <span class="font-italic">(
-                {{ val.comment }} )</span>
-            </p>
-            <p class="title" style="font-size: {{ val.value }}">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sed quae ullam et labore provident illo
-              beatae dicta. Doloremque vitae atque, quos repellendus iusto corporis reprehenderit perferendis quisquam
-              aliquid omnis?
-            </p>
+            {% mix_type val.value, name, val.comment %}
+            <div class="">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad fugit fugiat, blanditiis eligendi
+              harum expedita cupiditate error laboriosam vero vel quibusdam? Recusandae ratione expedita porro earum
+              quia fuga, quo officia!
+              <br>
+              <span>
+                .mx-font
+              </span>
+            </div>
+            {% endmix_type %}
             {% else %}
-            <p class="title" style="font-size: {{ val.value }}">
-              <span class="text-uppercase">mix-font-{{ name }}</span>
-              <span class="font-italic">( {{ val.comment }} )</span>
-            </p>
-            <p class="title" style="font-size: {{ val.value }}">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sed quae ullam et labore provident illo
-              beatae dicta. Doloremque vitae atque, quos repellendus iusto corporis reprehenderit perferendis quisquam
-              aliquid omnis?
-            </p>
+            {% mix_type val.value, name, val.comment %}
+            <div class="">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad fugit fugiat, blanditiis eligendi
+              harum expedita cupiditate error laboriosam vero vel quibusdam? Recusandae ratione expedita porro earum
+              quia fuga, quo officia!
+              <br>
+              <span>
+                .mx-font-{{ name }}
+              </span>
+            </div>
+            {% endmix_type %}
             {% endif %}
           </aside>
           {% endif %}
