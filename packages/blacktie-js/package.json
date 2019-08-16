@@ -6,7 +6,8 @@
   "scripts": {
     "start": "parcel index.html watch --open --https",
     "build": "npm run clean && parcel build index.html --no-content-hash --detailed-report",
-    "clean": "rm -rf dist/*"
+    "clean": "rm -rf dist/*",
+    "gulp": "gulp"
   },
   "author": {
     "name": "Shawn Sandy",
