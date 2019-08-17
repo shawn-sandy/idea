@@ -41,6 +41,24 @@
         "value": "#232323",
         "comment": "Element background etc"
       }
+    },
+    "brand": {
+      "primary": {
+        "value": "#0366D6",
+        "comment": "Primary branding color used for the logo, feature text/foreground elements"
+      },
+      "secondary": {
+        "value": "#070707",
+        "comment": "Secondary branding color used for backgrounds to emphasis the lift the Primary brand color"
+      },
+      "light": {
+        "value": "FEFCFC",
+        "comment": "Primary text on dark colors"
+      },
+      "dark": {
+        "value": "#707070",
+        "comment": "Primary text on dark colors"
+      }
     }
   }
 }

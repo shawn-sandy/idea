@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 15 Aug 2019 12:00:48 GMT
+ * Generated on Sat, 17 Aug 2019 19:35:20 GMT
  */
 
 export const ColorGray = "#6a737d";
@@ -15,6 +15,10 @@ export const ColorDark10 = "#000000"; // lightens
 export const ColorDark25 = "#707070"; // highlight text
 export const ColorDark50 = "#2a2a2a"; // default text
 export const ColorDark100 = "#232323"; // Element background etc
+export const ColorBrandPrimary = "#0366d6"; // Primary branding color used for the logo, feature text/foreground elements
+export const ColorBrandSecondary = "#070707"; // Secondary branding color used for backgrounds to emphasis the lift the Primary brand color
+export const ColorBrandLight = "#fefcfc"; // Primary text on dark colors
+export const ColorBrandDark = "#707070"; // Primary text on dark colors
 export const ComponentBtnPadding = "1.25rem";
 export const ComponentBtnFontSize = "1.07rem";
 export const ComponentBtnBackgroundColor = "#232323";

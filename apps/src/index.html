@@ -40,15 +40,30 @@ scripts: ["/js/mix.js"]
   </div>
 
   <div class="data bg-light p-2">
+
     <div class="container bg-light">
       <div class="row">
+        <div class="col-12 mx-font-title">
+          Brand Colors
+        </div>
+        {% for name, val in tokens.colors.color.brand %}
+        <div class="col-md-3 p-2">
+          {% mix_swatch "id-bg-brand-"+ name, name %}
+          {{ val.comment }} {{ name }}
+          {% endmix_swatch %}
+        </div>
+        {% endfor %}
+      </div>
+      <div class="row">
+        <div class="col-12 mx-font-title">
+          Default Colors
+        </div>
         {% for name, val in tokens.colors.color %}
         {% if val.value %}
         <div class="col-md-2 p-2 rounded">
-          <div class="p-5 rounded shadow-lg" style="background-color: {{ val.value }}"></div>
-          <div class="color text-uppercase" style="color: {{ val.value }}">
-            {{ name }} - {{ val.value }}
-          </div>
+          {% mix_swatch "id-bg-"+ name, name %}
+          {{ val.comment }} {{ name }}
+          {% endmix_swatch %}
         </div>
         {% endif %}
         {% endfor %}
@@ -57,16 +72,15 @@ scripts: ["/js/mix.js"]
     <!-- <hr> -->
     <div class="container">
       <div class="row mx-clip">
+        <div class="col-12 mx-font-title">
+          Grays Colors
+        </div>
         {% for name, val in tokens.colors.color.dark %}
         {% if val.value %}
         <div class="col-md-2 p-2">
           {% mix_swatch "id-bg-dark-"+ name, name %}
           {{ val.comment }} {{ name }}
           {% endmix_swatch %}
-          <div class="p-5 rounded shadow-lg" style="background-color: {{ val.value }}"></div>
-          <div class="color text-uppercase mx-font-xs" style="color: {{ val.value }}">
-            {{ name }} - {{ val.value }}
-          </div>
         </div>
         {% endif %}
         {% endfor %}
