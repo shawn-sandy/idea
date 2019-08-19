@@ -1,4 +1,5 @@
 const syntax = require("@11ty/eleventy-plugin-syntaxhighlight");
+const htmlmin = require("html-minifier");
 
 // shortcode imports
 const _Button = require("./src/_shortcodes/Button");
@@ -50,6 +51,19 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(require("@shawnsandy/ideas"));
 
   eleventyConfig.addPlugin(require("@shawnsandy/mix/eleventy"));
+
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    if (outputPath.endsWith(".html")) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+
+    return content;
+  });
 
   /**
    * Config

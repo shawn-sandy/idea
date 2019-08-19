@@ -54,14 +54,29 @@ scripts: ["/js/mix.js"]
         </div>
         {% endfor %}
       </div>
+
       <div class="row">
         <div class="col-12 mx-font-title">
           Default Colors
         </div>
         {% for name, val in tokens.colors.color %}
         {% if val.value %}
-        <div class="col-md-2 p-2 rounded">
+        <div class="col-md-3 p-2 rounded">
           {% mix_swatch "id-bg-"+ name, name %}
+          {{ name }} {{ val.comment }}
+          {% endmix_swatch %}
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+      <div class="row mx-clip">
+        <div class="col-12 mx-font-title">
+          Grays
+        </div>
+        {% for name, val in tokens.colors.color.dark %}
+        {% if val.value %}
+        <div class="col-md-3 p-2">
+          {% mix_swatch "id-bg-dark-"+ name, name %}
           {{ val.comment }} {{ name }}
           {% endmix_swatch %}
         </div>
@@ -71,20 +86,7 @@ scripts: ["/js/mix.js"]
     </div>
     <!-- <hr> -->
     <div class="container">
-      <div class="row mx-clip">
-        <div class="col-12 mx-font-title">
-          Grays Colors
-        </div>
-        {% for name, val in tokens.colors.color.dark %}
-        {% if val.value %}
-        <div class="col-md-2 p-2">
-          {% mix_swatch "id-bg-dark-"+ name, name %}
-          {{ val.comment }} {{ name }}
-          {% endmix_swatch %}
-        </div>
-        {% endif %}
-        {% endfor %}
-      </div>
+
       <section class="button-examples">
         <p>
           <button class="mix-clipboard"

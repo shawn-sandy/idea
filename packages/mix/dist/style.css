@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Thu, 15 Aug 2019 12:02:09 GMT
+  Generated on Mon, 19 Aug 2019 22:58:37 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 .mx {
@@ -218,6 +218,26 @@
       border-radius: 9999rem; }
     .mx-btn-rounded {
       border-radius: 0.31rem; }
+  .mx-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60px; }
+    .mx-nav-elm {
+      padding: 0 1rem; }
+    .mx-nav-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      list-style: none;
+      margin: auto 0; }
   .mx-font {
     font-size: 1rem; }
     .mx-font-fine-print {

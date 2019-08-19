@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Thu, 15 Aug 2019 12:02:09 GMT
+  Generated on Mon, 19 Aug 2019 22:58:37 GMT
 */
 
 $sg-color-gray: #6a737d !default;
@@ -39,6 +39,14 @@ $sg-font-size-title-lg: 4rem !default; // descriptions...
 $sg-font-size-title-xl: 5rem !default; // descriptions...
 $sg-font-weight-medium: 500 !default; // descriptions...
 $sg-font-weight-bold: 700 !default; // descriptions...
+$sg-nav-display: flex !default;
+$sg-nav-align-items: center !default;
+$sg-nav-height: 60px !default;
+$sg-nav-elm-padding: 0 1rem !default;
+$sg-nav-list-display: flex !default;
+$sg-nav-list-flex-direction: row !default;
+$sg-nav-list-list-style: none !default;
+$sg-nav-list-margin: auto 0 !default;
 
 $tokens: (
   'color': (
@@ -96,6 +104,20 @@ $tokens: (
     'weight': (
       'medium': $sg-font-weight-medium,
       'bold': $sg-font-weight-bold
+    )
+  ),
+  'nav': (
+    'display': $sg-nav-display,
+    'align-items': $sg-nav-align-items,
+    'height': $sg-nav-height,
+    'elm': (
+      'padding': $sg-nav-elm-padding
+    ),
+    'list': (
+      'display': $sg-nav-list-display,
+      'flex-direction': $sg-nav-list-flex-direction,
+      'list-style': $sg-nav-list-list-style,
+      'margin': $sg-nav-list-margin
     )
   )
 );

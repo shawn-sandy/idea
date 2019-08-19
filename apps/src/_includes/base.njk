@@ -7,6 +7,11 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <script src="https://kit.fontawesome.com/33ec04a601.js"></script>
+  {% if stylesheets %}
+  {% for style in stylesheets %}
+  <link rel="stylesheet" href="{{ style }}" />
+  {% endfor %}
+  {% endif %}
   {% block head %}
   {% include "partials/head.html" %}
   {% endblock %}
@@ -26,7 +31,11 @@
   {% block footer %} {% endblock %}
   <!-- scripts  -->
   {% include "./partials/footer-scripts.html" %}
-  <script></script>
+  {% if scripts %}
+  {% for script in scripts %}
+  <script src="{{ script }}"></script>
+  {% endfor %}
+  {% endif %}
 </body>
 
 </html>

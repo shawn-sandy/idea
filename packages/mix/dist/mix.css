@@ -1,10 +1,11 @@
 /** mix stylesheet **/
 /*
   Do not edit directly
-  Generated on Fri, 16 Aug 2019 11:05:11 GMT
+  Generated on Mon, 19 Aug 2019 09:46:24 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generate all components in specified map--default component **/
 .mx-swatch {
   min-height: 60px;
-  width: 100%; }
+  width: 100%;
+  padding: 10px; }

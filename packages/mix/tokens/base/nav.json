@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "display": {
+      "value": "flex"
+    },
+    "align-items": {
+      "value": "center"
+    },
+    "height": {
+      "value": "60px"
+    },
+    "elm": {
+      "padding": {
+        "value": "0 1rem"
+      }
+    },
+    "list": {
+      "display": {
+        "value": "flex"
+      },
+      "flex-direction": {
+        "value": "row"
+      },
+      "list-style": {
+        "value": "none"
+      },
+      "margin": {
+        "value": "auto 0"
+      }
+    }
+  }
+}
