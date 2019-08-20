@@ -43,6 +43,11 @@ npm i @shawnsandy/ideas
 
  [Eleventy Shortcodes](./ELEVENTY.md)
 
+### TODOS
+
+* Complete the docs
+* Add examples
+
 ## Licence (MIT)
 
 The MIT License (MIT)
