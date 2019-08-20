@@ -6,7 +6,7 @@ module.exports = (eleventy, options = {}) => {
   /**
    * Swatch
    **/
-  eleventy.addPairedShortcode("mix_swatch", (content, color, name) => {
+  eleventy.addPairedShortcode("MixSwatch", (content, color, name) => {
     return mix.swatch(content, color, name);
   });
 
@@ -14,7 +14,7 @@ module.exports = (eleventy, options = {}) => {
    * Type
    **/
   eleventy.addPairedShortcode(
-    "mix_type",
+    "MixType",
     (content, size, name, comment = "") => {
       return mix.type(content, size, name, comment);
     }

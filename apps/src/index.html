@@ -48,9 +48,9 @@ scripts: ["/js/mix.js"]
         </div>
         {% for name, val in tokens.colors.color.brand %}
         <div class="col-md-3 p-2">
-          {% mix_swatch "id-bg-brand-"+ name, name %}
+          {% MixSwatch "id-bg-brand-"+ name, name %}
           {{ val.comment }} {{ name }}
-          {% endmix_swatch %}
+          {% endMixSwatch %}
         </div>
         {% endfor %}
       </div>
@@ -62,9 +62,9 @@ scripts: ["/js/mix.js"]
         {% for name, val in tokens.colors.color %}
         {% if val.value %}
         <div class="col-md-3 p-2 rounded">
-          {% mix_swatch "id-bg-"+ name, name %}
+          {% MixSwatch "id-bg-"+ name, name %}
           {{ name }} {{ val.comment }}
-          {% endmix_swatch %}
+          {% endMixSwatch %}
         </div>
         {% endif %}
         {% endfor %}
@@ -76,9 +76,9 @@ scripts: ["/js/mix.js"]
         {% for name, val in tokens.colors.color.dark %}
         {% if val.value %}
         <div class="col-md-3 p-2">
-          {% mix_swatch "id-bg-dark-"+ name, name %}
+          {% MixSwatch "id-bg-dark-"+ name, name %}
           {{ val.comment }} {{ name }}
-          {% endmix_swatch %}
+          {% endMixSwatch %}
         </div>
         {% endif %}
         {% endfor %}
@@ -121,13 +121,13 @@ scripts: ["/js/mix.js"]
           {% if val.value %}
           <aside class="col-md-12 p-2">
             {% if name == 'base' %}
-            {% mix_type val.value, name, val.comment %}
+            {% MixType val.value, name, val.comment %}
             <div class="">.mx-font-title</div>
-            {% endmix_type %}
+            {% endMixType %}
             {% else %}
-            {% mix_type val.value, name, val.comment %}
+            {% MixType val.value, name, val.comment %}
             <div class="">.mx-font-title-{{name}}</div>
-            {% endmix_type %}
+            {% endMixType %}
             {% endif %}
           </aside>
           {% endif %}
@@ -141,7 +141,7 @@ scripts: ["/js/mix.js"]
           {% if val.value %}
           <aside class="col-md-12 p-2">
             {% if name == 'base' %}
-            {% mix_type val.value, name, val.comment %}
+            {% MixType val.value, name, val.comment %}
             <div class="">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad fugit fugiat, blanditiis eligendi
               harum expedita cupiditate error laboriosam vero vel quibusdam? Recusandae ratione expedita porro earum
@@ -151,9 +151,9 @@ scripts: ["/js/mix.js"]
                 .mx-font
               </span>
             </div>
-            {% endmix_type %}
+            {% endMixType %}
             {% else %}
-            {% mix_type val.value, name, val.comment %}
+            {% MixType val.value, name, val.comment %}
             <div class="">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad fugit fugiat, blanditiis eligendi
               harum expedita cupiditate error laboriosam vero vel quibusdam? Recusandae ratione expedita porro earum
@@ -163,7 +163,7 @@ scripts: ["/js/mix.js"]
                 .mx-font-{{ name }}
               </span>
             </div>
-            {% endmix_type %}
+            {% endMixType %}
             {% endif %}
           </aside>
           {% endif %}
