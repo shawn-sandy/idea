@@ -7,24 +7,24 @@ date: 2019-06-08
 ---
 
 <aside class="py-3">
-<h1>Button</h1>
+  <h1>Button</h1>
   <p>
-{% button_elm null, 'type="submit" style="one"' %}
-Sample Button
-{% endbutton_elm %}
+    {% ButtonElement null, 'type="submit" style="one"' %}
+    Sample Button
+    {% endButtonElement %}
   </p>
 </aside>
 
 <aside class="py-3">
-<h1>Link</h1>
-<p>
-{% link_elm "//google.com" %}
-Google It
-{% endlink_elm %}
-</p>
-<p>
-{% link_button "//google.com" %}
-Google It
-{% endlink_button %}
-</p>
+  <h1>Link</h1>
+  <p>
+    {% LinkElement "//google.com" %}
+    Google It
+    {% endLinkElement %}
+  </p>
+  <p>
+    {% LinkButton "//google.com" %}
+    Google It
+    {% endLinkButton %}
+  </p>
 </aside>
