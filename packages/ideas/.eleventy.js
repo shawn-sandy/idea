@@ -13,19 +13,19 @@ module.exports = (eleventy, options = {}) => {
   /**
    * Shortcodes
    */
-  eleventy.addPairedShortcode("button_elm", (content, styles, attrs) => {
+  eleventy.addPairedShortcode("ButtonElement", (content, styles, attrs) => {
     return elements.button(content, styles, attrs);
   });
 
   eleventy.addPairedShortcode(
-    "link_elm",
+    "LinkElement",
     (content, link = "", classes, attrs) => {
       return elements.link(content, link, classes, attrs);
     }
   );
 
   eleventy.addPairedShortcode(
-    "link_button",
+    "LinkButton",
     (content, link = "#", classes, attrs) => {
       let _classes = classes ? classes + " btn" : "button";
       return elements.link(content, link, _classes, attrs);
@@ -35,14 +35,14 @@ module.exports = (eleventy, options = {}) => {
   /**
    * Copy Element
    */
-  eleventy.addPairedShortcode("copy_string", (content, string, classes) => {
+  eleventy.addPairedShortcode("CopyString", (content, string, classes) => {
     return elements.copyString(content, string, classes);
   });
 
   /**
    * Copy Swatch
    */
-  eleventy.addPairedShortcode("copy_element", (content, target, classes) => {
+  eleventy.addPairedShortcode("CopyElement", (content, target, classes) => {
     return elements.copyElement(content, target, classes);
   });
 
