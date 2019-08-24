@@ -52,12 +52,16 @@
         "comment": "Secondary branding color used for backgrounds to emphasis the lift the Primary brand color"
       },
       "light": {
-        "value": "FEFCFC",
+        "value": "#FEFCFC",
         "comment": "Primary text on dark colors"
       },
-      "dark": {
+      "text": {
         "value": "#707070",
         "comment": "Primary text on dark colors"
+      },
+      "black-smoke": {
+        "value": "#0F0F0F",
+        "comment": "Dark overlays and backgrounds"
       }
     }
   }
