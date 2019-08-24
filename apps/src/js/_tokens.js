@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sat, 24 Aug 2019 14:32:49 GMT
+ * Generated on Sat, 24 Aug 2019 14:39:49 GMT
  */
 
 export const ColorGray = "#6a737d";
@@ -11,15 +11,15 @@ export const ColorYellow = "#ffd33d";
 export const ColorGreen = "#28a745";
 export const ColorBlack = "#000000";
 export const ColorWhite = "#ffffff";
-export const ColorDark10 = "#000000"; // lightens
-export const ColorDark25 = "#707070"; // highlight text
-export const ColorDark50 = "#2a2a2a"; // default text
-export const ColorDark100 = "#232323"; // Element background etc
 export const ColorUiPrimary = "#0366d6"; // Primary branding color used for the logo, feature text/foreground elements
 export const ColorUiSecondary = "#070707"; // Secondary branding color used for backgrounds to emphasis the lift the Primary brand color
 export const ColorUiLight = "#fefcfc"; // Primary text on dark colors
 export const ColorUiText = "#707070"; // Primary text color
 export const ColorUiBlackSmoke = "#0f0f0f"; // Dark overlays and backgrounds
+export const ColorGrays10 = "#000000"; // lightens
+export const ColorGrays25 = "#707070"; // highlight text
+export const ColorGrays50 = "#2a2a2a"; // default text
+export const ColorGrays100 = "#232323"; // Element background etc
 export const ComponentBtnPadding = "1.25rem";
 export const ComponentBtnFontSize = "1.07rem";
 export const ComponentBtnBackgroundColor = "#232323";

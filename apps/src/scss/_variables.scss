@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Sat, 24 Aug 2019 14:32:49 GMT
+  Generated on Sat, 24 Aug 2019 14:39:49 GMT
 */
 
 $tokens: (
@@ -13,14 +13,6 @@ $tokens: (
   'sg-color-green': #28a745,
   'sg-color-black': #000000,
   'sg-color-white': #ffffff,
-  // lightens
-  'sg-color-dark-10': #000000,
-  // highlight text
-  'sg-color-dark-25': #707070,
-  // default text
-  'sg-color-dark-50': #2a2a2a,
-  // Element background etc
-  'sg-color-dark-100': #232323,
   // Primary branding color used for the logo, feature text/foreground elements
   'sg-color-ui-primary': #0366d6,
   // Secondary branding color used for backgrounds to emphasis the lift the Primary brand color
@@ -31,6 +23,14 @@ $tokens: (
   'sg-color-ui-text': #707070,
   // Dark overlays and backgrounds
   'sg-color-ui-black-smoke': #0f0f0f,
+  // lightens
+  'sg-color-grays-10': #000000,
+  // highlight text
+  'sg-color-grays-25': #707070,
+  // default text
+  'sg-color-grays-50': #2a2a2a,
+  // Element background etc
+  'sg-color-grays-100': #232323,
   'sg-component-btn-padding': 1.25rem,
   'sg-component-btn-font-size': 1.07rem,
   'sg-component-btn-background-color': #232323,
