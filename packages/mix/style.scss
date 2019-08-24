@@ -24,7 +24,7 @@
   @include mix-utilities("font");
 }
 /** generate all components in specified map--default component **/
-@include build-components("component");
+@include mix-components("component");
 
 .test {
   @if is-modifier-state("hover") {
