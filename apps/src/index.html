@@ -46,9 +46,9 @@ scripts: ["/js/mix.js"]
         <div class="col-12 mx-font-title">
           Brand Colors
         </div>
-        {% for name, val in tokens.colors.color.brand %}
+        {% for name, val in tokens.colors.color.ui %}
         <div class="col-md-3 p-2">
-          {% MixSwatch "id-bg-brand-"+ name, name %}
+          {% MixSwatch "id-bg-ui-"+ name, name %}
           {{ val.comment }} {{ name }}
           {% endMixSwatch %}
         </div>

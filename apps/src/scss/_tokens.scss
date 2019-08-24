@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Mon, 19 Aug 2019 22:58:53 GMT
+  Generated on Sat, 24 Aug 2019 13:07:16 GMT
 */
 
 $sg-color-gray: #6a737d !default;
@@ -16,10 +16,10 @@ $sg-color-dark-10: #000000 !default; // lightens
 $sg-color-dark-25: #707070 !default; // highlight text
 $sg-color-dark-50: #2a2a2a !default; // default text
 $sg-color-dark-100: #232323 !default; // Element background etc
-$sg-color-brand-primary: #0366d6 !default; // Primary branding color used for the logo, feature text/foreground elements
-$sg-color-brand-secondary: #070707 !default; // Secondary branding color used for backgrounds to emphasis the lift the Primary brand color
-$sg-color-brand-light: #fefcfc !default; // Primary text on dark colors
-$sg-color-brand-dark: #707070 !default; // Primary text on dark colors
+$sg-color-ui-primary: #0366d6 !default; // Primary branding color used for the logo, feature text/foreground elements
+$sg-color-ui-secondary: #070707 !default; // Secondary branding color used for backgrounds to emphasis the lift the Primary brand color
+$sg-color-ui-light: #fefcfc !default; // Primary text on dark colors
+$sg-color-ui-dark: #707070 !default; // Primary text on dark colors
 $sg-component-btn-padding: 1.25rem !default;
 $sg-component-btn-font-size: 1.07rem !default;
 $sg-component-btn-background-color: #232323 !default;
@@ -64,11 +64,11 @@ $tokens: (
       '50': $sg-color-dark-50,
       '100': $sg-color-dark-100
     ),
-    'brand': (
-      'primary': $sg-color-brand-primary,
-      'secondary': $sg-color-brand-secondary,
-      'light': $sg-color-brand-light,
-      'dark': $sg-color-brand-dark
+    'ui': (
+      'primary': $sg-color-ui-primary,
+      'secondary': $sg-color-ui-secondary,
+      'light': $sg-color-ui-light,
+      'dark': $sg-color-ui-dark
     )
   ),
   'component': (

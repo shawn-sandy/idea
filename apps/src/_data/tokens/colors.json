@@ -42,7 +42,7 @@
         "comment": "Element background etc"
       }
     },
-    "brand": {
+    "ui": {
       "primary": {
         "value": "#0366D6",
         "comment": "Primary branding color used for the logo, feature text/foreground elements"
