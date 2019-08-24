@@ -9,7 +9,7 @@
 .mx {
   // generate utility color from your color map
   /** color utilities **/
-  @include g-colors();
+  @include mix-colors();
   // generate button modifiers using the mix-modifier (mixin)
   /** generate buttons using the modifier **/
   &-btn {

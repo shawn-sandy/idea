@@ -79,7 +79,7 @@
   }
 }
 
-@mixin g-colors($map: $tokens) {
+@mixin mix-colors($map: $tokens) {
   /** MIX COLORS **/
   @include mix-generator(
     $mix-colors,
@@ -90,14 +90,14 @@
   );
 }
 
-@mixin g-fonts($map: $mix-tokens) {
+@mixin mix-fonts($map: $mix-tokens) {
   @include mix-generator($mix-fonts, $map, "fonts");
 }
 
-@mixin g-spacing($map: $mix-tokens) {
+@mixin mix-spacing($map: $mix-tokens) {
   @include mix-generator($mix-spacing, $map, "spacing");
 }
 
-@mixin g-sizing($map: $mix-tokens) {
+@mixin mix-sizing($map: $mix-tokens) {
   @include mix-generator($mix-sizing, $map, "spacing");
 }
