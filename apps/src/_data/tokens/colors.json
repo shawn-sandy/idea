@@ -57,7 +57,7 @@
       },
       "text": {
         "value": "#707070",
-        "comment": "Primary text on dark colors"
+        "comment": "Primary text color"
       },
       "black-smoke": {
         "value": "#0F0F0F",

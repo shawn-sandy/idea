@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sat, 24 Aug 2019 13:07:16 GMT
+ * Generated on Sat, 24 Aug 2019 13:58:39 GMT
  */
 
 export const ColorGray = "#6a737d";
@@ -18,7 +18,8 @@ export const ColorDark100 = "#232323"; // Element background etc
 export const ColorUiPrimary = "#0366d6"; // Primary branding color used for the logo, feature text/foreground elements
 export const ColorUiSecondary = "#070707"; // Secondary branding color used for backgrounds to emphasis the lift the Primary brand color
 export const ColorUiLight = "#fefcfc"; // Primary text on dark colors
-export const ColorUiDark = "#707070"; // Primary text on dark colors
+export const ColorUiText = "#707070"; // Primary text on dark colors
+export const ColorUiBlackSmoke = "#0f0f0f"; // Dark overlays and backgrounds
 export const ComponentBtnPadding = "1.25rem";
 export const ComponentBtnFontSize = "1.07rem";
 export const ComponentBtnBackgroundColor = "#232323";

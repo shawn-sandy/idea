@@ -18,7 +18,8 @@
       "primary": "#0366d6",
       "secondary": "#070707",
       "light": "#fefcfc",
-      "dark": "#707070"
+      "text": "#707070",
+      "black-smoke": "#0f0f0f"
     }
   },
   "component": {

@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Sat, 24 Aug 2019 13:07:16 GMT
+  Generated on Sat, 24 Aug 2019 13:58:39 GMT
 */
 
 $tokens: (
@@ -28,7 +28,9 @@ $tokens: (
   // Primary text on dark colors
   'sg-color-ui-light': #fefcfc,
   // Primary text on dark colors
-  'sg-color-ui-dark': #707070,
+  'sg-color-ui-text': #707070,
+  // Dark overlays and backgrounds
+  'sg-color-ui-black-smoke': #0f0f0f,
   'sg-component-btn-padding': 1.25rem,
   'sg-component-btn-font-size': 1.07rem,
   'sg-component-btn-background-color': #232323,
