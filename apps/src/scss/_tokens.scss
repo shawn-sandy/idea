@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Sat, 24 Aug 2019 14:45:33 GMT
+  Generated on Sun, 25 Aug 2019 17:44:28 GMT
 */
 
 $sg-color-gray: #6a737d !default;
@@ -39,12 +39,12 @@ $sg-font-size-notes: 0.875rem !default; // 14px
 $sg-font-size-lead: 1.125rem !default; // 18px
 $sg-font-size-callout: 1.27rem !default; // 22px
 $sg-font-size-subtitle: 1.62rem !default; // 26px
-$sg-font-size-title-base: 2.25rem !default; // 36px base/default title
-$sg-font-size-title-xs: 1.75rem !default; // 28px
-$sg-font-size-title-sm: 3rem !default; // 48px
-$sg-font-size-title-md: 3.5rem !default; // 56px
-$sg-font-size-title-lg: 4rem !default; // 64px
-$sg-font-size-title-hero: 5rem !default; // 80px Hero
+$sg-font-size-header-base: 2.25rem !default; // 36px base/default title
+$sg-font-size-header-xs: 1.75rem !default; // 28px
+$sg-font-size-header-sm: 3rem !default; // 48px
+$sg-font-size-header-md: 3.5rem !default; // 56px
+$sg-font-size-header-lg: 4rem !default; // 64px
+$sg-font-size-header-hero: 5rem !default; // 80px Hero
 $sg-font-weight-medium: 500 !default; // descriptions...
 $sg-font-weight-bold: 700 !default; // descriptions...
 $sg-font-color: #fff !default; // descriptions...
@@ -103,13 +103,13 @@ $tokens: (
       'lead': $sg-font-size-lead,
       'callout': $sg-font-size-callout,
       'subtitle': $sg-font-size-subtitle,
-      'title': (
-        'base': $sg-font-size-title-base,
-        'xs': $sg-font-size-title-xs,
-        'sm': $sg-font-size-title-sm,
-        'md': $sg-font-size-title-md,
-        'lg': $sg-font-size-title-lg,
-        'hero': $sg-font-size-title-hero
+      'header': (
+        'base': $sg-font-size-header-base,
+        'xs': $sg-font-size-header-xs,
+        'sm': $sg-font-size-header-sm,
+        'md': $sg-font-size-header-md,
+        'lg': $sg-font-size-header-lg,
+        'hero': $sg-font-size-header-hero
       )
     ),
     'weight': (

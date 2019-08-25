@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sat, 24 Aug 2019 14:45:34 GMT
+ * Generated on Sun, 25 Aug 2019 17:44:28 GMT
  */
 
 export const ColorGray = "#6a737d";
@@ -38,12 +38,12 @@ export const FontSizeNotes = "0.875rem"; // 14px
 export const FontSizeLead = "1.125rem"; // 18px
 export const FontSizeCallout = "1.27rem"; // 22px
 export const FontSizeSubtitle = "1.62rem"; // 26px
-export const FontSizeTitleBase = "2.25rem"; // 36px base/default title
-export const FontSizeTitleXs = "1.75rem"; // 28px
-export const FontSizeTitleSm = "3rem"; // 48px
-export const FontSizeTitleMd = "3.5rem"; // 56px
-export const FontSizeTitleLg = "4rem"; // 64px
-export const FontSizeTitleHero = "5rem"; // 80px Hero
+export const FontSizeHeaderBase = "2.25rem"; // 36px base/default title
+export const FontSizeHeaderXs = "1.75rem"; // 28px
+export const FontSizeHeaderSm = "3rem"; // 48px
+export const FontSizeHeaderMd = "3.5rem"; // 56px
+export const FontSizeHeaderLg = "4rem"; // 64px
+export const FontSizeHeaderHero = "5rem"; // 80px Hero
 export const FontWeightMedium = "500"; // descriptions...
 export const FontWeightBold = "700"; // descriptions...
 export const FontColor = "#fff"; // descriptions...

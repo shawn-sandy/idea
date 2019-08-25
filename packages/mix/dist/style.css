@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Fri, 23 Aug 2019 01:45:18 GMT
+  Generated on Sun, 25 Aug 2019 17:43:37 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 .mx {
@@ -250,17 +250,17 @@
       font-size: 1.5rem; }
     .mx-font-subtitles {
       font-size: 1.75rem; }
-    .mx-font-title {
+    .mx-font-header {
       font-size: 2rem; }
-      .mx-font-title-xs {
+      .mx-font-header-xs {
         font-size: 2.5rem; }
-      .mx-font-title-sm {
+      .mx-font-header-sm {
         font-size: 3rem; }
-      .mx-font-title-md {
+      .mx-font-header-md {
         font-size: 3.5rem; }
-      .mx-font-title-lg {
+      .mx-font-header-lg {
         font-size: 4rem; }
-      .mx-font-title-xl {
+      .mx-font-header-xl {
         font-size: 5rem; }
   .mx-font-medium {
     font-weight: 500; }

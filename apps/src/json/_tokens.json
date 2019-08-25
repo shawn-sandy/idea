@@ -52,7 +52,7 @@
       "lead": "1.125rem",
       "callout": "1.27rem",
       "subtitle": "1.62rem",
-      "title": {
+      "header": {
         "base": "2.25rem",
         "xs": "1.75rem",
         "sm": "3rem",
