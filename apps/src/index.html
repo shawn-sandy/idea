@@ -76,14 +76,14 @@ eius magni ea! Est doloribus quibusdam a cupiditate officia quas natus similique
         {% endfor %}
       </div>
       <div class="row mx-clip">
-        <div class="col-12 mx-font-title">
+        <div class="col-12 mx-font-header">
           Grays
         </div>
         {% for name, val in tokens.colors.color.grays %}
         {% if val.value %}
         <div class="col-md-3 p-2">
-          {% MixSwatch "id-bg-dark-"+ name, name %}
-          {{ val.comment }} {{ name }}
+          {% MixSwatch "id-bg-grays-"+ name, name %}
+          gray-{{ name }}
           {% endMixSwatch %}
         </div>
         {% endif %}

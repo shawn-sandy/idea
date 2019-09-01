@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 01 Sep 2019 02:11:05 GMT
+ * Generated on Sun, 01 Sep 2019 02:14:19 GMT
  */
 
 export const ColorGray = "#6a737d";
@@ -11,6 +11,12 @@ export const ColorYellow = "#ffd33d";
 export const ColorGreen = "#28a745";
 export const ColorBlack = "#000000";
 export const ColorWhite = "#ffffff";
+export const ColorOlive = "#b5cc18";
+export const ColorTeal = "#00b5ad";
+export const ColorViolet = "#6435c9";
+export const ColorPurple = "#a333c8";
+export const ColorPink = "#e03997";
+export const ColorBrown = "#a5673f";
 export const ColorUiPrimary = "#0366d6"; // Primary branding color used for the logo, feature text/foreground elements
 export const ColorUiSecondary = "#070707"; // Secondary branding color used for backgrounds to emphasis the lift the Primary brand color
 export const ColorUiLight = "#fefcfc"; // Primary text on dark colors

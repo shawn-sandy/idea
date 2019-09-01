@@ -8,6 +8,12 @@
     "green": "#28a745",
     "black": "#000000",
     "white": "#ffffff",
+    "olive": "#b5cc18",
+    "teal": "#00b5ad",
+    "violet": "#6435c9",
+    "purple": "#a333c8",
+    "pink": "#e03997",
+    "brown": "#a5673f",
     "ui": {
       "primary": "#0366d6",
       "secondary": "#070707",

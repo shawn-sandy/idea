@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Sun, 01 Sep 2019 02:11:05 GMT
+  Generated on Sun, 01 Sep 2019 02:14:19 GMT
 */
 
 $sg-color-gray: #6a737d !default;
@@ -12,6 +12,12 @@ $sg-color-yellow: #ffd33d !default;
 $sg-color-green: #28a745 !default;
 $sg-color-black: #000000 !default;
 $sg-color-white: #ffffff !default;
+$sg-color-olive: #b5cc18 !default;
+$sg-color-teal: #00b5ad !default;
+$sg-color-violet: #6435c9 !default;
+$sg-color-purple: #a333c8 !default;
+$sg-color-pink: #e03997 !default;
+$sg-color-brown: #a5673f !default;
 $sg-color-ui-primary: #0366d6 !default; // Primary branding color used for the logo, feature text/foreground elements
 $sg-color-ui-secondary: #070707 !default; // Secondary branding color used for backgrounds to emphasis the lift the Primary brand color
 $sg-color-ui-light: #fefcfc !default; // Primary text on dark colors
@@ -59,6 +65,12 @@ $tokens: (
     'green': $sg-color-green,
     'black': $sg-color-black,
     'white': $sg-color-white,
+    'olive': $sg-color-olive,
+    'teal': $sg-color-teal,
+    'violet': $sg-color-violet,
+    'purple': $sg-color-purple,
+    'pink': $sg-color-pink,
+    'brown': $sg-color-brown,
     'ui': (
       'primary': $sg-color-ui-primary,
       'secondary': $sg-color-ui-secondary,

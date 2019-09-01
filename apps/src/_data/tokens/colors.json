@@ -24,6 +24,24 @@
     "white": {
       "value": "#ffffff"
     },
+    "olive": {
+      "value": "#B5CC18"
+    },
+    "teal": {
+      "value": "#00B5AD"
+    },
+    "violet": {
+      "value": "#6435C9"
+    },
+    "purple": {
+      "value": "#A333C8"
+    },
+    "pink": {
+      "value": "#E03997"
+    },
+    "brown": {
+      "value": "#A5673F"
+    },
     "ui": {
       "primary": {
         "value": "#0366D6",
