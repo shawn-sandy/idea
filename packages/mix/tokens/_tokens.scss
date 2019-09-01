@@ -1,17 +1,23 @@
 
 /*
   Do not edit directly
-  Generated on Fri, 23 Aug 2019 01:45:18 GMT
+  Generated on Sun, 01 Sep 2019 01:59:53 GMT
 */
 
+$sg-color-black: #000000 !default;
+$sg-color-white: #ffffff !default;
 $sg-color-gray: #6a737d !default;
 $sg-color-red: #d73a49 !default;
 $sg-color-blue: #0366d6 !default;
 $sg-color-orange: #f66a0a !default;
 $sg-color-yellow: #ffd33d !default;
 $sg-color-green: #28a745 !default;
-$sg-color-black: #000000 !default;
-$sg-color-white: #ffffff !default;
+$sg-color-olive: #b5cc18 !default;
+$sg-color-teal: #00b5ad !default;
+$sg-color-violet: #6435c9 !default;
+$sg-color-purple: #a333c8 !default;
+$sg-color-pink: #e03997 !default;
+$sg-color-brown: #a5673f !default;
 $sg-button-padding: 0 1.5rem !default;
 $sg-component-btn-height: 2.5rem !default;
 $sg-component-btn-padding: 0 1.5rem !default;
@@ -31,12 +37,12 @@ $sg-font-size-notes: 0.875rem !default; // descriptions...
 $sg-font-size-short-copy: 1.3rem !default; // descriptions...
 $sg-font-size-lead: 1.5rem !default; // descriptions...
 $sg-font-size-subtitles: 1.75rem !default; // descriptions...
-$sg-font-size-title-base: 2rem !default; // descriptions...
-$sg-font-size-title-xs: 2.5rem !default; // descriptions...
-$sg-font-size-title-sm: 3rem !default; // descriptions...
-$sg-font-size-title-md: 3.5rem !default; // descriptions...
-$sg-font-size-title-lg: 4rem !default; // descriptions...
-$sg-font-size-title-xl: 5rem !default; // descriptions...
+$sg-font-size-header-base: 2rem !default; // descriptions...
+$sg-font-size-header-xs: 2.5rem !default; // descriptions...
+$sg-font-size-header-sm: 3rem !default; // descriptions...
+$sg-font-size-header-md: 3.5rem !default; // descriptions...
+$sg-font-size-header-lg: 4rem !default; // descriptions...
+$sg-font-size-header-xl: 5rem !default; // descriptions...
 $sg-font-weight-medium: 500 !default; // descriptions...
 $sg-font-weight-bold: 700 !default; // descriptions...
 $sg-nav-display: flex !default;
@@ -50,14 +56,20 @@ $sg-nav-list-margin: auto 0 !default;
 
 $tokens: (
   'color': (
+    'black': $sg-color-black,
+    'white': $sg-color-white,
     'gray': $sg-color-gray,
     'red': $sg-color-red,
     'blue': $sg-color-blue,
     'orange': $sg-color-orange,
     'yellow': $sg-color-yellow,
     'green': $sg-color-green,
-    'black': $sg-color-black,
-    'white': $sg-color-white
+    'olive': $sg-color-olive,
+    'teal': $sg-color-teal,
+    'violet': $sg-color-violet,
+    'purple': $sg-color-purple,
+    'pink': $sg-color-pink,
+    'brown': $sg-color-brown
   ),
   'button-padding': $sg-button-padding,
   'component': (
@@ -92,13 +104,13 @@ $tokens: (
       'short-copy': $sg-font-size-short-copy,
       'lead': $sg-font-size-lead,
       'subtitles': $sg-font-size-subtitles,
-      'title': (
-        'base': $sg-font-size-title-base,
-        'xs': $sg-font-size-title-xs,
-        'sm': $sg-font-size-title-sm,
-        'md': $sg-font-size-title-md,
-        'lg': $sg-font-size-title-lg,
-        'xl': $sg-font-size-title-xl
+      'header': (
+        'base': $sg-font-size-header-base,
+        'xs': $sg-font-size-header-xs,
+        'sm': $sg-font-size-header-sm,
+        'md': $sg-font-size-header-md,
+        'lg': $sg-font-size-header-lg,
+        'xl': $sg-font-size-header-xl
       )
     ),
     'weight': (

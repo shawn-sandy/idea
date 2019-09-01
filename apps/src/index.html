@@ -4,6 +4,10 @@ collection: none
 package: "vue"
 title: Idea a design system framework
 scripts: ["/js/mix.js"]
+description: "Excerpt Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus inventore adipisci corporis
+cumque odio
+voluptatem
+eius magni ea! Est doloribus quibusdam a cupiditate officia quas natus similique distinctio optio."
 ---
 
 <main class="d-flex justify-content-center text-center cover bg-dark">
@@ -28,8 +32,10 @@ scripts: ["/js/mix.js"]
       </a>
       <a href="/modules/elements" class="button button-md m-2 button-rounded">Sample Modules</a>
     </p>
-
   </div>
+  <p>
+    {{ description }}
+  </p>
   <div>
     {% for atom in collections.atoms %}
     <h2>
@@ -70,14 +76,14 @@ scripts: ["/js/mix.js"]
         {% endfor %}
       </div>
       <div class="row mx-clip">
-        <div class="col-12 mx-font-title">
+        <div class="col-12 mx-font-header">
           Grays
         </div>
-        {% for name, val in tokens.colors.color.dark %}
+        {% for name, val in tokens.colors.color.grays %}
         {% if val.value %}
         <div class="col-md-3 p-2">
-          {% MixSwatch "id-bg-dark-"+ name, name %}
-          {{ val.comment }} {{ name }}
+          {% MixSwatch "id-bg-grays-"+ name, name %}
+          gray-{{ name }}
           {% endMixSwatch %}
         </div>
         {% endif %}
@@ -117,26 +123,9 @@ scripts: ["/js/mix.js"]
       </section>
       <section class="row py-4">
         <div class="typography">
-          {% for name, val in tokens.fonts.font.size.title %}
-          {% if val.value %}
-          <aside class="col-md-12 p-2">
-            {% if name == 'base' %}
-            {% MixType val.value, name, val.comment %}
-            <div class="">.mx-font-title</div>
-            {% endMixType %}
-            {% else %}
-            {% MixType val.value, name, val.comment %}
-            <div class="">.mx-font-title-{{name}}</div>
-            {% endMixType %}
-            {% endif %}
-          </aside>
-          {% endif %}
-          {% endfor %}
-
-        </div>
-      </section>
-      <section class="row py-4">
-        <div class="typography">
+          <div class="col">
+            <h2 class="mx-font-header-lg">Typography</h2>
+          </div>
           {% for name, val in tokens.fonts.font.size %}
           {% if val.value %}
           <aside class="col-md-12 p-2">
@@ -170,6 +159,28 @@ scripts: ["/js/mix.js"]
           {% endfor %}
         </div>
       </section>
+
+      <section class="row py-4">
+        <div class="typography">
+          {% for name, val in tokens.fonts.font.size.header %}
+          {% if val.value %}
+          <aside class="col-md-12 p-2">
+            {% if name == 'base' %}
+            {% MixType val.value, name, val.comment %}
+            <div class="">.mx-font-header</div>
+            {% endMixType %}
+            {% else %}
+            {% MixType val.value, name, val.comment %}
+            <div class="">.mx-font-header-{{name}}</div>
+            {% endMixType %}
+            {% endif %}
+          </aside>
+          {% endif %}
+          {% endfor %}
+
+        </div>
+      </section>
+
     </div>
 
   </div>

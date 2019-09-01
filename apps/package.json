@@ -10,13 +10,12 @@
     "build:content": "eleventy",
     "dev": "gulp dev",
     "tokens": "style-dictionary build --config ./tokens.config.js && gulp sass",
-    "js-tokens": "style-dictionary build --config ./tokens.config.json",
     "np:major": "np major --yolo=true --no-publish",
     "np:minor": "np minor --yolo=true --no-publish",
     "np:patch": "np patch --yolo=true --no-publish"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.8.3",
+    "@11ty/eleventy": "^0.9.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",

@@ -29,7 +29,7 @@
 }
 
 /// grabs multiple components and generates rules using the map-component mixin
-@mixin mix-component(
+@mixin _mix-component(
   $components: $mix-components,
   $map: $mix-tokens,
   $prefix: $mix-prefix
@@ -126,7 +126,7 @@
 
 // Quickly generate classes for components from token keys using build-components()
 // mix-build-components("buttons', 'cards')
-@mixin mix-build-components($tokens...) {
+@mixin mix-components($tokens...) {
   @each $token in $tokens {
     @include build-components($token);
   }

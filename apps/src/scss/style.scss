@@ -21,7 +21,7 @@ $rem-fallback: true;
 @import "node_modules/@shawnsandy/mix/index";
 
 .id {
-  @include g-colors();
+  @include mix-colors();
 
   &-btn {
     @include mix-modifier("component.btn");

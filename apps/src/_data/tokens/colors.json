@@ -24,23 +24,23 @@
     "white": {
       "value": "#ffffff"
     },
-    "dark": {
-      "10": {
-        "value": "lighten(#707070, 10)",
-        "comment": "lightens"
-      },
-      "25": {
-        "value": "#707070",
-        "comment": "highlight text"
-      },
-      "50": {
-        "value": "#2A2A2A",
-        "comment": "default text"
-      },
-      "100": {
-        "value": "#232323",
-        "comment": "Element background etc"
-      }
+    "olive": {
+      "value": "#B5CC18"
+    },
+    "teal": {
+      "value": "#00B5AD"
+    },
+    "violet": {
+      "value": "#6435C9"
+    },
+    "purple": {
+      "value": "#A333C8"
+    },
+    "pink": {
+      "value": "#E03997"
+    },
+    "brown": {
+      "value": "#A5673F"
     },
     "ui": {
       "primary": {
@@ -62,6 +62,24 @@
       "black-smoke": {
         "value": "#0F0F0F",
         "comment": "Dark overlays and backgrounds"
+      }
+    },
+    "grays": {
+      "10": {
+        "value": "lighten(#707070, 10)",
+        "comment": "lightens"
+      },
+      "25": {
+        "value": "#707070",
+        "comment": "highlight text"
+      },
+      "50": {
+        "value": "#2A2A2A",
+        "comment": "default text"
+      },
+      "100": {
+        "value": "#232323",
+        "comment": "Element background etc"
       }
     }
   }

@@ -8,7 +8,7 @@
         "value": "1.07rem"
       },
       "background-color": {
-        "value": "{color.dark.100.value}"
+        "value": "{color.grays.100.value}"
       },
       "color": {
         "value": "transparentize({color.gray.value}, .25)"

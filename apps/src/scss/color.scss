@@ -2,5 +2,5 @@
 @import "node_modules/@shawnsandy/mix/index";
 
 .id {
-  @include g-colors();
+  @include mix-colors();
 }

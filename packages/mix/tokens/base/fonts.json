@@ -25,7 +25,7 @@
         "value": "1.75rem",
         "comment": "descriptions..."
       },
-      "title": {
+      "header": {
         "base": {
           "value": "2rem",
           "comment": "descriptions..."

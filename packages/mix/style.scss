@@ -9,7 +9,7 @@
 .mx {
   // generate utility color from your color map
   /** color utilities **/
-  @include g-colors();
+  @include mix-colors();
   // generate button modifiers using the mix-modifier (mixin)
   /** generate buttons using the modifier **/
   &-btn {
@@ -24,7 +24,7 @@
   @include mix-utilities("font");
 }
 /** generate all components in specified map--default component **/
-@include build-components("component");
+@include mix-components("component");
 
 .test {
   @if is-modifier-state("hover") {
