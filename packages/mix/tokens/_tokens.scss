@@ -1,17 +1,23 @@
 
 /*
   Do not edit directly
-  Generated on Sun, 25 Aug 2019 17:43:37 GMT
+  Generated on Sun, 01 Sep 2019 01:59:53 GMT
 */
 
+$sg-color-black: #000000 !default;
+$sg-color-white: #ffffff !default;
 $sg-color-gray: #6a737d !default;
 $sg-color-red: #d73a49 !default;
 $sg-color-blue: #0366d6 !default;
 $sg-color-orange: #f66a0a !default;
 $sg-color-yellow: #ffd33d !default;
 $sg-color-green: #28a745 !default;
-$sg-color-black: #000000 !default;
-$sg-color-white: #ffffff !default;
+$sg-color-olive: #b5cc18 !default;
+$sg-color-teal: #00b5ad !default;
+$sg-color-violet: #6435c9 !default;
+$sg-color-purple: #a333c8 !default;
+$sg-color-pink: #e03997 !default;
+$sg-color-brown: #a5673f !default;
 $sg-button-padding: 0 1.5rem !default;
 $sg-component-btn-height: 2.5rem !default;
 $sg-component-btn-padding: 0 1.5rem !default;
@@ -50,14 +56,20 @@ $sg-nav-list-margin: auto 0 !default;
 
 $tokens: (
   'color': (
+    'black': $sg-color-black,
+    'white': $sg-color-white,
     'gray': $sg-color-gray,
     'red': $sg-color-red,
     'blue': $sg-color-blue,
     'orange': $sg-color-orange,
     'yellow': $sg-color-yellow,
     'green': $sg-color-green,
-    'black': $sg-color-black,
-    'white': $sg-color-white
+    'olive': $sg-color-olive,
+    'teal': $sg-color-teal,
+    'violet': $sg-color-violet,
+    'purple': $sg-color-purple,
+    'pink': $sg-color-pink,
+    'brown': $sg-color-brown
   ),
   'button-padding': $sg-button-padding,
   'component': (

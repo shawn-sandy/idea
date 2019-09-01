@@ -52,6 +52,13 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(require("@shawnsandy/mix/eleventy"));
 
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true,
+    // Eleventy custom option
+    // The variable where the excerpt will be stored.
+    excerpt_alias: "description"
+  });
+
   /**
    * Config
    */

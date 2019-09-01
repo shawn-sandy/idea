@@ -1,5 +1,11 @@
 {
   "color": {
+    "black": {
+      "value": "#000000"
+    },
+    "white": {
+      "value": "#ffffff"
+    },
     "gray": {
       "value": "#6a737d"
     },
@@ -18,11 +24,23 @@
     "green": {
       "value": "#28a745"
     },
-    "black": {
-      "value": "#000000"
+    "olive": {
+      "value": "#B5CC18"
     },
-    "white": {
-      "value": "#ffffff"
+    "teal": {
+      "value": "#00B5AD"
+    },
+    "violet": {
+      "value": "#6435C9"
+    },
+    "purple": {
+      "value": "#A333C8"
+    },
+    "pink": {
+      "value": "#E03997"
+    },
+    "brown": {
+      "value": "#A5673F"
     }
   }
 }

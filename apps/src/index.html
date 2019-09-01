@@ -4,6 +4,10 @@ collection: none
 package: "vue"
 title: Idea a design system framework
 scripts: ["/js/mix.js"]
+description: "Excerpt Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus inventore adipisci corporis
+cumque odio
+voluptatem
+eius magni ea! Est doloribus quibusdam a cupiditate officia quas natus similique distinctio optio."
 ---
 
 <main class="d-flex justify-content-center text-center cover bg-dark">
@@ -29,6 +33,9 @@ scripts: ["/js/mix.js"]
       <a href="/modules/elements" class="button button-md m-2 button-rounded">Sample Modules</a>
     </p>
   </div>
+  <p>
+    {{ description }}
+  </p>
   <div>
     {% for atom in collections.atoms %}
     <h2>
