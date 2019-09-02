@@ -20,7 +20,7 @@
       &#{$attr}#{$prefix}#{$item} {
         @if type-of($item) == "map" {
           //@debug "value #{$item} item: #{$value}";
-          @debug "key #{$key} .item #{$item} .value #{$value}";
+          // @debug "key #{$key} .item #{$item} .value #{$value}";
           @include class-generator(
             "#{$key}.#{$value}",
             $attribute,
@@ -42,25 +42,25 @@
         }
       }
 
-      @if type-of($value) == "color" {
+      @if type-of($val) == "color" {
         // $attr: map-color-attrs($attribute);
         &#{$attr}#{$prefix}#{$item}-hover {
           &:hover {
-            #{$attribute}: darken($value, 3%) !important;
+            #{$attribute}: transparentize($val, 0.2) !important;
           }
         }
         &#{$attr}#{$prefix}#{$item}\:hover {
           &:hover {
-            #{$attribute}: $value !important;
+            #{$attribute}: $val !important;
           }
         }
         &#{$attr}#{$prefix}#{$item}\:focus {
           &:focus {
-            #{$attribute}: $value !important;
+            #{$attribute}: $val !important;
           }
         }
         &#{$attr}#{$prefix}#{$item}#{$prefix}tp {
-          #{$attribute}: transparentize($value, 0.2) !important;
+          #{$attribute}: darken($val, 3%) !important;
         }
       }
     }
@@ -86,8 +86,8 @@
   }
 }
 
+/** generates a series of modifies based a list of attributes  **/
 @mixin mix-colors($map: $tokens) {
-  /** MIX COLORS **/
   @include mix-generator(
     $mix-colors,
     $map,
