@@ -1,15 +1,23 @@
 // utility generator
 
+@mixin mix-utilities($tokens...) {
+  @if length($tokens) >= 1 {
+    @each $var in $tokens {
+      @include utilities($var);
+    }
+  }
+}
+
 @mixin utilities($token, $map: $mix-tokens) {
   $utility: get($token, $map);
   @if length($list: $utility) >= 0 {
     @debug "we got the utility map";
     @each $key, $value in $utility {
-      &#{$mix-prefix}#{$token} {
-        @if type-of($value) == "map" {
-          @include map-values("#{$token}#{$mix-prefix}#{$key}", $value);
-          // @debug "values: #{$value}";
-        } @else {
+      @if type-of($value) == "map" {
+        @include map-values($token, $key, $value);
+        // @debug "values: #{$value}";
+      } @else {
+        &#{$mix-prefix}#{$key} {
           #{$key}: $value;
           // @debug "key: #{$key}";
         }
@@ -20,31 +28,25 @@
   }
 }
 
-@mixin map-values($modifier-key, $values) {
+@mixin map-values($token, $modifier-key, $values) {
   @if type-of($values) == "map" {
     @each $key, $val in $values {
       @if type-of($val) == "map" {
         &#{$mix-prefix}#{$key} {
-          @include map-values($modifier-key, $val);
+          @include map-values($token, $modifier-key, $val);
         }
       } @else {
         // TODO refactor to handle color maps--remove `color` from output
         @if $key == "base" {
-          #{$modifier-key}: $val;
+          &#{$mix-prefix}#{$token} {
+            #{$modifier-key}: $val;
+          }
         } @else {
           &#{$mix-prefix}#{$key} {
             #{$modifier-key}: $val;
           }
         }
       }
-    }
-  }
-}
-
-@mixin mix-utilities($tokens...) {
-  @if length($tokens) >= 1 {
-    @each $var in $tokens {
-      @include utilities($var);
     }
   }
 }

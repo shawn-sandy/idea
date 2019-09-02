@@ -65,7 +65,7 @@
           }
         }
       } @else {
-        @if $item== "hover" {
+        @if is-modifier-state($item) {
           &:hover {
             #{$item}: $value;
           }
@@ -73,6 +73,14 @@
           #{$item}: $value;
         }
       }
+    }
+  }
+}
+
+@mixin mix-add($args...) {
+  @if length($args) >= 1 {
+    @each $key in $args {
+      @include mix-modifier($item);
     }
   }
 }

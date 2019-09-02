@@ -2,7 +2,7 @@
   "button-padding": {
     "value": "0 1.5rem"
   },
-  "component": {
+  "button": {
     "btn": {
       "height": {
         "value": "2.5rem"
@@ -16,19 +16,11 @@
       "text-align": {
         "value": "center"
       },
-      "background-color": {
-        "value": "lightgray"
-      },
       "transition": {
         "value": "all .2s"
       },
       "border": {
         "value": "none"
-      },
-      "hover": {
-        "background-color": {
-          "value": "darken({component.btn.background-color.value}, 5)"
-        }
       },
       "focus": {
         "border": {

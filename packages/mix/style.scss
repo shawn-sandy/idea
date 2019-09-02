@@ -6,25 +6,23 @@
 // import mix library
 @import "./index.scss";
 
+/** generate all components in specified map--default component **/
+@include mix-components("button");
+// generate button modifiers using the mix-modifier (mixin)
+/** generate buttons using the modifier **/
 .mx {
-  // generate utility color from your color map
-  /** color utilities **/
-  @include mix-colors();
-  // generate button modifiers using the mix-modifier (mixin)
-  /** generate buttons using the modifier **/
   &-btn {
-    @include mix-modifier("component.btn");
+    @include mix-modifier("button.btn");
   }
 
   &-nav {
     @include mix-modifier("nav");
   }
 
-  /** fonts **/
   @include mix-utilities("font");
+
+  @include mix-colors();
 }
-/** generate all components in specified map--default component **/
-@include mix-components("component");
 
 .test {
   @if is-modifier-state("hover") {
