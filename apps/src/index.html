@@ -4,7 +4,8 @@ collection: none
 package: "vue"
 title: Idea a design system framework
 scripts: ["/js/mix.js"]
-description: "Excerpt Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus inventore adipisci corporis
+---
+"Excerpt Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus inventore adipisci corporis
 cumque odio
 voluptatem
 eius magni ea! Est doloribus quibusdam a cupiditate officia quas natus similique distinctio optio."
@@ -116,7 +117,7 @@ eius magni ea! Est doloribus quibusdam a cupiditate officia quas natus similique
           <button class="mx-btn mx-btn-rounded">
             Mix rounded Button
           </button>
-          <button class="mx-btn mx-btn-pill">
+          <button class="mx-btn mx-btn-pill mx-bg-olive mx-bg-olive-hover">
             Mix Pill Button
           </button>
         </p>
@@ -136,9 +137,7 @@ eius magni ea! Est doloribus quibusdam a cupiditate officia quas natus similique
               harum expedita cupiditate error laboriosam vero vel quibusdam? Recusandae ratione expedita porro earum
               quia fuga, quo officia!
               <br>
-              <span>
-                .mx-font
-              </span>
+              <span>.mx-font</span>
             </div>
             {% endMixType %}
             {% else %}
@@ -149,7 +148,7 @@ eius magni ea! Est doloribus quibusdam a cupiditate officia quas natus similique
               quia fuga, quo officia!
               <br>
               <span>
-                .mx-font-{{ name }}
+                .mx-{{ name }}
               </span>
             </div>
             {% endMixType %}
@@ -162,22 +161,22 @@ eius magni ea! Est doloribus quibusdam a cupiditate officia quas natus similique
 
       <section class="row py-4">
         <div class="typography">
+          {{ tokens.fonts.font.size.header | dump }}
           {% for name, val in tokens.fonts.font.size.header %}
           {% if val.value %}
           <aside class="col-md-12 p-2">
             {% if name == 'base' %}
             {% MixType val.value, name, val.comment %}
-            <div class="">.mx-font-header</div>
+            <div class="">.mx-header-font</div>
             {% endMixType %}
             {% else %}
             {% MixType val.value, name, val.comment %}
-            <div class="">.mx-font-header-{{name}}</div>
+            <div class="">.mx-header-{{name}}</div>
             {% endMixType %}
             {% endif %}
           </aside>
           {% endif %}
           {% endfor %}
-
         </div>
       </section>
 

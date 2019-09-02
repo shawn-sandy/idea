@@ -29,7 +29,9 @@
           );
         } @else {
           @if type-of($value) != "map" {
-            #{$attribute}: $value;
+            #{$attribute}: $value !important;
+            // #{$attribute}: if
+            //   (type-of($value) == "color", $value !important, $value);
           } @else {
             @each $_key, $_value in $value {
               &#{$prefix}#{$_key} {
@@ -42,6 +44,11 @@
 
       @if type-of($value) == "color" {
         // $attr: map-color-attrs($attribute);
+        &#{$attr}#{$prefix}#{$item}-hover {
+          &:hover {
+            #{$attribute}: darken($value, 3%) !important;
+          }
+        }
         &#{$attr}#{$prefix}#{$item}\:hover {
           &:hover {
             #{$attribute}: $value !important;
