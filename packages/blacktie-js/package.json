@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/blacktie-js",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Blacktie Core",
   "private": true,
   "scripts": {

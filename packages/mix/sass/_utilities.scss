@@ -46,6 +46,28 @@
             #{$modifier-key}: $val;
           }
         }
+
+        @if type-of($val) == "color" {
+          // $attr: map-color-attrs($attribute);
+          &#{$attr}#{$prefix}#{$item}-hover {
+            &:hover {
+              #{$attribute}: transparentize($val, 0.2) !important;
+            }
+          }
+          &#{$attr}#{$prefix}#{$item}\:hover {
+            &:hover {
+              #{$attribute}: $val !important;
+            }
+          }
+          &#{$attr}#{$prefix}#{$item}\:focus {
+            &:focus {
+              #{$attribute}: $val !important;
+            }
+          }
+          &#{$attr}#{$prefix}#{$item}#{$prefix}tp {
+            #{$attribute}: darken($val, 3%) !important;
+          }
+        }
       }
     }
   }
