@@ -42,25 +42,25 @@
         }
       }
 
-      @if type-of($val) == "color" {
+      @if type-of($value) == "color" {
         // $attr: map-color-attrs($attribute);
         &#{$attr}#{$prefix}#{$item}-hover {
           &:hover {
-            #{$attribute}: transparentize($val, 0.2) !important;
+            #{$attribute}: transparentize($value, 0.2) !important;
           }
         }
         &#{$attr}#{$prefix}#{$item}\:hover {
           &:hover {
-            #{$attribute}: $val !important;
+            #{$attribute}: $value !important;
           }
         }
         &#{$attr}#{$prefix}#{$item}\:focus {
           &:focus {
-            #{$attribute}: $val !important;
+            #{$attribute}: $value !important;
           }
         }
         &#{$attr}#{$prefix}#{$item}#{$prefix}tp {
-          #{$attribute}: darken($val, 3%) !important;
+          #{$attribute}: darken($value, 3%) !important;
         }
       }
     }
