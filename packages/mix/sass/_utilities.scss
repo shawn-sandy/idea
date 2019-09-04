@@ -39,11 +39,11 @@
         // TODO refactor to handle color maps--remove `color` from output
         @if $key == "base" {
           &#{$mix-prefix}#{$token} {
-            #{$modifier-key}: $val;
+            #{$token}#{$mix-prefix}#{$modifier-key}: $val;
           }
         } @else {
           &#{$mix-prefix}#{$key} {
-            #{$modifier-key}: $val;
+            #{$token}#{$mix-prefix}#{$modifier-key}: $val;
           }
         }
 
