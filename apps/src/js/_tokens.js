@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 03 Sep 2019 00:18:50 GMT
+ * Generated on Fri, 06 Sep 2019 09:35:15 GMT
  */
 
 export const ColorGray = "#6a737d";
@@ -26,6 +26,7 @@ export const ColorGrays10 = "#000000"; // lightens
 export const ColorGrays25 = "#707070"; // highlight text
 export const ColorGrays50 = "#2a2a2a"; // default text
 export const ColorGrays100 = "#232323"; // Element background etc
+export const ColorGraysLightgray = "#d3d3d3"; // lightens
 export const ComponentBtnPadding = "1.25rem";
 export const ComponentBtnFontSize = "1.07rem";
 export const ComponentBtnBackgroundColor = "#232323";

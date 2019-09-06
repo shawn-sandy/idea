@@ -69,6 +69,10 @@
         "value": "lighten(#707070, 10)",
         "comment": "lightens"
       },
+      "lightgray": {
+        "value": "lightgray",
+        "comment": "lightens"
+      },
       "25": {
         "value": "#707070",
         "comment": "highlight text"

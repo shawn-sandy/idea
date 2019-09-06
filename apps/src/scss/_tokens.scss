@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Tue, 03 Sep 2019 00:18:50 GMT
+  Generated on Fri, 06 Sep 2019 09:35:15 GMT
 */
 
 $sg-color-gray: #6a737d !default;
@@ -27,6 +27,7 @@ $sg-color-grays-10: #000000 !default; // lightens
 $sg-color-grays-25: #707070 !default; // highlight text
 $sg-color-grays-50: #2a2a2a !default; // default text
 $sg-color-grays-100: #232323 !default; // Element background etc
+$sg-color-grays-lightgray: #d3d3d3 !default; // lightens
 $sg-component-btn-padding: 1.25rem !default;
 $sg-component-btn-font-size: 1.07rem !default;
 $sg-component-btn-background-color: #232323 !default;
@@ -82,7 +83,8 @@ $tokens: (
       '10': $sg-color-grays-10,
       '25': $sg-color-grays-25,
       '50': $sg-color-grays-50,
-      '100': $sg-color-grays-100
+      '100': $sg-color-grays-100,
+      'lightgray': $sg-color-grays-lightgray
     )
   ),
   'component': (
