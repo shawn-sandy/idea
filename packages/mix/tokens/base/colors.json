@@ -41,6 +41,28 @@
     },
     "brown": {
       "value": "#A5673F"
+    },
+    "ui": {
+      "primary": {
+        "value": "#0366D6",
+        "comment": "Primary branding color used for the logo, feature text/foreground elements"
+      },
+      "secondary": {
+        "value": "#070707",
+        "comment": "Secondary branding color used for backgrounds to emphasis the lift the Primary brand color"
+      },
+      "light": {
+        "value": "#FEFCFC",
+        "comment": "Primary text on dark colors"
+      },
+      "text": {
+        "value": "#707070",
+        "comment": "Primary text color"
+      },
+      "black-smoke": {
+        "value": "#0F0F0F",
+        "comment": "Dark overlays and backgrounds"
+      }
     }
   }
 }

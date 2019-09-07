@@ -1,9 +1,10 @@
 /**
  * Do not edit directly
- * Generated on Fri, 06 Sep 2019 09:35:15 GMT
+ * Generated on Sat, 07 Sep 2019 01:56:24 GMT
  */
 
 export const ColorGray = "#6a737d";
+export const ColorLightgray = "#d3d3d3";
 export const ColorRed = "#bf0201";
 export const ColorBlue = "#0070d2";
 export const ColorOrange = "#f66a0a";

@@ -1,10 +1,11 @@
 
 /*
   Do not edit directly
-  Generated on Fri, 06 Sep 2019 09:35:15 GMT
+  Generated on Sat, 07 Sep 2019 01:56:24 GMT
 */
 
 $sg-color-gray: #6a737d !default;
+$sg-color-lightgray: #d3d3d3 !default;
 $sg-color-red: #bf0201 !default;
 $sg-color-blue: #0070d2 !default;
 $sg-color-orange: #f66a0a !default;
@@ -59,6 +60,7 @@ $sg-font-color: #fff !default; // descriptions...
 $tokens: (
   'color': (
     'gray': $sg-color-gray,
+    'lightgray': $sg-color-lightgray,
     'red': $sg-color-red,
     'blue': $sg-color-blue,
     'orange': $sg-color-orange,

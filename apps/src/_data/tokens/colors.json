@@ -3,6 +3,9 @@
     "gray": {
       "value": "#6a737d"
     },
+    "lightgray": {
+      "value": "lightgray"
+    },
     "red": {
       "value": "#bf0201"
     },

@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Wed, 04 Sep 2019 03:21:04 GMT
+  Generated on Sat, 07 Sep 2019 03:54:24 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -311,6 +311,21 @@
 .mx-brown-tp {
   color: #9a603b !important; }
 
+.mx-ui-primary {
+  color: #0366d6; }
+
+.mx-ui-secondary {
+  color: #070707; }
+
+.mx-ui-light {
+  color: #fefcfc; }
+
+.mx-ui-text {
+  color: #707070; }
+
+.mx-ui-black-smoke {
+  color: #0f0f0f; }
+
 .mx-bg-black {
   background-color: #000000 !important; }
 
@@ -521,6 +536,21 @@
 .mx-bg-brown-tp {
   background-color: #9a603b !important; }
 
+.mx-bg-ui-primary {
+  background-color: #0366d6; }
+
+.mx-bg-ui-secondary {
+  background-color: #070707; }
+
+.mx-bg-ui-light {
+  background-color: #fefcfc; }
+
+.mx-bg-ui-text {
+  background-color: #707070; }
+
+.mx-bg-ui-black-smoke {
+  background-color: #0f0f0f; }
+
 .mx-border-black {
   border-color: #000000 !important; }
 
@@ -730,3 +760,18 @@
 
 .mx-border-brown-tp {
   border-color: #9a603b !important; }
+
+.mx-border-ui-primary {
+  border-color: #0366d6; }
+
+.mx-border-ui-secondary {
+  border-color: #070707; }
+
+.mx-border-ui-light {
+  border-color: #fefcfc; }
+
+.mx-border-ui-text {
+  border-color: #707070; }
+
+.mx-border-ui-black-smoke {
+  border-color: #0f0f0f; }

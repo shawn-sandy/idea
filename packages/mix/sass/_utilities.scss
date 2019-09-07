@@ -48,27 +48,33 @@
         }
 
         @if type-of($val) == "color" {
-          // $attr: map-color-attrs($attribute);
-          &#{$attr}#{$prefix}#{$item}-hover {
-            &:hover {
-              #{$attribute}: transparentize($val, 0.2) !important;
-            }
-          }
-          &#{$attr}#{$prefix}#{$item}\:hover {
-            &:hover {
-              #{$attribute}: $val !important;
-            }
-          }
-          &#{$attr}#{$prefix}#{$item}\:focus {
-            &:focus {
-              #{$attribute}: $val !important;
-            }
-          }
-          &#{$attr}#{$prefix}#{$item}#{$prefix}tp {
-            #{$attribute}: darken($val, 3%) !important;
-          }
+          @include map-colors($val, $key);
         }
       }
+    }
+  }
+}
+
+@mixin map-colors($val, $item) {
+  @each $attribute in $mix-color-attrs {
+    $attr: map-color-attrs($attribute);
+    &#{$attr}#{$mix-prefix}#{$item}-hover {
+      &:hover {
+        #{$attribute}: transparentize($val, 0.2) !important;
+      }
+    }
+    &#{$attr}#{$mix-prefix}#{$item}\:hover {
+      &:hover {
+        #{$attribute}: $val !important;
+      }
+    }
+    &#{$attr}#{$mix-prefix}#{$item}\:focus {
+      &:focus {
+        #{$attribute}: $val !important;
+      }
+    }
+    &#{$attr}#{$mix-prefix}#{$item}#{$mix-prefix}tp {
+      #{$attribute}: darken($val, 3%) !important;
     }
   }
 }
