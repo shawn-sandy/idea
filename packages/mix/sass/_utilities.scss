@@ -13,6 +13,10 @@
   @include mix-utilities("color");
 }
 
+@mixin mix-fonts($map: $mix-tokens) {
+  @include mix-utilities("font");
+}
+
 @mixin utilities($token, $map: $mix-tokens) {
   $utility: get($token, $map);
   @if length($list: $utility) >= 0 {

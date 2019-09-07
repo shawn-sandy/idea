@@ -86,10 +86,6 @@
   }
 }
 
-@mixin mix-fonts($map: $mix-tokens) {
-  @include mix-generator($mix-fonts, $map, "fonts");
-}
-
 @mixin mix-spacing($map: $mix-tokens) {
   @include mix-generator($mix-spacing, $map, "spacing");
 }
