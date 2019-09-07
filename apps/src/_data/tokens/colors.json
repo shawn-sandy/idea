@@ -3,6 +3,9 @@
     "gray": {
       "value": "#6a737d"
     },
+    "lightgray": {
+      "value": "lightgray"
+    },
     "red": {
       "value": "#bf0201"
     },
@@ -67,6 +70,10 @@
     "grays": {
       "10": {
         "value": "lighten(#707070, 10)",
+        "comment": "lightens"
+      },
+      "lightgray": {
+        "value": "lightgray",
         "comment": "lightens"
       },
       "25": {
