@@ -1,101 +1,23 @@
 # StyleMix (beta)
 
-A SASS-Map toolkit for generating utility classes, components and styles-sheets for your design system, style-guide or website from SASS MAPS.
+A SASS-Map toolkit for generating utility classes, components and styles-sheets for your design system, style-guide or website using SASS MAPS.
 
 ## Usage
 
-**Basic** generates color utility classes form you map
+##### Generate color utility classes form you map
 
 ``` scss
-// import you sass tokens
+// import you sass map/tokens
 @import "tokens.scss";
 // import StyleMix
 @import "@shawnsandy/mix";
-
+// generate color utilities from your `color` map
 .id {
-  // generate color modifiers from your color map
  @include mix-color();
 }
 ```
 
-**Change default settings** replace default mix values with your own
-
-``` scss
-// Setup up some defaults
-$mix-tokens: $tokens !default;
-$mix-colors: "color" !default;
-$mix-fonts: "fonts" !default;
-$mix-spacing: "spacing" !default;
-$mix-sizing: "sizing" !default;
-$mix-prefix: "-" !default;
-$mix-components: "components" !default;
-$mix-extend-class: true;
-$mix-element-states: active focus focus-within hover visited;
-
-@import "@shawnsandy/mix";
-
-.sg {
- @include mix-components();
-}
-
-```
-
-**Custom components**
-
-``` scss
-
-// TODO
-
-```
-
-**Mixing Components** (custom components)
-
-This mix includes allow you to quickly generate a **components** from a utility/component map:
-
-``` scss
-  @include mix($key, $attr: optional)
-
-```
-
-<!-- *Functions*
-
-* mix-color
-* mix-font
-* mix-height
-* mix-width
-* mix-padding
-* mix-margin -->
-
-*Example*
-
-``` scss
-// scss
-.component: {
-
-// use with component/utility maps
-  @include mix('colors.blue')
-
-  @include mix('components.btn.hover')
-
-}
-
-// css output
-.component {
-  color: #3f86f5;
-  }
-  .component:hover {
-    color: #ffffff;
-    color: #000000;
-  }
-
-  // optionally you can use regular maps by passing and optional value for the modifier
-  @include mix-color-background('color.blue')
-
-  @include mix-color-border('color.blue')
-
-```
-
-**Sample Output**
+##### Sample Output
 
 ``` css
 .id-gray-hover:hover {
@@ -191,11 +113,37 @@ This mix includes allow you to quickly generate a **components** from a utility/
 }
 ```
 
+### MIX Components
+
+**Change default settings** replace default mix values with your own
+
+``` scss
+// Setup up some defaults
+$mix-tokens: $tokens !default; // token variable name
+$mix-namespace: "mx" !default; // namespace
+$mix-base: "base" !default; // default utility name
+$mix-colors: "color" !default; // color key
+$mix-fonts: "fonts" !default; // font key
+$mix-spacing: "spacing" !default; // padding and margin
+$mix-sizing: "sizing" !default; //  width heights
+$mix-prefix: "-" !default; // separator for you class names my-class-name
+$mix-components: "components" !default; // default component key
+$mix-modifier-states: active focus focus-within hover visited; // define the states that you use
+$mix-color-attrs: "color", "background-color", "border-color" !default;
+
+@import "@shawnsandy/mix";
+
+.sg {
+ @include mix-components();
+}
+
+```
+
 #### [Read the docs for more info on setup, usages and examples Docs (WIP)](./docs)
 
 ### What are SASS Maps
 
-> Maps in Sass hold pairs of keys and values, and make it easy to look up a value by its corresponding key. They’re written (<expression>: <expression>, <expression>: <expression>). The expression before the : is the key, and the expression after is the value associated with that key. The keys must be unique, but the values may be duplicated. Unlike lists, maps must be written with parentheses around them. A map with no pairs is written (). [More Info]([https://link](https://sass-lang.com/documentation/values/maps))
+> Maps in Sass hold pairs of keys and values, and make it easy to look up a value by its corresponding key. They’re written (<expression>: <expression>, <expression>: <expression>). The expression before the : is the key, and the expression after is the value associated with that key. The keys must be unique, but the values may be duplicated. Unlike lists, maps must be written with parentheses around them. A map with no pairs is written ().[More Info]([https://link](https://sass-lang.com/documentation/values/maps))
 
 #### Inspiration, Links & Resources
 

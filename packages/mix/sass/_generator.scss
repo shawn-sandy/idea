@@ -86,17 +86,6 @@
   }
 }
 
-/** generates a series of modifies based a list of attributes  **/
-@mixin mix-colors($map: $tokens) {
-  @include mix-generator(
-    $mix-colors,
-    $map,
-    "color",
-    "background-color",
-    "border-color"
-  );
-}
-
 @mixin mix-fonts($map: $mix-tokens) {
   @include mix-generator($mix-fonts, $map, "fonts");
 }

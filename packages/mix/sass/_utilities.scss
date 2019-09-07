@@ -8,6 +8,11 @@
   }
 }
 
+/** generates a series of modifies based a list of attributes  **/
+@mixin mix-colors($map: $tokens) {
+  @include mix-utilities("color");
+}
+
 @mixin utilities($token, $map: $mix-tokens) {
   $utility: get($token, $map);
   @if length($list: $utility) >= 0 {
