@@ -27,7 +27,11 @@
         // @debug "values: #{$value}";
       } @else {
         &#{$mix-prefix}#{$key} {
-          #{$key}: $value;
+          @if type-of($value) == "color" {
+            color: $value;
+          } @else {
+            #{$key}: $value;
+          }
           // @debug "key: #{$key}";
         }
       }
@@ -46,13 +50,24 @@
         }
       } @else {
         // TODO refactor to handle color maps--remove `color` from output
+
         @if $key == "base" {
           &#{$mix-prefix}#{$token} {
-            #{$token}#{$mix-prefix}#{$modifier-key}: $val;
+            @if type-of($val) == "color" {
+              color: $val;
+            } @else {
+              #{$token}#{$mix-prefix}#{$modifier-key}: $val;
+            }
           }
         } @else {
-          &#{$mix-prefix}#{$key} {
-            #{$token}#{$mix-prefix}#{$modifier-key}: $val;
+          @if type-of($val) == "color" {
+            &#{$mix-prefix}#{$key} {
+              color: $val;
+            }
+          } @else {
+            &#{$mix-prefix}#{$key} {
+              #{$token}#{$mix-prefix}#{$modifier-key}: $val;
+            }
           }
         }
 
