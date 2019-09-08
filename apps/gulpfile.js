@@ -48,8 +48,9 @@ gulp.task("sass", () =>
     .src(["./src/scss/*.scss"])
     .pipe(sass().on("error", sass.logError))
     .pipe(autoprefixer())
-    .pipe(minify())
     .pipe(gulp.dest("./src/css/"))
+    .pipe(minify())
+    .pipe(gulp.dest("../../dist/"))
     .pipe(reports({ gzip: true }))
 );
 

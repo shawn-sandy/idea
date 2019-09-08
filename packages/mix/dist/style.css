@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Sun, 08 Sep 2019 00:15:33 GMT
+  Generated on Sun, 08 Sep 2019 12:09:35 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -146,6 +146,9 @@
 .mx-primary {
   color: #0366d6; }
 
+.mx-primary {
+  color: rgba(3, 102, 214, 0.8) !important; }
+
 .mx-primary-hover:hover {
   color: rgba(3, 102, 214, 0.8) !important; }
 
@@ -158,6 +161,9 @@
 .mx-primary-tp {
   color: #035fc7 !important; }
 
+.mx-bg-primary {
+  background-color: rgba(3, 102, 214, 0.8) !important; }
+
 .mx-bg-primary-hover:hover {
   background-color: rgba(3, 102, 214, 0.8) !important; }
 
@@ -169,6 +175,9 @@
 
 .mx-bg-primary-tp {
   background-color: #035fc7 !important; }
+
+.mx-border-primary {
+  border-color: rgba(3, 102, 214, 0.8) !important; }
 
 .mx-border-primary-hover:hover {
   border-color: rgba(3, 102, 214, 0.8) !important; }
@@ -185,6 +194,9 @@
 .mx-secondary {
   color: #070707; }
 
+.mx-secondary {
+  color: rgba(7, 7, 7, 0.8) !important; }
+
 .mx-secondary-hover:hover {
   color: rgba(7, 7, 7, 0.8) !important; }
 
@@ -197,6 +209,9 @@
 .mx-secondary-tp {
   color: black !important; }
 
+.mx-bg-secondary {
+  background-color: rgba(7, 7, 7, 0.8) !important; }
+
 .mx-bg-secondary-hover:hover {
   background-color: rgba(7, 7, 7, 0.8) !important; }
 
@@ -208,6 +223,9 @@
 
 .mx-bg-secondary-tp {
   background-color: black !important; }
+
+.mx-border-secondary {
+  border-color: rgba(7, 7, 7, 0.8) !important; }
 
 .mx-border-secondary-hover:hover {
   border-color: rgba(7, 7, 7, 0.8) !important; }
@@ -224,6 +242,9 @@
 .mx-light {
   color: #fefcfc; }
 
+.mx-light {
+  color: rgba(254, 252, 252, 0.8) !important; }
+
 .mx-light-hover:hover {
   color: rgba(254, 252, 252, 0.8) !important; }
 
@@ -236,6 +257,9 @@
 .mx-light-tp {
   color: #faf1f1 !important; }
 
+.mx-bg-light {
+  background-color: rgba(254, 252, 252, 0.8) !important; }
+
 .mx-bg-light-hover:hover {
   background-color: rgba(254, 252, 252, 0.8) !important; }
 
@@ -247,6 +271,9 @@
 
 .mx-bg-light-tp {
   background-color: #faf1f1 !important; }
+
+.mx-border-light {
+  border-color: rgba(254, 252, 252, 0.8) !important; }
 
 .mx-border-light-hover:hover {
   border-color: rgba(254, 252, 252, 0.8) !important; }
@@ -263,6 +290,9 @@
 .mx-text {
   color: #707070; }
 
+.mx-text {
+  color: rgba(112, 112, 112, 0.8) !important; }
+
 .mx-text-hover:hover {
   color: rgba(112, 112, 112, 0.8) !important; }
 
@@ -275,6 +305,9 @@
 .mx-text-tp {
   color: #686868 !important; }
 
+.mx-bg-text {
+  background-color: rgba(112, 112, 112, 0.8) !important; }
+
 .mx-bg-text-hover:hover {
   background-color: rgba(112, 112, 112, 0.8) !important; }
 
@@ -286,6 +319,9 @@
 
 .mx-bg-text-tp {
   background-color: #686868 !important; }
+
+.mx-border-text {
+  border-color: rgba(112, 112, 112, 0.8) !important; }
 
 .mx-border-text-hover:hover {
   border-color: rgba(112, 112, 112, 0.8) !important; }
@@ -302,6 +338,9 @@
 .mx-black-smoke {
   color: #0f0f0f; }
 
+.mx-black-smoke {
+  color: rgba(15, 15, 15, 0.8) !important; }
+
 .mx-black-smoke-hover:hover {
   color: rgba(15, 15, 15, 0.8) !important; }
 
@@ -314,6 +353,9 @@
 .mx-black-smoke-tp {
   color: #070707 !important; }
 
+.mx-bg-black-smoke {
+  background-color: rgba(15, 15, 15, 0.8) !important; }
+
 .mx-bg-black-smoke-hover:hover {
   background-color: rgba(15, 15, 15, 0.8) !important; }
 
@@ -325,6 +367,9 @@
 
 .mx-bg-black-smoke-tp {
   background-color: #070707 !important; }
+
+.mx-border-black-smoke {
+  border-color: rgba(15, 15, 15, 0.8) !important; }
 
 .mx-border-black-smoke-hover:hover {
   border-color: rgba(15, 15, 15, 0.8) !important; }

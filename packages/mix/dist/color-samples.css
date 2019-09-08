@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Sun, 08 Sep 2019 00:15:33 GMT
+  Generated on Sun, 08 Sep 2019 12:09:35 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -49,6 +49,9 @@
 .samp-primary {
   color: #0366d6; }
 
+.samp-primary {
+  color: rgba(3, 102, 214, 0.8) !important; }
+
 .samp-primary-hover:hover {
   color: rgba(3, 102, 214, 0.8) !important; }
 
@@ -61,6 +64,9 @@
 .samp-primary-tp {
   color: #035fc7 !important; }
 
+.samp-bg-primary {
+  background-color: rgba(3, 102, 214, 0.8) !important; }
+
 .samp-bg-primary-hover:hover {
   background-color: rgba(3, 102, 214, 0.8) !important; }
 
@@ -72,6 +78,9 @@
 
 .samp-bg-primary-tp {
   background-color: #035fc7 !important; }
+
+.samp-border-primary {
+  border-color: rgba(3, 102, 214, 0.8) !important; }
 
 .samp-border-primary-hover:hover {
   border-color: rgba(3, 102, 214, 0.8) !important; }
@@ -88,6 +97,9 @@
 .samp-secondary {
   color: #070707; }
 
+.samp-secondary {
+  color: rgba(7, 7, 7, 0.8) !important; }
+
 .samp-secondary-hover:hover {
   color: rgba(7, 7, 7, 0.8) !important; }
 
@@ -100,6 +112,9 @@
 .samp-secondary-tp {
   color: black !important; }
 
+.samp-bg-secondary {
+  background-color: rgba(7, 7, 7, 0.8) !important; }
+
 .samp-bg-secondary-hover:hover {
   background-color: rgba(7, 7, 7, 0.8) !important; }
 
@@ -111,6 +126,9 @@
 
 .samp-bg-secondary-tp {
   background-color: black !important; }
+
+.samp-border-secondary {
+  border-color: rgba(7, 7, 7, 0.8) !important; }
 
 .samp-border-secondary-hover:hover {
   border-color: rgba(7, 7, 7, 0.8) !important; }
@@ -127,6 +145,9 @@
 .samp-light {
   color: #fefcfc; }
 
+.samp-light {
+  color: rgba(254, 252, 252, 0.8) !important; }
+
 .samp-light-hover:hover {
   color: rgba(254, 252, 252, 0.8) !important; }
 
@@ -139,6 +160,9 @@
 .samp-light-tp {
   color: #faf1f1 !important; }
 
+.samp-bg-light {
+  background-color: rgba(254, 252, 252, 0.8) !important; }
+
 .samp-bg-light-hover:hover {
   background-color: rgba(254, 252, 252, 0.8) !important; }
 
@@ -150,6 +174,9 @@
 
 .samp-bg-light-tp {
   background-color: #faf1f1 !important; }
+
+.samp-border-light {
+  border-color: rgba(254, 252, 252, 0.8) !important; }
 
 .samp-border-light-hover:hover {
   border-color: rgba(254, 252, 252, 0.8) !important; }
@@ -166,6 +193,9 @@
 .samp-text {
   color: #707070; }
 
+.samp-text {
+  color: rgba(112, 112, 112, 0.8) !important; }
+
 .samp-text-hover:hover {
   color: rgba(112, 112, 112, 0.8) !important; }
 
@@ -178,6 +208,9 @@
 .samp-text-tp {
   color: #686868 !important; }
 
+.samp-bg-text {
+  background-color: rgba(112, 112, 112, 0.8) !important; }
+
 .samp-bg-text-hover:hover {
   background-color: rgba(112, 112, 112, 0.8) !important; }
 
@@ -189,6 +222,9 @@
 
 .samp-bg-text-tp {
   background-color: #686868 !important; }
+
+.samp-border-text {
+  border-color: rgba(112, 112, 112, 0.8) !important; }
 
 .samp-border-text-hover:hover {
   border-color: rgba(112, 112, 112, 0.8) !important; }
@@ -205,6 +241,9 @@
 .samp-black-smoke {
   color: #0f0f0f; }
 
+.samp-black-smoke {
+  color: rgba(15, 15, 15, 0.8) !important; }
+
 .samp-black-smoke-hover:hover {
   color: rgba(15, 15, 15, 0.8) !important; }
 
@@ -217,6 +256,9 @@
 .samp-black-smoke-tp {
   color: #070707 !important; }
 
+.samp-bg-black-smoke {
+  background-color: rgba(15, 15, 15, 0.8) !important; }
+
 .samp-bg-black-smoke-hover:hover {
   background-color: rgba(15, 15, 15, 0.8) !important; }
 
@@ -228,6 +270,9 @@
 
 .samp-bg-black-smoke-tp {
   background-color: #070707 !important; }
+
+.samp-border-black-smoke {
+  border-color: rgba(15, 15, 15, 0.8) !important; }
 
 .samp-border-black-smoke-hover:hover {
   border-color: rgba(15, 15, 15, 0.8) !important; }
