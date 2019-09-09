@@ -36,7 +36,7 @@
   "devDependencies": {
     "es-dev-server": "^1.17.1",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^6.1.0",
+    "gulp-autoprefixer": "^7.0.0",
     "gulp-clean-css": "^4.2.0",
     "gulp-sass": "^4.0.2",
     "gulp-sizereport": "^1.2.1",
