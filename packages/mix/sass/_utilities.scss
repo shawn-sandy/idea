@@ -9,9 +9,9 @@
 }
 
 /** generates a series of modifies based a list of attributes  **/
-@mixin mix-colors($map: $tokens) {
-  @include mix-utilities("color");
-}
+// @mixin mix-colors($map: $tokens) {
+//   @include mix-utilities("color");
+// }
 
 @mixin mix-fonts($map: $mix-tokens) {
   @include mix-utilities("font");
@@ -72,8 +72,10 @@
             }
           }
         }
-        @if type-of($val) == "color" {
-          @include map-colors($val, $key);
+        &#{$mix-prefix}#{$key} {
+          @if type-of($val) == "color" {
+            @include map-colors($val, $key);
+          }
         }
       }
     }
@@ -84,9 +86,7 @@
   @each $attribute in $mix-color-attrs {
     $attr: map-color-attrs($attribute);
     &#{$attr}#{$mix-prefix}#{$item} {
-
-        #{$attribute}: transparentize($val, 0.2) !important;
-
+      #{$attribute}: transparentize($val, 0.2) !important;
     }
     &#{$attr}#{$mix-prefix}#{$item}-hover {
       &:hover {
