@@ -1,10 +1,14 @@
 /** mix stylesheet **/
 /*
   Do not edit directly
-  Generated on Sun, 08 Sep 2019 12:05:36 GMT
+  Generated on Wed, 11 Sep 2019 04:43:46 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
+/**
+
+
+**/
 /** generate all components in specified map--default component **/
 .mx-swatch {
   min-height: 60px;
