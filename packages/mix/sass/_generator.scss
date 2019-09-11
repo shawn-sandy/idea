@@ -93,3 +93,24 @@
 @mixin mix-sizing($map: $mix-tokens) {
   @include mix-generator($mix-sizing, $map, "spacing");
 }
+
+@function map-color-attrs($attr) {
+  @if $attr == "background-color" {
+    @return "-bg";
+  } @else if $attr == "border-color" {
+    @return "-border";
+  } @else {
+    @return null;
+  }
+}
+
+@mixin mix-colors($color: $mix-colors, $map: $tokens) {
+  /** MIX COLORS **/
+  @include mix-generator(
+    $mix-colors,
+    $map,
+    "color",
+    "background-color",
+    "border-color"
+  );
+}

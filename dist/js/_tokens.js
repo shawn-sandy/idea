@@ -1,9 +1,10 @@
 /**
  * Do not edit directly
- * Generated on Fri, 06 Sep 2019 01:09:21 GMT
+ * Generated on Mon, 09 Sep 2019 00:04:32 GMT
  */
 
 export const ColorGray = "#6a737d";
+export const ColorLightgray = "#d3d3d3";
 export const ColorRed = "#bf0201";
 export const ColorBlue = "#0070d2";
 export const ColorOrange = "#f66a0a";
@@ -26,6 +27,7 @@ export const ColorGrays10 = "#000000"; // lightens
 export const ColorGrays25 = "#707070"; // highlight text
 export const ColorGrays50 = "#2a2a2a"; // default text
 export const ColorGrays100 = "#232323"; // Element background etc
+export const ColorGraysLightgray = "#d3d3d3"; // lightens
 export const ComponentBtnPadding = "1.25rem";
 export const ComponentBtnFontSize = "1.07rem";
 export const ComponentBtnBackgroundColor = "#232323";

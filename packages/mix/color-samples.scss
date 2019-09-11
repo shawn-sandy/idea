@@ -7,5 +7,5 @@
 @import "./index.scss";
 
 .samp {
-  @include mix-utilities("color");
+  @include mix-colors("color");
 }

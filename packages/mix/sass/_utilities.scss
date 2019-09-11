@@ -9,9 +9,9 @@
 }
 
 /** generates a series of modifies based a list of attributes  **/
-@mixin mix-colors($map: $tokens) {
-  @include mix-utilities("color");
-}
+// @mixin mix-colors($map: $tokens) {
+//   @include mix-utilities("color");
+// }
 
 @mixin mix-fonts($map: $mix-tokens) {
   @include mix-utilities("font");
@@ -27,8 +27,14 @@
         // @debug "values: #{$value}";
       } @else {
         &#{$mix-prefix}#{$key} {
-          #{$key}: $value;
-          // @debug "key: #{$key}";
+          @if type-of($value) == "color" {
+            color: $value;
+          } @else {
+            #{$key}: $value;
+          }
+        }
+        @if type-of($value) == "color" {
+          @include map-colors($value, $key);
         }
       }
     }
@@ -46,18 +52,30 @@
         }
       } @else {
         // TODO refactor to handle color maps--remove `color` from output
+
         @if $key == "base" {
           &#{$mix-prefix}#{$token} {
-            #{$token}#{$mix-prefix}#{$modifier-key}: $val;
+            @if type-of($val) == "color" {
+              color: $val;
+            } @else {
+              #{$token}#{$mix-prefix}#{$modifier-key}: $val;
+            }
           }
         } @else {
-          &#{$mix-prefix}#{$key} {
-            #{$token}#{$mix-prefix}#{$modifier-key}: $val;
+          @if type-of($val) == "color" {
+            &#{$mix-prefix}#{$key} {
+              color: $val;
+            }
+          } @else {
+            &#{$mix-prefix}#{$key} {
+              #{$token}#{$mix-prefix}#{$modifier-key}: $val;
+            }
           }
         }
-
-        @if type-of($val) == "color" {
-          @include map-colors($val, $key);
+        &#{$mix-prefix}#{$key} {
+          @if type-of($val) == "color" {
+            @include map-colors($val, $key);
+          }
         }
       }
     }
@@ -67,6 +85,9 @@
 @mixin map-colors($val, $item) {
   @each $attribute in $mix-color-attrs {
     $attr: map-color-attrs($attribute);
+    &#{$attr}#{$mix-prefix}#{$item} {
+      #{$attribute}: transparentize($val, 0.2) !important;
+    }
     &#{$attr}#{$mix-prefix}#{$item}-hover {
       &:hover {
         #{$attribute}: transparentize($val, 0.2) !important;
