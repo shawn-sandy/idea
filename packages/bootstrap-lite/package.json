@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/bootstrap-lite",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Bootstrap Lite",
   "main": "dist/bootstrap-lite.min.css",
   "repository": {
