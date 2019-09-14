@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   flex-basis: row;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.4);
   transition: opacity 0.3s;
   opacity: 0; }
   .cs-overlay:target {
@@ -26,6 +26,7 @@
       position: absolute;
       top: 15px;
       right: 15px;
+      color: grey;
       text-decoration: none; }
     .cs-overlay .modal-sm {
       width: 40vw; }

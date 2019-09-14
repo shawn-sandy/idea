@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
   <title>css-modal</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -32,9 +30,9 @@
 
     button {
       border: none !important;
-      padding: 15px 25px;
-      border-radius: 9999px;
-
+      padding: 15px 20px;
+      border-radius: 999px;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -48,7 +46,7 @@
   </p>
 
   <p>
-    <button type="button" onclick="location.hash='modal'" type="button">Open Modal
+    <button type="button" class="js-button-modal" data-target="#modal" type="button">Open Modal
     </button>
   </p>
 
@@ -62,7 +60,7 @@
         illo voluptas quis!
       </p>
       <a href="#" class="close">
-        <span name="close">&times;</span>
+        <span id="close">&times;</span>
       </a>
     </div>
   </div>
@@ -72,7 +70,7 @@
 
 </html>
 
+  <script  src="./script.js"></script>
 
 </body>
-
 </html>

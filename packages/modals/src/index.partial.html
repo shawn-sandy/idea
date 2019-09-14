@@ -21,9 +21,9 @@
 
     button {
       border: none !important;
-      padding: 15px 25px;
-      border-radius: 9999px;
-
+      padding: 15px 20px;
+      border-radius: 999px;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -37,7 +37,7 @@
   </p>
 
   <p>
-    <button type="button" onclick="location.hash='modal'" type="button">Open Modal
+    <button type="button" class="js-button-modal" data-target="#modal" type="button">Open Modal
     </button>
   </p>
 
@@ -51,7 +51,7 @@
         illo voluptas quis!
       </p>
       <a href="#" class="close">
-        <span name="close">&times;</span>
+        <span id="close">&times;</span>
       </a>
     </div>
   </div>
