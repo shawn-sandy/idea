@@ -1,13 +1,18 @@
 {
   "name": "@shawnsandy/css-modal",
-  "version": "0.2.0",
+  "private": true,
+  "version": "0.2.3",
   "scripts": {
+    "start": "es-dev-server --compatibility all --legacy --app-index index.html --node-resolve --open",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "publishConfig": {
+    "access": "private"
+  },
   "dependencies": {
-    "core-js": "^3.1.4",
+    "core-js": "^3.2.1",
     "vue": "^2.6.10"
   },
   "eslintConfig": {
@@ -34,6 +39,9 @@
     "last 2 versions"
   ],
   "devDependencies": {
-    "@vue/cli-service": "^3.9.2"
-  }
+    "@vue/cli-service": "^3.11.0",
+    "browser-sync": "^2.26.7",
+    "es-dev-server": "^1.18.0"
+  },
+  "gitHead": "876f7a3783424ade681a5e7cff63e521ec2db601"
 }

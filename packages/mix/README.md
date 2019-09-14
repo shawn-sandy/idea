@@ -139,6 +139,18 @@ $mix-color-attrs: "color", "background-color", "border-color" !default;
 
 ```
 
+## Mix helpers
+
+##### `mix-get()` 
+
+Grab the value of a given token/key
+
+``` scss
+.danger {
+  color: mix-get('color.red');
+}
+```
+
 #### [Read the docs for more info on setup, usages and examples Docs (WIP)](./docs)
 
 ### What are SASS Maps

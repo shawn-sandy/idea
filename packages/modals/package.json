@@ -1,0 +1,92 @@
+{
+  "name": "@shawnsandy/modals",
+  "version": "0.1.0",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/shawn-sandy/idea",
+  "scripts": {
+    "build": "gulp -f ./build/gulpfile.js --cwd ./ --continue",
+    "serve": "gulp serve -f ./build/gulpfile.js --cwd ./ --continue",
+    "task": "gulp -f ./build/gulpfile.js --cwd ./ --continue",
+    "tasks": "gulp --tasks-simple -f ./build/gulpfile.js --cwd ./ --continue"
+  },
+  "config": {
+    "srcDir": "src/",
+    "distDir": "dist/"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "glob": "^7.1.4",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-inject-partials": "^1.0.5",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "tasks": {
+    "partials": {
+      "order": 999,
+      "src": [
+        "**/*.template.html"
+      ],
+      "pipe": [
+        {
+          "require": "gulp-inject-partials",
+          "args": [
+            {
+              "removeTags": true,
+              "quiet": true
+            }
+          ]
+        }
+      ],
+      "rename": {
+        "find": ".template",
+        "replace": ""
+      },
+      "cleanup": [
+        "**/*.partial.html",
+        "**/*.template.html"
+      ]
+    },
+    "sass": {
+      "src": [
+        "**/*.sass",
+        "**/*.scss"
+      ],
+      "pipe": [
+        {
+          "require": "gulp-sass"
+        }
+      ],
+      "cleanup": true
+    },
+    "autoprefixer": {
+      "order": 999,
+      "src": [
+        "**/*.css"
+      ],
+      "pipe": [
+        {
+          "require": "gulp-autoprefixer",
+          "args": [
+            {
+              "cascade": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "browserslist": [
+    "last 5 version"
+  ],
+  "gitHead": "876f7a3783424ade681a5e7cff63e521ec2db601"
+}
