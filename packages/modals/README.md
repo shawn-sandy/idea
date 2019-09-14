@@ -15,14 +15,14 @@ npm i @shawnsandy/modals
 ``` html
 <div id="modal" class="cs-overlay">
     <a href="#" class="cancel"></a>
-    <div class="modal modal-sm">
+    <div class="cs-modal cs-modal-sm">
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit hic, excepturi consequatur deleniti totam quidem
             aliquid perferendis iste molestias delectus asperiores. Minus voluptates consequuntur porro necessitatibus quod
             illo voluptas quis!
         </p>
-        <a href="#" class="close">
-            <span id="close">&times;</span>
+        <a href="#" class="cs-close">
+            <span id="cs-close">&times;</span>
         </a>
     </div>
 </div>

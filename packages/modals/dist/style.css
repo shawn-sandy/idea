@@ -15,25 +15,25 @@
   .cs-overlay:target {
     visibility: visible;
     opacity: 1; }
-  .cs-overlay .modal {
+  .cs-overlay .cs-modal {
     position: relative;
     max-width: 80%;
     background: white;
     border-radius: 4px;
     padding: 2.5em;
     box-shadow: 0 5px 11px rgba(36, 37, 38, 0.08); }
-    .cs-overlay .modal .close {
+    .cs-overlay .cs-modal .cs-close {
       position: absolute;
       top: 15px;
       right: 15px;
       text-decoration: none; }
-    .cs-overlay .modal-sm {
+    .cs-overlay .cs-modal-sm {
       width: 40vw; }
-    .cs-overlay .modal-md {
+    .cs-overlay .cs-modal-md {
       width: 60vw; }
-    .cs-overlay .modal-lg {
+    .cs-overlay .cs-modal-lg {
       width: 80vw; }
-    .cs-overlay .modal-xl {
+    .cs-overlay .cs-modal-xl {
       width: 90vw; }
   .cs-overlay .cancel {
     position: absolute;

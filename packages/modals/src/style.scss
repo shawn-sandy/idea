@@ -20,7 +20,7 @@ $modal-shadow: 0 5px 11px rgba(36, 37, 38, 0.08) !default;
     visibility: visible;
     opacity: 1;
   }
-  .modal {
+  .cs-modal {
     position: relative;
     max-width: 80%;
     background: $modal-bg;
@@ -28,7 +28,7 @@ $modal-shadow: 0 5px 11px rgba(36, 37, 38, 0.08) !default;
     padding: 2.5em;
     box-shadow: $modal-shadow;
 
-    .close {
+    .cs-close {
       position: absolute;
       top: 15px;
       right: 15px;
