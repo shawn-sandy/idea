@@ -1,5 +1,6 @@
 {
   "name": "@shawnsandy/css-modal",
+  "private": true,
   "version": "0.2.2",
   "scripts": {
     "start": "es-dev-server --compatibility all --legacy --app-index index.html --node-resolve --open",
@@ -41,5 +42,6 @@
     "@vue/cli-service": "^3.11.0",
     "browser-sync": "^2.26.7",
     "es-dev-server": "^1.18.0"
-  }
+  },
+  "gitHead": "876f7a3783424ade681a5e7cff63e521ec2db601"
 }
