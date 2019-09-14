@@ -1,6 +1,6 @@
 {
   "name": "@local/idea",
-  "version": "0.6.27",
+  "version": "0.6.28",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --no-clean",
@@ -20,7 +20,7 @@
     "@babel/core": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
     "@shawnsandy/bootstrap-lite": "^0.0.10",
-    "@shawnsandy/css-modal": "^0.2.2",
+    "@shawnsandy/css-modal": "^0.2.3",
     "@shawnsandy/eleventy_atomic_plugin": "^0.1.2",
     "@shawnsandy/ideas": "^0.0.10",
     "@shawnsandy/mix": "^0.5.9",
