@@ -13,36 +13,59 @@ npm i @shawnsandy/modals
 #### Add your modals to the page
 
 ``` html
- <div id="modal" class="cs-overlay">
-     <a href="#" class="cancel"></a>
-     <div class="modal modal-sm">
-         <p>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit hic, excepturi consequatur deleniti totam quidem aliquid perferendis iste molestias delectus asperiores. Minus voluptates consequuntur porro necessitatibus quod illo voluptas quis!
-         </p>
-         <a href="#" class="close">
-             <span name="close">&times;</span>
-         </a>
-     </div>
- </div>
+<div id="modal" class="cs-overlay">
+    <a href="#" class="cancel"></a>
+    <div class="modal modal-sm">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit hic, excepturi consequatur deleniti totam quidem
+            aliquid perferendis iste molestias delectus asperiores. Minus voluptates consequuntur porro necessitatibus quod
+            illo voluptas quis!
+        </p>
+        <a href="#" class="close">
+            <span id="close">&times;</span>
+        </a>
+    </div>
+</div>
 ```
 
-#### Add your links/button to trigger the modals
+#### Add your links to trigger the modals
 
 ``` html
 <p>
-    <a href="#modal" class="text-blue-500 underline">Open Modal</a>
+    <a href="#modal" class="">Open Modal</a>
 </p>
+```
 
+#### Add button `onclick` to trigger the modals
+
+``` html
 <p>
-    <button type="button" onclick="location.hash='modal'" type="button">Open Modal
+    <button type="button" onclick="location.hash='modal'" class="js-modal-css" type="button">Open Modal
     </button>
 </p>
+```
+
+#### Link to the js script
+
+``` html
+  <button type="button" class="js-modal-css" data-target="#modal" type="button">Open Modal
+  </button>
+```
+
+``` html
+<script src="/modals/script.js"></script>
+```
+
+#### Add CSS to you page
+
+``` html
+<link src="/modals/styles.js">
 ```
 
 #### Import and customize SCSS
 
 ``` scss
-// custom colors with css defaults
+// change the default colors/attributes
 $overlay-bg: rgba(0, 0, 0, 0.8) !default;
 $modal-bg: white !default;
 $modal-shadow: 0 5px 11px rgba(36, 37, 38, 0.08) !default;
