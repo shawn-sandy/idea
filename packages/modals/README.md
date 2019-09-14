@@ -1,6 +1,6 @@
 # Modals
 
-Simple CSS powered Modals
+Simple zero dependency CSS powered Modals
 
 ### Install
 
@@ -56,10 +56,10 @@ npm i @shawnsandy/modals
 <script src="/modals/script.js"></script>
 ```
 
-#### Add CSS to you page
+**Add CSS to you page**
 
 ``` html
-<link src="/modals/styles.js">
+<link src="/modals/styles.css">
 ```
 
 #### Import and customize SCSS
