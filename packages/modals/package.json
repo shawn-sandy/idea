@@ -1,7 +1,8 @@
 {
   "name": "@shawnsandy/modals",
   "version": "0.1.0",
-  "license": "UNLICENSED",
+  "license": "MIT",
+  "author": "shawnsandy <shawnsandy04@gmail.com>",
   "homepage": "https://github.com/shawn-sandy/idea",
   "scripts": {
     "build": "gulp -f ./build/gulpfile.js --cwd ./ --continue",
@@ -9,6 +10,7 @@
     "task": "gulp -f ./build/gulpfile.js --cwd ./ --continue",
     "tasks": "gulp --tasks-simple -f ./build/gulpfile.js --cwd ./ --continue"
   },
+  "main": "dist/style.scss",
   "config": {
     "srcDir": "src/",
     "distDir": "dist/"
