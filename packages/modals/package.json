@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "author": "shawnsandy <shawnsandy04@gmail.com>",
-  "homepage": "https://github.com/shawn-sandy/idea",
+  "homepage": "https://github.com/shawn-sandy/idea/tree/master/packages/modals",
   "scripts": {
     "build": "gulp -f ./build/gulpfile.js --cwd ./ --continue",
     "serve": "gulp serve -f ./build/gulpfile.js --cwd ./ --continue",
