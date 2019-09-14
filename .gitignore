@@ -19,3 +19,4 @@ yarn-error.log*
 *.sln
 *.sw*
 lerna-debug.log
+/packages/modals/DOCUMENTATION.md
