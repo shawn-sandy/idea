@@ -1,0 +1,51 @@
+.cs-overlay {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: row;
+  background: rgba(0, 0, 0, 0.4);
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+.cs-overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.cs-overlay .modal {
+  position: relative;
+  max-width: 80%;
+  background: white;
+  border-radius: 4px;
+  padding: 2.5em;
+  box-shadow: 0 5px 11px rgba(36, 37, 38, 0.08);
+}
+.cs-overlay .modal .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: grey;
+  text-decoration: none;
+}
+.cs-overlay .modal-sm {
+  width: 40vw;
+}
+.cs-overlay .modal-md {
+  width: 60vw;
+}
+.cs-overlay .modal-lg {
+  width: 80vw;
+}
+.cs-overlay .modal-xl {
+  width: 90vw;
+}
+.cs-overlay .cancel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
