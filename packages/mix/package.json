@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/mix",
-  "version": "0.5.10",
+  "version": "0.5.11",
   "description": "StyleMix--A toolkit for generating utility classes, components and styles-sheets for your design system, style-guide or website from SASS MAPS",
   "keywords": [
     "SASS",
