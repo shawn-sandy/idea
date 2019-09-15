@@ -20,41 +20,41 @@ $modal-shadow: 0 5px 11px rgba(36, 37, 38, 0.08) !default;
     visibility: visible;
     opacity: 1;
   }
-  .modal {
-    position: relative;
-    max-width: 80%;
-    background: $modal-bg;
-    border-radius: 4px;
-    padding: 2.5em;
-    box-shadow: $modal-shadow;
-
-    .close {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      text-decoration: none;
-    }
-
-    &-sm {
-      width: 40vw;
-    }
-
-    &-md {
-      width: 60vw;
-    }
-
-    &-lg {
-      width: 80vw;
-    }
-
-    &-xl {
-      width: 90vw;
-    }
-  }
 
   .cancel {
     position: absolute;
     width: 100%;
     height: 100%;
+  }
+}
+.cs-modal {
+  position: relative;
+  max-width: 80%;
+  background: $modal-bg;
+  border-radius: 4px;
+  padding: 2.5em;
+  box-shadow: $modal-shadow;
+
+  .cs-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    text-decoration: none;
+  }
+
+  &-sm {
+    width: 40vw;
+  }
+
+  &-md {
+    width: 60vw;
+  }
+
+  &-lg {
+    width: 80vw;
+  }
+
+  &-xl {
+    width: 90vw;
   }
 }

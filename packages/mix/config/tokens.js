@@ -51,7 +51,7 @@ module.exports = {
       // the underlying transform
       transformGroup: "scss",
       buildPath: "./tokens/",
-      prefix: "sg",
+      prefix: "mx",
       files: [
         {
           destination: "_tokens.scss",
