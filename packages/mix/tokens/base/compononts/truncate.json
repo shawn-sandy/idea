@@ -8,7 +8,7 @@
         "value": "relative"
       },
       "line-height": {
-        "value": "1.2rem"
+        "value": "1rem"
       },
       "max-height": {
         "value": "3rem"
@@ -45,6 +45,9 @@
         },
         "right": {
           "value": "0"
+        },
+        "width": {
+          "value": "1rem"
         },
         "height": {
           "value": "1rem"

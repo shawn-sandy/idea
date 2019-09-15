@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Sun, 15 Sep 2019 19:05:13 GMT
+  Generated on Sun, 15 Sep 2019 19:15:01 GMT
 */
 
 $sg-button-padding: 0 1.5rem !default;
@@ -36,7 +36,7 @@ $sg-color-ui-text: #707070 !default; // Primary text color
 $sg-color-ui-black-smoke: #0f0f0f !default; // Dark overlays and backgrounds
 $sg-truncate-truncate-overflow: hidden !default;
 $sg-truncate-truncate-position: relative !default;
-$sg-truncate-truncate-line-height: 1.2rem !default;
+$sg-truncate-truncate-line-height: 1rem !default;
 $sg-truncate-truncate-max-height: 3rem !default;
 $sg-truncate-truncate-text-align: justify !default;
 $sg-truncate-truncate-margin-right: -1rem !default;
@@ -48,6 +48,7 @@ $sg-truncate-truncate-before-bottom: 0 !default;
 $sg-truncate-truncate-after-content: "" !default;
 $sg-truncate-truncate-after-position: absoulte !default;
 $sg-truncate-truncate-after-right: 0 !default;
+$sg-truncate-truncate-after-width: 1rem !default;
 $sg-truncate-truncate-after-height: 1rem !default;
 $sg-truncate-truncate-after-background: transparent !default;
 $sg-font-size-base: 1rem !default; // descriptions...
@@ -137,6 +138,7 @@ $tokens: (
         'content': $sg-truncate-truncate-after-content,
         'position': $sg-truncate-truncate-after-position,
         'right': $sg-truncate-truncate-after-right,
+        'width': $sg-truncate-truncate-after-width,
         'height': $sg-truncate-truncate-after-height,
         'background': $sg-truncate-truncate-after-background
       )
