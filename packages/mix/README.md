@@ -139,6 +139,44 @@ $mix-color-attrs: "color", "background-color", "border-color" !default;
 
 ```
 
+#### Truncate component
+
+Truncate text using only CSS (beta)--add the following to you scss imports
+
+``` scss
+// optional change or modify the following default values/options to customize the component
+$mx-truncate-truncate-overflow: hidden;
+$mx-truncate-truncate-position: relative;
+$mx-truncate-truncate-line-height: 1rem;
+$mx-truncate-truncate-max-height: 3rem;
+$mx-truncate-truncate-text-align: justify;
+$mx-truncate-truncate-margin-right: -1rem;
+$mx-truncate-truncate-padding-right: 1rem;
+$mx-truncate-truncate-before-content: "...";
+$mx-truncate-truncate-before-position: absolute;
+$mx-truncate-truncate-before-right: 0;
+$mx-truncate-truncate-before-bottom: 0;
+$mx-truncate-truncate-after-content: "";
+$mx-truncate-truncate-after-position: absoulte;
+$mx-truncate-truncate-after-right: 0;
+$mx-truncate-truncate-after-width: 1rem;
+$mx-truncate-truncate-after-height: 1rem;
+$mx-truncate-truncate-after-background: transparent;
+
+// import the component
+
+@import "node_modules/@shawnsandy/mix/components/truncate.scss"
+
+```
+
+Example text
+
+``` html
+<p class="mx-truncate" style="height: 3rem">The Hitch Hiker's Guide to the Galaxy has a few things to say on the subject of towels. <br>
+    A towel, it says, is about the most massively useful thing an interstellar hitch hiker can have. Partly it has great practical value - you can wrap it around you for warmth as you bound across the cold moons of Jaglan Beta; you can lie on it on the brilliant marble-sandedssss beaches of Santraginus V, inhaling the heady sea vapours; you can sleep under it beneath the stars which shine so redly on the desert world of Kakrafoon; use it to sail a mini raft down the slow heavy river Moth; wet it for use in hand-to-hand-combat; wrap it round your head to ward off noxious fumes or to avoid the gaze of the Ravenous Bugblatter Beast of Traal (a mindboggingly stupid animal, it assumes that if you can't see it, it can't see you - daft as a bush, but very ravenous); you can wave your towel in emergencies as a distress signal, and of course dry yourself off with it if it still seems to be clean enough. More importantly, a towel has immense psychological value. For some reason, if a strag (strag: non-hitch hiker) discovers that a hitch hiker has his towel with him, he will automatically assume that he is also in possession of a toothbrush, face flannel, soap, tin of biscuits, flask, compass, map, ball of string, gnat spray, wet weather gear, space suit etc., etc. Furthermore, the strag will then happily lend the hitch hiker any of these or a dozen other items that the hitch hiker might accidentally have "lost". What the strag will think is that any man who can hitch the length and breadth of the galaxy, rough it, slum it, struggle against terrible odds, win through, and still knows where his towel is is clearly a man to be reckoned with.</p>
+`
+```
+
 ## Mix helpers
 
 ##### `mix-get()` 

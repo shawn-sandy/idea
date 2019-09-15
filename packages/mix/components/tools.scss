@@ -1,9 +1,0 @@
-@import "./imports";
-
-.mx {
-  &-truncate {
-    @include mix-modifier("truncate.truncate");
-  }
-}
-
-@include mix-components("truncate");
