@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Sun, 15 Sep 2019 20:31:11 GMT
+  Generated on Sun, 15 Sep 2019 20:45:24 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -8,7 +8,7 @@
 
 
 **/
-.mx-truncate {
+.mx-clip {
   overflow: hidden;
   position: relative;
   line-height: 1rem;
@@ -16,12 +16,12 @@
   text-align: justify;
   margin-right: -1rem;
   padding-right: 1rem; }
-  .mx-truncate:before {
+  .mx-clip:before {
     content: "...";
     position: absolute;
     right: 0;
     bottom: 0; }
-  .mx-truncate:after {
+  .mx-clip:after {
     content: "";
     position: absoulte;
     right: 0;

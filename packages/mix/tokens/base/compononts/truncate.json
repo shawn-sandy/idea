@@ -1,6 +1,6 @@
 {
   "truncate": {
-    "truncate": {
+    "clip": {
       "overflow": {
         "value": "hidden"
       },
