@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Wed, 11 Sep 2019 04:54:22 GMT
+  Generated on Sun, 15 Sep 2019 19:05:13 GMT
 */
 
 $sg-button-padding: 0 1.5rem !default;
@@ -34,6 +34,22 @@ $sg-color-ui-secondary: #070707 !default; // Secondary branding color used for b
 $sg-color-ui-light: #fefcfc !default; // Primary text on dark colors
 $sg-color-ui-text: #707070 !default; // Primary text color
 $sg-color-ui-black-smoke: #0f0f0f !default; // Dark overlays and backgrounds
+$sg-truncate-truncate-overflow: hidden !default;
+$sg-truncate-truncate-position: relative !default;
+$sg-truncate-truncate-line-height: 1.2rem !default;
+$sg-truncate-truncate-max-height: 3rem !default;
+$sg-truncate-truncate-text-align: justify !default;
+$sg-truncate-truncate-margin-right: -1rem !default;
+$sg-truncate-truncate-padding-right: 1rem !default;
+$sg-truncate-truncate-before-content: "..." !default;
+$sg-truncate-truncate-before-position: absolute !default;
+$sg-truncate-truncate-before-right: 0 !default;
+$sg-truncate-truncate-before-bottom: 0 !default;
+$sg-truncate-truncate-after-content: "" !default;
+$sg-truncate-truncate-after-position: absoulte !default;
+$sg-truncate-truncate-after-right: 0 !default;
+$sg-truncate-truncate-after-height: 1rem !default;
+$sg-truncate-truncate-after-background: transparent !default;
 $sg-font-size-base: 1rem !default; // descriptions...
 $sg-font-size-fine-print: 0.75rem !default; // descriptions...
 $sg-font-size-notes: 0.875rem !default; // descriptions...
@@ -100,6 +116,30 @@ $tokens: (
       'light': $sg-color-ui-light,
       'text': $sg-color-ui-text,
       'black-smoke': $sg-color-ui-black-smoke
+    )
+  ),
+  'truncate': (
+    'truncate': (
+      'overflow': $sg-truncate-truncate-overflow,
+      'position': $sg-truncate-truncate-position,
+      'line-height': $sg-truncate-truncate-line-height,
+      'max-height': $sg-truncate-truncate-max-height,
+      'text-align': $sg-truncate-truncate-text-align,
+      'margin-right': $sg-truncate-truncate-margin-right,
+      'padding-right': $sg-truncate-truncate-padding-right,
+      'before': (
+        'content': $sg-truncate-truncate-before-content,
+        'position': $sg-truncate-truncate-before-position,
+        'right': $sg-truncate-truncate-before-right,
+        'bottom': $sg-truncate-truncate-before-bottom
+      ),
+      'after': (
+        'content': $sg-truncate-truncate-after-content,
+        'position': $sg-truncate-truncate-after-position,
+        'right': $sg-truncate-truncate-after-right,
+        'height': $sg-truncate-truncate-after-height,
+        'background': $sg-truncate-truncate-after-background
+      )
     )
   ),
   'font': (

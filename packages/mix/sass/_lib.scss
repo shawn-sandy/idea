@@ -8,7 +8,7 @@ $mix-spacing: "spacing" !default; // padding and margin
 $mix-sizing: "sizing" !default; //  width heights
 $mix-prefix: "-" !default; // separator for you class names my-class-name
 $mix-components: "components" !default; // default component key
-$mix-modifier-states: active focus focus-within hover visited; // define the states that you use
+$mix-modifier-states: active focus focus-within hover visited before after; // define the states that you use
 $mix-color-attrs: "color", "background-color", "border-color" !default;
 @import "./functions";
 @import "./general";
