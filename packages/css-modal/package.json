@@ -1,7 +1,7 @@
 {
   "name": "@shawnsandy/css-modal",
   "private": true,
-  "version": "0.2.4",
+  "version": "0.2.5",
   "scripts": {
     "start": "es-dev-server --compatibility all --legacy --app-index index.html --node-resolve --open",
     "serve": "vue-cli-service serve",
