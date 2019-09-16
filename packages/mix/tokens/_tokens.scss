@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Sun, 15 Sep 2019 20:45:24 GMT
+  Generated on Mon, 16 Sep 2019 10:56:00 GMT
 */
 
 $mx-button-padding: 0 1.5rem !default;
@@ -34,23 +34,23 @@ $mx-color-ui-secondary: #070707 !default; // Secondary branding color used for b
 $mx-color-ui-light: #fefcfc !default; // Primary text on dark colors
 $mx-color-ui-text: #707070 !default; // Primary text color
 $mx-color-ui-black-smoke: #0f0f0f !default; // Dark overlays and backgrounds
-$mx-truncate-clip-overflow: hidden !default;
-$mx-truncate-clip-position: relative !default;
-$mx-truncate-clip-line-height: 1rem !default;
-$mx-truncate-clip-max-height: 3rem !default;
-$mx-truncate-clip-text-align: justify !default;
-$mx-truncate-clip-margin-right: -1rem !default;
-$mx-truncate-clip-padding-right: 1rem !default;
-$mx-truncate-clip-before-content: "..." !default;
-$mx-truncate-clip-before-position: absolute !default;
-$mx-truncate-clip-before-right: 0 !default;
-$mx-truncate-clip-before-bottom: 0 !default;
-$mx-truncate-clip-after-content: "" !default;
-$mx-truncate-clip-after-position: absoulte !default;
-$mx-truncate-clip-after-right: 0 !default;
-$mx-truncate-clip-after-width: 1rem !default;
-$mx-truncate-clip-after-height: 1rem !default;
-$mx-truncate-clip-after-background: transparent !default;
+$mx-truncate-clip-text-overflow: hidden !default;
+$mx-truncate-clip-text-position: relative !default;
+$mx-truncate-clip-text-line-height: 1rem !default;
+$mx-truncate-clip-text-max-height: 3rem !default;
+$mx-truncate-clip-text-text-align: justify !default;
+$mx-truncate-clip-text-margin-right: -1rem !default;
+$mx-truncate-clip-text-padding-right: 1rem !default;
+$mx-truncate-clip-text-before-content: "..." !default;
+$mx-truncate-clip-text-before-position: absolute !default;
+$mx-truncate-clip-text-before-right: 0 !default;
+$mx-truncate-clip-text-before-bottom: 0 !default;
+$mx-truncate-clip-text-after-content: "" !default;
+$mx-truncate-clip-text-after-position: absolute !default;
+$mx-truncate-clip-text-after-right: 0 !default;
+$mx-truncate-clip-text-after-width: 1rem !default;
+$mx-truncate-clip-text-after-height: 1rem !default;
+$mx-truncate-clip-text-after-background: transparent !default;
 $mx-font-size-base: 1rem !default; // descriptions...
 $mx-font-size-fine-print: 0.75rem !default; // descriptions...
 $mx-font-size-notes: 0.875rem !default; // descriptions...
@@ -120,27 +120,27 @@ $tokens: (
     )
   ),
   'truncate': (
-    'clip': (
-      'overflow': $mx-truncate-clip-overflow,
-      'position': $mx-truncate-clip-position,
-      'line-height': $mx-truncate-clip-line-height,
-      'max-height': $mx-truncate-clip-max-height,
-      'text-align': $mx-truncate-clip-text-align,
-      'margin-right': $mx-truncate-clip-margin-right,
-      'padding-right': $mx-truncate-clip-padding-right,
+    'clip-text': (
+      'overflow': $mx-truncate-clip-text-overflow,
+      'position': $mx-truncate-clip-text-position,
+      'line-height': $mx-truncate-clip-text-line-height,
+      'max-height': $mx-truncate-clip-text-max-height,
+      'text-align': $mx-truncate-clip-text-text-align,
+      'margin-right': $mx-truncate-clip-text-margin-right,
+      'padding-right': $mx-truncate-clip-text-padding-right,
       'before': (
-        'content': $mx-truncate-clip-before-content,
-        'position': $mx-truncate-clip-before-position,
-        'right': $mx-truncate-clip-before-right,
-        'bottom': $mx-truncate-clip-before-bottom
+        'content': $mx-truncate-clip-text-before-content,
+        'position': $mx-truncate-clip-text-before-position,
+        'right': $mx-truncate-clip-text-before-right,
+        'bottom': $mx-truncate-clip-text-before-bottom
       ),
       'after': (
-        'content': $mx-truncate-clip-after-content,
-        'position': $mx-truncate-clip-after-position,
-        'right': $mx-truncate-clip-after-right,
-        'width': $mx-truncate-clip-after-width,
-        'height': $mx-truncate-clip-after-height,
-        'background': $mx-truncate-clip-after-background
+        'content': $mx-truncate-clip-text-after-content,
+        'position': $mx-truncate-clip-text-after-position,
+        'right': $mx-truncate-clip-text-after-right,
+        'width': $mx-truncate-clip-text-after-width,
+        'height': $mx-truncate-clip-text-after-height,
+        'background': $mx-truncate-clip-text-after-background
       )
     )
   ),
