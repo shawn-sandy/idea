@@ -115,53 +115,44 @@ A SASS-Map toolkit for generating utility classes, components and styles-sheets 
 
 ### MIX Components
 
-**Change default settings** replace default mix values with your own
+#### Import and customize Mix using SASS variables
+
+**Change default settings** use the following variables to override the  default SCSS setting variables when needed. View the full list of variables [here](./tokens/_tokens.scss)
 
 ``` scss
 // Setup up some defaults
-$mix-tokens: $tokens !default; // token variable name
-$mix-namespace: "mx" !default; // namespace
-$mix-base: "base" !default; // default utility name
-$mix-colors: "color" !default; // color key
-$mix-fonts: "fonts" !default; // font key
-$mix-spacing: "spacing" !default; // padding and margin
-$mix-sizing: "sizing" !default; //  width heights
-$mix-prefix: "-" !default; // separator for you class names my-class-name
-$mix-components: "components" !default; // default component key
+$mix-tokens: $tokens; // token variable name
+$mix-namespace: "mx"; // namespace
+$mix-base: "base"; // default utility name
+$mix-colors: "color"; // color key
+$mix-fonts: "fonts"; // font key
+$mix-spacing: "spacing"; // padding and margin
+$mix-sizing: "sizing"; //  width heights
+$mix-prefix: "-"; // separator for you class names my-class-name
+$mix-components: "components"; // default component key
 $mix-modifier-states: active focus focus-within hover visited; // define the states that you use
-$mix-color-attrs: "color", "background-color", "border-color" !default;
+$mix-color-attrs: "color", "background-color", "border-color";
 
 @import "@shawnsandy/mix";
 
-.sg {
- @include mix-components();
-}
-
 ```
 
-#### Truncate component
+#### Truncate text component
 
-Truncate text using only CSS (beta)--add the following to you scss imports
+Truncate text using only CSS (beta)--add the following to your scss imports, use variables to override the components default variables if needed
 
 ``` scss
-// optional change or modify the following default values/options to customize the component
-$mx-truncate-clip-overflow: hidden !default;
-$mx-truncate-clip-position: relative !default;
-$mx-truncate-clip-line-height: 1rem !default;
-$mx-truncate-clip-max-height: 3rem !default;
-$mx-truncate-clip-text-align: justify !default;
-$mx-truncate-clip-margin-right: -1rem !default;
-$mx-truncate-clip-padding-right: 1rem !default;
-$mx-truncate-clip-before-content: "..." !default;
-$mx-truncate-clip-before-position: absolute !default;
-$mx-truncate-clip-before-right: 0 !default;
-$mx-truncate-clip-before-bottom: 0 !default;
-$mx-truncate-clip-after-content: "" !default;
-$mx-truncate-clip-after-position: absoulte !default;
-$mx-truncate-clip-after-right: 0 !default;
-$mx-truncate-clip-after-width: 1rem !default;
-$mx-truncate-clip-after-height: 1rem !default;
-$mx-truncate-clip-after-background: transparent !default;
+// optional change or modify the following default variables to customize the component CSS modifiers
+
+$mx-truncate-clip-text-line-height: 1rem;
+$mx-truncate-clip-text-max-height: 3rem;
+$mx-truncate-clip-text-text-align: justify;
+$mx-truncate-clip-text-margin-right: -1rem;
+$mx-truncate-clip-text-padding-right: 1rem;
+$mx-truncate-clip-text-before-content: "...";
+$mx-truncate-clip-text-before-right: 0;
+$mx-truncate-clip-text-before-bottom: 0;
+$mx-truncate-clip-text-after-background: transparent;
 
 // import the component
 
@@ -172,8 +163,8 @@ $mx-truncate-clip-after-background: transparent !default;
 Example text
 
 ``` html
-<p class="mx-clip" style="height: 3rem">The Hitch Hiker's Guide to the Galaxy has a few things to say on the subject of towels. <br>
-    A towel, it says, is about the most massively useful thing an interstellar hitch hiker can have. Partly it has great practical value - you can wrap it around you for warmth as you bound across the cold moons of Jaglan Beta; you can lie on it on the brilliant marble-sandedssss beaches of Santraginus V, inhaling the heady sea vapours; you can sleep under it beneath the stars which shine so redly on the desert world of Kakrafoon; use it to sail a mini raft down the slow heavy river Moth; wet it for use in hand-to-hand-combat; wrap it round your head to ward off noxious fumes or to avoid the gaze of the Ravenous Bugblatter Beast of Traal (a mindboggingly stupid animal, it assumes that if you can't see it, it can't see you - daft as a bush, but very ravenous); you can wave your towel in emergencies as a distress signal, and of course dry yourself off with it if it still seems to be clean enough. More importantly, a towel has immense psychological value. For some reason, if a strag (strag: non-hitch hiker) discovers that a hitch hiker has his towel with him, he will automatically assume that he is also in possession of a toothbrush, face flannel, soap, tin of biscuits, flask, compass, map, ball of string, gnat spray, wet weather gear, space suit etc., etc. Furthermore, the strag will then happily lend the hitch hiker any of these or a dozen other items that the hitch hiker might accidentally have "lost". What the strag will think is that any man who can hitch the length and breadth of the galaxy, rough it, slum it, struggle against terrible odds, win through, and still knows where his towel is is clearly a man to be reckoned with.</p>
+<p class="mx-clip-text" style="height: 3rem">The Hitch Hiker's Guide to the Galaxy has a few things to say on the subject of towels. <br>
+    A towel, it says, is about the most massively useful thing an interstellar hitch hiker can have. Partly it has great practical value - you can wrap it around you for warmth as you bound across the cold moons of Jaglan Beta; you can lie on it on the brilliant marble-sandedssss beaches of Santraginus V, inhaling the heady sea vapours; you can sleep under it beneath the stars which shine so redly on the desert world of Kakrafoon; use it to sail a mini raft down the slow heavy river Moth; wet it for use in hand-to-hand-combat; wrap it round your head to ward off noxious fumes or to avoid the gaze of the Ravenous Bugblatter Beast of Traal (a mindboggingly stupid animal, it assumes that if you can't see it, it can't see you - daft as a bush.</p>
 `
 ```
 

@@ -1,6 +1,6 @@
 {
   "truncate": {
-    "clip": {
+    "clip-text": {
       "overflow": {
         "value": "hidden"
       },
@@ -41,16 +41,16 @@
           "value": "\"\""
         },
         "position": {
-          "value": "absoulte"
+          "value": "absolute"
         },
         "right": {
           "value": "0"
         },
         "width": {
-          "value": "1rem"
+          "value": "{truncate.clip-text.line-height.value}"
         },
         "height": {
-          "value": "1rem"
+          "value": "{truncate.clip-text.line-height.value}"
         },
         "background": {
           "value": "transparent"
