@@ -5,7 +5,7 @@
   "main": "dist/bootstrap-lite.min.css",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/shawn-sandy/ides.git"
+    "url": "git+ssh://git@github.com/shawn-sandy/ideas.git"
   },
   "license": "MIT",
   "author": "Shawn Sandy <shawnsandy04@gmail.com> (http://shawnsandy.design)",
