@@ -26,7 +26,7 @@ $modal-shadow: 0 5px 11px rgba(36, 37, 38, 0.08) !default;
     width: 100%;
     height: 100%;
   }
-}
+
 .cs-modal {
   position: relative;
   max-width: 80%;
@@ -57,4 +57,5 @@ $modal-shadow: 0 5px 11px rgba(36, 37, 38, 0.08) !default;
   &-xl {
     width: 90vw;
   }
+}
 }
