@@ -23,13 +23,6 @@
     "Bootstrap",
     "Bootstrap-Lite"
   ],
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
   "devDependencies": {
     "bootstrap": "^4.3.1",
     "gulp": "^4.0.2",
