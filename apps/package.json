@@ -20,7 +20,6 @@
     "@babel/core": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
     "@shawnsandy/bootstrap-lite": "^0.0.16",
-    "@shawnsandy/css-modal": "^0.2.5",
     "@shawnsandy/eleventy_atomic_plugin": "^0.1.2",
     "@shawnsandy/ideas": "^0.0.16",
     "@shawnsandy/mix": "^0.5.15",

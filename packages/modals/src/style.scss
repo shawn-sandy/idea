@@ -1,6 +1,7 @@
-$overlay-bg: rgba(0, 0, 0, 0.8) !default;
+$modal-overlay-bg: rgba(0, 0, 0, 0.8) !default;
 $modal-bg: white !default;
 $modal-shadow: 0 5px 11px rgba(36, 37, 38, 0.08) !default;
+$modal-transition: opacity 0.3s !default;
 
 .cs-overlay {
   visibility: hidden;
@@ -13,8 +14,8 @@ $modal-shadow: 0 5px 11px rgba(36, 37, 38, 0.08) !default;
   align-items: center;
   justify-content: center;
   flex-basis: row;
-  background: $overlay-bg;
-  transition: opacity 0.3s;
+  background: $modal-overlay-bg;
+  transition: $modal-transition;
   opacity: 0;
   &:target {
     visibility: visible;
@@ -27,35 +28,35 @@ $modal-shadow: 0 5px 11px rgba(36, 37, 38, 0.08) !default;
     height: 100%;
   }
 
-.cs-modal {
-  position: relative;
-  max-width: 80%;
-  background: $modal-bg;
-  border-radius: 4px;
-  padding: 2.5em;
-  box-shadow: $modal-shadow;
+  .cs-modal {
+    position: relative;
+    max-width: 80%;
+    background: $modal-bg;
+    border-radius: 4px;
+    padding: 2.5em;
+    box-shadow: $modal-shadow;
 
-  .cs-close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    text-decoration: none;
-  }
+    .cs-close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      text-decoration: none;
+    }
 
-  &-sm {
-    width: 40vw;
-  }
+    &-sm {
+      width: 40vw;
+    }
 
-  &-md {
-    width: 60vw;
-  }
+    &-md {
+      width: 60vw;
+    }
 
-  &-lg {
-    width: 80vw;
-  }
+    &-lg {
+      width: 80vw;
+    }
 
-  &-xl {
-    width: 90vw;
+    &-xl {
+      width: 90vw;
+    }
   }
-}
 }
