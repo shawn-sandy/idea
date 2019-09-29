@@ -2,6 +2,7 @@
   "packages": [
     "components/*",
     "packages/*",
+    "web/",
     "apps/"
   ],
   "version": "independent"
