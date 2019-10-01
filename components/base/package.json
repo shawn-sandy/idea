@@ -41,5 +41,6 @@
     "@storybook/addon-options": "^5.2.1",
     "@storybook/html": "^5.2.1",
     "babel-loader": "^8.0.6"
-  }
+  },
+  "gitHead": "f08f1f7ecabe267c90ab2420726fc51a8586bf08"
 }
