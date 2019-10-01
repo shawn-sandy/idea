@@ -30,8 +30,28 @@
         } @else {
           @if type-of($value) != "map" {
             #{$attribute}: $value !important;
-            // #{$attribute}: if
-            //   (type-of($value) == "color", $value !important, $value);
+
+            @if type-of($value) == "color" {
+              // $attr: map-color-attrs($attribute);
+              &#{$attr}#{$prefix}hover {
+                &:hover {
+                  #{$attribute}: transparentize($value, 0.2) !important;
+                }
+              }
+              &#{$attr}\:hover {
+                &:hover {
+                  #{$attribute}: $value !important;
+                }
+              }
+              &#{$attr}\:focus {
+                &:focus {
+                  #{$attribute}: $value !important;
+                }
+              }
+              &#{$attr}#{$prefix}tp {
+                #{$attribute}: darken($value, 3%) !important;
+              }
+            }
           } @else {
             @each $_key, $_value in $value {
               &#{$prefix}#{$_key} {
@@ -42,27 +62,27 @@
         }
       }
 
-      @if type-of($value) == "color" {
-        // $attr: map-color-attrs($attribute);
-        &#{$attr}#{$prefix}#{$item}-hover {
-          &:hover {
-            #{$attribute}: transparentize($value, 0.2) !important;
-          }
-        }
-        &#{$attr}#{$prefix}#{$item}\:hover {
-          &:hover {
-            #{$attribute}: $value !important;
-          }
-        }
-        &#{$attr}#{$prefix}#{$item}\:focus {
-          &:focus {
-            #{$attribute}: $value !important;
-          }
-        }
-        &#{$attr}#{$prefix}#{$item}#{$prefix}tp {
-          #{$attribute}: darken($value, 3%) !important;
-        }
-      }
+      // @if type-of($value) == "color" {
+      //   // $attr: map-color-attrs($attribute);
+      //   &#{$attr}#{$prefix}#{$item}-hover {
+      //     &:hover {
+      //       #{$attribute}: transparentize($value, 0.2) !important;
+      //     }
+      //   }
+      //   &#{$attr}#{$prefix}#{$item}\:hover {
+      //     &:hover {
+      //       #{$attribute}: $value !important;
+      //     }
+      //   }
+      //   &#{$attr}#{$prefix}#{$item}\:focus {
+      //     &:focus {
+      //       #{$attribute}: $value !important;
+      //     }
+      //   }
+      //   &#{$attr}#{$prefix}#{$item}#{$prefix}tp {
+      //     #{$attribute}: darken($value, 3%) !important;
+      //   }
+      // }
     }
   }
 }
