@@ -8,5 +8,4 @@
 
 .samp {
   @include mix-colors("color");
-  @include mix-colors("color.ui");
 }

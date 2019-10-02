@@ -17,40 +17,45 @@
       // e.g. a color map containing colors .color-key { color: value }
       // prefix class if necessary
       $attr: map-color-attrs($attribute);
-      &#{$attr}#{$prefix}#{$item} {
-        @if type-of($value) == "map" {
-          //@debug "value #{$item} item: #{$value}";
-          // @debug "key #{$key} .item #{$item} .value #{$value}";
-          // @debug "#{$key}.#{$item}";
+
+      @if type-of($value) == "map" {
+        //@debug "value #{$item} item: #{$value}";
+        // @debug "key #{$key} .item #{$item} .value #{$value}";
+        // @debug "#{$key}.#{$item}";
+        &#{$prefix}#{$item} {
           @include class-generator("#{$key}.#{$item}", $attribute);
-        } @else {
+        }
+      } @else {
+        // start
+        &#{$attr}#{$prefix}#{$item} {
           @if type-of($value) != "map" {
             #{$attribute}: $value !important;
 
             @if type-of($value) == "color" {
               // $attr: map-color-attrs($attribute);
-              &#{$attr}#{$prefix}hover {
+              &#{$prefix}hover {
                 &:hover {
                   #{$attribute}: transparentize($value, 0.2) !important;
                 }
               }
-              &#{$attr}\:hover {
+              &\:hover {
                 &:hover {
                   #{$attribute}: $value !important;
                 }
               }
-              &#{$attr}\:focus {
+              &\:focus {
                 &:focus {
                   #{$attribute}: $value !important;
                 }
               }
-              &#{$attr}#{$prefix}tp {
+              &#{$prefix}tp {
                 #{$attribute}: darken($value, 3%) !important;
               }
             }
           }
         }
       }
+      // end ---
 
       // @if type-of($value) == "color" {
       //   // $attr: map-color-attrs($attribute);
@@ -115,7 +120,6 @@
 }
 
 @mixin mix-colors($color: $mix-colors, $map: $tokens) {
-  /** MIX COLORS **/
   @include mix-generator(
     $mix-colors,
     $map,
