@@ -27,7 +27,7 @@
         }
       } @else {
         // start
-        &#{$attr}#{$prefix}#{$item} {
+        &#{$prefix}#{$item}#{$attr} {
           @if type-of($value) != "map" {
             #{$attribute}: $value !important;
 

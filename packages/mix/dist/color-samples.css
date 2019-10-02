@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Wed, 02 Oct 2019 03:38:01 GMT
+  Generated on Wed, 02 Oct 2019 04:51:36 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -217,420 +217,420 @@
   .samp-ui-black-smoke-tp {
     color: #070707 !important; }
 
-.samp-bg-black {
+.samp-black-bg {
   background-color: #000000 !important; }
-  .samp-bg-black-hover:hover {
+  .samp-black-bg-hover:hover {
     background-color: rgba(0, 0, 0, 0.8) !important; }
-  .samp-bg-black\:hover:hover {
+  .samp-black-bg\:hover:hover {
     background-color: #000000 !important; }
-  .samp-bg-black\:focus:focus {
+  .samp-black-bg\:focus:focus {
     background-color: #000000 !important; }
-  .samp-bg-black-tp {
+  .samp-black-bg-tp {
     background-color: black !important; }
 
-.samp-bg-white {
+.samp-white-bg {
   background-color: #ffffff !important; }
-  .samp-bg-white-hover:hover {
+  .samp-white-bg-hover:hover {
     background-color: rgba(255, 255, 255, 0.8) !important; }
-  .samp-bg-white\:hover:hover {
+  .samp-white-bg\:hover:hover {
     background-color: #ffffff !important; }
-  .samp-bg-white\:focus:focus {
+  .samp-white-bg\:focus:focus {
     background-color: #ffffff !important; }
-  .samp-bg-white-tp {
+  .samp-white-bg-tp {
     background-color: #f7f7f7 !important; }
 
-.samp-bg-gray {
+.samp-gray-bg {
   background-color: #6a737d !important; }
-  .samp-bg-gray-hover:hover {
+  .samp-gray-bg-hover:hover {
     background-color: rgba(106, 115, 125, 0.8) !important; }
-  .samp-bg-gray\:hover:hover {
+  .samp-gray-bg\:hover:hover {
     background-color: #6a737d !important; }
-  .samp-bg-gray\:focus:focus {
+  .samp-gray-bg\:focus:focus {
     background-color: #6a737d !important; }
-  .samp-bg-gray-tp {
+  .samp-gray-bg-tp {
     background-color: #636b75 !important; }
 
-.samp-bg-red {
+.samp-red-bg {
   background-color: #d73a49 !important; }
-  .samp-bg-red-hover:hover {
+  .samp-red-bg-hover:hover {
     background-color: rgba(215, 58, 73, 0.8) !important; }
-  .samp-bg-red\:hover:hover {
+  .samp-red-bg\:hover:hover {
     background-color: #d73a49 !important; }
-  .samp-bg-red\:focus:focus {
+  .samp-red-bg\:focus:focus {
     background-color: #d73a49 !important; }
-  .samp-bg-red-tp {
+  .samp-red-bg-tp {
     background-color: #d42d3d !important; }
 
-.samp-bg-blue {
+.samp-blue-bg {
   background-color: #0366d6 !important; }
-  .samp-bg-blue-hover:hover {
+  .samp-blue-bg-hover:hover {
     background-color: rgba(3, 102, 214, 0.8) !important; }
-  .samp-bg-blue\:hover:hover {
+  .samp-blue-bg\:hover:hover {
     background-color: #0366d6 !important; }
-  .samp-bg-blue\:focus:focus {
+  .samp-blue-bg\:focus:focus {
     background-color: #0366d6 !important; }
-  .samp-bg-blue-tp {
+  .samp-blue-bg-tp {
     background-color: #035fc7 !important; }
 
-.samp-bg-orange {
+.samp-orange-bg {
   background-color: #f66a0a !important; }
-  .samp-bg-orange-hover:hover {
+  .samp-orange-bg-hover:hover {
     background-color: rgba(246, 106, 10, 0.8) !important; }
-  .samp-bg-orange\:hover:hover {
+  .samp-orange-bg\:hover:hover {
     background-color: #f66a0a !important; }
-  .samp-bg-orange\:focus:focus {
+  .samp-orange-bg\:focus:focus {
     background-color: #f66a0a !important; }
-  .samp-bg-orange-tp {
+  .samp-orange-bg-tp {
     background-color: #e86409 !important; }
 
-.samp-bg-yellow {
+.samp-yellow-bg {
   background-color: #ffd33d !important; }
-  .samp-bg-yellow-hover:hover {
+  .samp-yellow-bg-hover:hover {
     background-color: rgba(255, 211, 61, 0.8) !important; }
-  .samp-bg-yellow\:hover:hover {
+  .samp-yellow-bg\:hover:hover {
     background-color: #ffd33d !important; }
-  .samp-bg-yellow\:focus:focus {
+  .samp-yellow-bg\:focus:focus {
     background-color: #ffd33d !important; }
-  .samp-bg-yellow-tp {
+  .samp-yellow-bg-tp {
     background-color: #ffd02e !important; }
 
-.samp-bg-green {
+.samp-green-bg {
   background-color: #28a745 !important; }
-  .samp-bg-green-hover:hover {
+  .samp-green-bg-hover:hover {
     background-color: rgba(40, 167, 69, 0.8) !important; }
-  .samp-bg-green\:hover:hover {
+  .samp-green-bg\:hover:hover {
     background-color: #28a745 !important; }
-  .samp-bg-green\:focus:focus {
+  .samp-green-bg\:focus:focus {
     background-color: #28a745 !important; }
-  .samp-bg-green-tp {
+  .samp-green-bg-tp {
     background-color: #259b40 !important; }
 
-.samp-bg-olive {
+.samp-olive-bg {
   background-color: #b5cc18 !important; }
-  .samp-bg-olive-hover:hover {
+  .samp-olive-bg-hover:hover {
     background-color: rgba(181, 204, 24, 0.8) !important; }
-  .samp-bg-olive\:hover:hover {
+  .samp-olive-bg\:hover:hover {
     background-color: #b5cc18 !important; }
-  .samp-bg-olive\:focus:focus {
+  .samp-olive-bg\:focus:focus {
     background-color: #b5cc18 !important; }
-  .samp-bg-olive-tp {
+  .samp-olive-bg-tp {
     background-color: #a9be16 !important; }
 
-.samp-bg-teal {
+.samp-teal-bg {
   background-color: #00b5ad !important; }
-  .samp-bg-teal-hover:hover {
+  .samp-teal-bg-hover:hover {
     background-color: rgba(0, 181, 173, 0.8) !important; }
-  .samp-bg-teal\:hover:hover {
+  .samp-teal-bg\:hover:hover {
     background-color: #00b5ad !important; }
-  .samp-bg-teal\:focus:focus {
+  .samp-teal-bg\:focus:focus {
     background-color: #00b5ad !important; }
-  .samp-bg-teal-tp {
+  .samp-teal-bg-tp {
     background-color: #00a69e !important; }
 
-.samp-bg-violet {
+.samp-violet-bg {
   background-color: #6435c9 !important; }
-  .samp-bg-violet-hover:hover {
+  .samp-violet-bg-hover:hover {
     background-color: rgba(100, 53, 201, 0.8) !important; }
-  .samp-bg-violet\:hover:hover {
+  .samp-violet-bg\:hover:hover {
     background-color: #6435c9 !important; }
-  .samp-bg-violet\:focus:focus {
+  .samp-violet-bg\:focus:focus {
     background-color: #6435c9 !important; }
-  .samp-bg-violet-tp {
+  .samp-violet-bg-tp {
     background-color: #5e32bd !important; }
 
-.samp-bg-purple {
+.samp-purple-bg {
   background-color: #a333c8 !important; }
-  .samp-bg-purple-hover:hover {
+  .samp-purple-bg-hover:hover {
     background-color: rgba(163, 51, 200, 0.8) !important; }
-  .samp-bg-purple\:hover:hover {
+  .samp-purple-bg\:hover:hover {
     background-color: #a333c8 !important; }
-  .samp-bg-purple\:focus:focus {
+  .samp-purple-bg\:focus:focus {
     background-color: #a333c8 !important; }
-  .samp-bg-purple-tp {
+  .samp-purple-bg-tp {
     background-color: #9930bc !important; }
 
-.samp-bg-pink {
+.samp-pink-bg {
   background-color: #e03997 !important; }
-  .samp-bg-pink-hover:hover {
+  .samp-pink-bg-hover:hover {
     background-color: rgba(224, 57, 151, 0.8) !important; }
-  .samp-bg-pink\:hover:hover {
+  .samp-pink-bg\:hover:hover {
     background-color: #e03997 !important; }
-  .samp-bg-pink\:focus:focus {
+  .samp-pink-bg\:focus:focus {
     background-color: #e03997 !important; }
-  .samp-bg-pink-tp {
+  .samp-pink-bg-tp {
     background-color: #de2c90 !important; }
 
-.samp-bg-brown {
+.samp-brown-bg {
   background-color: #a5673f !important; }
-  .samp-bg-brown-hover:hover {
+  .samp-brown-bg-hover:hover {
     background-color: rgba(165, 103, 63, 0.8) !important; }
-  .samp-bg-brown\:hover:hover {
+  .samp-brown-bg\:hover:hover {
     background-color: #a5673f !important; }
-  .samp-bg-brown\:focus:focus {
+  .samp-brown-bg\:focus:focus {
     background-color: #a5673f !important; }
-  .samp-bg-brown-tp {
+  .samp-brown-bg-tp {
     background-color: #9a603b !important; }
 
-.samp-ui-bg-primary {
+.samp-ui-primary-bg {
   background-color: #0366d6 !important; }
-  .samp-ui-bg-primary-hover:hover {
+  .samp-ui-primary-bg-hover:hover {
     background-color: rgba(3, 102, 214, 0.8) !important; }
-  .samp-ui-bg-primary\:hover:hover {
+  .samp-ui-primary-bg\:hover:hover {
     background-color: #0366d6 !important; }
-  .samp-ui-bg-primary\:focus:focus {
+  .samp-ui-primary-bg\:focus:focus {
     background-color: #0366d6 !important; }
-  .samp-ui-bg-primary-tp {
+  .samp-ui-primary-bg-tp {
     background-color: #035fc7 !important; }
 
-.samp-ui-bg-secondary {
+.samp-ui-secondary-bg {
   background-color: #070707 !important; }
-  .samp-ui-bg-secondary-hover:hover {
+  .samp-ui-secondary-bg-hover:hover {
     background-color: rgba(7, 7, 7, 0.8) !important; }
-  .samp-ui-bg-secondary\:hover:hover {
+  .samp-ui-secondary-bg\:hover:hover {
     background-color: #070707 !important; }
-  .samp-ui-bg-secondary\:focus:focus {
+  .samp-ui-secondary-bg\:focus:focus {
     background-color: #070707 !important; }
-  .samp-ui-bg-secondary-tp {
+  .samp-ui-secondary-bg-tp {
     background-color: black !important; }
 
-.samp-ui-bg-light {
+.samp-ui-light-bg {
   background-color: #fefcfc !important; }
-  .samp-ui-bg-light-hover:hover {
+  .samp-ui-light-bg-hover:hover {
     background-color: rgba(254, 252, 252, 0.8) !important; }
-  .samp-ui-bg-light\:hover:hover {
+  .samp-ui-light-bg\:hover:hover {
     background-color: #fefcfc !important; }
-  .samp-ui-bg-light\:focus:focus {
+  .samp-ui-light-bg\:focus:focus {
     background-color: #fefcfc !important; }
-  .samp-ui-bg-light-tp {
+  .samp-ui-light-bg-tp {
     background-color: #faf1f1 !important; }
 
-.samp-ui-bg-text {
+.samp-ui-text-bg {
   background-color: #707070 !important; }
-  .samp-ui-bg-text-hover:hover {
+  .samp-ui-text-bg-hover:hover {
     background-color: rgba(112, 112, 112, 0.8) !important; }
-  .samp-ui-bg-text\:hover:hover {
+  .samp-ui-text-bg\:hover:hover {
     background-color: #707070 !important; }
-  .samp-ui-bg-text\:focus:focus {
+  .samp-ui-text-bg\:focus:focus {
     background-color: #707070 !important; }
-  .samp-ui-bg-text-tp {
+  .samp-ui-text-bg-tp {
     background-color: #686868 !important; }
 
-.samp-ui-bg-black-smoke {
+.samp-ui-black-smoke-bg {
   background-color: #0f0f0f !important; }
-  .samp-ui-bg-black-smoke-hover:hover {
+  .samp-ui-black-smoke-bg-hover:hover {
     background-color: rgba(15, 15, 15, 0.8) !important; }
-  .samp-ui-bg-black-smoke\:hover:hover {
+  .samp-ui-black-smoke-bg\:hover:hover {
     background-color: #0f0f0f !important; }
-  .samp-ui-bg-black-smoke\:focus:focus {
+  .samp-ui-black-smoke-bg\:focus:focus {
     background-color: #0f0f0f !important; }
-  .samp-ui-bg-black-smoke-tp {
+  .samp-ui-black-smoke-bg-tp {
     background-color: #070707 !important; }
 
-.samp-border-black {
+.samp-black-border {
   border-color: #000000 !important; }
-  .samp-border-black-hover:hover {
+  .samp-black-border-hover:hover {
     border-color: rgba(0, 0, 0, 0.8) !important; }
-  .samp-border-black\:hover:hover {
+  .samp-black-border\:hover:hover {
     border-color: #000000 !important; }
-  .samp-border-black\:focus:focus {
+  .samp-black-border\:focus:focus {
     border-color: #000000 !important; }
-  .samp-border-black-tp {
+  .samp-black-border-tp {
     border-color: black !important; }
 
-.samp-border-white {
+.samp-white-border {
   border-color: #ffffff !important; }
-  .samp-border-white-hover:hover {
+  .samp-white-border-hover:hover {
     border-color: rgba(255, 255, 255, 0.8) !important; }
-  .samp-border-white\:hover:hover {
+  .samp-white-border\:hover:hover {
     border-color: #ffffff !important; }
-  .samp-border-white\:focus:focus {
+  .samp-white-border\:focus:focus {
     border-color: #ffffff !important; }
-  .samp-border-white-tp {
+  .samp-white-border-tp {
     border-color: #f7f7f7 !important; }
 
-.samp-border-gray {
+.samp-gray-border {
   border-color: #6a737d !important; }
-  .samp-border-gray-hover:hover {
+  .samp-gray-border-hover:hover {
     border-color: rgba(106, 115, 125, 0.8) !important; }
-  .samp-border-gray\:hover:hover {
+  .samp-gray-border\:hover:hover {
     border-color: #6a737d !important; }
-  .samp-border-gray\:focus:focus {
+  .samp-gray-border\:focus:focus {
     border-color: #6a737d !important; }
-  .samp-border-gray-tp {
+  .samp-gray-border-tp {
     border-color: #636b75 !important; }
 
-.samp-border-red {
+.samp-red-border {
   border-color: #d73a49 !important; }
-  .samp-border-red-hover:hover {
+  .samp-red-border-hover:hover {
     border-color: rgba(215, 58, 73, 0.8) !important; }
-  .samp-border-red\:hover:hover {
+  .samp-red-border\:hover:hover {
     border-color: #d73a49 !important; }
-  .samp-border-red\:focus:focus {
+  .samp-red-border\:focus:focus {
     border-color: #d73a49 !important; }
-  .samp-border-red-tp {
+  .samp-red-border-tp {
     border-color: #d42d3d !important; }
 
-.samp-border-blue {
+.samp-blue-border {
   border-color: #0366d6 !important; }
-  .samp-border-blue-hover:hover {
+  .samp-blue-border-hover:hover {
     border-color: rgba(3, 102, 214, 0.8) !important; }
-  .samp-border-blue\:hover:hover {
+  .samp-blue-border\:hover:hover {
     border-color: #0366d6 !important; }
-  .samp-border-blue\:focus:focus {
+  .samp-blue-border\:focus:focus {
     border-color: #0366d6 !important; }
-  .samp-border-blue-tp {
+  .samp-blue-border-tp {
     border-color: #035fc7 !important; }
 
-.samp-border-orange {
+.samp-orange-border {
   border-color: #f66a0a !important; }
-  .samp-border-orange-hover:hover {
+  .samp-orange-border-hover:hover {
     border-color: rgba(246, 106, 10, 0.8) !important; }
-  .samp-border-orange\:hover:hover {
+  .samp-orange-border\:hover:hover {
     border-color: #f66a0a !important; }
-  .samp-border-orange\:focus:focus {
+  .samp-orange-border\:focus:focus {
     border-color: #f66a0a !important; }
-  .samp-border-orange-tp {
+  .samp-orange-border-tp {
     border-color: #e86409 !important; }
 
-.samp-border-yellow {
+.samp-yellow-border {
   border-color: #ffd33d !important; }
-  .samp-border-yellow-hover:hover {
+  .samp-yellow-border-hover:hover {
     border-color: rgba(255, 211, 61, 0.8) !important; }
-  .samp-border-yellow\:hover:hover {
+  .samp-yellow-border\:hover:hover {
     border-color: #ffd33d !important; }
-  .samp-border-yellow\:focus:focus {
+  .samp-yellow-border\:focus:focus {
     border-color: #ffd33d !important; }
-  .samp-border-yellow-tp {
+  .samp-yellow-border-tp {
     border-color: #ffd02e !important; }
 
-.samp-border-green {
+.samp-green-border {
   border-color: #28a745 !important; }
-  .samp-border-green-hover:hover {
+  .samp-green-border-hover:hover {
     border-color: rgba(40, 167, 69, 0.8) !important; }
-  .samp-border-green\:hover:hover {
+  .samp-green-border\:hover:hover {
     border-color: #28a745 !important; }
-  .samp-border-green\:focus:focus {
+  .samp-green-border\:focus:focus {
     border-color: #28a745 !important; }
-  .samp-border-green-tp {
+  .samp-green-border-tp {
     border-color: #259b40 !important; }
 
-.samp-border-olive {
+.samp-olive-border {
   border-color: #b5cc18 !important; }
-  .samp-border-olive-hover:hover {
+  .samp-olive-border-hover:hover {
     border-color: rgba(181, 204, 24, 0.8) !important; }
-  .samp-border-olive\:hover:hover {
+  .samp-olive-border\:hover:hover {
     border-color: #b5cc18 !important; }
-  .samp-border-olive\:focus:focus {
+  .samp-olive-border\:focus:focus {
     border-color: #b5cc18 !important; }
-  .samp-border-olive-tp {
+  .samp-olive-border-tp {
     border-color: #a9be16 !important; }
 
-.samp-border-teal {
+.samp-teal-border {
   border-color: #00b5ad !important; }
-  .samp-border-teal-hover:hover {
+  .samp-teal-border-hover:hover {
     border-color: rgba(0, 181, 173, 0.8) !important; }
-  .samp-border-teal\:hover:hover {
+  .samp-teal-border\:hover:hover {
     border-color: #00b5ad !important; }
-  .samp-border-teal\:focus:focus {
+  .samp-teal-border\:focus:focus {
     border-color: #00b5ad !important; }
-  .samp-border-teal-tp {
+  .samp-teal-border-tp {
     border-color: #00a69e !important; }
 
-.samp-border-violet {
+.samp-violet-border {
   border-color: #6435c9 !important; }
-  .samp-border-violet-hover:hover {
+  .samp-violet-border-hover:hover {
     border-color: rgba(100, 53, 201, 0.8) !important; }
-  .samp-border-violet\:hover:hover {
+  .samp-violet-border\:hover:hover {
     border-color: #6435c9 !important; }
-  .samp-border-violet\:focus:focus {
+  .samp-violet-border\:focus:focus {
     border-color: #6435c9 !important; }
-  .samp-border-violet-tp {
+  .samp-violet-border-tp {
     border-color: #5e32bd !important; }
 
-.samp-border-purple {
+.samp-purple-border {
   border-color: #a333c8 !important; }
-  .samp-border-purple-hover:hover {
+  .samp-purple-border-hover:hover {
     border-color: rgba(163, 51, 200, 0.8) !important; }
-  .samp-border-purple\:hover:hover {
+  .samp-purple-border\:hover:hover {
     border-color: #a333c8 !important; }
-  .samp-border-purple\:focus:focus {
+  .samp-purple-border\:focus:focus {
     border-color: #a333c8 !important; }
-  .samp-border-purple-tp {
+  .samp-purple-border-tp {
     border-color: #9930bc !important; }
 
-.samp-border-pink {
+.samp-pink-border {
   border-color: #e03997 !important; }
-  .samp-border-pink-hover:hover {
+  .samp-pink-border-hover:hover {
     border-color: rgba(224, 57, 151, 0.8) !important; }
-  .samp-border-pink\:hover:hover {
+  .samp-pink-border\:hover:hover {
     border-color: #e03997 !important; }
-  .samp-border-pink\:focus:focus {
+  .samp-pink-border\:focus:focus {
     border-color: #e03997 !important; }
-  .samp-border-pink-tp {
+  .samp-pink-border-tp {
     border-color: #de2c90 !important; }
 
-.samp-border-brown {
+.samp-brown-border {
   border-color: #a5673f !important; }
-  .samp-border-brown-hover:hover {
+  .samp-brown-border-hover:hover {
     border-color: rgba(165, 103, 63, 0.8) !important; }
-  .samp-border-brown\:hover:hover {
+  .samp-brown-border\:hover:hover {
     border-color: #a5673f !important; }
-  .samp-border-brown\:focus:focus {
+  .samp-brown-border\:focus:focus {
     border-color: #a5673f !important; }
-  .samp-border-brown-tp {
+  .samp-brown-border-tp {
     border-color: #9a603b !important; }
 
-.samp-ui-border-primary {
+.samp-ui-primary-border {
   border-color: #0366d6 !important; }
-  .samp-ui-border-primary-hover:hover {
+  .samp-ui-primary-border-hover:hover {
     border-color: rgba(3, 102, 214, 0.8) !important; }
-  .samp-ui-border-primary\:hover:hover {
+  .samp-ui-primary-border\:hover:hover {
     border-color: #0366d6 !important; }
-  .samp-ui-border-primary\:focus:focus {
+  .samp-ui-primary-border\:focus:focus {
     border-color: #0366d6 !important; }
-  .samp-ui-border-primary-tp {
+  .samp-ui-primary-border-tp {
     border-color: #035fc7 !important; }
 
-.samp-ui-border-secondary {
+.samp-ui-secondary-border {
   border-color: #070707 !important; }
-  .samp-ui-border-secondary-hover:hover {
+  .samp-ui-secondary-border-hover:hover {
     border-color: rgba(7, 7, 7, 0.8) !important; }
-  .samp-ui-border-secondary\:hover:hover {
+  .samp-ui-secondary-border\:hover:hover {
     border-color: #070707 !important; }
-  .samp-ui-border-secondary\:focus:focus {
+  .samp-ui-secondary-border\:focus:focus {
     border-color: #070707 !important; }
-  .samp-ui-border-secondary-tp {
+  .samp-ui-secondary-border-tp {
     border-color: black !important; }
 
-.samp-ui-border-light {
+.samp-ui-light-border {
   border-color: #fefcfc !important; }
-  .samp-ui-border-light-hover:hover {
+  .samp-ui-light-border-hover:hover {
     border-color: rgba(254, 252, 252, 0.8) !important; }
-  .samp-ui-border-light\:hover:hover {
+  .samp-ui-light-border\:hover:hover {
     border-color: #fefcfc !important; }
-  .samp-ui-border-light\:focus:focus {
+  .samp-ui-light-border\:focus:focus {
     border-color: #fefcfc !important; }
-  .samp-ui-border-light-tp {
+  .samp-ui-light-border-tp {
     border-color: #faf1f1 !important; }
 
-.samp-ui-border-text {
+.samp-ui-text-border {
   border-color: #707070 !important; }
-  .samp-ui-border-text-hover:hover {
+  .samp-ui-text-border-hover:hover {
     border-color: rgba(112, 112, 112, 0.8) !important; }
-  .samp-ui-border-text\:hover:hover {
+  .samp-ui-text-border\:hover:hover {
     border-color: #707070 !important; }
-  .samp-ui-border-text\:focus:focus {
+  .samp-ui-text-border\:focus:focus {
     border-color: #707070 !important; }
-  .samp-ui-border-text-tp {
+  .samp-ui-text-border-tp {
     border-color: #686868 !important; }
 
-.samp-ui-border-black-smoke {
+.samp-ui-black-smoke-border {
   border-color: #0f0f0f !important; }
-  .samp-ui-border-black-smoke-hover:hover {
+  .samp-ui-black-smoke-border-hover:hover {
     border-color: rgba(15, 15, 15, 0.8) !important; }
-  .samp-ui-border-black-smoke\:hover:hover {
+  .samp-ui-black-smoke-border\:hover:hover {
     border-color: #0f0f0f !important; }
-  .samp-ui-border-black-smoke\:focus:focus {
+  .samp-ui-black-smoke-border\:focus:focus {
     border-color: #0f0f0f !important; }
-  .samp-ui-border-black-smoke-tp {
+  .samp-ui-black-smoke-border-tp {
     border-color: #070707 !important; }
