@@ -18,15 +18,11 @@
       // prefix class if necessary
       $attr: map-color-attrs($attribute);
       &#{$attr}#{$prefix}#{$item} {
-        @if type-of($item) == "map" {
+        @if type-of($value) == "map" {
           //@debug "value #{$item} item: #{$value}";
           // @debug "key #{$key} .item #{$item} .value #{$value}";
-          @include class-generator(
-            "#{$key}.#{$value}",
-            $attribute,
-            $map,
-            $prefix
-          );
+          // @debug "#{$key}.#{$item}";
+          @include class-generator("#{$key}.#{$item}", $attribute);
         } @else {
           @if type-of($value) != "map" {
             #{$attribute}: $value !important;
@@ -50,12 +46,6 @@
               }
               &#{$attr}#{$prefix}tp {
                 #{$attribute}: darken($value, 3%) !important;
-              }
-            }
-          } @else {
-            @each $_key, $_value in $value {
-              &#{$prefix}#{$_key} {
-                #{$attribute}: $_value;
               }
             }
           }
