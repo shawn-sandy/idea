@@ -35,49 +35,26 @@
               // $attr: map-color-attrs($attribute);
               &#{$prefix}hover {
                 &:hover {
-                  #{$attribute}: transparentize($value, 0.2) !important;
+                  #{$attribute}: dynamic-hover-color($value);
                 }
               }
               &\:hover {
                 &:hover {
-                  #{$attribute}: $value !important;
+                  #{$attribute}: dynamic-hover-color($value);
                 }
               }
               &\:focus {
                 &:focus {
-                  #{$attribute}: $value !important;
+                  #{$attribute}: dynamic-hover-color($value);
                 }
               }
               &#{$prefix}tp {
-                #{$attribute}: darken($value, 3%) !important;
+                #{$attribute}: dynamic-hover-color($value);
               }
             }
           }
         }
       }
-      // end ---
-
-      // @if type-of($value) == "color" {
-      //   // $attr: map-color-attrs($attribute);
-      //   &#{$attr}#{$prefix}#{$item}-hover {
-      //     &:hover {
-      //       #{$attribute}: transparentize($value, 0.2) !important;
-      //     }
-      //   }
-      //   &#{$attr}#{$prefix}#{$item}\:hover {
-      //     &:hover {
-      //       #{$attribute}: $value !important;
-      //     }
-      //   }
-      //   &#{$attr}#{$prefix}#{$item}\:focus {
-      //     &:focus {
-      //       #{$attribute}: $value !important;
-      //     }
-      //   }
-      //   &#{$attr}#{$prefix}#{$item}#{$prefix}tp {
-      //     #{$attribute}: darken($value, 3%) !important;
-      //   }
-      // }
     }
   }
 }
