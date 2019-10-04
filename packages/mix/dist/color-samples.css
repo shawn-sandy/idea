@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Thu, 03 Oct 2019 23:33:17 GMT
+  Generated on Fri, 04 Oct 2019 11:13:50 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -11,13 +11,13 @@
 .samp-black {
   color: #000000 !important; }
   .samp-black-hover:hover {
-    color: rgba(0, 0, 0, 0.85) !important; }
+    color: rgba(0, 0, 0, 0.91) !important; }
   .samp-black\:hover:hover {
-    color: rgba(0, 0, 0, 0.85) !important; }
+    color: rgba(0, 0, 0, 0.91) !important; }
   .samp-black\:focus:focus {
-    color: rgba(0, 0, 0, 0.85) !important; }
+    color: rgba(0, 0, 0, 0.91) !important; }
   .samp-black-tp {
-    color: rgba(0, 0, 0, 0.85) !important; }
+    color: rgba(0, 0, 0, 0.91) !important; }
 
 .samp-white {
   color: #ffffff !important; }
@@ -33,13 +33,13 @@
 .samp-gray {
   color: #6a737d !important; }
   .samp-gray-hover:hover {
-    color: rgba(106, 115, 125, 0.85) !important; }
+    color: rgba(106, 115, 125, 0.91) !important; }
   .samp-gray\:hover:hover {
-    color: rgba(106, 115, 125, 0.85) !important; }
+    color: rgba(106, 115, 125, 0.91) !important; }
   .samp-gray\:focus:focus {
-    color: rgba(106, 115, 125, 0.85) !important; }
+    color: rgba(106, 115, 125, 0.91) !important; }
   .samp-gray-tp {
-    color: rgba(106, 115, 125, 0.85) !important; }
+    color: rgba(106, 115, 125, 0.91) !important; }
 
 .samp-red {
   color: #d73a49 !important; }
@@ -55,13 +55,13 @@
 .samp-blue {
   color: #0366d6 !important; }
   .samp-blue-hover:hover {
-    color: rgba(3, 102, 214, 0.85) !important; }
+    color: rgba(3, 102, 214, 0.91) !important; }
   .samp-blue\:hover:hover {
-    color: rgba(3, 102, 214, 0.85) !important; }
+    color: rgba(3, 102, 214, 0.91) !important; }
   .samp-blue\:focus:focus {
-    color: rgba(3, 102, 214, 0.85) !important; }
+    color: rgba(3, 102, 214, 0.91) !important; }
   .samp-blue-tp {
-    color: rgba(3, 102, 214, 0.85) !important; }
+    color: rgba(3, 102, 214, 0.91) !important; }
 
 .samp-orange {
   color: #f66a0a !important; }
@@ -88,57 +88,57 @@
 .samp-green {
   color: #28a745 !important; }
   .samp-green-hover:hover {
-    color: rgba(40, 167, 69, 0.85) !important; }
+    color: rgba(40, 167, 69, 0.91) !important; }
   .samp-green\:hover:hover {
-    color: rgba(40, 167, 69, 0.85) !important; }
+    color: rgba(40, 167, 69, 0.91) !important; }
   .samp-green\:focus:focus {
-    color: rgba(40, 167, 69, 0.85) !important; }
+    color: rgba(40, 167, 69, 0.91) !important; }
   .samp-green-tp {
-    color: rgba(40, 167, 69, 0.85) !important; }
+    color: rgba(40, 167, 69, 0.91) !important; }
 
 .samp-olive {
   color: #b5cc18 !important; }
   .samp-olive-hover:hover {
-    color: rgba(181, 204, 24, 0.85) !important; }
+    color: rgba(181, 204, 24, 0.91) !important; }
   .samp-olive\:hover:hover {
-    color: rgba(181, 204, 24, 0.85) !important; }
+    color: rgba(181, 204, 24, 0.91) !important; }
   .samp-olive\:focus:focus {
-    color: rgba(181, 204, 24, 0.85) !important; }
+    color: rgba(181, 204, 24, 0.91) !important; }
   .samp-olive-tp {
-    color: rgba(181, 204, 24, 0.85) !important; }
+    color: rgba(181, 204, 24, 0.91) !important; }
 
 .samp-teal {
   color: #00b5ad !important; }
   .samp-teal-hover:hover {
-    color: rgba(0, 181, 173, 0.85) !important; }
+    color: rgba(0, 181, 173, 0.91) !important; }
   .samp-teal\:hover:hover {
-    color: rgba(0, 181, 173, 0.85) !important; }
+    color: rgba(0, 181, 173, 0.91) !important; }
   .samp-teal\:focus:focus {
-    color: rgba(0, 181, 173, 0.85) !important; }
+    color: rgba(0, 181, 173, 0.91) !important; }
   .samp-teal-tp {
-    color: rgba(0, 181, 173, 0.85) !important; }
+    color: rgba(0, 181, 173, 0.91) !important; }
 
 .samp-violet {
   color: #6435c9 !important; }
   .samp-violet-hover:hover {
-    color: rgba(100, 53, 201, 0.85) !important; }
+    color: rgba(100, 53, 201, 0.91) !important; }
   .samp-violet\:hover:hover {
-    color: rgba(100, 53, 201, 0.85) !important; }
+    color: rgba(100, 53, 201, 0.91) !important; }
   .samp-violet\:focus:focus {
-    color: rgba(100, 53, 201, 0.85) !important; }
+    color: rgba(100, 53, 201, 0.91) !important; }
   .samp-violet-tp {
-    color: rgba(100, 53, 201, 0.85) !important; }
+    color: rgba(100, 53, 201, 0.91) !important; }
 
 .samp-purple {
   color: #a333c8 !important; }
   .samp-purple-hover:hover {
-    color: rgba(163, 51, 200, 0.85) !important; }
+    color: rgba(163, 51, 200, 0.91) !important; }
   .samp-purple\:hover:hover {
-    color: rgba(163, 51, 200, 0.85) !important; }
+    color: rgba(163, 51, 200, 0.91) !important; }
   .samp-purple\:focus:focus {
-    color: rgba(163, 51, 200, 0.85) !important; }
+    color: rgba(163, 51, 200, 0.91) !important; }
   .samp-purple-tp {
-    color: rgba(163, 51, 200, 0.85) !important; }
+    color: rgba(163, 51, 200, 0.91) !important; }
 
 .samp-pink {
   color: #e03997 !important; }
@@ -154,35 +154,35 @@
 .samp-brown {
   color: #a5673f !important; }
   .samp-brown-hover:hover {
-    color: rgba(165, 103, 63, 0.85) !important; }
+    color: rgba(165, 103, 63, 0.91) !important; }
   .samp-brown\:hover:hover {
-    color: rgba(165, 103, 63, 0.85) !important; }
+    color: rgba(165, 103, 63, 0.91) !important; }
   .samp-brown\:focus:focus {
-    color: rgba(165, 103, 63, 0.85) !important; }
+    color: rgba(165, 103, 63, 0.91) !important; }
   .samp-brown-tp {
-    color: rgba(165, 103, 63, 0.85) !important; }
+    color: rgba(165, 103, 63, 0.91) !important; }
 
 .samp-ui-primary {
   color: #0366d6 !important; }
   .samp-ui-primary-hover:hover {
-    color: rgba(3, 102, 214, 0.85) !important; }
+    color: rgba(3, 102, 214, 0.91) !important; }
   .samp-ui-primary\:hover:hover {
-    color: rgba(3, 102, 214, 0.85) !important; }
+    color: rgba(3, 102, 214, 0.91) !important; }
   .samp-ui-primary\:focus:focus {
-    color: rgba(3, 102, 214, 0.85) !important; }
+    color: rgba(3, 102, 214, 0.91) !important; }
   .samp-ui-primary-tp {
-    color: rgba(3, 102, 214, 0.85) !important; }
+    color: rgba(3, 102, 214, 0.91) !important; }
 
 .samp-ui-secondary {
   color: #070707 !important; }
   .samp-ui-secondary-hover:hover {
-    color: rgba(7, 7, 7, 0.85) !important; }
+    color: rgba(7, 7, 7, 0.91) !important; }
   .samp-ui-secondary\:hover:hover {
-    color: rgba(7, 7, 7, 0.85) !important; }
+    color: rgba(7, 7, 7, 0.91) !important; }
   .samp-ui-secondary\:focus:focus {
-    color: rgba(7, 7, 7, 0.85) !important; }
+    color: rgba(7, 7, 7, 0.91) !important; }
   .samp-ui-secondary-tp {
-    color: rgba(7, 7, 7, 0.85) !important; }
+    color: rgba(7, 7, 7, 0.91) !important; }
 
 .samp-ui-light {
   color: #fefcfc !important; }
@@ -198,35 +198,35 @@
 .samp-ui-text {
   color: #707070 !important; }
   .samp-ui-text-hover:hover {
-    color: rgba(112, 112, 112, 0.85) !important; }
+    color: rgba(112, 112, 112, 0.91) !important; }
   .samp-ui-text\:hover:hover {
-    color: rgba(112, 112, 112, 0.85) !important; }
+    color: rgba(112, 112, 112, 0.91) !important; }
   .samp-ui-text\:focus:focus {
-    color: rgba(112, 112, 112, 0.85) !important; }
+    color: rgba(112, 112, 112, 0.91) !important; }
   .samp-ui-text-tp {
-    color: rgba(112, 112, 112, 0.85) !important; }
+    color: rgba(112, 112, 112, 0.91) !important; }
 
 .samp-ui-black-smoke {
   color: #0f0f0f !important; }
   .samp-ui-black-smoke-hover:hover {
-    color: rgba(15, 15, 15, 0.85) !important; }
+    color: rgba(15, 15, 15, 0.91) !important; }
   .samp-ui-black-smoke\:hover:hover {
-    color: rgba(15, 15, 15, 0.85) !important; }
+    color: rgba(15, 15, 15, 0.91) !important; }
   .samp-ui-black-smoke\:focus:focus {
-    color: rgba(15, 15, 15, 0.85) !important; }
+    color: rgba(15, 15, 15, 0.91) !important; }
   .samp-ui-black-smoke-tp {
-    color: rgba(15, 15, 15, 0.85) !important; }
+    color: rgba(15, 15, 15, 0.91) !important; }
 
 .samp-bg-black {
   background-color: #000000 !important; }
   .samp-bg-black-hover:hover {
-    background-color: rgba(0, 0, 0, 0.85) !important; }
+    background-color: rgba(0, 0, 0, 0.91) !important; }
   .samp-bg-black\:hover:hover {
-    background-color: rgba(0, 0, 0, 0.85) !important; }
+    background-color: rgba(0, 0, 0, 0.91) !important; }
   .samp-bg-black\:focus:focus {
-    background-color: rgba(0, 0, 0, 0.85) !important; }
+    background-color: rgba(0, 0, 0, 0.91) !important; }
   .samp-bg-black-tp {
-    background-color: rgba(0, 0, 0, 0.85) !important; }
+    background-color: rgba(0, 0, 0, 0.91) !important; }
 
 .samp-bg-white {
   background-color: #ffffff !important; }
@@ -242,13 +242,13 @@
 .samp-bg-gray {
   background-color: #6a737d !important; }
   .samp-bg-gray-hover:hover {
-    background-color: rgba(106, 115, 125, 0.85) !important; }
+    background-color: rgba(106, 115, 125, 0.91) !important; }
   .samp-bg-gray\:hover:hover {
-    background-color: rgba(106, 115, 125, 0.85) !important; }
+    background-color: rgba(106, 115, 125, 0.91) !important; }
   .samp-bg-gray\:focus:focus {
-    background-color: rgba(106, 115, 125, 0.85) !important; }
+    background-color: rgba(106, 115, 125, 0.91) !important; }
   .samp-bg-gray-tp {
-    background-color: rgba(106, 115, 125, 0.85) !important; }
+    background-color: rgba(106, 115, 125, 0.91) !important; }
 
 .samp-bg-red {
   background-color: #d73a49 !important; }
@@ -264,13 +264,13 @@
 .samp-bg-blue {
   background-color: #0366d6 !important; }
   .samp-bg-blue-hover:hover {
-    background-color: rgba(3, 102, 214, 0.85) !important; }
+    background-color: rgba(3, 102, 214, 0.91) !important; }
   .samp-bg-blue\:hover:hover {
-    background-color: rgba(3, 102, 214, 0.85) !important; }
+    background-color: rgba(3, 102, 214, 0.91) !important; }
   .samp-bg-blue\:focus:focus {
-    background-color: rgba(3, 102, 214, 0.85) !important; }
+    background-color: rgba(3, 102, 214, 0.91) !important; }
   .samp-bg-blue-tp {
-    background-color: rgba(3, 102, 214, 0.85) !important; }
+    background-color: rgba(3, 102, 214, 0.91) !important; }
 
 .samp-bg-orange {
   background-color: #f66a0a !important; }
@@ -297,57 +297,57 @@
 .samp-bg-green {
   background-color: #28a745 !important; }
   .samp-bg-green-hover:hover {
-    background-color: rgba(40, 167, 69, 0.85) !important; }
+    background-color: rgba(40, 167, 69, 0.91) !important; }
   .samp-bg-green\:hover:hover {
-    background-color: rgba(40, 167, 69, 0.85) !important; }
+    background-color: rgba(40, 167, 69, 0.91) !important; }
   .samp-bg-green\:focus:focus {
-    background-color: rgba(40, 167, 69, 0.85) !important; }
+    background-color: rgba(40, 167, 69, 0.91) !important; }
   .samp-bg-green-tp {
-    background-color: rgba(40, 167, 69, 0.85) !important; }
+    background-color: rgba(40, 167, 69, 0.91) !important; }
 
 .samp-bg-olive {
   background-color: #b5cc18 !important; }
   .samp-bg-olive-hover:hover {
-    background-color: rgba(181, 204, 24, 0.85) !important; }
+    background-color: rgba(181, 204, 24, 0.91) !important; }
   .samp-bg-olive\:hover:hover {
-    background-color: rgba(181, 204, 24, 0.85) !important; }
+    background-color: rgba(181, 204, 24, 0.91) !important; }
   .samp-bg-olive\:focus:focus {
-    background-color: rgba(181, 204, 24, 0.85) !important; }
+    background-color: rgba(181, 204, 24, 0.91) !important; }
   .samp-bg-olive-tp {
-    background-color: rgba(181, 204, 24, 0.85) !important; }
+    background-color: rgba(181, 204, 24, 0.91) !important; }
 
 .samp-bg-teal {
   background-color: #00b5ad !important; }
   .samp-bg-teal-hover:hover {
-    background-color: rgba(0, 181, 173, 0.85) !important; }
+    background-color: rgba(0, 181, 173, 0.91) !important; }
   .samp-bg-teal\:hover:hover {
-    background-color: rgba(0, 181, 173, 0.85) !important; }
+    background-color: rgba(0, 181, 173, 0.91) !important; }
   .samp-bg-teal\:focus:focus {
-    background-color: rgba(0, 181, 173, 0.85) !important; }
+    background-color: rgba(0, 181, 173, 0.91) !important; }
   .samp-bg-teal-tp {
-    background-color: rgba(0, 181, 173, 0.85) !important; }
+    background-color: rgba(0, 181, 173, 0.91) !important; }
 
 .samp-bg-violet {
   background-color: #6435c9 !important; }
   .samp-bg-violet-hover:hover {
-    background-color: rgba(100, 53, 201, 0.85) !important; }
+    background-color: rgba(100, 53, 201, 0.91) !important; }
   .samp-bg-violet\:hover:hover {
-    background-color: rgba(100, 53, 201, 0.85) !important; }
+    background-color: rgba(100, 53, 201, 0.91) !important; }
   .samp-bg-violet\:focus:focus {
-    background-color: rgba(100, 53, 201, 0.85) !important; }
+    background-color: rgba(100, 53, 201, 0.91) !important; }
   .samp-bg-violet-tp {
-    background-color: rgba(100, 53, 201, 0.85) !important; }
+    background-color: rgba(100, 53, 201, 0.91) !important; }
 
 .samp-bg-purple {
   background-color: #a333c8 !important; }
   .samp-bg-purple-hover:hover {
-    background-color: rgba(163, 51, 200, 0.85) !important; }
+    background-color: rgba(163, 51, 200, 0.91) !important; }
   .samp-bg-purple\:hover:hover {
-    background-color: rgba(163, 51, 200, 0.85) !important; }
+    background-color: rgba(163, 51, 200, 0.91) !important; }
   .samp-bg-purple\:focus:focus {
-    background-color: rgba(163, 51, 200, 0.85) !important; }
+    background-color: rgba(163, 51, 200, 0.91) !important; }
   .samp-bg-purple-tp {
-    background-color: rgba(163, 51, 200, 0.85) !important; }
+    background-color: rgba(163, 51, 200, 0.91) !important; }
 
 .samp-bg-pink {
   background-color: #e03997 !important; }
@@ -363,35 +363,35 @@
 .samp-bg-brown {
   background-color: #a5673f !important; }
   .samp-bg-brown-hover:hover {
-    background-color: rgba(165, 103, 63, 0.85) !important; }
+    background-color: rgba(165, 103, 63, 0.91) !important; }
   .samp-bg-brown\:hover:hover {
-    background-color: rgba(165, 103, 63, 0.85) !important; }
+    background-color: rgba(165, 103, 63, 0.91) !important; }
   .samp-bg-brown\:focus:focus {
-    background-color: rgba(165, 103, 63, 0.85) !important; }
+    background-color: rgba(165, 103, 63, 0.91) !important; }
   .samp-bg-brown-tp {
-    background-color: rgba(165, 103, 63, 0.85) !important; }
+    background-color: rgba(165, 103, 63, 0.91) !important; }
 
 .samp-ui-bg-primary {
   background-color: #0366d6 !important; }
   .samp-ui-bg-primary-hover:hover {
-    background-color: rgba(3, 102, 214, 0.85) !important; }
+    background-color: rgba(3, 102, 214, 0.91) !important; }
   .samp-ui-bg-primary\:hover:hover {
-    background-color: rgba(3, 102, 214, 0.85) !important; }
+    background-color: rgba(3, 102, 214, 0.91) !important; }
   .samp-ui-bg-primary\:focus:focus {
-    background-color: rgba(3, 102, 214, 0.85) !important; }
+    background-color: rgba(3, 102, 214, 0.91) !important; }
   .samp-ui-bg-primary-tp {
-    background-color: rgba(3, 102, 214, 0.85) !important; }
+    background-color: rgba(3, 102, 214, 0.91) !important; }
 
 .samp-ui-bg-secondary {
   background-color: #070707 !important; }
   .samp-ui-bg-secondary-hover:hover {
-    background-color: rgba(7, 7, 7, 0.85) !important; }
+    background-color: rgba(7, 7, 7, 0.91) !important; }
   .samp-ui-bg-secondary\:hover:hover {
-    background-color: rgba(7, 7, 7, 0.85) !important; }
+    background-color: rgba(7, 7, 7, 0.91) !important; }
   .samp-ui-bg-secondary\:focus:focus {
-    background-color: rgba(7, 7, 7, 0.85) !important; }
+    background-color: rgba(7, 7, 7, 0.91) !important; }
   .samp-ui-bg-secondary-tp {
-    background-color: rgba(7, 7, 7, 0.85) !important; }
+    background-color: rgba(7, 7, 7, 0.91) !important; }
 
 .samp-ui-bg-light {
   background-color: #fefcfc !important; }
@@ -407,35 +407,35 @@
 .samp-ui-bg-text {
   background-color: #707070 !important; }
   .samp-ui-bg-text-hover:hover {
-    background-color: rgba(112, 112, 112, 0.85) !important; }
+    background-color: rgba(112, 112, 112, 0.91) !important; }
   .samp-ui-bg-text\:hover:hover {
-    background-color: rgba(112, 112, 112, 0.85) !important; }
+    background-color: rgba(112, 112, 112, 0.91) !important; }
   .samp-ui-bg-text\:focus:focus {
-    background-color: rgba(112, 112, 112, 0.85) !important; }
+    background-color: rgba(112, 112, 112, 0.91) !important; }
   .samp-ui-bg-text-tp {
-    background-color: rgba(112, 112, 112, 0.85) !important; }
+    background-color: rgba(112, 112, 112, 0.91) !important; }
 
 .samp-ui-bg-black-smoke {
   background-color: #0f0f0f !important; }
   .samp-ui-bg-black-smoke-hover:hover {
-    background-color: rgba(15, 15, 15, 0.85) !important; }
+    background-color: rgba(15, 15, 15, 0.91) !important; }
   .samp-ui-bg-black-smoke\:hover:hover {
-    background-color: rgba(15, 15, 15, 0.85) !important; }
+    background-color: rgba(15, 15, 15, 0.91) !important; }
   .samp-ui-bg-black-smoke\:focus:focus {
-    background-color: rgba(15, 15, 15, 0.85) !important; }
+    background-color: rgba(15, 15, 15, 0.91) !important; }
   .samp-ui-bg-black-smoke-tp {
-    background-color: rgba(15, 15, 15, 0.85) !important; }
+    background-color: rgba(15, 15, 15, 0.91) !important; }
 
 .samp-border-black {
   border-color: #000000 !important; }
   .samp-border-black-hover:hover {
-    border-color: rgba(0, 0, 0, 0.85) !important; }
+    border-color: rgba(0, 0, 0, 0.91) !important; }
   .samp-border-black\:hover:hover {
-    border-color: rgba(0, 0, 0, 0.85) !important; }
+    border-color: rgba(0, 0, 0, 0.91) !important; }
   .samp-border-black\:focus:focus {
-    border-color: rgba(0, 0, 0, 0.85) !important; }
+    border-color: rgba(0, 0, 0, 0.91) !important; }
   .samp-border-black-tp {
-    border-color: rgba(0, 0, 0, 0.85) !important; }
+    border-color: rgba(0, 0, 0, 0.91) !important; }
 
 .samp-border-white {
   border-color: #ffffff !important; }
@@ -451,13 +451,13 @@
 .samp-border-gray {
   border-color: #6a737d !important; }
   .samp-border-gray-hover:hover {
-    border-color: rgba(106, 115, 125, 0.85) !important; }
+    border-color: rgba(106, 115, 125, 0.91) !important; }
   .samp-border-gray\:hover:hover {
-    border-color: rgba(106, 115, 125, 0.85) !important; }
+    border-color: rgba(106, 115, 125, 0.91) !important; }
   .samp-border-gray\:focus:focus {
-    border-color: rgba(106, 115, 125, 0.85) !important; }
+    border-color: rgba(106, 115, 125, 0.91) !important; }
   .samp-border-gray-tp {
-    border-color: rgba(106, 115, 125, 0.85) !important; }
+    border-color: rgba(106, 115, 125, 0.91) !important; }
 
 .samp-border-red {
   border-color: #d73a49 !important; }
@@ -473,13 +473,13 @@
 .samp-border-blue {
   border-color: #0366d6 !important; }
   .samp-border-blue-hover:hover {
-    border-color: rgba(3, 102, 214, 0.85) !important; }
+    border-color: rgba(3, 102, 214, 0.91) !important; }
   .samp-border-blue\:hover:hover {
-    border-color: rgba(3, 102, 214, 0.85) !important; }
+    border-color: rgba(3, 102, 214, 0.91) !important; }
   .samp-border-blue\:focus:focus {
-    border-color: rgba(3, 102, 214, 0.85) !important; }
+    border-color: rgba(3, 102, 214, 0.91) !important; }
   .samp-border-blue-tp {
-    border-color: rgba(3, 102, 214, 0.85) !important; }
+    border-color: rgba(3, 102, 214, 0.91) !important; }
 
 .samp-border-orange {
   border-color: #f66a0a !important; }
@@ -506,57 +506,57 @@
 .samp-border-green {
   border-color: #28a745 !important; }
   .samp-border-green-hover:hover {
-    border-color: rgba(40, 167, 69, 0.85) !important; }
+    border-color: rgba(40, 167, 69, 0.91) !important; }
   .samp-border-green\:hover:hover {
-    border-color: rgba(40, 167, 69, 0.85) !important; }
+    border-color: rgba(40, 167, 69, 0.91) !important; }
   .samp-border-green\:focus:focus {
-    border-color: rgba(40, 167, 69, 0.85) !important; }
+    border-color: rgba(40, 167, 69, 0.91) !important; }
   .samp-border-green-tp {
-    border-color: rgba(40, 167, 69, 0.85) !important; }
+    border-color: rgba(40, 167, 69, 0.91) !important; }
 
 .samp-border-olive {
   border-color: #b5cc18 !important; }
   .samp-border-olive-hover:hover {
-    border-color: rgba(181, 204, 24, 0.85) !important; }
+    border-color: rgba(181, 204, 24, 0.91) !important; }
   .samp-border-olive\:hover:hover {
-    border-color: rgba(181, 204, 24, 0.85) !important; }
+    border-color: rgba(181, 204, 24, 0.91) !important; }
   .samp-border-olive\:focus:focus {
-    border-color: rgba(181, 204, 24, 0.85) !important; }
+    border-color: rgba(181, 204, 24, 0.91) !important; }
   .samp-border-olive-tp {
-    border-color: rgba(181, 204, 24, 0.85) !important; }
+    border-color: rgba(181, 204, 24, 0.91) !important; }
 
 .samp-border-teal {
   border-color: #00b5ad !important; }
   .samp-border-teal-hover:hover {
-    border-color: rgba(0, 181, 173, 0.85) !important; }
+    border-color: rgba(0, 181, 173, 0.91) !important; }
   .samp-border-teal\:hover:hover {
-    border-color: rgba(0, 181, 173, 0.85) !important; }
+    border-color: rgba(0, 181, 173, 0.91) !important; }
   .samp-border-teal\:focus:focus {
-    border-color: rgba(0, 181, 173, 0.85) !important; }
+    border-color: rgba(0, 181, 173, 0.91) !important; }
   .samp-border-teal-tp {
-    border-color: rgba(0, 181, 173, 0.85) !important; }
+    border-color: rgba(0, 181, 173, 0.91) !important; }
 
 .samp-border-violet {
   border-color: #6435c9 !important; }
   .samp-border-violet-hover:hover {
-    border-color: rgba(100, 53, 201, 0.85) !important; }
+    border-color: rgba(100, 53, 201, 0.91) !important; }
   .samp-border-violet\:hover:hover {
-    border-color: rgba(100, 53, 201, 0.85) !important; }
+    border-color: rgba(100, 53, 201, 0.91) !important; }
   .samp-border-violet\:focus:focus {
-    border-color: rgba(100, 53, 201, 0.85) !important; }
+    border-color: rgba(100, 53, 201, 0.91) !important; }
   .samp-border-violet-tp {
-    border-color: rgba(100, 53, 201, 0.85) !important; }
+    border-color: rgba(100, 53, 201, 0.91) !important; }
 
 .samp-border-purple {
   border-color: #a333c8 !important; }
   .samp-border-purple-hover:hover {
-    border-color: rgba(163, 51, 200, 0.85) !important; }
+    border-color: rgba(163, 51, 200, 0.91) !important; }
   .samp-border-purple\:hover:hover {
-    border-color: rgba(163, 51, 200, 0.85) !important; }
+    border-color: rgba(163, 51, 200, 0.91) !important; }
   .samp-border-purple\:focus:focus {
-    border-color: rgba(163, 51, 200, 0.85) !important; }
+    border-color: rgba(163, 51, 200, 0.91) !important; }
   .samp-border-purple-tp {
-    border-color: rgba(163, 51, 200, 0.85) !important; }
+    border-color: rgba(163, 51, 200, 0.91) !important; }
 
 .samp-border-pink {
   border-color: #e03997 !important; }
@@ -572,35 +572,35 @@
 .samp-border-brown {
   border-color: #a5673f !important; }
   .samp-border-brown-hover:hover {
-    border-color: rgba(165, 103, 63, 0.85) !important; }
+    border-color: rgba(165, 103, 63, 0.91) !important; }
   .samp-border-brown\:hover:hover {
-    border-color: rgba(165, 103, 63, 0.85) !important; }
+    border-color: rgba(165, 103, 63, 0.91) !important; }
   .samp-border-brown\:focus:focus {
-    border-color: rgba(165, 103, 63, 0.85) !important; }
+    border-color: rgba(165, 103, 63, 0.91) !important; }
   .samp-border-brown-tp {
-    border-color: rgba(165, 103, 63, 0.85) !important; }
+    border-color: rgba(165, 103, 63, 0.91) !important; }
 
 .samp-ui-border-primary {
   border-color: #0366d6 !important; }
   .samp-ui-border-primary-hover:hover {
-    border-color: rgba(3, 102, 214, 0.85) !important; }
+    border-color: rgba(3, 102, 214, 0.91) !important; }
   .samp-ui-border-primary\:hover:hover {
-    border-color: rgba(3, 102, 214, 0.85) !important; }
+    border-color: rgba(3, 102, 214, 0.91) !important; }
   .samp-ui-border-primary\:focus:focus {
-    border-color: rgba(3, 102, 214, 0.85) !important; }
+    border-color: rgba(3, 102, 214, 0.91) !important; }
   .samp-ui-border-primary-tp {
-    border-color: rgba(3, 102, 214, 0.85) !important; }
+    border-color: rgba(3, 102, 214, 0.91) !important; }
 
 .samp-ui-border-secondary {
   border-color: #070707 !important; }
   .samp-ui-border-secondary-hover:hover {
-    border-color: rgba(7, 7, 7, 0.85) !important; }
+    border-color: rgba(7, 7, 7, 0.91) !important; }
   .samp-ui-border-secondary\:hover:hover {
-    border-color: rgba(7, 7, 7, 0.85) !important; }
+    border-color: rgba(7, 7, 7, 0.91) !important; }
   .samp-ui-border-secondary\:focus:focus {
-    border-color: rgba(7, 7, 7, 0.85) !important; }
+    border-color: rgba(7, 7, 7, 0.91) !important; }
   .samp-ui-border-secondary-tp {
-    border-color: rgba(7, 7, 7, 0.85) !important; }
+    border-color: rgba(7, 7, 7, 0.91) !important; }
 
 .samp-ui-border-light {
   border-color: #fefcfc !important; }
@@ -616,21 +616,21 @@
 .samp-ui-border-text {
   border-color: #707070 !important; }
   .samp-ui-border-text-hover:hover {
-    border-color: rgba(112, 112, 112, 0.85) !important; }
+    border-color: rgba(112, 112, 112, 0.91) !important; }
   .samp-ui-border-text\:hover:hover {
-    border-color: rgba(112, 112, 112, 0.85) !important; }
+    border-color: rgba(112, 112, 112, 0.91) !important; }
   .samp-ui-border-text\:focus:focus {
-    border-color: rgba(112, 112, 112, 0.85) !important; }
+    border-color: rgba(112, 112, 112, 0.91) !important; }
   .samp-ui-border-text-tp {
-    border-color: rgba(112, 112, 112, 0.85) !important; }
+    border-color: rgba(112, 112, 112, 0.91) !important; }
 
 .samp-ui-border-black-smoke {
   border-color: #0f0f0f !important; }
   .samp-ui-border-black-smoke-hover:hover {
-    border-color: rgba(15, 15, 15, 0.85) !important; }
+    border-color: rgba(15, 15, 15, 0.91) !important; }
   .samp-ui-border-black-smoke\:hover:hover {
-    border-color: rgba(15, 15, 15, 0.85) !important; }
+    border-color: rgba(15, 15, 15, 0.91) !important; }
   .samp-ui-border-black-smoke\:focus:focus {
-    border-color: rgba(15, 15, 15, 0.85) !important; }
+    border-color: rgba(15, 15, 15, 0.91) !important; }
   .samp-ui-border-black-smoke-tp {
-    border-color: rgba(15, 15, 15, 0.85) !important; }
+    border-color: rgba(15, 15, 15, 0.91) !important; }
