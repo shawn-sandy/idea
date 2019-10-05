@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/bootstrap-lite",
-  "version": "0.0.14",
+  "version": "0.0.16",
   "description": "Bootstrap Lite",
   "main": "dist/bootstrap-lite.min.css",
   "repository": {
@@ -23,16 +23,6 @@
     "Bootstrap",
     "Bootstrap-Lite"
   ],
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
   "devDependencies": {
     "bootstrap": "^4.3.1",
     "gulp": "^4.0.2",
@@ -45,5 +35,5 @@
     "gulp-sizereport": "^1.2.1",
     "gulp-sourcemaps": "^2.6.5"
   },
-  "gitHead": "211c97d427535eae633e2102d03450d7177ace3e"
+  "gitHead": "7ede6bf5067c6d11a87c3e2368dec12e590aa8f8"
 }

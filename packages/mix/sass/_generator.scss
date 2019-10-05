@@ -17,50 +17,42 @@
       // e.g. a color map containing colors .color-key { color: value }
       // prefix class if necessary
       $attr: map-color-attrs($attribute);
-      &#{$attr}#{$prefix}#{$item} {
-        @if type-of($item) == "map" {
-          //@debug "value #{$item} item: #{$value}";
-          // @debug "key #{$key} .item #{$item} .value #{$value}";
-          @include class-generator(
-            "#{$key}.#{$value}",
-            $attribute,
-            $map,
-            $prefix
-          );
-        } @else {
+
+      @if type-of($value) == "map" {
+        //@debug "value #{$item} item: #{$value}";
+        // @debug "key #{$key} .item #{$item} .value #{$value}";
+        // @debug "#{$key}.#{$item}";
+        &#{$prefix}#{$item} {
+          @include class-generator("#{$key}.#{$item}", $attribute);
+        }
+      } @else {
+        // start
+        &#{$attr}#{$prefix}#{$item} {
           @if type-of($value) != "map" {
             #{$attribute}: $value !important;
-            // #{$attribute}: if
-            //   (type-of($value) == "color", $value !important, $value);
-          } @else {
-            @each $_key, $_value in $value {
-              &#{$prefix}#{$_key} {
-                #{$attribute}: $_value;
+
+            @if type-of($value) == "color" {
+              // $attr: map-color-attrs($attribute);
+              &#{$prefix}hover {
+                &:hover {
+                  #{$attribute}: dynamic-hover-color($value);
+                }
+              }
+              &\:hover {
+                &:hover {
+                  #{$attribute}: dynamic-hover-color($value);
+                }
+              }
+              &\:focus {
+                &:focus {
+                  #{$attribute}: dynamic-hover-color($value);
+                }
+              }
+              &#{$prefix}tp {
+                #{$attribute}: dynamic-hover-color($value);
               }
             }
           }
-        }
-      }
-
-      @if type-of($value) == "color" {
-        // $attr: map-color-attrs($attribute);
-        &#{$attr}#{$prefix}#{$item}-hover {
-          &:hover {
-            #{$attribute}: transparentize($value, 0.2) !important;
-          }
-        }
-        &#{$attr}#{$prefix}#{$item}\:hover {
-          &:hover {
-            #{$attribute}: $value !important;
-          }
-        }
-        &#{$attr}#{$prefix}#{$item}\:focus {
-          &:focus {
-            #{$attribute}: $value !important;
-          }
-        }
-        &#{$attr}#{$prefix}#{$item}#{$prefix}tp {
-          #{$attribute}: darken($value, 3%) !important;
         }
       }
     }
@@ -105,7 +97,6 @@
 }
 
 @mixin mix-colors($color: $mix-colors, $map: $tokens) {
-  /** MIX COLORS **/
   @include mix-generator(
     $mix-colors,
     $map,

@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Mon, 16 Sep 2019 10:56:00 GMT
+  Generated on Thu, 03 Oct 2019 23:33:17 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -8,20 +8,19 @@
 
 
 **/
-.mx-clip-text {
+.mx-clip-box {
   overflow: hidden;
   position: relative;
   line-height: 1rem;
   max-height: 3rem;
-  text-align: justify;
   margin-right: -1rem;
   padding-right: 1rem; }
-  .mx-clip-text:before {
+  .mx-clip-box:before {
     content: "...";
     position: absolute;
     right: 0;
     bottom: 0; }
-  .mx-clip-text:after {
+  .mx-clip-box:after {
     content: "";
     position: absolute;
     right: 0;

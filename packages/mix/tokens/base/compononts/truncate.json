@@ -1,6 +1,6 @@
 {
   "truncate": {
-    "clip-text": {
+    "clip-box": {
       "overflow": {
         "value": "hidden"
       },
@@ -14,7 +14,7 @@
         "value": "3rem"
       },
       "text-align": {
-        "value": "justify"
+        "value": "null"
       },
       "margin-right": {
         "value": "-1rem"
@@ -47,10 +47,10 @@
           "value": "0"
         },
         "width": {
-          "value": "{truncate.clip-text.line-height.value}"
+          "value": "{truncate.clip-box.line-height.value}"
         },
         "height": {
-          "value": "{truncate.clip-text.line-height.value}"
+          "value": "{truncate.clip-box.line-height.value}"
         },
         "background": {
           "value": "transparent"
