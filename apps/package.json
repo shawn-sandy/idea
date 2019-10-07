@@ -1,6 +1,6 @@
 {
   "name": "@local/idea",
-  "version": "0.6.41",
+  "version": "0.6.42",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --no-clean",
@@ -22,7 +22,7 @@
     "@shawnsandy/bootstrap-lite": "^0.0.16",
     "@shawnsandy/eleventy_atomic_plugin": "^0.1.2",
     "@shawnsandy/ideas": "^0.0.16",
-    "@shawnsandy/mix": "^0.5.22",
+    "@shawnsandy/mix": "^0.5.23",
     "@shawnsandy/npm_info": "^0.4.6",
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-plugin-eslint": "^3.11.0",
