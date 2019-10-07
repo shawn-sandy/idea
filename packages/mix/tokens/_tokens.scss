@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Fri, 04 Oct 2019 11:13:50 GMT
+  Generated on Mon, 07 Oct 2019 01:39:21 GMT
 */
 
 $mx-button-padding: 0 1.5rem !default;
@@ -65,14 +65,14 @@ $mx-font-size-header-lg: 4rem !default; // descriptions...
 $mx-font-size-header-xl: 5rem !default; // descriptions...
 $mx-font-weight-medium: 500 !default; // descriptions...
 $mx-font-weight-bold: 700 !default; // descriptions...
-$mx-nav-display: flex !default;
-$mx-nav-align-items: center !default;
-$mx-nav-height: 60px !default;
-$mx-nav-elm-padding: 0 1rem !default;
-$mx-nav-list-display: flex !default;
-$mx-nav-list-flex-direction: row !default;
-$mx-nav-list-list-style: none !default;
-$mx-nav-list-margin: auto 0 !default;
+$mx-nav-nav-bar-display: flex !default;
+$mx-nav-nav-bar-align-items: center !default;
+$mx-nav-nav-bar-height: 60px !default;
+$mx-nav-nav-bar-elm-padding: 0 1rem !default;
+$mx-nav-nav-bar-list-display: flex !default;
+$mx-nav-nav-bar-list-flex-direction: row !default;
+$mx-nav-nav-bar-list-list-style: none !default;
+$mx-nav-nav-bar-list-margin: auto 0 !default;
 
 $tokens: (
   'button-padding': $mx-button-padding,
@@ -167,17 +167,19 @@ $tokens: (
     )
   ),
   'nav': (
-    'display': $mx-nav-display,
-    'align-items': $mx-nav-align-items,
-    'height': $mx-nav-height,
-    'elm': (
-      'padding': $mx-nav-elm-padding
-    ),
-    'list': (
-      'display': $mx-nav-list-display,
-      'flex-direction': $mx-nav-list-flex-direction,
-      'list-style': $mx-nav-list-list-style,
-      'margin': $mx-nav-list-margin
+    'nav-bar': (
+      'display': $mx-nav-nav-bar-display,
+      'align-items': $mx-nav-nav-bar-align-items,
+      'height': $mx-nav-nav-bar-height,
+      'elm': (
+        'padding': $mx-nav-nav-bar-elm-padding
+      ),
+      'list': (
+        'display': $mx-nav-nav-bar-list-display,
+        'flex-direction': $mx-nav-nav-bar-list-flex-direction,
+        'list-style': $mx-nav-nav-bar-list-list-style,
+        'margin': $mx-nav-nav-bar-list-margin
+      )
     )
   )
 );
