@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Mon, 07 Oct 2019 01:39:21 GMT
+  Generated on Tue, 08 Oct 2019 02:48:40 GMT
 */
 
 $mx-button-padding: 0 1.5rem !default;
@@ -73,6 +73,10 @@ $mx-nav-nav-bar-list-display: flex !default;
 $mx-nav-nav-bar-list-flex-direction: row !default;
 $mx-nav-nav-bar-list-list-style: none !default;
 $mx-nav-nav-bar-list-margin: auto 0 !default;
+$mx-nav-nav-bar-sm-height: 20rem !important !default;
+$mx-nav-nav-bar-md-height: 40rem !important !default;
+$mx-nav-nav-bar-lg-height: 80rem !important !default;
+$mx-nav-nav-bar-xl-height: 100rem !important !default;
 
 $tokens: (
   'button-padding': $mx-button-padding,
@@ -179,6 +183,18 @@ $tokens: (
         'flex-direction': $mx-nav-nav-bar-list-flex-direction,
         'list-style': $mx-nav-nav-bar-list-list-style,
         'margin': $mx-nav-nav-bar-list-margin
+      ),
+      'sm': (
+        'height': $mx-nav-nav-bar-sm-height
+      ),
+      'md': (
+        'height': $mx-nav-nav-bar-md-height
+      ),
+      'lg': (
+        'height': $mx-nav-nav-bar-lg-height
+      ),
+      'xl': (
+        'height': $mx-nav-nav-bar-xl-height
       )
     )
   )

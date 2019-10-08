@@ -34,13 +34,13 @@
     "url": "https://github.com/shawn-sandy/idea/issues"
   },
   "devDependencies": {
-    "es-dev-server": "^1.17.1",
+    "es-dev-server": "^1.18.3",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.0",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.2.0",
     "gulp-sass": "^4.0.2",
     "gulp-sizereport": "^1.2.1",
-    "style-dictionary": "^2.8.1"
+    "style-dictionary": "^2.8.2"
   },
   "gitHead": "e2e6bac826ec7c9a889e5b1a6ead322cc60582d4"
 }

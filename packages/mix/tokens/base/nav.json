@@ -28,6 +28,26 @@
         "margin": {
           "value": "auto 0"
         }
+      },
+      "sm": {
+        "height": {
+          "value": "20rem !important"
+        }
+      },
+      "md": {
+        "height": {
+          "value": "40rem !important"
+        }
+      },
+      "lg": {
+        "height": {
+          "value": "80rem !important"
+        }
+      },
+      "xl": {
+        "height": {
+          "value": "100rem !important"
+        }
       }
     }
   }
