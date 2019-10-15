@@ -7,12 +7,14 @@
 @import "./index.scss";
 
 /** generate all components in specified map--default component **/
-@include mix-components("button");
+@include mix-components("buttons");
+@include mix-components("links");
+
 // generate button modifiers using the mix-modifier (mixin)
 /** generate buttons using the modifier **/
 .mx {
   &-btn {
-    @include mix-modifier("button.btn");
+    @include mix-rules("buttons.btn");
   }
 
   &-nav {

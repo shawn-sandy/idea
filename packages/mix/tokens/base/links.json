@@ -1,0 +1,14 @@
+{
+  "links": {
+    "primary": {
+      "color": {
+        "value": "#000000"
+      },
+      "hover": {
+        "color": {
+          "value": "#010101"
+        }
+      }
+    }
+  }
+}

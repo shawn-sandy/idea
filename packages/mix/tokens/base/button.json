@@ -2,7 +2,7 @@
   "button-padding": {
     "value": "0 1.5rem"
   },
-  "button": {
+  "buttons": {
     "btn": {
       "height": {
         "value": "2.5rem"

@@ -1,20 +1,20 @@
 
 /*
   Do not edit directly
-  Generated on Tue, 08 Oct 2019 02:48:40 GMT
+  Generated on Tue, 15 Oct 2019 00:40:58 GMT
 */
 
 $mx-button-padding: 0 1.5rem !default;
-$mx-button-btn-height: 2.5rem !default;
-$mx-button-btn-padding: 0 1.5rem !default;
-$mx-button-btn-display: inline-block !default;
-$mx-button-btn-text-align: center !default;
-$mx-button-btn-transition: all .2s !default;
-$mx-button-btn-border: none !default;
-$mx-button-btn-focus-border: none !default;
-$mx-button-btn-focus-outline: none !default;
-$mx-button-btn-pill-border-radius: 9999rem !default;
-$mx-button-btn-rounded-border-radius: 0.31rem !default;
+$mx-buttons-btn-height: 2.5rem !default;
+$mx-buttons-btn-padding: 0 1.5rem !default;
+$mx-buttons-btn-display: inline-block !default;
+$mx-buttons-btn-text-align: center !default;
+$mx-buttons-btn-transition: all .2s !default;
+$mx-buttons-btn-border: none !default;
+$mx-buttons-btn-focus-border: none !default;
+$mx-buttons-btn-focus-outline: none !default;
+$mx-buttons-btn-pill-border-radius: 9999rem !default;
+$mx-buttons-btn-rounded-border-radius: 0.31rem !default;
 $mx-color-black: #000000 !default;
 $mx-color-white: #ffffff !default;
 $mx-color-gray: #6a737d !default;
@@ -65,6 +65,8 @@ $mx-font-size-header-lg: 4rem !default; // descriptions...
 $mx-font-size-header-xl: 5rem !default; // descriptions...
 $mx-font-weight-medium: 500 !default; // descriptions...
 $mx-font-weight-bold: 700 !default; // descriptions...
+$mx-links-primary-color: #000000 !default;
+$mx-links-primary-hover-color: #010101 !default;
 $mx-nav-nav-bar-display: flex !default;
 $mx-nav-nav-bar-align-items: center !default;
 $mx-nav-nav-bar-height: 60px !default;
@@ -80,23 +82,23 @@ $mx-nav-nav-bar-xl-height: 100rem !important !default;
 
 $tokens: (
   'button-padding': $mx-button-padding,
-  'button': (
+  'buttons': (
     'btn': (
-      'height': $mx-button-btn-height,
-      'padding': $mx-button-btn-padding,
-      'display': $mx-button-btn-display,
-      'text-align': $mx-button-btn-text-align,
-      'transition': $mx-button-btn-transition,
-      'border': $mx-button-btn-border,
+      'height': $mx-buttons-btn-height,
+      'padding': $mx-buttons-btn-padding,
+      'display': $mx-buttons-btn-display,
+      'text-align': $mx-buttons-btn-text-align,
+      'transition': $mx-buttons-btn-transition,
+      'border': $mx-buttons-btn-border,
       'focus': (
-        'border': $mx-button-btn-focus-border,
-        'outline': $mx-button-btn-focus-outline
+        'border': $mx-buttons-btn-focus-border,
+        'outline': $mx-buttons-btn-focus-outline
       ),
       'pill': (
-        'border-radius': $mx-button-btn-pill-border-radius
+        'border-radius': $mx-buttons-btn-pill-border-radius
       ),
       'rounded': (
-        'border-radius': $mx-button-btn-rounded-border-radius
+        'border-radius': $mx-buttons-btn-rounded-border-radius
       )
     )
   ),
@@ -168,6 +170,14 @@ $tokens: (
     'weight': (
       'medium': $mx-font-weight-medium,
       'bold': $mx-font-weight-bold
+    )
+  ),
+  'links': (
+    'primary': (
+      'color': $mx-links-primary-color,
+      'hover': (
+        'color': $mx-links-primary-hover-color
+      )
     )
   ),
   'nav': (
