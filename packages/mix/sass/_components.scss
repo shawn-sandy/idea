@@ -77,6 +77,10 @@
   }
 }
 
+@mixin mix-rules($key, $map: $mix-tokens) {
+  @include mix-modifier($key, $map);
+}
+
 @mixin mix-add($args...) {
   @if length($args) >= 1 {
     @each $key in $args {
@@ -118,7 +122,14 @@
                 }
               }
             } @else {
-              #{$key}: $value;
+              // #{$key}: $value;
+              @if is-modifier-state($key) {
+                &:#{$key} {
+                  #{$key}: $value;
+                }
+              } @else {
+                #{$key}: $value;
+              }
             }
           }
         }

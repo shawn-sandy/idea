@@ -1,0 +1,38 @@
+/*
+  Do not edit directly
+  Generated on Tue, 15 Oct 2019 00:40:58 GMT
+*/
+/** GENERAL PURPOSE SASS-MIXINS **/
+/** generates a series of modifies based a list of attributes  **/
+/**
+
+
+**/
+.mx-nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px; }
+  .mx-nav-bar-elm {
+    padding: 0 1rem; }
+  .mx-nav-bar-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    list-style: none;
+    margin: auto 0; }
+  .mx-nav-bar-sm {
+    height: 20rem !important; }
+  .mx-nav-bar-md {
+    height: 40rem !important; }
+  .mx-nav-bar-lg {
+    height: 80rem !important; }
+  .mx-nav-bar-xl {
+    height: 100rem !important; }

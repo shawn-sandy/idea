@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/mix",
-  "version": "0.5.22",
+  "version": "0.5.24",
   "description": "StyleMix--A toolkit for generating utility classes, components and styles-sheets for your design system, style-guide or website from SASS MAPS",
   "keywords": [
     "SASS",
@@ -34,13 +34,13 @@
     "url": "https://github.com/shawn-sandy/idea/issues"
   },
   "devDependencies": {
-    "es-dev-server": "^1.17.1",
+    "es-dev-server": "^1.18.3",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.0",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.2.0",
     "gulp-sass": "^4.0.2",
     "gulp-sizereport": "^1.2.1",
-    "style-dictionary": "^2.8.1"
+    "style-dictionary": "^2.8.2"
   },
-  "gitHead": "f08f1f7ecabe267c90ab2420726fc51a8586bf08"
+  "gitHead": "e2e6bac826ec7c9a889e5b1a6ead322cc60582d4"
 }

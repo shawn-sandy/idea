@@ -140,6 +140,6 @@
   @if (lightness($color) > 50) {
     @return darken($color, 10%) !important;
   } @else {
-    @return transparentize($color, 0.15) !important;
+    @return transparentize($color, 0.09) !important;
   }
 }
