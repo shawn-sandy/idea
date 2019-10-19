@@ -1,0 +1,32 @@
+{
+  "font": {
+    "size": {
+      "title": {
+        "base": {
+          "value": "2rem",
+          "comment": "descriptions..."
+        },
+        "xs": {
+          "value": "2.5rem",
+          "comment": "descriptions..."
+        },
+        "sm": {
+          "value": "3rem",
+          "comment": "descriptions..."
+        },
+        "md": {
+          "value": "3.5rem",
+          "comment": "descriptions..."
+        },
+        "lg": {
+          "value": "4rem",
+          "comment": "descriptions..."
+        },
+        "xl": {
+          "value": "5rem",
+          "comment": "descriptions..."
+        }
+      }
+    }
+  }
+}
