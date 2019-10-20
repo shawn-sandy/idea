@@ -29,13 +29,15 @@ Using mix to create custom stylesheet(s)
 }
 ```
 
-* Creating tokens
+### Creating tokens
 
-StyleMix token structure is ***Group/Rule/Item/Subitems*** method or in a case where you don't need a group structure ***Rule/Item/Subitems*** making it easier to generate styles stylesheets/components
+1.**Utility tokens** are used to generate utility classes [more about utility classes](https://blog.mariano.io/css-utility-classes-how-to-use-them-effectively-d61ee00dad2d)
+
+StyleMix token structure is ***Group/Rule/Item/Subitems*** method or in a case where you don't need a group structure ***Rule/Item/Subitems*** when creating tokens for utilities classes:
 
 * Group: SASS group
 * Rule: Targets the CSS rule size for e.g: `size: 1rem`
-* Items/Subitems: are used for the class names `.**-item-subitem: 0.75rem` e.g: `.mx-fs-xs: 0.75rem`
+* Items/Subitems: are used for the class names `.prefix-item-subitem: 0.75rem` e.g: `.mx-fs-xs: 0.75rem`
 
 ``` json
 // fonts.json
