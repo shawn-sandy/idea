@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Tue, 15 Oct 2019 00:40:58 GMT
+  Generated on Sun, 20 Oct 2019 17:22:25 GMT
 */
 
 $mx-button-padding: 0 1.5rem !default;
@@ -34,6 +34,18 @@ $mx-color-ui-secondary: #070707 !default; // Secondary branding color used for b
 $mx-color-ui-light: #fefcfc !default; // Primary text on dark colors
 $mx-color-ui-text: #707070 !default; // Primary text color
 $mx-color-ui-black-smoke: #0f0f0f !default; // Dark overlays and backgrounds
+$mx-nav-nav-bar-display: flex !default;
+$mx-nav-nav-bar-align-items: center !default;
+$mx-nav-nav-bar-height: 60px !default;
+$mx-nav-nav-bar-elm-padding: 0 1rem !default;
+$mx-nav-nav-bar-list-display: flex !default;
+$mx-nav-nav-bar-list-flex-direction: row !default;
+$mx-nav-nav-bar-list-list-style: none !default;
+$mx-nav-nav-bar-list-margin: auto 0 !default;
+$mx-nav-nav-bar-sm-height: 20rem !important !default;
+$mx-nav-nav-bar-md-height: 40rem !important !default;
+$mx-nav-nav-bar-lg-height: 80rem !important !default;
+$mx-nav-nav-bar-xl-height: 100rem !important !default;
 $mx-truncate-clip-box-overflow: hidden !default;
 $mx-truncate-clip-box-position: relative !default;
 $mx-truncate-clip-box-line-height: 1rem !default;
@@ -63,22 +75,23 @@ $mx-font-size-header-sm: 3rem !default; // descriptions...
 $mx-font-size-header-md: 3.5rem !default; // descriptions...
 $mx-font-size-header-lg: 4rem !default; // descriptions...
 $mx-font-size-header-xl: 5rem !default; // descriptions...
+$mx-font-size-fs-default: 1rem !default; // descriptions...
+$mx-font-size-fs-xs: 0.75rem !default; // descriptions...
+$mx-font-size-fs-sm: 0.875rem !default; // descriptions...
+$mx-font-size-fs-md: 1.3rem !default; // descriptions...
+$mx-font-size-fs-lg: 1.5rem !default; // descriptions...
+$mx-font-size-fs-xl: 1.75rem !default; // descriptions...
+$mx-font-size-fs-xxl: 1.75rem !default; // descriptions...
+$mx-font-size-title-base: 2rem !default; // descriptions...
+$mx-font-size-title-xs: 2.5rem !default; // descriptions...
+$mx-font-size-title-sm: 3rem !default; // descriptions...
+$mx-font-size-title-md: 3.5rem !default; // descriptions...
+$mx-font-size-title-lg: 4rem !default; // descriptions...
+$mx-font-size-title-xl: 5rem !default; // descriptions...
 $mx-font-weight-medium: 500 !default; // descriptions...
 $mx-font-weight-bold: 700 !default; // descriptions...
 $mx-links-primary-color: #000000 !default;
 $mx-links-primary-hover-color: #010101 !default;
-$mx-nav-nav-bar-display: flex !default;
-$mx-nav-nav-bar-align-items: center !default;
-$mx-nav-nav-bar-height: 60px !default;
-$mx-nav-nav-bar-elm-padding: 0 1rem !default;
-$mx-nav-nav-bar-list-display: flex !default;
-$mx-nav-nav-bar-list-flex-direction: row !default;
-$mx-nav-nav-bar-list-list-style: none !default;
-$mx-nav-nav-bar-list-margin: auto 0 !default;
-$mx-nav-nav-bar-sm-height: 20rem !important !default;
-$mx-nav-nav-bar-md-height: 40rem !important !default;
-$mx-nav-nav-bar-lg-height: 80rem !important !default;
-$mx-nav-nav-bar-xl-height: 100rem !important !default;
 
 $tokens: (
   'button-padding': $mx-button-padding,
@@ -125,6 +138,34 @@ $tokens: (
       'black-smoke': $mx-color-ui-black-smoke
     )
   ),
+  'nav': (
+    'nav-bar': (
+      'display': $mx-nav-nav-bar-display,
+      'align-items': $mx-nav-nav-bar-align-items,
+      'height': $mx-nav-nav-bar-height,
+      'elm': (
+        'padding': $mx-nav-nav-bar-elm-padding
+      ),
+      'list': (
+        'display': $mx-nav-nav-bar-list-display,
+        'flex-direction': $mx-nav-nav-bar-list-flex-direction,
+        'list-style': $mx-nav-nav-bar-list-list-style,
+        'margin': $mx-nav-nav-bar-list-margin
+      ),
+      'sm': (
+        'height': $mx-nav-nav-bar-sm-height
+      ),
+      'md': (
+        'height': $mx-nav-nav-bar-md-height
+      ),
+      'lg': (
+        'height': $mx-nav-nav-bar-lg-height
+      ),
+      'xl': (
+        'height': $mx-nav-nav-bar-xl-height
+      )
+    )
+  ),
   'truncate': (
     'clip-box': (
       'overflow': $mx-truncate-clip-box-overflow,
@@ -165,6 +206,23 @@ $tokens: (
         'md': $mx-font-size-header-md,
         'lg': $mx-font-size-header-lg,
         'xl': $mx-font-size-header-xl
+      ),
+      'fs': (
+        'default': $mx-font-size-fs-default,
+        'xs': $mx-font-size-fs-xs,
+        'sm': $mx-font-size-fs-sm,
+        'md': $mx-font-size-fs-md,
+        'lg': $mx-font-size-fs-lg,
+        'xl': $mx-font-size-fs-xl,
+        'xxl': $mx-font-size-fs-xxl
+      ),
+      'title': (
+        'base': $mx-font-size-title-base,
+        'xs': $mx-font-size-title-xs,
+        'sm': $mx-font-size-title-sm,
+        'md': $mx-font-size-title-md,
+        'lg': $mx-font-size-title-lg,
+        'xl': $mx-font-size-title-xl
       )
     ),
     'weight': (
@@ -177,34 +235,6 @@ $tokens: (
       'color': $mx-links-primary-color,
       'hover': (
         'color': $mx-links-primary-hover-color
-      )
-    )
-  ),
-  'nav': (
-    'nav-bar': (
-      'display': $mx-nav-nav-bar-display,
-      'align-items': $mx-nav-nav-bar-align-items,
-      'height': $mx-nav-nav-bar-height,
-      'elm': (
-        'padding': $mx-nav-nav-bar-elm-padding
-      ),
-      'list': (
-        'display': $mx-nav-nav-bar-list-display,
-        'flex-direction': $mx-nav-nav-bar-list-flex-direction,
-        'list-style': $mx-nav-nav-bar-list-list-style,
-        'margin': $mx-nav-nav-bar-list-margin
-      ),
-      'sm': (
-        'height': $mx-nav-nav-bar-sm-height
-      ),
-      'md': (
-        'height': $mx-nav-nav-bar-md-height
-      ),
-      'lg': (
-        'height': $mx-nav-nav-bar-lg-height
-      ),
-      'xl': (
-        'height': $mx-nav-nav-bar-xl-height
       )
     )
   )

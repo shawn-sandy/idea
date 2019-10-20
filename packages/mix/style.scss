@@ -24,26 +24,22 @@
   @include mix-utilities("font");
 
   @include mix-colors();
-
-  &-danger {
-    color: mix-get("color.red");
-  }
 }
 
-.test {
-  @if is-modifier-state("hover") {
-    @debug "This is a state";
-  } @else {
-    @debug "Sorry not state found";
-  }
-  @if is-modifier-state("hov") {
-    @debug "This is a state";
-  } @else {
-    @debug "Sorry not state found";
-  }
-  @if is-modifier-state("focus-within") {
-    @debug "This is a state";
-  } @else {
-    @debug "Sorry not state found";
-  }
-}
+// .test {
+//   @if is-modifier-state("hover") {
+//     @debug "This is a state";
+//   } @else {
+//     @debug "Sorry not state found";
+//   }
+//   @if is-modifier-state("hov") {
+//     @debug "This is a state";
+//   } @else {
+//     @debug "Sorry not state found";
+//   }
+//   @if is-modifier-state("focus-within") {
+//     @debug "This is a state";
+//   } @else {
+//     @debug "Sorry not state found";
+//   }
+// }
