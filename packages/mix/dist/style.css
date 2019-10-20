@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Sun, 20 Oct 2019 16:28:34 GMT
+  Generated on Sun, 20 Oct 2019 17:22:25 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -783,6 +783,3 @@
     border-color: rgba(15, 15, 15, 0.91) !important; }
   .mx-ui-border-black-smoke-tp {
     border-color: rgba(15, 15, 15, 0.91) !important; }
-
-.mx-danger {
-  color: #d73a49; }

@@ -7,5 +7,6 @@
 @import "./index.scss";
 
 .mix {
+  /** default colors */
   @include mix-colors("color");
 }

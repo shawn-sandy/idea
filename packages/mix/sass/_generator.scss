@@ -5,7 +5,6 @@
   $prefix: $mix-prefix
 ) {
   // get a predefined map
-
   $map: get($key, $map);
   @if type-of($map) != "map" {
     @error 'Incorrect map type `#{$map}`, map is required';
@@ -98,7 +97,7 @@
 
 @mixin mix-colors($color: $mix-colors, $map: $tokens) {
   @include mix-generator(
-    $mix-colors,
+    $color,
     $map,
     "color",
     "background-color",

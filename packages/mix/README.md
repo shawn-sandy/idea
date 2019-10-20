@@ -31,9 +31,11 @@ Using mix to create custom stylesheet(s)
 
 * Creating tokens
 
-StyleMix token structure is Group/Rule/Item/Subitems method making it easier to generate styles stylesheets/components
+StyleMix token structure is ***Group/Rule/Item/Subitems*** method or in a case where you don't need a group structure ***Rule/Item/Subitems*** making it easier to generate styles stylesheets/components
 
-* Group
+* Group: SASS group
+* Rule: Targets the CSS rule size for e.g: `size: 1rem`
+* Items/Subitems: are used for the class names `.**-item-subitem: 0.75rem` e.g: `.mx-fs-xs: 0.75rem`
 
 ``` json
 // fonts.json
