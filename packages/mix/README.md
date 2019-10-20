@@ -1,8 +1,10 @@
 # StyleMix (beta)
 
-A SASS-Map toolkit for generating utility classes, components and styles-sheets for your design system, style-guide or website using SASS MAPS.
+A SASS-Map toolkit for generating utility classes, components and styles-sheets for a style-guide or website from your **[DESIGN TOKENS](https://www.lightningdesignsystem.com/design-tokens)** using StyleMix (SASS MAPS/Tools).
 
-### Install
+> Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development.
+
+## Install
 
 ```
 npm i -D style-dictionary @shawnsandy/mix
@@ -18,13 +20,95 @@ Using mix to create custom stylesheet(s)
 @import "@shawnsandy/mix";
 ```
 
-1. Generate color utilities output example [color.css]('./dist/color.css')
+* Generate color utilities output example [color.css]('./dist/color.css')
 
 ``` scss
 // generate color utilities from our `color` map
 .mx {
  @include mix-color();
 }
+```
+
+* Creating tokens
+
+StyleMix token structure is Group/Rule/Item/Subitems method making it easier to generate styles stylesheets/components
+
+* Group
+
+``` json
+// fonts.json
+{
+  "font": {
+    "size": {
+      "fs": {
+        "default": {
+          "value": "1rem",
+          "comment": "descriptions..."
+        },
+        "xs": {
+          "value": "0.75rem",
+          "comment": "descriptions..."
+        },
+        "sm": {
+          "value": "0.875rem",
+          "comment": "descriptions..."
+        },
+        "md": {
+          "value": "1.3rem",
+          "comment": "descriptions..."
+        },
+        "lg": {
+          "value": "1.5rem",
+          "comment": "descriptions..."
+        },
+        "xl": {
+          "value": "1.75rem",
+          "comment": "descriptions..."
+        },
+        "xxl": {
+          "value": "1.75rem",
+          "comment": "descriptions..."
+        }
+      }
+    }
+  }
+}
+
+```
+
+* Generated output `varables.scss` checkout our  [examples here](./tokens/_tokens.scss)
+
+``` scss
+
+// variables.scss
+$color-base-gray-light: #cccccc;
+$color-base-gray-medium: #999999;
+$color-base-gray-dark: #111111;
+$color-base-red: #ff0000;
+$color-base-green: #00ff00;
+$color-font-base: #ff0000;
+$color-font-secondary: #00ff00;
+$color-font-tertiary: #cccccc;
+$size-font-small: 0.75rem;
+$size-font-medium: 1rem;
+$size-font-large: 2rem;
+$size-font-base: 1rem;
+
+$tokens {
+ 'font': (
+    'size': (
+      'fs': (
+        'default': $mx-font-size-fs-default,
+        'xs': $mx-font-size-fs-xs,
+        'sm': $mx-font-size-fs-sm,
+        'md': $mx-font-size-fs-md,
+        'lg': $mx-font-size-fs-lg,
+        'xl': $mx-font-size-fs-xl,
+        'xxl': $mx-font-size-fs-xxl
+      )
+  )
+}
+
 ```
 
 ## Overview
@@ -85,10 +169,6 @@ Grab the value of a given token/key
 > Maps in Sass hold pairs of keys and values, and make it easy to look up a value by its corresponding key. They’re written (<expression>: <expression>, <expression>: <expression>). The expression before the : is the key, and the expression after is the value associated with that key. The keys must be unique, but the values may be duplicated. Unlike lists, maps must be written with parentheses around them. A map with no pairs is written ().[More Info]([https://link](https://sass-lang.com/documentation/values/maps))
 
 #### Inspiration, Links & Resources
-
-**[Design Tokens]([https://link](https://www.lightningdesignsystem.com/design-tokens/))**
-
-Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development.
 
 **[Amazon Style Dictionary](https://amzn.github.io/style-dictionary/#/?id=style-dictionary)**
 Style Dictionary is a build system that allows you to define styles once, in a way for any platform or language to consume. A single place to create and edit your styles, and a single command exports these rules to all the places you need them - iOS, Android, CSS, JS, HTML, sketch files, style documentation, or anything you can think of. It is available as a CLI through npm, but can also be used like any normal node module if you want to extend its functionality.
