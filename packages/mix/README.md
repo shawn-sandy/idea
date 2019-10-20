@@ -13,12 +13,12 @@ Using mix to create custom stylesheet(s)
 ``` scss
 /** custom-styles.scss */
 // import you sass map/tokens
-@import "tokens.scss";
+@import "@shawnsandy/mix/tokens/tokens";
 // import StyleMix
 @import "@shawnsandy/mix";
 ```
 
-1. Generate color utilities
+1. Generate color utilities output example [color.css]('./dist/color.css')
 
 ``` scss
 // generate color utilities from our `color` map
