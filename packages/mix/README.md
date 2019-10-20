@@ -2,118 +2,45 @@
 
 A SASS-Map toolkit for generating utility classes, components and styles-sheets for your design system, style-guide or website using SASS MAPS.
 
-## Usage
+### Install
 
-### Utility Classes
+```
+npm i -D style-dictionary @shawnsandy/mix
+```
 
-##### Generate color utility classes form you map
+Using mix to create custom stylesheet(s)
 
 ``` scss
+/** custom-styles.scss */
 // import you sass map/tokens
 @import "tokens.scss";
 // import StyleMix
 @import "@shawnsandy/mix";
-// generate color utilities from your `color` map
-.id {
+```
+
+1. Generate color utilities
+
+``` scss
+// generate color utilities from our `color` map
+.mx {
  @include mix-color();
 }
 ```
 
-##### Sample Output
+## Overview
 
-``` css
-.id-gray-hover:hover {
-    color: #6a737d !important
-}
+1. Create and organize your design attributes/tokens using JSON files
+2. Generate all SASS variables/maps from your JSON tokens
+3. Create your stylesheets using the StyleMix SASS toolkit/utilities
 
-.id-gray-focus:focus {
-    color: #6a737d !important
-}
+   - Utilities
+   - Components
+   - Helpers
+   - Functions
 
-.id-gray-tp {
-    color: rgba(106, 115, 125, .8) !important
-}
+#### Create Tokens
 
-.id-red {
-    color: #d73a49
-}
-
-.id-red-hover:hover {
-    color: #d73a49 !important
-}
-
-.id-red-focus:focus {
-    color: #d73a49 !important
-}
-
-.id-red-tp {
-    color: rgba(215, 58, 73, .8) !important
-}
-
-.id-blue {
-    color: #0366d6
-}
-
-.id-blue-hover:hover {
-    color: #0366d6 !important
-}
-
-.id-blue-focus:focus {
-    color: #0366d6 !important
-}
-
-.id-blue-tp {
-    color: rgba(3, 102, 214, .8) !important
-}
-
-.id-orange {
-    color: #f66a0a
-}
-
-.id-orange-hover:hover {
-    color: #f66a0a !important
-}
-
-.id-orange-focus:focus {
-    color: #f66a0a !important
-}
-
-.id-orange-tp {
-    color: rgba(246, 106, 10, .8) !important
-}
-
-.id-yellow {
-    color: #ffd33d
-}
-
-.id-yellow-hover:hover {
-    color: #ffd33d !important
-}
-
-.id-yellow-focus:focus {
-    color: #ffd33d !important
-}
-
-.id-yellow-tp {
-    color: rgba(255, 211, 61, .8) !important
-}
-
-.id-green {
-    color: #28a745
-}
-
-.id-green-hover:hover {
-    color: #28a745 !important
-}
-
-.id-green-focus:focus {
-    color: #28a745 !important
-}
-
-.id-green-tp {
-    color: rgba(40, 167, 69, .8) !important
-}
-```
+#### Utilities
 
 ## Components
 
@@ -136,6 +63,8 @@ $mix-modifier-states: active focus focus-within hover visited; // define the sta
 $mix-color-attrs: "color", "background-color", "border-color";
 
 @import "@shawnsandy/mix";
+
+```
 
 ## Mix helpers
 
