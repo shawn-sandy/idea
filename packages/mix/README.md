@@ -169,7 +169,7 @@ StyleMix token structure is ***Group/Rule/Item/Subitems/*** method or in a case 
 
 ```
 
-**Color Tokens** (examples)
+**Color Utility Tokens** (examples)
 
 ``` json
 {
@@ -200,17 +200,19 @@ StyleMix token structure is ***Group/Rule/Item/Subitems/*** method or in a case 
 
 {
  "component": {
-    "nav-bar": {
-      "display": {
-        "value": "flex"
-      },
-      "align-items": {
-        "value": "center"
-      },
-      "height": {
-        "value": "60px"
-      }
-    }
+
+     "navbar": {
+       "display": {
+         "value": "flex"
+       },
+       "align-items": {
+         "value": "center"
+       },
+       "height": {
+         "value": "60px"
+       }
+     }
+
  }
 
 ```

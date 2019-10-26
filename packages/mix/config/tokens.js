@@ -37,7 +37,7 @@ const CTITransform = {
 };
 
 module.exports = function(options = {}) {
-  const source = options.source || "./tokens/base/**/*.json";
+  const source = options.source || ["./tokens/base/**/*.json"];
   const build_dir = options.build || "./tokens/";
   const name = options.name ? `${options.name}.scss` : "_tokens.scss";
 
