@@ -72,7 +72,7 @@ $mix-color-attrs: "color", "background-color", "border-color";
 >
 > [Read more about SASS maps](https://sass-lang.com/documentation/values/maps)
 
-## Creating Tokens and SASS Maps for StyleMix
+#### Creating Tokens
 
 StyleMix really only needs a SASS-MAPS to do it's thing  and yes you can write SASS-MAPS on your own, but thats entirely up to you the workflow below is recommend but not mandatory, once you stick to the map format.
 
