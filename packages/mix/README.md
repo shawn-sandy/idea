@@ -1,143 +1,41 @@
 # StyleMix (beta)
 
-A SASS-Map toolkit for generating utility classes, components and styles-sheets for a style-guide or website from your **[DESIGN TOKENS](https://www.lightningdesignsystem.com/design-tokens)** using StyleMix (SASS MAPS/Tools).
+A SASS toolkit for generating CSS utility classes and components from **Design Tokens**.
 
-> Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development.
+A SASS toolkit for generating CSS utility classes and components for a style-guide or website using SASS Maps generated from your **Design Tokens**.
 
 ## Install
 
+* **Install StyleMix(beta)**
+
 ```
-npm i -D style-dictionary @shawnsandy/mix
+npm i -D @shawnsandy/mix
 ```
 
-Using mix to create custom stylesheet(s)
+* **Install Style Dictionary**
+
+> Style Dictionary is a build system that allows you to define styles once, in a way for any platform or language to consume. A single place to create and edit your styles, and a single command exports these rules to all the places you need them - iOS, Android, CSS, JS, HTML, sketch files, style documentation, or anything you can think of. It is available as a CLI through npm, but can also be used like any normal node module if you want to extend its functionality.
+
+```
+// global
+npm i -g style-dictionary
+```
+
+**Uility classes** (example)
+
+1. Create/Import your tokens [(creating tokens)](#creating-tokens)
+2. Config StyleMix using SASS defaults
+3. Import StyleMix
+4. Include the utility mixin and run you build
+5. View [UTILITY TOKENS]('./dist/color.css') example
 
 ``` scss
-/** custom-styles.scss */
-// import you sass map/tokens
+
+/** Import tokens, replace the import file below with your own **/
 @import "@shawnsandy/mix/tokens/tokens";
-// import StyleMix
-@import "@shawnsandy/mix";
-```
 
-* Generate color utilities output example [color.css]('./dist/color.css')
+/** Config StyleMix SASS defaults */
 
-``` scss
-// generate color utilities from our `color` map
-.mx {
- @include mix-color();
-}
-```
-
-### Creating tokens
-
-1.**Utility tokens** are used to generate utility classes [more about utility classes](https://blog.mariano.io/css-utility-classes-how-to-use-them-effectively-d61ee00dad2d)
-
-StyleMix token structure is ***Group/Rule/Item/Subitems*** method or in a case where you don't need a group structure ***Rule/Item/Subitems*** when creating tokens for utilities classes:
-
-* Group: SASS group
-* Rule: Targets the CSS rule size for e.g: `size: 1rem`
-* Items/Subitems: are used for the class names `.prefix-item-subitem: 0.75rem` e.g: `.mx-fs-xs: 0.75rem`
-
-``` json
-// fonts.json
-{
-  "font": {
-    "size": {
-      "fs": {
-        "default": {
-          "value": "1rem",
-          "comment": "descriptions..."
-        },
-        "xs": {
-          "value": "0.75rem",
-          "comment": "descriptions..."
-        },
-        "sm": {
-          "value": "0.875rem",
-          "comment": "descriptions..."
-        },
-        "md": {
-          "value": "1.3rem",
-          "comment": "descriptions..."
-        },
-        "lg": {
-          "value": "1.5rem",
-          "comment": "descriptions..."
-        },
-        "xl": {
-          "value": "1.75rem",
-          "comment": "descriptions..."
-        },
-        "xxl": {
-          "value": "1.75rem",
-          "comment": "descriptions..."
-        }
-      }
-    }
-  }
-}
-
-```
-
-* Generated output `varables.scss` checkout our  [examples here](./tokens/_tokens.scss)
-
-``` scss
-
-// variables.scss
-$color-base-gray-light: #cccccc;
-$color-base-gray-medium: #999999;
-$color-base-gray-dark: #111111;
-$color-base-red: #ff0000;
-$color-base-green: #00ff00;
-$color-font-base: #ff0000;
-$color-font-secondary: #00ff00;
-$color-font-tertiary: #cccccc;
-$size-font-small: 0.75rem;
-$size-font-medium: 1rem;
-$size-font-large: 2rem;
-$size-font-base: 1rem;
-
-$tokens {
- 'font': (
-    'size': (
-      'fs': (
-        'default': $mx-font-size-fs-default,
-        'xs': $mx-font-size-fs-xs,
-        'sm': $mx-font-size-fs-sm,
-        'md': $mx-font-size-fs-md,
-        'lg': $mx-font-size-fs-lg,
-        'xl': $mx-font-size-fs-xl,
-        'xxl': $mx-font-size-fs-xxl
-      )
-  )
-}
-
-```
-
-## Overview
-
-1. Create and organize your design attributes/tokens using JSON files
-2. Generate all SASS variables/maps from your JSON tokens
-3. Create your stylesheets using the StyleMix SASS toolkit/utilities
-
-   - Utilities
-   - Components
-   - Helpers
-   - Functions
-
-#### Create Tokens
-
-#### Utilities
-
-## Components
-
-#### Import and customize Mix using SASS variables
-
-**Change default settings** use the following variables to override the  default SCSS setting variables when needed. View the full list of variables [here](./tokens/_tokens.scss)
-
-``` scss
-// Setup up some defaults
 $mix-tokens: $tokens; // token variable name
 $mix-namespace: "mx"; // namespace
 $mix-base: "base"; // default utility name
@@ -150,27 +48,102 @@ $mix-components: "components"; // default component key
 $mix-modifier-states: active focus focus-within hover visited; // define the states that you use
 $mix-color-attrs: "color", "background-color", "border-color";
 
+/** import stylemix **/
 @import "@shawnsandy/mix";
 
+/** utility mixin example--create font utility form our tokens **/
+@include mix-utilities("font");
 ```
 
-## Mix helpers
+### Design Tokens
 
-##### `mix-get()`
+ **What are design tokens?**
 
-Grab the value of a given token/key
+> Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development.
 
-``` scss
-.danger {
-  color: mix-get('color.red');
-}
-```
+[What are design Tokens (CSS-Tricks)](https://css-tricks.com/what-are-design-tokens/)
 
-#### [Read the docs for more info on setup, usages and examples Docs (WIP)](./docs)
+[Tokens in a design System]([https://link](https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421))
+
+[SALES FORCE DESIGN TOKENS](https://www.lightningdesignsystem.com/design-tokens)
 
 ### What are SASS Maps
 
-> Maps in Sass hold pairs of keys and values, and make it easy to look up a value by its corresponding key. They’re written (<expression>: <expression>, <expression>: <expression>). The expression before the : is the key, and the expression after is the value associated with that key. The keys must be unique, but the values may be duplicated. Unlike lists, maps must be written with parentheses around them. A map with no pairs is written ().[More Info]([https://link](https://sass-lang.com/documentation/values/maps))
+> Maps in Sass hold pairs of keys and values, and make it easy to look up a value by its corresponding key. They’re written (<expression>: <expression>, <expression>: <expression>). The expression before the : is the key, and the expression after is the value associated with that key. The keys must be unique, but the values may be duplicated. Unlike lists, maps must be written with parentheses around them. A map with no pairs is written ().
+>
+> [Read more about SASS maps](https://sass-lang.com/documentation/values/maps)
+
+#### Creating Tokens
+
+StyleMix really only needs a SASS-MAPS to do it's thing  and yes you can write SASS-MAPS on your own, but thats entirely up to you the workflow below is recommend but not mandatory, once you stick to the map format.
+
+* If you haven't yet install the [Style Dictionary Quick Start](https://amzn.github.io/style-dictionary/#/quick_start)
+
+* Create a config file for your tokens
+
+``` js
+// tokens-config.js
+const config = require("./tokens");
+
+module.exports = config({
+    source: "tokens/**/*", // tokens dir--/tokens/my-tokens.json
+    build: "scss/_tokens/", // build dir trailing slash required--scss/_tokens.scss
+    name: "token/" // name of you scss token output file--tokens.scss
+});
+```
+
+* Run the build script
+
+Command line
+
+```
+style-dictionary build --config ./config.js
+
+```
+
+NPM Scripts
+
+```
+ "scripts": {
+    "tokens": "style-dictionary build --config ./config.js"
+  },
+```
+
+**Font-Size Tokens** (example)
+
+``` json
+// fonts.json
+{
+  "font": {
+    "size": {
+      "fs": {
+        "sm": {
+          "value": "0.875rem",
+          "comment": "descriptions..."
+        },
+        "md": {
+          "value": "1.3rem",
+          "comment": "descriptions..."
+        },
+        "lg": {
+          "value": "1.5rem",
+          "comment": "descriptions..."
+        }
+      }
+    }
+  }
+}
+
+```
+
+`to be continue--WIP`
+
+* Utilities
+* Components
+* Helpers
+* Functions
+
+#### [Read the docs for more info on setup, usages and examples (WIP)](./docs)
 
 #### Inspiration, Links & Resources
 
