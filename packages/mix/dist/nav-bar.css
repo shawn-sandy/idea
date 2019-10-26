@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Sat, 26 Oct 2019 19:43:31 GMT
+  Generated on Sat, 26 Oct 2019 20:12:13 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -8,17 +8,17 @@
 
 
 **/
-.mx-nav-bar {
+.mx-navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60px; }
-  .mx-nav-bar-elm {
-    padding: 0 1rem; }
-  .mx-nav-bar-list {
+  height: 60rem; }
+  .mx-navbar-elm {
+    padding: 0rem; }
+  .mx-navbar-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -28,11 +28,11 @@
             flex-direction: row;
     list-style: none;
     margin: auto 0; }
-  .mx-nav-bar-sm {
-    height: 20rem !important; }
-  .mx-nav-bar-md {
-    height: 40rem !important; }
-  .mx-nav-bar-lg {
-    height: 80rem !important; }
-  .mx-nav-bar-xl {
-    height: 100rem !important; }
+  .mx-navbar-sm {
+    height: 20rem; }
+  .mx-navbar-md {
+    height: 40rem; }
+  .mx-navbar-lg {
+    height: 80rem; }
+  .mx-navbar-xl {
+    height: 100rem; }
