@@ -109,6 +109,37 @@ NPM Scripts
   },
 ```
 
+Run the scripts
+
+```
+npm run tokens
+```
+
+**Token Structure**
+
+StyleMix token structure is ***Group/Rule/Item/Subitems/*** method or in a case where you don't need a group structure ***Rule/Item/Subitems*** when creating tokens for utilities classes:
+
+* Group: SASS group
+* Rule: Targets the CSS rule size for e.g: `size: 1rem`
+* Items/Subitems: are used for the class names `.prefix-item-subitem: 0.75rem` e.g: `.mx-fs-xs: 0.75rem`
+
+``` json
+
+{
+  {
+    "GROUP" : {
+      "RULE" : {
+        "ITEM": {
+          "KEY": "VALUE",
+          "COMMENT": "COMMENT"
+        }
+      }
+    }
+  }
+}
+
+```
+
 **Font-Size Tokens** (example)
 
 ``` json
@@ -136,12 +167,12 @@ NPM Scripts
 
 ```
 
-`to be continue--WIP`
-
 * Utilities
 * Components
 * Helpers
 * Functions
+
+`to be continue--WIP`
 
 #### [Read the docs for more info on setup, usages and examples (WIP)](./docs)
 
