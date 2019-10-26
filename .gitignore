@@ -20,3 +20,4 @@ yarn-error.log*
 *.sw*
 lerna-debug.log
 /packages/modals/DOCUMENTATION.md
+/packages/mix/token-test

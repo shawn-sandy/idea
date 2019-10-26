@@ -20,7 +20,6 @@ npm i -D style-dictionary @shawnsandy/mix
 npm i -D style-dictionary @shawnsandy/mix
 ```
 
-
 **Uility classes** (example)
 
 1. Create/Import your tokens [(creating tokens)](#creating-tokens)
@@ -77,7 +76,37 @@ $mix-color-attrs: "color", "background-color", "border-color";
 
 StyleMix really only needs a SASS-MAPS to do it's thing  and yes you can write SASS-MAPS on your own, but thats entirely up to you the workflow below is recommend but not mandatory, once you stick to the map format.
 
-* If you haven't yet install the [Style Dictionar](https://amzn.github.io/style-dictionary/#/quick_start)
+* If you haven't yet install the [Style Dictionary Quick Start](https://amzn.github.io/style-dictionary/#/quick_start)
+
+* Create a config file for your tokens
+
+``` js
+// tokens-config.js
+const config = require("./tokens");
+
+module.exports = config({
+    source: "tokens/**/*", // tokens dir--/tokens/my-tokens.json
+    build: "scss/_tokens/", // build dir trailing slash required--scss/_tokens.scss
+    name: "token/" // name of you scss token output file--tokens.scss
+});
+```
+
+* Run the build script
+
+Command line
+
+```
+style-dictionary build --config ./config.js
+
+```
+
+NPM Scripts
+
+```
+ "scripts": {
+    "tokens": "style-dictionary build --config ./config.js"
+  },
+```
 
 **Font-Size Tokens** (example)
 
