@@ -140,7 +140,7 @@ StyleMix token structure is ***Group/Rule/Item/Subitems/*** method or in a case 
 
 ```
 
-**Font-Size Tokens** (example)
+**Font-Size Utility Tokens** (example)
 
 ``` json
 // fonts.json
@@ -164,6 +164,52 @@ StyleMix token structure is ***Group/Rule/Item/Subitems/*** method or in a case 
     }
   }
 }
+
+```
+
+**Color Tokens** (examples)
+
+``` json
+{
+  {
+  "color": {
+
+    "black": {
+      "value": "#000000"
+    },
+    "white": {
+      "value": "#ffffff"
+    },
+    "gray": {
+      "value": "#6a737d"
+    },
+    "red": {
+      "value": "#d73a49"
+    }
+
+  }
+}
+
+```
+
+**Component Format** (example)
+
+``` json
+
+{
+ "component": {
+    "nav-bar": {
+      "display": {
+        "value": "flex"
+      },
+      "align-items": {
+        "value": "center"
+      },
+      "height": {
+        "value": "60px"
+      }
+    }
+ }
 
 ```
 
