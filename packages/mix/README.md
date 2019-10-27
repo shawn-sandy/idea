@@ -199,7 +199,7 @@ Structure ***Group/Rule/Item/Subitems/*** method or in a case where you don't ne
 
 **Component Token Structure** (example)
 
-Component tokens allow you to create SCSS/CSS for you stylesheet classes.
+Component tokens are structured a lot like how you write rules for a button/card and will generate all the SASS/CSS for your element.
 Structure ***Group/Name/Rules/Nesting/Rules***:
 
 * Group: Component SASS group
