@@ -2,8 +2,6 @@
 
 A SASS toolkit for generating CSS utility classes and components from **Design Tokens**.
 
-A SASS toolkit for generating CSS utility classes and components for a style-guide or website using SASS Maps generated from your **Design Tokens**.
-
 ## Install
 
 * **Install StyleMix(beta)**
@@ -84,7 +82,7 @@ StyleMix really only needs a SASS-MAPS to do it's thing  and yes you can write S
 * Create a config file for your tokens
 
 ``` js
-// tokens-config.js
+// config.js
 const config = require("./tokens");
 
 module.exports = config({
@@ -117,9 +115,10 @@ Run the scripts
 npm run tokens
 ```
 
-**Token Structure**
+**Utility Token Structure**
 
-StyleMix token structure is ***Group/Rule/Item/Subitems/*** method or in a case where you don't need a group structure ***Rule/Item/Subitems*** when creating tokens for utilities classes:
+Utility tokens allow you to generate SASS Maps for utility classes.
+Structure ***Group/Rule/Item/Subitems/*** method or in a case where you don't need a group structure ***Rule/Item/Subitems*** when creating tokens for utilities classes:
 
 * Group: SASS group
 * Rule: Targets the CSS rule size for e.g: `size: 1rem`
@@ -194,13 +193,43 @@ StyleMix token structure is ***Group/Rule/Item/Subitems/*** method or in a case 
 
 ```
 
-**Component Format** (example)
+**Component Token Structure** (example)
+
+Component tokens allow you to create SCSS/CSS for you stylesheet classes.
+Structure ***Group/Name/Rules/Nesting/Rules***:
+
+* Group: Component SASS group
+* Name: Component name
+* Rules: Rules that style the Component e.g: `size: 1rem`
+* Nested/Rules: Components can have nested rules
+
+``` json
+
+{
+  {
+    "GROUP" : {
+      "NAME" : {
+        "RULE": {
+          "KEY": "VALUE",
+          "COMMENT": "COMMENT"
+        },
+        "NESTED" : {
+        "RULE": {
+          "KEY": "VALUE",
+          "COMMENT": "COMMENT"
+        }
+      }
+      }
+    }
+  }
+}
+
+```
 
 ``` json
 
 {
  "component": {
-
      "navbar": {
        "display": {
          "value": "flex"
@@ -212,7 +241,6 @@ StyleMix token structure is ***Group/Rule/Item/Subitems/*** method or in a case 
          "value": "60px"
        }
      }
-
  }
 
 ```

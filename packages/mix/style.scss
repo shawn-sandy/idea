@@ -18,7 +18,7 @@
   }
 
   &-nav {
-    @include mix-modifier("component.nav.navbar");
+    @include mix-modifier("component.nav");
   }
 
   @include mix-utilities("font");
