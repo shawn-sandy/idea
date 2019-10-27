@@ -2,8 +2,6 @@
 
 A SASS toolkit for generating CSS utility classes and components from **Design Tokens**.
 
-A SASS toolkit for generating CSS utility classes and components for a style-guide or website using SASS Maps generated from your **Design Tokens**.
-
 ## Install
 
 * **Install StyleMix(beta)**
@@ -17,8 +15,10 @@ npm i -D @shawnsandy/mix
 > Style Dictionary is a build system that allows you to define styles once, in a way for any platform or language to consume. A single place to create and edit your styles, and a single command exports these rules to all the places you need them - iOS, Android, CSS, JS, HTML, sketch files, style documentation, or anything you can think of. It is available as a CLI through npm, but can also be used like any normal node module if you want to extend its functionality.
 
 ```
+
 // global
 npm i -g style-dictionary
+
 ```
 
 **Uility classes** (example)
@@ -82,7 +82,7 @@ StyleMix really only needs a SASS-MAPS to do it's thing  and yes you can write S
 * Create a config file for your tokens
 
 ``` js
-// tokens-config.js
+// config.js
 const config = require("./tokens");
 
 module.exports = config({
@@ -109,7 +109,39 @@ NPM Scripts
   },
 ```
 
-**Font-Size Tokens** (example)
+Run the scripts
+
+```
+npm run tokens
+```
+
+**Utility Token Structure**
+
+Utility tokens allow you to generate SASS Maps for utility classes.
+Structure ***Group/Rule/Item/Subitems/*** method or in a case where you don't need a group structure ***Rule/Item/Subitems*** when creating tokens for utilities classes:
+
+* Group: SASS group
+* Rule: Targets the CSS rule size for e.g: `size: 1rem`
+* Items/Subitems: are used for the class names `.prefix-item-subitem: 0.75rem` e.g: `.mx-fs-xs: 0.75rem`
+
+``` json
+
+{
+  {
+    "GROUP" : {
+      "RULE" : {
+        "ITEM": {
+          "KEY": "VALUE",
+          "COMMENT": "COMMENT"
+        }
+      }
+    }
+  }
+}
+
+```
+
+**Font-Size Utility Tokens** (example)
 
 ``` json
 // fonts.json
@@ -136,12 +168,89 @@ NPM Scripts
 
 ```
 
-`to be continue--WIP`
+**Color Utility Tokens** (examples)
+
+``` json
+{
+  {
+  "color": {
+
+    "black": {
+      "value": "#000000"
+    },
+    "white": {
+      "value": "#ffffff"
+    },
+    "gray": {
+      "value": "#6a737d"
+    },
+    "red": {
+      "value": "#d73a49"
+    }
+
+  }
+}
+
+```
+
+**Component Token Structure** (example)
+
+Component tokens allow you to create SCSS/CSS for you stylesheet classes.
+Structure ***Group/Name/Rules/Nesting/Rules***:
+
+* Group: Component SASS group
+* Name: Component name
+* Rules: Rules that style the Component e.g: `size: 1rem`
+* Nested/Rules: Components can have nested rules
+
+``` json
+
+{
+  {
+    "GROUP" : {
+      "NAME" : {
+        "RULE": {
+          "KEY": "VALUE",
+          "COMMENT": "COMMENT"
+        },
+        "NESTED" : {
+        "RULE": {
+          "KEY": "VALUE",
+          "COMMENT": "COMMENT"
+        }
+      }
+      }
+    }
+  }
+}
+
+```
+
+``` json
+
+{
+ "component": {
+     "navbar": {
+       "display": {
+         "value": "flex"
+       },
+       "align-items": {
+         "value": "center"
+       },
+       "height": {
+         "value": "60px"
+       }
+     }
+ }
+
+```
 
 * Utilities
 * Components
 * Helpers
 * Functions
+
+`to be continue--WIP`
 
 #### [Read the docs for more info on setup, usages and examples (WIP)](./docs)
 
