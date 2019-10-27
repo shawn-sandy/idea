@@ -77,9 +77,11 @@ $mix-color-attrs: "color", "background-color", "border-color";
 
 StyleMix really only needs a SASS-MAPS to do it's thing  and yes you can write SASS-MAPS on your own, but thats entirely up to you the workflow below is recommend but not mandatory, once you stick to the map format.
 
-* If you haven't yet install the [Style Dictionary Quick Start](https://amzn.github.io/style-dictionary/#/quick_start)
+* If you haven't yet install the Style Dictionary : [Style Dictionary Quick Start](https://amzn.github.io/style-dictionary/#/quick_start)
 
-* Create a config file for your tokens
+* Create a config
+* Write you tokens be sure to read about how to   [format tokens for stylemix](#token-formats)
+* Run style-dictionary
 
 ``` js
 // config.js
@@ -114,6 +116,8 @@ Run the scripts
 ```
 npm run tokens
 ```
+
+#### Token Formats
 
 **Utility Token Structure**
 
