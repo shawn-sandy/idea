@@ -69,23 +69,22 @@ $mix-color-attrs: "color", "background-color", "border-color";
 
 ### What are SASS Maps
 
-> Maps in Sass hold pairs of keys and values, and make it easy to look up a value by its corresponding key. They’re written (<expression>: <expression>, <expression>: <expression>). The expression before the : is the key, and the expression after is the value associated with that key. The keys must be unique, but the values may be duplicated. Unlike lists, maps must be written with parentheses around them. A map with no pairs is written ().
+> Maps in Sass hold pairs of keys and values, and make it easy to look up a value by its corresponding key. They’re written ( `<expression>: <expression>, <expression>: <expression>` ). The expression before the : is the key, and the expression after is the value associated with that key. The keys must be unique, but the values may be duplicated. Unlike lists, maps must be written with parentheses around them. A map with no pairs is written ().
 >
 > [Read more about SASS maps](https://sass-lang.com/documentation/values/maps)
 
 #### Creating Tokens
 
-StyleMix really only needs a SASS-MAPS to do it's thing  and yes you can write SASS-MAPS on your own, but thats entirely up to you the workflow below is recommend but not mandatory, once you stick to the map format.
+StyleMix really only needs a SASS-MAPS to do it's thing, and you can write SASS-MAPS on your own, thats entirely up to you, once you stick to the map format(s). The workflow below is not mandatory but strongly recommend.
 
 * If you haven't yet install the Style Dictionary : [Style Dictionary Quick Start](https://amzn.github.io/style-dictionary/#/quick_start)
-
 * Create a config
-* Write you tokens be sure to read about how to   [format tokens for stylemix](#token-formats)
+* Write you tokens be sure to read about how to [format tokens for stylemix](#token-formats)
 * Run style-dictionary
 
 ``` js
 // config.js
-const config = require("./tokens");
+const config = require("@shawnsandy/mix/config/tokens");
 
 module.exports = config({
     source: "tokens/**/*", // tokens dir--/tokens/my-tokens.json
@@ -130,7 +129,6 @@ Structure ***Group/Rule/Item/Subitems/*** method or in a case where you don't ne
 
 ``` json
 
-{
   {
     "GROUP" : {
       "RULE" : {
@@ -141,7 +139,6 @@ Structure ***Group/Rule/Item/Subitems/*** method or in a case where you don't ne
       }
     }
   }
-}
 
 ```
 
@@ -176,9 +173,7 @@ Structure ***Group/Rule/Item/Subitems/*** method or in a case where you don't ne
 
 ``` json
 {
-  {
   "color": {
-
     "black": {
       "value": "#000000"
     },
@@ -191,7 +186,6 @@ Structure ***Group/Rule/Item/Subitems/*** method or in a case where you don't ne
     "red": {
       "value": "#d73a49"
     }
-
   }
 }
 
@@ -199,7 +193,7 @@ Structure ***Group/Rule/Item/Subitems/*** method or in a case where you don't ne
 
 **Component Token Structure** (example)
 
-Component tokens are structured a lot like how you write rules for a button/card and will generate all the SASS/CSS for your element.
+Component tokens are structured a lot like how you write rules for a CSS button/card and will generate all the SASS/CSS for your element.
 Structure ***Group/Name/Rules/Nesting/Rules***:
 
 * Group: Component SASS group
@@ -209,7 +203,6 @@ Structure ***Group/Name/Rules/Nesting/Rules***:
 
 ``` json
 
-{
   {
     "GROUP" : {
       "NAME" : {
@@ -226,7 +219,6 @@ Structure ***Group/Name/Rules/Nesting/Rules***:
       }
     }
   }
-}
 
 ```
 
