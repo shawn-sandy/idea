@@ -27,15 +27,15 @@
       },
       "header": {
         "base": {
-          "value": "2.25rem",
-          "comment": "36px base/default title"
+          "value": "3rem",
+          "comment": "46px base/default title"
         },
         "xs": {
           "value": "1.75rem",
           "comment": "28px"
         },
         "sm": {
-          "value": "3rem",
+          "value": "2.25rem",
           "comment": "48px"
         },
         "md": {

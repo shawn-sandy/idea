@@ -14,7 +14,7 @@
 /** generate buttons using the modifier **/
 .mx {
   &-btn {
-    @include mix-rules("buttons.btn");
+    @include mix-modifier("buttons.btn");
   }
 
   &-nav {

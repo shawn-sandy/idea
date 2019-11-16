@@ -61,9 +61,9 @@
       "callout": "1.27rem",
       "subtitle": "1.62rem",
       "header": {
-        "base": "2.25rem",
+        "base": "3rem",
         "xs": "1.75rem",
-        "sm": "3rem",
+        "sm": "2.25rem",
         "md": "3.5rem",
         "lg": "4rem",
         "hero": "5rem"
