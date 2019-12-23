@@ -22,7 +22,7 @@ $rem-fallback: true;
 
 .id {
   &-btn {
-    @include mix-modifier("buttons.btn");
+    @include mix-modifier("component.btn");
   }
   @include mix-colors();
 }

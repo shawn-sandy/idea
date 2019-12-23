@@ -1,6 +1,9 @@
 ---
+eleventyNavigation:
+  key: Humans
+  parent: Mammals
 layout: theme/layout.njk
-title: Manage Content 
+title: Manage Content
 date: 2018-12-03
 stylesheet: "styles"
 tags: ["ideas"]
@@ -15,3 +18,4 @@ tags: ["ideas"]
 {{ '/css/styles.css' | url }}
 
 ---
+
