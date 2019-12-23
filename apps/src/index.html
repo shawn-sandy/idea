@@ -9,6 +9,9 @@ description: "Excerpt Lorem ipsum dolor sit amet consectetur adipisicing elit. E
 corporiscumque odio"
 ---
 
+<!-- {% for e in collections.all %}
+{{ e.data.title }}
+{% endfor %} -->
 <main class="d-flex justify-content-center text-center cover bg-dark">
   <div class="container align-items-center align-self-center text-white">
     <div id="mx-clip" class="text-uppercase headline">Idea.</div>
@@ -51,10 +54,10 @@ corporiscumque odio"
         <div class="col-12 mx-font-title">
           Brand Colors
         </div>
-        {% for name, val in tokens.colors.color.ui %}
+        {% for name, attrs in tokens.colors.color.ui %}
         <div class="col-md-3 p-2">
           {% MixSwatch "id-bg-ui-"+ name, name %}
-          {{ val.comment }} {{ name }}
+          {{ name }} <small>id-bg-ui-{{ name }} {{ attrs.value }}</small>
           {% endMixSwatch %}
         </div>
         {% endfor %}

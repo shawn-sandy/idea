@@ -77,7 +77,7 @@
     height: 100rem; }
 
 .mx-font {
-  font-size: 1rem; }
+  font: 1rem; }
 
 .mx-fine-print {
   font-size: 0.75rem !important; }
@@ -95,7 +95,7 @@
   font-size: 1.75rem !important; }
 
 .mx-header-font {
-  font-size: 2rem; }
+  font: 2rem; }
 
 .mx-header-xs {
   font-size: 2.5rem !important; }
@@ -134,7 +134,7 @@
   font-size: 1.75rem !important; }
 
 .mx-title-font {
-  font-size: 2rem; }
+  font: 2rem; }
 
 .mx-title-xs {
   font-size: 2.5rem !important; }

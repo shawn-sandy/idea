@@ -28,7 +28,7 @@
       "header": {
         "base": {
           "value": "3rem",
-          "comment": "46px base/default title"
+          "comment": "48px base/default title"
         },
         "xs": {
           "value": "1.75rem",
@@ -36,7 +36,7 @@
         },
         "sm": {
           "value": "2.25rem",
-          "comment": "48px"
+          "comment": "36px"
         },
         "md": {
           "value": "3.5rem",

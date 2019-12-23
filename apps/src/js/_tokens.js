@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sat, 16 Nov 2019 13:04:17 GMT
+ * Generated on Sat, 16 Nov 2019 13:42:27 GMT
  */
 
 export const ColorGray = "#6a737d";
@@ -46,9 +46,9 @@ export const FontSizeNotes = "0.875rem"; // 14px
 export const FontSizeLead = "1.125rem"; // 18px
 export const FontSizeCallout = "1.27rem"; // 22px
 export const FontSizeSubtitle = "1.62rem"; // 26px
-export const FontSizeHeaderBase = "3rem"; // 46px base/default title
+export const FontSizeHeaderBase = "3rem"; // 48px base/default title
 export const FontSizeHeaderXs = "1.75rem"; // 28px
-export const FontSizeHeaderSm = "2.25rem"; // 48px
+export const FontSizeHeaderSm = "2.25rem"; // 36px
 export const FontSizeHeaderMd = "3.5rem"; // 56px
 export const FontSizeHeaderLg = "4rem"; // 64px
 export const FontSizeHeaderHero = "5rem"; // 80px Hero
