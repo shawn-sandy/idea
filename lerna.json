@@ -3,6 +3,7 @@
     "components/*",
     "packages/*",
     "web/",
+    "apps/src/content/*",
     "apps/"
   ],
   "version": "independent"
