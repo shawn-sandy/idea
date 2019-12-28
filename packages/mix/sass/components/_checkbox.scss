@@ -1,0 +1,47 @@
+// Checkbox mixin *************************
+
+@import "../helpers";
+
+@mixin mix-checkbox() {
+  display: none;
+  pointer-events: none;
+  & + label:before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-color: whitesmoke;
+    border: 3px solid darkgray;
+    margin-right: 5px;
+    margin-left: 0px;
+    transition: all 0.8s ease;
+  }
+  @include mix-checkbox-checked();
+  @content;
+}
+
+@mixin mix-checkbox-label(
+  $map: (
+    "background-color": darkgray,
+    "border": 3px solid whitesmoke
+  )
+) {
+  & + label:before {
+    @include mix-maps($map);
+    @content;
+  }
+}
+
+@mixin mix-checkbox-checked(
+  $map: (
+    "background-color": darkgray,
+    "border": 3px solid lightgray
+  )
+) {
+  &:checked + label:before {
+    @include mix-maps($map);
+    @content;
+  }
+}
+
+// end mixin *************************
