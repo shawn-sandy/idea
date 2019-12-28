@@ -4,6 +4,7 @@ Demo and code examples: https://codepen.io/shawn-sandy/pen/GRgvqjm
 
 @import "../helpers";
 
+/// checkbox defaults
 @mixin mix-checkbox() {
   display: none;
   pointer-events: none;
@@ -18,14 +19,15 @@ Demo and code examples: https://codepen.io/shawn-sandy/pen/GRgvqjm
     margin-left: 0px;
     transition: all 0.8s ease;
   }
-  @include mix-checkbox-checked();
+  @include mix-checkbox-selected();
   @content;
 }
 
+/// change/update the label checkbox style
 @mixin mix-checkbox-label(
   $map: (
     "background-color": darkgray,
-    "border": 3px solid whitesmoke
+    "border": 2px solid whitesmoke
   )
 ) {
   & + label:before {
@@ -33,11 +35,12 @@ Demo and code examples: https://codepen.io/shawn-sandy/pen/GRgvqjm
     @content;
   }
 }
-/// style checkbox selection
+
+// change or update the selected checkbox label style
 @mixin mix-checkbox-selected(
   $map: (
     "background-color": darkgray,
-    "border": 3px solid lightgray
+    "border": 2px solid lightgray
   )
 ) {
   &:checked + label:before {
