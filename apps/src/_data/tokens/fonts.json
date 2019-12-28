@@ -27,16 +27,16 @@
       },
       "header": {
         "base": {
-          "value": "3rem",
-          "comment": "48px base/default title"
+          "value": "2.25rem",
+          "comment": "36px base/default title"
         },
         "xs": {
           "value": "1.75rem",
           "comment": "28px"
         },
         "sm": {
-          "value": "2.25rem",
-          "comment": "36px"
+          "value": "3rem",
+          "comment": "48px"
         },
         "md": {
           "value": "3.5rem",

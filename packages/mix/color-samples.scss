@@ -6,7 +6,6 @@
 // import mix library
 @import "./index.scss";
 
-.mix {
-  /** default colors */
+.samp {
   @include mix-colors("color");
 }

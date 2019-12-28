@@ -4,8 +4,6 @@ const htmlmin = require("html-minifier");
 // shortcode imports
 const _Button = require("./src/_shortcodes/Button");
 
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function(eleventyConfig) {
@@ -49,8 +47,6 @@ module.exports = function(eleventyConfig) {
   /**
    * Plugins
    */
-
-  eleventyConfig.addPlugin(require("@11ty/eleventy-navigation"));
 
   eleventyConfig.addPlugin(require("@shawnsandy/ideas"));
 

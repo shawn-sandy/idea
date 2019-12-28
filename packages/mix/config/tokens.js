@@ -36,32 +36,28 @@ const CTITransform = {
   }
 };
 
-module.exports = function(options = {}) {
-  const source = options.source || ["./tokens/base/**/*.json"];
-  const build_dir = options.build || "./tokens/";
-  const name = options.name ? `${options.name}.scss` : "_tokens.scss";
-
-  var config = {
-    transform: {
-      // Override the attribute/cti transform
-      "attribute/cti": CTITransform
-    },
-    source: source,
-    platforms: {
-      scss: {
-        // We can still use this transformGroup because we are overriding
-        // the underlying transform
-        transformGroup: "scss",
-        buildPath: build_dir,
-        prefix: "mx",
-        files: [
-          {
-            destination: name,
-            format: "scss/map-deep"
-          }
-        ]
-      }
+module.exports = {
+  // Rather than calling .registerTransform() we can apply the new transform
+  // directly in our configuration. Using .registerTransform() with the same
+  // transform name, 'attribute/cti', would work as well.
+  transform: {
+    // Override the attribute/cti transform
+    "attribute/cti": CTITransform
+  },
+  source: ["./tokens/base/**/*.json"],
+  platforms: {
+    scss: {
+      // We can still use this transformGroup because we are overriding
+      // the underlying transform
+      transformGroup: "scss",
+      buildPath: "./tokens/",
+      prefix: "mx",
+      files: [
+        {
+          destination: "_tokens.scss",
+          format: "scss/map-deep"
+        }
+      ]
     }
-  };
-  return config;
+  }
 };

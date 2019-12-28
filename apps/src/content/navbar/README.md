@@ -1,11 +1,11 @@
-# `@shawnsandy/base`
+# `@idea/navbar`
 
 > TODO: description
 
 ## Usage
 
 ```
-const base = require('@shawnsandy/base');
+const navbar = require('@idea/navbar');
 
 // TODO: DEMONSTRATE API
 ```

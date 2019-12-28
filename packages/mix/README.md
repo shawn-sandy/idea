@@ -1,41 +1,126 @@
 # StyleMix (beta)
 
-A SASS toolkit for generating CSS utility classes and components from **Design Tokens**.
+A SASS-Map toolkit for generating utility classes, components and styles-sheets for your design system, style-guide or website using SASS MAPS.
 
-## Install
+## Usage
 
-* **Install StyleMix(beta)**
-
-```
-npm i -D @shawnsandy/mix
-```
-
-* **Install Style Dictionary**
-
-> Style Dictionary is a build system that allows you to define styles once, in a way for any platform or language to consume. A single place to create and edit your styles, and a single command exports these rules to all the places you need them - iOS, Android, CSS, JS, HTML, sketch files, style documentation, or anything you can think of. It is available as a CLI through npm, but can also be used like any normal node module if you want to extend its functionality.
-
-```
-
-// global
-npm i -g style-dictionary
-
-```
-
-**Uility classes** (example)
-
-1. Create/Import your tokens [(creating tokens)](#creating-tokens)
-2. Config StyleMix using SASS defaults
-3. Import StyleMix
-4. Include the utility mixin and run you build
-5. View [UTILITY TOKENS]('./dist/color.css') example
+##### Generate color utility classes form you map
 
 ``` scss
+// import you sass map/tokens
+@import "tokens.scss";
+// import StyleMix
+@import "@shawnsandy/mix";
+// generate color utilities from your `color` map
+.id {
+ @include mix-color();
+}
+```
 
-/** Import tokens, replace the import file below with your own **/
-@import "@shawnsandy/mix/tokens/tokens";
+##### Sample Output
 
-/** Config StyleMix SASS defaults */
+``` css
+.id-gray-hover:hover {
+    color: #6a737d !important
+}
 
+.id-gray-focus:focus {
+    color: #6a737d !important
+}
+
+.id-gray-tp {
+    color: rgba(106, 115, 125, .8) !important
+}
+
+.id-red {
+    color: #d73a49
+}
+
+.id-red-hover:hover {
+    color: #d73a49 !important
+}
+
+.id-red-focus:focus {
+    color: #d73a49 !important
+}
+
+.id-red-tp {
+    color: rgba(215, 58, 73, .8) !important
+}
+
+.id-blue {
+    color: #0366d6
+}
+
+.id-blue-hover:hover {
+    color: #0366d6 !important
+}
+
+.id-blue-focus:focus {
+    color: #0366d6 !important
+}
+
+.id-blue-tp {
+    color: rgba(3, 102, 214, .8) !important
+}
+
+.id-orange {
+    color: #f66a0a
+}
+
+.id-orange-hover:hover {
+    color: #f66a0a !important
+}
+
+.id-orange-focus:focus {
+    color: #f66a0a !important
+}
+
+.id-orange-tp {
+    color: rgba(246, 106, 10, .8) !important
+}
+
+.id-yellow {
+    color: #ffd33d
+}
+
+.id-yellow-hover:hover {
+    color: #ffd33d !important
+}
+
+.id-yellow-focus:focus {
+    color: #ffd33d !important
+}
+
+.id-yellow-tp {
+    color: rgba(255, 211, 61, .8) !important
+}
+
+.id-green {
+    color: #28a745
+}
+
+.id-green-hover:hover {
+    color: #28a745 !important
+}
+
+.id-green-focus:focus {
+    color: #28a745 !important
+}
+
+.id-green-tp {
+    color: rgba(40, 167, 69, .8) !important
+}
+```
+
+### MIX Components
+
+#### Import and customize Mix using SASS variables
+
+**Change default settings** use the following variables to override the  default SCSS setting variables when needed. View the full list of variables [here](./tokens/_tokens.scss)
+
+``` scss
+// Setup up some defaults
 $mix-tokens: $tokens; // token variable name
 $mix-namespace: "mx"; // namespace
 $mix-base: "base"; // default utility name
@@ -48,209 +133,64 @@ $mix-components: "components"; // default component key
 $mix-modifier-states: active focus focus-within hover visited; // define the states that you use
 $mix-color-attrs: "color", "background-color", "border-color";
 
-/** import stylemix **/
 @import "@shawnsandy/mix";
 
-/** utility mixin example--create font utility form our tokens **/
-@include mix-utilities("font");
 ```
 
-### Design Tokens
+#### Truncate text component
 
- **What are design tokens?**
+Truncate text using only CSS (beta)--add the following to your scss imports, use variables to override the components default variables if needed
 
-> Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development.
+``` scss
+// optional change or modify the following default variables to customize the component CSS modifiers
 
-[What are design Tokens (CSS-Tricks)](https://css-tricks.com/what-are-design-tokens/)
+$mx-truncate-clip-box-line-height: 1rem;
+$mx-truncate-clip-box-max-height: 3rem;
+$mx-truncate-clip-box-text-align: justify;
+$mx-truncate-clip-box-margin-right: -1rem;
+$mx-truncate-clip-box-padding-right: 1rem;
+$mx-truncate-clip-box-before-content: "...";
+$mx-truncate-clip-box-before-right: 0;
+$mx-truncate-clip-box-before-bottom: 0;
+$mx-truncate-clip-box-after-background: transparent;
 
-[Tokens in a design System]([https://link](https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421))
+// import the component
 
-[SALES FORCE DESIGN TOKENS](https://www.lightningdesignsystem.com/design-tokens)
+@import "node_modules/@shawnsandy/mix/components/truncate.scss"
+
+```
+
+Usage example
+
+``` html
+<p class="mx-clip-box" style="height: 3rem">The Hitch Hiker's Guide to the Galaxy has a few things to say on the subject of towels. <br>
+    A towel, it says, is about the most massively useful thing an interstellar hitch hiker can have. Partly it has great practical value - you can wrap it around you for warmth as you bound across the cold moons of Jaglan Beta; you can lie on it on the brilliant marble-sandedssss beaches of Santraginus V, inhaling the heady sea vapours; you can sleep under it beneath the stars which shine so redly on the desert world of Kakrafoon; use it to sail a mini raft down the slow heavy river Moth; wet it for use in hand-to-hand-combat; wrap it round your head to ward off noxious fumes or to avoid the gaze of the Ravenous Bugblatter Beast of Traal (a mindboggingly stupid animal, it assumes that if you can't see it, it can't see you - daft as a bush.</p>
+`
+```
+
+## Mix helpers
+
+##### `mix-get()`
+
+Grab the value of a given token/key
+
+``` scss
+.danger {
+  color: mix-get('color.red');
+}
+```
+
+#### [Read the docs for more info on setup, usages and examples Docs (WIP)](./docs)
 
 ### What are SASS Maps
 
-> Maps in Sass hold pairs of keys and values, and make it easy to look up a value by its corresponding key. They’re written ( `<expression>: <expression>, <expression>: <expression>` ). The expression before the : is the key, and the expression after is the value associated with that key. The keys must be unique, but the values may be duplicated. Unlike lists, maps must be written with parentheses around them. A map with no pairs is written ().
->
-> [Read more about SASS maps](https://sass-lang.com/documentation/values/maps)
-
-#### Creating Tokens
-
-StyleMix really only needs a SASS-MAPS to do it's thing, and you can write SASS-MAPS on your own, thats entirely up to you, once you stick to the map format(s). The workflow below is not mandatory but strongly recommend.
-
-* If you haven't yet install the Style Dictionary : [Style Dictionary Quick Start](https://amzn.github.io/style-dictionary/#/quick_start)
-* Create a config
-* Write you tokens be sure to read about how to [format tokens for stylemix](#token-formats)
-* Run style-dictionary
-
-``` js
-// config.js
-const config = require("@shawnsandy/mix/config/tokens");
-
-module.exports = config({
-    source: "tokens/**/*", // tokens dir--/tokens/my-tokens.json
-    build: "scss/_tokens/", // build dir trailing slash required--scss/_tokens.scss
-    name: "token/" // name of you scss token output file--tokens.scss
-});
-```
-
-* Run the build script
-
-Command line
-
-```
-style-dictionary build --config ./config.js
-
-```
-
-NPM Scripts
-
-```
- "scripts": {
-    "tokens": "style-dictionary build --config ./config.js"
-  },
-```
-
-Run the scripts
-
-```
-npm run tokens
-```
-
-#### Token Formats
-
-**Utility Token Structure**
-
-Utility tokens allow you to generate SASS Maps for utility classes.
-Structure ***Group/Rule/Item/Subitems/*** method or in a case where you don't need a group structure ***Rule/Item/Subitems*** when creating tokens for utilities classes:
-
-* Group: SASS group
-* Rule: Targets the CSS rule size for e.g: `size: 1rem`
-* Items/Subitems: are used for the class names `.prefix-item-subitem: 0.75rem` e.g: `.mx-fs-xs: 0.75rem`
-
-``` json
-
-  {
-    "GROUP" : {
-      "RULE" : {
-        "ITEM": {
-          "KEY": "VALUE",
-          "COMMENT": "COMMENT"
-        }
-      }
-    }
-  }
-
-```
-
-**Font-Size Utility Tokens** (example)
-
-``` json
-// fonts.json
-{
-  "font": {
-    "size": {
-      "fs": {
-        "sm": {
-          "value": "0.875rem",
-          "comment": "descriptions..."
-        },
-        "md": {
-          "value": "1.3rem",
-          "comment": "descriptions..."
-        },
-        "lg": {
-          "value": "1.5rem",
-          "comment": "descriptions..."
-        }
-      }
-    }
-  }
-}
-
-```
-
-**Color Utility Tokens** (examples)
-
-``` json
-{
-  "color": {
-    "black": {
-      "value": "#000000"
-    },
-    "white": {
-      "value": "#ffffff"
-    },
-    "gray": {
-      "value": "#6a737d"
-    },
-    "red": {
-      "value": "#d73a49"
-    }
-  }
-}
-
-```
-
-**Component Token Structure** (example)
-
-Component tokens are structured a lot like how you write rules for a CSS button/card and will generate all the SASS/CSS for your element.
-Structure ***Group/Name/Rules/Nesting/Rules***:
-
-* Group: Component SASS group
-* Name: Component name
-* Rules: Rules that style the Component e.g: `size: 1rem`
-* Nested/Rules: Components can have nested rules
-
-``` json
-
-  {
-    "GROUP" : {
-      "NAME" : {
-        "RULE": {
-          "KEY": "VALUE",
-          "COMMENT": "COMMENT"
-        },
-        "NESTED" : {
-        "RULE": {
-          "KEY": "VALUE",
-          "COMMENT": "COMMENT"
-        }
-      }
-      }
-    }
-  }
-
-```
-
-``` json
-
-{
- "component": {
-     "navbar": {
-       "display": {
-         "value": "flex"
-       },
-       "align-items": {
-         "value": "center"
-       },
-       "height": {
-         "value": "60px"
-       }
-     }
- }
-
-```
-
-* Utilities
-* Components
-* Helpers
-* Functions
-
-`to be continue--WIP`
-
-#### [Read the docs for more info on setup, usages and examples (WIP)](./docs)
+> Maps in Sass hold pairs of keys and values, and make it easy to look up a value by its corresponding key. They’re written (<expression>: <expression>, <expression>: <expression>). The expression before the : is the key, and the expression after is the value associated with that key. The keys must be unique, but the values may be duplicated. Unlike lists, maps must be written with parentheses around them. A map with no pairs is written ().[More Info]([https://link](https://sass-lang.com/documentation/values/maps))
 
 #### Inspiration, Links & Resources
+
+**[Design Tokens]([https://link](https://www.lightningdesignsystem.com/design-tokens/))**
+
+Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes. We use them in place of hard-coded values (such as hex values for color or pixel values for spacing) in order to maintain a scalable and consistent visual system for UI development.
 
 **[Amazon Style Dictionary](https://amzn.github.io/style-dictionary/#/?id=style-dictionary)**
 Style Dictionary is a build system that allows you to define styles once, in a way for any platform or language to consume. A single place to create and edit your styles, and a single command exports these rules to all the places you need them - iOS, Android, CSS, JS, HTML, sketch files, style documentation, or anything you can think of. It is available as a CLI through npm, but can also be used like any normal node module if you want to extend its functionality.

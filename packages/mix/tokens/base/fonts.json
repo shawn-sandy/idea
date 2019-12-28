@@ -51,6 +51,16 @@
           "comment": "descriptions..."
         }
       }
+    },
+    "weight": {
+      "medium": {
+        "value": "500",
+        "comment": "descriptions..."
+      },
+      "bold": {
+        "value": "700",
+        "comment": "descriptions..."
+      }
     }
   }
 }

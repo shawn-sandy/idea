@@ -30,7 +30,7 @@
           @if type-of($value) == "color" {
             color: $value;
           } @else {
-            #{$key}: $value !important;
+            #{$key}: $value;
           }
         }
         @if type-of($value) == "color" {
@@ -56,9 +56,9 @@
         @if $key == "base" {
           &#{$mix-prefix}#{$token} {
             @if type-of($val) == "color" {
-              color: $val !important;
+              color: $val;
             } @else {
-              #{$token}: $val;
+              #{$token}#{$mix-prefix}#{$modifier-key}: $val;
             }
           }
         } @else {
@@ -67,18 +67,8 @@
               color: $val;
             }
           } @else {
-            @if $key == "base" {
-              &#{$mix-prefix}#{$token} {
-                @if type-of($val) == "color" {
-                  color: $val !important;
-                } @else {
-                  #{$token}: $val;
-                }
-              }
-            } @else {
-              &#{$mix-prefix}#{$key} {
-                #{$token}#{$mix-prefix}#{$modifier-key}: $val !important;
-              }
+            &#{$mix-prefix}#{$key} {
+              #{$token}#{$mix-prefix}#{$modifier-key}: $val;
             }
           }
         }

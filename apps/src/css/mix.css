@@ -1,6 +1,6 @@
 /*
   Do not edit directly
-  Generated on Sat, 16 Nov 2019 13:00:59 GMT
+  Generated on Mon, 07 Oct 2019 10:09:02 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
@@ -25,11 +25,6 @@
   .mx-btn-rounded {
     border-radius: 0.31rem; }
 
-.mx-primary {
-  color: #000000; }
-  .mx-primary:hover {
-    color: #010101; }
-
 /** generate buttons using the modifier **/
 .mx-btn {
   height: 2.5rem;
@@ -47,17 +42,17 @@
   .mx-btn-rounded {
     border-radius: 0.31rem; }
 
-.mx-nav-navbar {
+.mx-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60rem; }
-  .mx-nav-navbar-elm {
-    padding: 0rem; }
-  .mx-nav-navbar-list {
+  height: 60px; }
+  .mx-nav-elm {
+    padding: 0 1rem; }
+  .mx-nav-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -67,95 +62,56 @@
             flex-direction: row;
     list-style: none;
     margin: auto 0; }
-  .mx-nav-navbar-sm {
-    height: 20rem; }
-  .mx-nav-navbar-md {
-    height: 40rem; }
-  .mx-nav-navbar-lg {
-    height: 80rem; }
-  .mx-nav-navbar-xl {
-    height: 100rem; }
+  .mx-nav-sm {
+    height: 20rem !important; }
+  .mx-nav-md {
+    height: 40rem !important; }
+  .mx-nav-lg {
+    height: 80rem !important; }
+  .mx-nav-xl {
+    height: 100rem !important; }
 
 .mx-font {
-  font: 1rem; }
+  font-size: 1rem; }
 
 .mx-fine-print {
-  font-size: 0.75rem !important; }
+  font-size: 0.75rem; }
 
 .mx-notes {
-  font-size: 0.875rem !important; }
+  font-size: 0.875rem; }
 
 .mx-short-copy {
-  font-size: 1.3rem !important; }
+  font-size: 1.3rem; }
 
 .mx-lead {
-  font-size: 1.5rem !important; }
+  font-size: 1.5rem; }
 
 .mx-subtitles {
-  font-size: 1.75rem !important; }
+  font-size: 1.75rem; }
 
 .mx-header-font {
-  font: 2rem; }
+  font-size: 2rem; }
 
 .mx-header-xs {
-  font-size: 2.5rem !important; }
+  font-size: 2.5rem; }
 
 .mx-header-sm {
-  font-size: 3rem !important; }
+  font-size: 3rem; }
 
 .mx-header-md {
-  font-size: 3.5rem !important; }
+  font-size: 3.5rem; }
 
 .mx-header-lg {
-  font-size: 4rem !important; }
+  font-size: 4rem; }
 
 .mx-header-xl {
-  font-size: 5rem !important; }
-
-.mx-fs-default {
-  font-size: 1rem !important; }
-
-.mx-fs-xs {
-  font-size: 0.75rem !important; }
-
-.mx-fs-sm {
-  font-size: 0.875rem !important; }
-
-.mx-fs-md {
-  font-size: 1.3rem !important; }
-
-.mx-fs-lg {
-  font-size: 1.5rem !important; }
-
-.mx-fs-xl {
-  font-size: 1.75rem !important; }
-
-.mx-fs-xxl {
-  font-size: 1.75rem !important; }
-
-.mx-title-font {
-  font: 2rem; }
-
-.mx-title-xs {
-  font-size: 2.5rem !important; }
-
-.mx-title-sm {
-  font-size: 3rem !important; }
-
-.mx-title-md {
-  font-size: 3.5rem !important; }
-
-.mx-title-lg {
-  font-size: 4rem !important; }
-
-.mx-title-xl {
-  font-size: 5rem !important; }
+  font-size: 5rem; }
 
 .mx-medium {
-  font-weight: 500 !important; }
+  font-weight: 500; }
 
 .mx-bold {
-  font-weight: 700 !important; }
+  font-weight: 700; }
 
 .mx-black {
   color: #000000 !important; }
@@ -783,3 +739,6 @@
     border-color: rgba(15, 15, 15, 0.91) !important; }
   .mx-ui-border-black-smoke-tp {
     border-color: rgba(15, 15, 15, 0.91) !important; }
+
+.mx-danger {
+  color: #d73a49; }

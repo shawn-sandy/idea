@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "nav-bar": {
+      "display": {
+        "value": "flex"
+      },
+      "align-items": {
+        "value": "center"
+      },
+      "height": {
+        "value": "60px"
+      },
+      "elm": {
+        "padding": {
+          "value": "0 1rem"
+        }
+      },
+      "list": {
+        "display": {
+          "value": "flex"
+        },
+        "flex-direction": {
+          "value": "row"
+        },
+        "list-style": {
+          "value": "none"
+        },
+        "margin": {
+          "value": "auto 0"
+        }
+      },
+      "sm": {
+        "height": {
+          "value": "20rem !important"
+        }
+      },
+      "md": {
+        "height": {
+          "value": "40rem !important"
+        }
+      },
+      "lg": {
+        "height": {
+          "value": "80rem !important"
+        }
+      },
+      "xl": {
+        "height": {
+          "value": "100rem !important"
+        }
+      }
+    }
+  }
+}
