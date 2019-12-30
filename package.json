@@ -9,7 +9,7 @@
     "changelog": "auto-changelog -p --template config/_changelog.hbs"
   },
   "devDependencies": {
-    "auto-changelog": "^1.14.1"
+    "auto-changelog": "^1.16.2"
   },
   "auto-changelog": {
     "unreleased": true,

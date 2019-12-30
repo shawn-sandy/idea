@@ -12,9 +12,12 @@
   "scripts": {
     "build": "gulp sass"
   },
+  "files": [
+    "dist"
+  ],
   "homepage": "https://github.com/shawn-sandy/idea/tree/master/packages/bootstrap-lite",
   "dependencies": {
-    "bootstrap": "^4.3.1"
+    "bootstrap": "^4.4.1"
   },
   "bugs": {
     "url": "https://github.com/shawn-sandy/idea/issues"
@@ -24,9 +27,9 @@
     "Bootstrap-Lite"
   ],
   "devDependencies": {
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.4.1",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.0",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.2.0",
     "gulp-dart-sass": "^0.9.1",
