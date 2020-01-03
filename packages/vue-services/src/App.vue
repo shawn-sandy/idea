@@ -1,28 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <data-provider url="https://dog.ceo/api/breed/husky/images">
+      <template v-slot:default="{ loading, error, data, message}">
+        <div v-if="loading">{{ message }}</div>
+        <div v-else-if="error">Message: {{ error }}</div>
+        <div v-else>{{ data }}</div>
+      </template>
+    </data-provider>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+  // import HelloWorld from './components/HelloWorld.vue'
+  import DataProvider from "./providers/Axios";
+  export default {
+    name: "AxiosProvider",
+    "components": {
+      DataProvider
+    }
+  };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
