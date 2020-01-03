@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <data-provider url="https://dog.ceo/api/breed/husky/images">
+    <data-provider url="https://dogcata.ceo/api/breed/husky/images">
       <template v-slot:default="{ loading, error, data, message}">
         <div v-if="loading">{{ message }}</div>
         <div v-else-if="error">Message: {{ error }}</div>

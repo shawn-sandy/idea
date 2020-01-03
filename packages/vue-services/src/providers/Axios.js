@@ -23,8 +23,10 @@ export default {
       .finally(
         () => {
           if (this.error) {
-            this.loading = false;
-            this.message = "Sorry an Error has occurred";
+            this.$nextTick(function() {
+              this.loading = false;
+              this.message = "Sorry an Error has occurred";
+            });
           }
         } //   // log
       );
