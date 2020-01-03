@@ -14,9 +14,10 @@ export default {
         this.data = data;
       })
       .catch(err => {
-        console.log("Sorry error", err);
+        //console.log("Sorry error", err);
         this.$nextTick(() => {
           this.error = true;
+          this.message = err;
         });
       })
       .finally(
