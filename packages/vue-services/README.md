@@ -1,5 +1,7 @@
 # @shawnsandy/vue-services
 
+A simple vue renderless component for loading and displaying data using [Axios.js](https://github.com/axios/axios), more info coming soon
+
 ## Project setup
 
 ```
@@ -28,3 +30,30 @@ yarn lint
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+### Usage (example)
+
+```js
+
+<template>
+  <div id="app">
+    <data-provider url="https://cat.ceo/api/breed/husky/images">
+      <template v-slot:default="{ loading, error, data, message }">
+        <div v-if="loading">Loading...</div>
+        <div v-else-if="error">Message: {{ message }}</div>
+        <div v-else>{{ data }}</div>
+      </template>
+    </data-provider>
+  </div>
+</template>
+
+<script>
+  import DataProvider from "@shawnsandy/vue-services/src/providers/Axios";
+  export default {
+    name: "AxiosProvider",
+    "components": {
+      DataProvider
+    }
+  };
+</script>
+
+```
