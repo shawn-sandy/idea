@@ -12,6 +12,7 @@ export default {
       .get(this.url)
       .then(({ data }) => {
         this.data = data;
+        this.loading = false;
       })
       .catch(err => {
         //console.log("Sorry error", err);
@@ -25,8 +26,7 @@ export default {
         () => {
           if (this.error) {
             this.$nextTick(function() {
-              this.loading = 0;
-              // this.message = "Sorry an Error has occurred";
+              this.loading = false;
             });
           }
         } //   // log

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <data-provider url="https://cat.ceo/api/breed/husky/images">
+    <data-provider url="https://jsonplaceholder.typicode.com/users">
       <template v-slot:default="{ loading, error, data, message }">
         <div v-if="loading">Loading...</div>
         <div v-else-if="error">Message: {{ message }}</div>
