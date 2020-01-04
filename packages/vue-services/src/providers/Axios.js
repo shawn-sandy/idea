@@ -15,17 +15,18 @@ export default {
       })
       .catch(err => {
         //console.log("Sorry error", err);
+        this.error = true;
         this.$nextTick(() => {
-          this.error = true;
           this.message = err;
+          this.loading = false;
         });
       })
       .finally(
         () => {
           if (this.error) {
             this.$nextTick(function() {
-              this.loading = false;
-              this.message = "Sorry an Error has occurred";
+              this.loading = 0;
+              // this.message = "Sorry an Error has occurred";
             });
           }
         } //   // log
@@ -33,7 +34,7 @@ export default {
   },
   render() {
     const slot = this.$scopedSlots.default({
-      loading: !this.loading,
+      loading: this.loading,
       data: this.data,
       message: this.message,
       error: this.error
