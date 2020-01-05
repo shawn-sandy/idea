@@ -1,6 +1,6 @@
 # vue-services
 
-A simple vue renderless component for loading and displaying data using [Axios.js](https://github.com/axios/axios), more info coming soon
+Vue wrapper components for loading and displaying data using [Axios.js](https://github.com/axios/axios), more info/docs coming soon
 
 ## Project setup
 
