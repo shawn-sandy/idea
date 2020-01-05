@@ -1,4 +1,4 @@
-# @shawnsandy/vue-services
+# vue-services
 
 A simple vue renderless component for loading and displaying data using [Axios.js](https://github.com/axios/axios), more info coming soon
 
@@ -31,6 +31,20 @@ yarn lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Usage (example)
+
+**Quick example SFC component** (Not IE compatible)
+
+```js
+<data-provider url="https://jsonplaceholder.typicode.com/users">
+  <template v-slot:default="{ data, message, loading, error }">
+    <div v-if="loading">Loading...</div>
+    <div v-else-if="error">Message: {{ message }}</div>
+    <div v-else>{{ data }}</div>
+  </template>
+</data-provider>
+```
+
+**Example renderless component** (IE compatible)
 
 ```js
 

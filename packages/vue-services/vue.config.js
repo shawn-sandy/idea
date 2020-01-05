@@ -39,6 +39,6 @@ module.exports = {
   },
   chainWebpack: config => {
     // GraphQL Loader
-    //config.optimization.delete("splitChunks");
+    config.optimization.delete("splitChunks");
   }
 };
