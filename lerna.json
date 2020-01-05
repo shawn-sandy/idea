@@ -1,9 +1,8 @@
 {
   "packages": [
-    "components/*",
-    "modules/*",
-    "web/",
-    "apps/"
+    "projects/*",
+    "apps/",
+    "components/*"
   ],
   "version": "independent"
 }
