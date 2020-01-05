@@ -42,6 +42,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
     <div v-else>{{ data }}</div>
   </template>
 </data-provider>
+//..... add link to script
+<script src=/js/index.js> </script>
+
 ```
 
 **Example renderless component** (IE compatible)
