@@ -7,6 +7,10 @@
     "lint": "vue-cli-service lint"
   },
   "main": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
   "dependencies": {
     "core-js": "^3.6.1",
     "vue": "^2.6.11"
