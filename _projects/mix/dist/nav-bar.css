@@ -1,13 +1,9 @@
 /*
   Do not edit directly
-  Generated on Tue, 15 Oct 2019 00:40:58 GMT
+  Generated on Mon, 06 Jan 2020 00:31:39 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
-/**
-
-
-**/
 .mx-nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -43,7 +43,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
   </template>
 </data-provider>
 //..... add link to script
-<script src=/js/index.js> </script>
+<script src="https://cdn.jsdelivr.net/npm/@shawnsandy/vue-services@0.1.1/dist/js/index.js"></script>
 
 ```
 
