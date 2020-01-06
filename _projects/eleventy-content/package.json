@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/eleventy-content",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A content management toolkit for eleventy.js",
   "private": true,
   "keywords": [
