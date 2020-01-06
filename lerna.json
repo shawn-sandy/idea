@@ -1,6 +1,6 @@
 {
   "packages": [
-    "_projects/",
+    "_projects/*",
     "apps/",
     "components/*"
   ],
