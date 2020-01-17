@@ -1,6 +1,6 @@
 {
   "name": "@shawnsandy/service-app",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "Markus Oberlehner",
   "homepage": "https://github.com/maoberlehner/building-renderless-components-to-handle-crud-operations-in-vue",
   "license": "MIT",
