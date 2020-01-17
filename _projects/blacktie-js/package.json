@@ -1,0 +1,41 @@
+{
+  "name": "@shawnsandy/blacktie-js",
+  "version": "0.0.15",
+  "description": "Blacktie Core",
+  "private": true,
+  "scripts": {
+    "start": "parcel index.html watch --open --https",
+    "build": "npm run clean && parcel build index.html --no-content-hash --detailed-report",
+    "clean": "rm -rf dist/*",
+    "gulp": "gulp"
+  },
+  "author": {
+    "name": "Shawn Sandy",
+    "url": "http://idea.com"
+  },
+  "license": "MIT",
+  "openSource": {
+    "credits": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/shawn-sandy/blacktie"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "es-dev-server": "^1.17.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sizereport": "^1.2.1",
+    "gulp-uglify": "^3.0.2",
+    "lodash": "^4.17.15",
+    "parcel-bundler": "^1.12.3",
+    "rollup": "^1.19.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.0.2",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-uglify": "^6.0.2"
+  }
+}

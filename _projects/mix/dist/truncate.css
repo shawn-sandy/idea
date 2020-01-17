@@ -1,0 +1,25 @@
+/*
+  Do not edit directly
+  Generated on Mon, 06 Jan 2020 00:31:39 GMT
+*/
+/** GENERAL PURPOSE SASS-MIXINS **/
+/** generates a series of modifies based a list of attributes  **/
+.mx-clip-box {
+  overflow: hidden;
+  position: relative;
+  line-height: 1rem;
+  max-height: 3rem;
+  margin-right: -1rem;
+  padding-right: 1rem; }
+  .mx-clip-box:before {
+    content: "...";
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+  .mx-clip-box:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1rem;
+    height: 1rem;
+    background: transparent; }

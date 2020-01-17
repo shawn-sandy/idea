@@ -1,0 +1,42 @@
+{
+  "name": "@shawnsandy/bootstrap-lite",
+  "version": "0.0.22",
+  "description": "Bootstrap Lite",
+  "main": "dist/bootstrap-lite.min.css",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/shawn-sandy/ideas.git"
+  },
+  "license": "MIT",
+  "author": "Shawn Sandy <shawnsandy04@gmail.com> (http://shawnsandy.design)",
+  "scripts": {
+    "build": "gulp sass"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/shawn-sandy/idea/tree/master/packages/bootstrap-lite",
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  },
+  "bugs": {
+    "url": "https://github.com/shawn-sandy/idea/issues"
+  },
+  "keywords": [
+    "Bootstrap",
+    "Bootstrap-Lite"
+  ],
+  "devDependencies": {
+    "bootstrap": "^4.4.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-dart-sass": "^0.9.1",
+    "gulp-print": "^5.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sizereport": "^1.2.1",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "gitHead": "7ede6bf5067c6d11a87c3e2368dec12e590aa8f8"
+}

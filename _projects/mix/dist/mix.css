@@ -1,0 +1,12 @@
+/** mix stylesheet **/
+/*
+  Do not edit directly
+  Generated on Wed, 02 Oct 2019 02:32:44 GMT
+*/
+/** GENERAL PURPOSE SASS-MIXINS **/
+/** generates a series of modifies based a list of attributes  **/
+/** generate all components in specified map--default component **/
+.mx-swatch {
+  min-height: 60px;
+  width: 100%;
+  padding: 10px; }
