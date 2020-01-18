@@ -1,0 +1,12 @@
+// StyleMix demo
+
+//import tokens
+@import "./tokens/tokens";
+
+// import mix library
+@import "./index.scss";
+
+.mix {
+  /** default colors */
+  @include mix-colors("color");
+}
