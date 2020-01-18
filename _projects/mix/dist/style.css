@@ -4,6 +4,10 @@
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
+/**
+
+
+**/
 /** generate all components in specified map--default component **/
 .mx-btn {
   height: 2.5rem;
@@ -73,46 +77,46 @@
     height: 100rem !important; }
 
 .mx-font {
-  font-size: 1rem; }
+  font: 1rem; }
 
 .mx-fine-print {
-  font-size: 0.75rem; }
+  font-size: 0.75rem !important; }
 
 .mx-notes {
-  font-size: 0.875rem; }
+  font-size: 0.875rem !important; }
 
 .mx-short-copy {
-  font-size: 1.3rem; }
+  font-size: 1.3rem !important; }
 
 .mx-lead {
-  font-size: 1.5rem; }
+  font-size: 1.5rem !important; }
 
 .mx-subtitles {
-  font-size: 1.75rem; }
+  font-size: 1.75rem !important; }
 
 .mx-header-font {
-  font-size: 2rem; }
+  font: 2rem; }
 
 .mx-header-xs {
-  font-size: 2.5rem; }
+  font-size: 2.5rem !important; }
 
 .mx-header-sm {
-  font-size: 3rem; }
+  font-size: 3rem !important; }
 
 .mx-header-md {
-  font-size: 3.5rem; }
+  font-size: 3.5rem !important; }
 
 .mx-header-lg {
-  font-size: 4rem; }
+  font-size: 4rem !important; }
 
 .mx-header-xl {
-  font-size: 5rem; }
+  font-size: 5rem !important; }
 
 .mx-medium {
-  font-weight: 500; }
+  font-weight: 500 !important; }
 
 .mx-bold {
-  font-weight: 700; }
+  font-weight: 700 !important; }
 
 .mx-black {
   color: #000000 !important; }

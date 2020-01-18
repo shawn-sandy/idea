@@ -1,13 +1,8 @@
+/**
+
+
+**/
 /// return the value of a given token/key
 @function mix-get($key, $tokens: $mix-tokens) {
   @return get($key, $tokens);
-}
-
-// loops trough a sass map and render modifier: values
-@mixin mix-maps($map) {
-  @if type-of($map) == "map" {
-    @each $item, $value in $map {
-      #{$item}: $value;
-    }
-  }
 }
