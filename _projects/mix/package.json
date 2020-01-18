@@ -11,7 +11,7 @@
     "Design Tokens"
   ],
   "author": "shawnsandy <shawnsandy04@gmail.com>",
-  "homepage": "https://github.com/shawn-sandy/idea/tree/master/packages/mix#stylemix",
+  "homepage": "https://github.com/shawn-sandy/idea/tree/master/_components/mix#stylemix",
   "license": "MIT",
   "main": "index.scss",
   "publishConfig": {
@@ -40,5 +40,5 @@
     "gulp-sizereport": "^1.2.1",
     "style-dictionary": "^2.8.2"
   },
-  "gitHead": "e2e6bac826ec7c9a889e5b1a6ead322cc60582d4"
+  "gitHead": "48c83e4fb5bcad0ddd74eb1771f876f487ff1538"
 }
