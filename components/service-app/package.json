@@ -4,7 +4,6 @@
   "author": "Markus Oberlehner",
   "homepage": "https://github.com/maoberlehner/building-renderless-components-to-handle-crud-operations-in-vue",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",

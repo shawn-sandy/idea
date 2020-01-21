@@ -1,13 +1,9 @@
 /*
   Do not edit directly
-  Generated on Mon, 07 Oct 2019 10:09:02 GMT
+  Generated on Tue, 15 Oct 2019 00:40:58 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
-/**
-
-
-**/
 /** generate all components in specified map--default component **/
 .mx-btn {
   height: 2.5rem;
@@ -24,6 +20,11 @@
     border-radius: 9999rem; }
   .mx-btn-rounded {
     border-radius: 0.31rem; }
+
+.mx-primary {
+  color: #000000; }
+  .mx-primary:hover {
+    color: #010101; }
 
 /** generate buttons using the modifier **/
 .mx-btn {
