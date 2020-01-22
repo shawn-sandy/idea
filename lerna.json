@@ -2,8 +2,7 @@
   "packages": [
     "_projects/*",
     "core/*",
-    "apps/",
-    "components/*"
+    "apps/"
   ],
   "version": "independent"
 }
