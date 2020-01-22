@@ -1,8 +1,8 @@
 {
   "packages": [
     "_projects/*",
-    "apps/",
-    "components/*"
+    "core/*",
+    "apps/"
   ],
   "version": "independent"
 }

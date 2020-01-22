@@ -3960,14 +3960,10 @@ code {
 
 /*
   Do not edit directly
-  Generated on Mon, 07 Oct 2019 11:41:30 GMT
+  Generated on Mon, 06 Jan 2020 00:29:43 GMT
 */
 /** GENERAL PURPOSE SASS-MIXINS **/
 /** generates a series of modifies based a list of attributes  **/
-/**
-
-
-**/
 .id-btn {
   padding: 1.25rem;
   font-size: 1.07rem;
@@ -3981,6 +3977,10 @@ code {
     background-color: #0a0a0a; }
   .id-btn-blue {
     background-color: #0070d2; }
+
+.id-swatch {
+  min-height: 60rem;
+  width: 100rem; }
 
 .id-gray {
   color: #6a737d !important; }
