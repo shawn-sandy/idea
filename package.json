@@ -3,6 +3,7 @@
   "version": "0.3.0",
   "private": true,
   "scripts": {
+    "start": "lerna run --scope @local/idea start",
     "np:major": "np major --yolo=true --no-publish",
     "np:minor": "np minor --yolo=true --no-publish",
     "np:patch": "np patch --yolo=true --no-publish",
