@@ -1,1 +1,0 @@
-var isIE=function(){var e=window.navigator.userAgent,i=e.indexOf("MSIE "),n=e.indexOf("Trident/");return console.log(i,"msie"),0<i||0<n};if(isIE()){var ieElm=document.getElementById("ie-warning");ieElm.classList.remove("ie-hidden"),console.info("User is using IE/MSIE...")}
