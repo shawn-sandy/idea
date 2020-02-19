@@ -22,6 +22,7 @@
     "eslint-plugin-vue": "^4.5.0",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
+    "snowpack": "^1.4.0",
     "vue-template-compiler": "^2.5.13"
   },
   "browserslist": [

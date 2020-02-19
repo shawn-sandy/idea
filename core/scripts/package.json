@@ -31,5 +31,8 @@
   },
   "bugs": {
     "url": "https://github.com/shawn-sandy/idea/issues"
+  },
+  "devDependencies": {
+    "snowpack": "^1.4.0"
   }
 }

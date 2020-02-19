@@ -38,6 +38,7 @@
     "gulp-clean-css": "^4.2.0",
     "gulp-sass": "^4.0.2",
     "gulp-sizereport": "^1.2.1",
+    "snowpack": "^1.4.0",
     "style-dictionary": "^2.8.2"
   },
   "gitHead": "48c83e4fb5bcad0ddd74eb1771f876f487ff1538"

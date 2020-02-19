@@ -25,6 +25,7 @@
     "eslint-plugin-vue": "^5.0.0",
     "sass": "^1.24.1",
     "sass-loader": "^8.0.0",
+    "snowpack": "^1.4.0",
     "vue-template-compiler": "^2.6.11"
   }
 }

@@ -10,7 +10,8 @@
     "changelog": "auto-changelog -p --template config/_changelog.hbs"
   },
   "devDependencies": {
-    "auto-changelog": "^1.16.2"
+    "auto-changelog": "^1.16.2",
+    "snowpack": "^1.4.0"
   },
   "auto-changelog": {
     "unreleased": true,

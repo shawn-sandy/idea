@@ -86,6 +86,7 @@
     "sass-rem": "^2.0.1",
     "sassdoc": "^2.7.1",
     "scsstojson": "^1.0.2",
+    "snowpack": "^1.4.0",
     "style-dictionary": "^2.8.3",
     "vinyl-named": "^1.1.0",
     "vue-styleguidist": "^4.7.6",
